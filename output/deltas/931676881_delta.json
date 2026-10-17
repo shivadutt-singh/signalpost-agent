@@ -1,0 +1,94 @@
+{
+  "orgnr": "931676881",
+  "run_timestamp": "2026-10-17T10:23:54.729222+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:23:54.729222+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "12 ROUNDS NUF",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931676881"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:54.729222+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "NUF",
+        "beskrivelse": "Norskregistrert utenlandsk foretak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931676881"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:54.729222+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-09-05",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931676881"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:54.729222+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Møllergata 9",
+        "postal_code": "0179",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931676881"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:54.729222+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "85.510",
+        "beskrivelse": "Undervisning innenfor idrett og rekreasjon"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931676881"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:54.729222+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931676881"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:54.729222+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Behnush Najibi",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931676881"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:54.729222+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "932023954",
+          "name": "12 ROUNDS NUF",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931676881"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

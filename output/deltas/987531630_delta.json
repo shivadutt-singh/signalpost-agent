@@ -1,0 +1,103 @@
+{
+  "orgnr": "987531630",
+  "run_timestamp": "2026-10-17T10:21:41.296787+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:21:41.296787+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1. ÅS SPEIDERGRUPPE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987531630"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:41.296787+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987531630"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:41.296787+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2004-12-20",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987531630"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:41.296787+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1923-06-22",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987531630"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:41.296787+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "aas.speiding.no",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987531630"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:41.296787+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987531630"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:41.296787+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987531630"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:41.296787+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Knut Marius Hauglin",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987531630"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:41.296787+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "932402165",
+          "name": "1. ÅS SPEIDERGRUPPE",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987531630"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:41.296787+00:00",
+      "fact_key": "operations.summary",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1. Ås speidergruppe Eventyrene er der ute! 1.",
+      "reason": "Initial discovery from https://aas.speiding.no"
+    }
+  ],
+  "facts_created": 10,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

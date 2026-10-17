@@ -1,0 +1,126 @@
+{
+  "orgnr": "990727333",
+  "run_timestamp": "2026-10-17T10:20:29.725065+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:29.725065+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1,5 INVEST AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990727333"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:29.725065+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990727333"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:29.725065+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2007-01-08",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990727333"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:29.725065+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2007-01-03",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990727333"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:29.725065+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Storelvdalsveien 2101",
+        "postal_code": "2480",
+        "city": "KOPPANG",
+        "municipality": "STOR-ELVDAL",
+        "municipality_number": "3423",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990727333"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:29.725065+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "68.200",
+        "beskrivelse": "Utleie av egen eller leid fast eiendom"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990727333"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:29.725065+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990727333"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:29.725065+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 2500000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990727333"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:29.725065+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Finansforvaltning og utleie.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990727333"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:29.725065+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990727333"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:29.725065+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Jens Naas-Bibow",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990727333"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:29.725065+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "999487998",
+          "name": "1,5 INVEST AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990727333"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

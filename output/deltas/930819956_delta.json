@@ -1,0 +1,134 @@
+{
+  "orgnr": "930819956",
+  "run_timestamp": "2026-10-17T10:20:26.035658+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:26.035658+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1-2-3 BYGG OG MONTASJESERVICE AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930819956"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.035658+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930819956"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.035658+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-02-13",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930819956"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.035658+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-01-22",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930819956"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.035658+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Nordlysbuen 10",
+        "postal_code": "8007",
+        "city": "BODØ",
+        "municipality": "BODØ",
+        "municipality_number": "1804",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930819956"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.035658+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "43.320",
+        "beskrivelse": "Snekkerarbeid"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930819956"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.035658+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930819956"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.035658+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930819956"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.035658+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Selge tjenester og varer innen Bygg og Montering kjøkken/bad - og annet som naturlig sammenfaller med dette - samt deltagelse i andre selskaper, investeringer og nærliggende virksomhet.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930819956"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.035658+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930819956"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.035658+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Ola Andreas Jönsson",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930819956"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.035658+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Ola Andreas Jönsson",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930819956"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.035658+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "931040286",
+          "name": "1-2-3 BYGG OG MONTASJESERVICE AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930819956"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

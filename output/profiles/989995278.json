@@ -1,0 +1,202 @@
+{
+  "orgnr": "989995278",
+  "legal_name": "= OSLO (ERLIK OSLO) DA",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-10-17T10:19:46.205890+00:00",
+  "updated_at": "2026-10-17T13:24:16.774890+00:00",
+  "schema_version": "1.0.0",
+  "profile_verification_explanation": "Enterprise profile for = OSLO (ERLIK OSLO) DA (orgnr: 989995278) deterministically verified. 9 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "= OSLO (ERLIK OSLO) DA is a registered Norwegian enterprise located in OSLO focused on its statutory activities. Official registration records confirm corporate standing with verified leadership (Executive Board) and verified Modulo-11 enterprise number 989995278. Unfiled interim financial statements, private commercial contracts, and internal headcount fluctuations remain unverified from public registry filings.",
+  "known_unknowns": [
+    "Current unfiled interim quarterly revenue and operating margins",
+    "Detailed private commercial agreements and non-public partner contracts",
+    "Real-time headcount variance beyond latest annual Aa-registeret submission"
+  ],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "= OSLO (ERLIK OSLO) DA",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989995278",
+        "source_tier": "official_registry",
+        "source_date": "2006-07-26",
+        "retrieval_timestamp": "2026-10-17T10:19:43.805861+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '= OSLO (ERLIK OSLO) DA'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "DA",
+        "beskrivelse": "Ansvarlig selskap med delt ansvar"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989995278",
+        "source_tier": "official_registry",
+        "source_date": "2006-07-26",
+        "retrieval_timestamp": "2026-10-17T10:19:43.805861+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form DA (Ansvarlig selskap med delt ansvar)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2006-07-26",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989995278",
+        "source_tier": "official_registry",
+        "source_date": "2006-07-26",
+        "retrieval_timestamp": "2026-10-17T10:19:43.805861+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "registry.founding_date": {
+      "fact_key": "registry.founding_date",
+      "current_value": "2006-06-23",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989995278",
+        "source_tier": "official_registry",
+        "source_date": "2006-07-26",
+        "retrieval_timestamp": "2026-10-17T10:19:43.805861+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official founding date (stiftelsesdato) recorded in registry."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "c/o Vibeke Omberg Lavrans vei 17",
+        "postal_code": "0670",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989995278",
+        "source_tier": "official_registry",
+        "source_date": "2006-07-26",
+        "retrieval_timestamp": "2026-10-17T10:19:43.805861+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in OSLO."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "60.310",
+        "beskrivelse": "Nyhetsbyråvirksomhet"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989995278",
+        "source_tier": "official_registry",
+        "source_date": "2006-07-26",
+        "retrieval_timestamp": "2026-10-17T10:19:43.805861+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 60.310: Nyhetsbyråvirksomhet)."
+      },
+      "previous_values": []
+    },
+    "operations.statutory_purpose": {
+      "fact_key": "operations.statutory_purpose",
+      "current_value": "Magasinsalg, promotering av Oslo by, journalistikk, medievirksomhet, bokutgivelse, kursvirksomhet samt hva hermed står i forbindelse.",
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989995278",
+        "source_tier": "official_registry",
+        "source_date": "2006-07-26",
+        "retrieval_timestamp": "2026-10-17T10:19:43.805861+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Statutory purpose registered in articles of association."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989995278",
+        "source_tier": "official_registry",
+        "source_date": "2006-07-26",
+        "retrieval_timestamp": "2026-10-17T10:19:43.805861+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    },
+    "governance.board_chair": {
+      "fact_key": "governance.board_chair",
+      "current_value": "Ingeborg Vibeke Omberg",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989995278",
+        "source_tier": "official_registry",
+        "source_date": "2006-07-26",
+        "retrieval_timestamp": "2026-10-17T10:19:43.805861+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    }
+  },
+  "metadata": {}
+}

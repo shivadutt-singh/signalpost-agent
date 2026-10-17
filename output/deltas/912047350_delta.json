@@ -1,0 +1,79 @@
+{
+  "orgnr": "912047350",
+  "run_timestamp": "2026-10-17T10:19:55.676393+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:19:55.676393+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "01KOMMUNIKASJON - MARTA DIAZ HINAREJOS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912047350"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:55.676393+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912047350"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:55.676393+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2013-06-10",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912047350"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:55.676393+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Jens Gjerløws vei 9",
+        "postal_code": "4841",
+        "city": "ARENDAL",
+        "municipality": "ARENDAL",
+        "municipality_number": "4203",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912047350"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:55.676393+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "www.01kommunikasjon.no",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912047350"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:55.676393+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "62.100",
+        "beskrivelse": "Dataprogrammeringstjenester"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912047350"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:55.676393+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912047350"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

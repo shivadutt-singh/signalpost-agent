@@ -1,0 +1,134 @@
+{
+  "orgnr": "915177395",
+  "run_timestamp": "2026-10-17T10:22:21.334278+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:21.334278+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "100 VEDLIKEHOLD AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/915177395"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.334278+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/915177395"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.334278+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1995-02-19",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/915177395"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.334278+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1961-07-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/915177395"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.334278+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Torvgata 3",
+        "postal_code": "2000",
+        "city": "LILLESTRØM",
+        "municipality": "LILLESTRØM",
+        "municipality_number": "3205",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/915177395"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.334278+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "43.320",
+        "beskrivelse": "Snekkerarbeid"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/915177395"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.334278+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/915177395"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.334278+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 100000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/915177395"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.334278+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Vedlikeholdstjenester, maler- og tømrerarbeid samt virksomhet som hører inn under dette.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/915177395"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.334278+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/915177395"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.334278+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Visar Xhaferi",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/915177395"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.334278+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Visar Xhaferi",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/915177395"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.334278+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "871752982",
+          "name": "100 VEDLIKEHOLD AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/915177395"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

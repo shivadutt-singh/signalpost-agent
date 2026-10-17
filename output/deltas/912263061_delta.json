@@ -1,0 +1,111 @@
+{
+  "orgnr": "912263061",
+  "run_timestamp": "2026-10-17T10:24:00.603727+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:24:00.603727+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "12:24 INVEST AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912263061"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:00.603727+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912263061"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:00.603727+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2013-08-06",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912263061"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:00.603727+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2013-06-20",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912263061"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:00.603727+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Stølsvegen 30",
+        "postal_code": "3580",
+        "city": "GEILO",
+        "municipality": "HOL",
+        "municipality_number": "3330",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912263061"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:00.603727+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "64.323",
+        "beskrivelse": "Andre egeninvesteringsselskaper"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912263061"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:00.603727+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912263061"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:00.603727+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 588000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912263061"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:00.603727+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Konsulenttjenester, investering og deltagelse i andre selskaper, kjøp og salg av aksjer og hva dermed står i forbindelse.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912263061"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:00.603727+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912263061"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:00.603727+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Marius Grue",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/912263061"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

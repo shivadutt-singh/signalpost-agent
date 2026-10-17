@@ -1,0 +1,103 @@
+{
+  "orgnr": "999024467",
+  "run_timestamp": "2026-10-17T10:23:10.860811+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:23:10.860811+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1099 MANAGEMENT DA",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999024467"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:10.860811+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "DA",
+        "beskrivelse": "Ansvarlig selskap med delt ansvar"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999024467"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:10.860811+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2012-10-18",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999024467"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:10.860811+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2012-10-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999024467"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:10.860811+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Jonsvannsveien 23",
+        "postal_code": "7052",
+        "city": "TRONDHEIM",
+        "municipality": "TRONDHEIM",
+        "municipality_number": "5001",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999024467"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:10.860811+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "www.1099band.com",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999024467"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:10.860811+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "59.200",
+        "beskrivelse": "Produksjon og utgivelse av musikk- og lydopptak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999024467"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:10.860811+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kjøp og salg av utstyr, samt kostnader og inntekter forbundet med utgivelser relatert til musikkgruppen 1099.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999024467"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:10.860811+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999024467"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:10.860811+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Anders Kalland",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999024467"
+    }
+  ],
+  "facts_created": 10,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

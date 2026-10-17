@@ -1,0 +1,126 @@
+{
+  "orgnr": "992017015",
+  "run_timestamp": "2026-10-17T10:20:03.351126+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:03.351126+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "07365 DOKVA AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/992017015"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:03.351126+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/992017015"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:03.351126+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2007-12-17",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/992017015"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:03.351126+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2007-11-15",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/992017015"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:03.351126+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Hovedbygget 3. Etasje Eidsvågveien 150",
+        "postal_code": "5105",
+        "city": "EIDSVÅG I ÅSANE",
+        "municipality": "BERGEN",
+        "municipality_number": "4601",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/992017015"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:03.351126+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "42.210",
+        "beskrivelse": "Bygging av vann- og kloakkanlegg"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/992017015"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:03.351126+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/992017015"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:03.351126+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 100100.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/992017015"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:03.351126+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Utvikling og drifting av WEB-baserte styringssystemer for entrepenørvirksomhet, samt å drive entrepenørvirksomhet. Videre å drive videoinspeksjon av røranlegg samt rørfornying og hva dermed står i forbindelse. Videre å drive konsulenttjeneste innenfor undervannsteknikk, herunder også deltakelse i andre selskaper med lignende formål.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/992017015"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:03.351126+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/992017015"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:03.351126+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Henrik Bjarte Reigstad",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/992017015"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:03.351126+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "933658279",
+          "name": "07365 DOKVA AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/992017015"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

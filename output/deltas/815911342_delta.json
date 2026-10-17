@@ -1,0 +1,87 @@
+{
+  "orgnr": "815911342",
+  "run_timestamp": "2026-10-17T10:20:32.422488+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:32.422488+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1. DRAMMEN SPEIDERGRUPPE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/815911342"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:32.422488+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/815911342"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:32.422488+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2015-10-26",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/815911342"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:32.422488+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1921-01-12",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/815911342"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:32.422488+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "C/O Silje Bjørge Rebbansbakken 6",
+        "postal_code": "3018",
+        "city": "DRAMMEN",
+        "municipality": "DRAMMEN",
+        "municipality_number": "3301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/815911342"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:32.422488+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/815911342"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:32.422488+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/815911342"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:32.422488+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Silje Bjørge",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/815911342"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

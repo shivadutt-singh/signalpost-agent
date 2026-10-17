@@ -1,0 +1,142 @@
+{
+  "orgnr": "928493822",
+  "run_timestamp": "2026-10-17T10:23:23.806721+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:23:23.806721+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "10X AGENCY AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928493822"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:23.806721+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928493822"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:23.806721+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2022-01-05",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928493822"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:23.806721+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-12-21",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928493822"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:23.806721+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Rogalandsgata 3A",
+        "postal_code": "4011",
+        "city": "STAVANGER",
+        "municipality": "STAVANGER",
+        "municipality_number": "1103",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928493822"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:23.806721+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "73.110",
+        "beskrivelse": "Reklamebyråvirksomhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928493822"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:23.806721+00:00",
+      "fact_key": "operations.employee_count",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 7,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928493822"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:23.806721+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928493822"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:23.806721+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928493822"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:23.806721+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Salg av digitale kurs. Coaching og kurs. Markedsføring av sosiale medier.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928493822"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:23.806721+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928493822"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:23.806721+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Hortsy Waldmann Reyes",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928493822"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:23.806721+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Hortsy Waldmann Reyes",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928493822"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:23.806721+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "928519694",
+          "name": "10X AGENCY AS",
+          "employees": 7,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928493822"
+    }
+  ],
+  "facts_created": 14,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

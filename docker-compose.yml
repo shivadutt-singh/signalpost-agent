@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: signalpost-agent
+    volumes:
+      - ./output:/app/output
+    env_file:
+      - path: .env
+        required: false
+    command: ["run", "--orgnr", "923609016"]
+
+  seed-1000:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: signalpost-seed-1000
+    volumes:
+      - ./output:/app/output
+    env_file:
+      - path: .env
+        required: false
+    command: ["seed-1000", "--limit", "1000", "--concurrency", "25"]
+
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: signalpost-test
+    command: ["python", "-m", "pytest", "tests", "-v"]

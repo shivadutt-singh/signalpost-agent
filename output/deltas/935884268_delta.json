@@ -1,0 +1,71 @@
+{
+  "orgnr": "935884268",
+  "run_timestamp": "2026-10-17T10:23:48.169020+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:23:48.169020+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "123 HÅNDVERKERTJENESTER GABRIEL BJERKNES",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935884268"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.169020+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935884268"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.169020+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-08-05",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935884268"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.169020+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Museumsgata 4",
+        "postal_code": "3210",
+        "city": "SANDEFJORD",
+        "municipality": "SANDEFJORD",
+        "municipality_number": "3907",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935884268"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.169020+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "43.340",
+        "beskrivelse": "Maler- og glassarbeid"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935884268"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.169020+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935884268"
+    }
+  ],
+  "facts_created": 6,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

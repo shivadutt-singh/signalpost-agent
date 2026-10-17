@@ -1,0 +1,134 @@
+{
+  "orgnr": "997549546",
+  "run_timestamp": "2026-10-17T10:23:26.509659+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:23:26.509659+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "10XNORTH AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997549546"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:26.509659+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997549546"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:26.509659+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2011-11-30",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997549546"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:26.509659+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2011-10-27",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997549546"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:26.509659+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Innelvvegen 112",
+        "postal_code": "9107",
+        "city": "KVALØYA",
+        "municipality": "TROMSØ",
+        "municipality_number": "5501",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997549546"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:26.509659+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "79.121",
+        "beskrivelse": "Aktiviteter utført av utflukts- og eventarrangører"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997549546"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:26.509659+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997549546"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:26.509659+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 100000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997549546"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:26.509659+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Drive reiselivsaktiviteter og sikkerhetsopplæring til sjøs, herunder turistguiding, opplevlesesturisme, arktiske ekspedisjoner, utleie og drift av turistutstyr, maritime tjenester, kurs- og opplæringsvirksomhet samt annen virksomhet som naturlig hører sammen med dette. Selskapet kan delta i andre selskaper med tilsvarende eller beslektet formål.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997549546"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:26.509659+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997549546"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:26.509659+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Erika Westby",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997549546"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:26.509659+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Terje Westby",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997549546"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:26.509659+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "985926506",
+          "name": "10XNORTH - NORWEGIAN ICEBREAKING",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997549546"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

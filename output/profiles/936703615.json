@@ -1,0 +1,136 @@
+{
+  "orgnr": "936703615",
+  "legal_name": "101 COPENHAGEN APS",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-10-17T10:22:51.207393+00:00",
+  "updated_at": "2026-10-17T10:22:51.207393+00:00",
+  "schema_version": "1.0.0",
+  "profile_verification_explanation": "Enterprise profile for 101 COPENHAGEN APS (orgnr: 936703615) deterministically verified. 6 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "101 COPENHAGEN APS",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936703615",
+        "source_tier": "official_registry",
+        "source_date": "2025-12-04",
+        "retrieval_timestamp": "2026-10-17T10:22:34.608010+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '101 COPENHAGEN APS'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "UTLA",
+        "beskrivelse": "Utenlandsk enhet"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936703615",
+        "source_tier": "official_registry",
+        "source_date": "2025-12-04",
+        "retrieval_timestamp": "2026-10-17T10:22:34.608010+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form UTLA (Utenlandsk enhet)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2025-12-04",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936703615",
+        "source_tier": "official_registry",
+        "source_date": "2025-12-04",
+        "retrieval_timestamp": "2026-10-17T10:22:34.608010+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "registry.founding_date": {
+      "fact_key": "registry.founding_date",
+      "current_value": "2018-11-29",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936703615",
+        "source_tier": "official_registry",
+        "source_date": "2025-12-04",
+        "retrieval_timestamp": "2026-10-17T10:22:34.608010+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official founding date (stiftelsesdato) recorded in registry."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Østergade 17",
+        "postal_code": null,
+        "city": "DK-1100 KØBENHAVN K",
+        "municipality": null,
+        "municipality_number": null,
+        "country": "Danmark"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936703615",
+        "source_tier": "official_registry",
+        "source_date": "2025-12-04",
+        "retrieval_timestamp": "2026-10-17T10:22:34.608010+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in DK-1100 KØBENHAVN K."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936703615",
+        "source_tier": "official_registry",
+        "source_date": "2025-12-04",
+        "retrieval_timestamp": "2026-10-17T10:22:34.608010+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    }
+  },
+  "metadata": {}
+}

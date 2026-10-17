@@ -1,0 +1,119 @@
+{
+  "orgnr": "919701226",
+  "run_timestamp": "2026-10-17T10:19:59.286277+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:19:59.286277+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "0495 GREFSEN AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919701226"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:59.286277+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919701226"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:59.286277+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2017-10-11",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919701226"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:59.286277+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2017-09-21",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919701226"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:59.286277+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Trestakkveien 36A",
+        "postal_code": "2016",
+        "city": "FROGNER",
+        "municipality": "LILLESTRØM",
+        "municipality_number": "3205",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919701226"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:59.286277+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "68.120",
+        "beskrivelse": "Utvikling og salg av byggeprosjekter"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919701226"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:59.286277+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919701226"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:59.286277+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 100000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919701226"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:59.286277+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Utvikling og salg av egen fast eiendom.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919701226"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:59.286277+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919701226"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:59.286277+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Thomas Nysæther",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919701226"
+    },
+    {
+      "timestamp": "2026-10-17T10:19:59.286277+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Bjørn Erik Dørstad",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919701226"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

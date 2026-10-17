@@ -1,0 +1,126 @@
+{
+  "orgnr": "934570219",
+  "run_timestamp": "2026-10-17T10:23:48.694329+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:23:48.694329+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "123 EIENDOM HOLDING AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934570219"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.694329+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934570219"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.694329+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2024-11-30",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934570219"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.694329+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2024-11-13",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934570219"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.694329+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Stokkedalen 134",
+        "postal_code": "5151",
+        "city": "STRAUMSGREND",
+        "municipality": "BERGEN",
+        "municipality_number": "4601",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934570219"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.694329+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "43.221",
+        "beskrivelse": "Rørleggerarbeid"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934570219"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.694329+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934570219"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.694329+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934570219"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.694329+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Holdingselskap. Investering i aksjer, verdipapirer og eiendom.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934570219"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.694329+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934570219"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.694329+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Emil Sophus Jacobsen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934570219"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.694329+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "934571126",
+          "name": "123 EIENDOM HOLDING AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934570219"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

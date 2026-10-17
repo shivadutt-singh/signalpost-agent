@@ -1,0 +1,68 @@
+{
+  "orgnr": "815886992",
+  "run_timestamp": "2026-10-17T10:22:21.657426+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:21.657426+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "100% FOREIGN OWNED SUBSIDIARY \"SIEMENS UKRAINE\"",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/815886992"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.657426+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "UTLA",
+        "beskrivelse": "Utenlandsk enhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/815886992"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.657426+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2015-10-20",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/815886992"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.657426+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1997-07-18",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/815886992"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.657426+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "4-V, Mykola Grinchenco Str.",
+        "postal_code": null,
+        "city": "Kyiv 03680",
+        "municipality": null,
+        "municipality_number": null,
+        "country": "Ukraina"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/815886992"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.657426+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/815886992"
+    }
+  ],
+  "facts_created": 6,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

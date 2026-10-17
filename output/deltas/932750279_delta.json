@@ -1,0 +1,126 @@
+{
+  "orgnr": "932750279",
+  "run_timestamp": "2026-10-17T10:20:15.646416+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:15.646416+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1 NYGÅRD AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932750279"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:15.646416+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932750279"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:15.646416+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2024-01-03",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932750279"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:15.646416+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-12-12",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932750279"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:15.646416+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Innersvingen 20",
+        "postal_code": "4820",
+        "city": "FROLAND",
+        "municipality": "FROLAND",
+        "municipality_number": "4214",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932750279"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:15.646416+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "00.000",
+        "beskrivelse": "Uoppgitt"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932750279"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:15.646416+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932750279"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:15.646416+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932750279"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:15.646416+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Aksjeeie, kjøp og salg av aksjer og annen investeringsvirksomhet.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932750279"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:15.646416+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932750279"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:15.646416+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Endre Nygård",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932750279"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:15.646416+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "932753359",
+          "name": "1 NYGÅRD AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932750279"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

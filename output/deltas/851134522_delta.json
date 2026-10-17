@@ -1,0 +1,84 @@
+{
+  "orgnr": "851134522",
+  "run_timestamp": "2026-10-17T10:22:42.429059+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:42.429059+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1001 TING LILLESTRØM ANS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/851134522"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:42.429059+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ANS",
+        "beskrivelse": "Ansvarlig selskap med solidarisk ansvar"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/851134522"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:42.429059+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1995-02-19",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/851134522"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:42.429059+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1989-01-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/851134522"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:42.429059+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Nittedalsgata 23",
+        "postal_code": "2000",
+        "city": "LILLESTRØM",
+        "municipality": "LILLESTRØM",
+        "municipality_number": "3205",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/851134522"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:42.429059+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Handel med salg av interiør og pyntegjenstander og herunder hva står i forbindelse.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/851134522"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:42.429059+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/851134522"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:42.429059+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Unni Helene Westvang",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/851134522"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

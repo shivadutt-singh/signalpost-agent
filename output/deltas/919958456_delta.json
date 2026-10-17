@@ -1,0 +1,111 @@
+{
+  "orgnr": "919958456",
+  "run_timestamp": "2026-10-17T10:22:52.589453+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:52.589453+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "101 INVEST AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919958456"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.589453+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919958456"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.589453+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2017-11-23",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919958456"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.589453+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2017-11-12",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919958456"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.589453+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Hovsveien 8",
+        "postal_code": "1831",
+        "city": "ASKIM",
+        "municipality": "INDRE ØSTFOLD",
+        "municipality_number": "3118",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919958456"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.589453+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "85.531",
+        "beskrivelse": "Undervisning ved godkjente trafikkskoler"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919958456"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.589453+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919958456"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.589453+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919958456"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.589453+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kjøp, salg og utleie av fast eller leid eiendom, og utstyr/verktøy og maskiner av enhver art. Investering i andre selskaper, aksjer, fond og verdipapirer. Investeringsvirksomhet av enhver art, herunder deltakelse i andre selskaper samt alt som står i forbindelse hermed.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919958456"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.589453+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919958456"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.589453+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Cristin Stene",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919958456"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

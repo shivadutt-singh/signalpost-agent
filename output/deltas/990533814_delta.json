@@ -1,0 +1,87 @@
+{
+  "orgnr": "990533814",
+  "run_timestamp": "2026-10-17T10:23:35.062121+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:23:35.062121+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "110-FORUM",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990533814"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:35.062121+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990533814"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:35.062121+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2007-01-16",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990533814"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:35.062121+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2003-09-09",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990533814"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:35.062121+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Vestre Strandgate 55",
+        "postal_code": "4612",
+        "city": "KRISTIANSAND S",
+        "municipality": "KRISTIANSAND",
+        "municipality_number": "4204",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990533814"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:35.062121+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990533814"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:35.062121+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990533814"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:35.062121+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Christer Skei",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/990533814"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

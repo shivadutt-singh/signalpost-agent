@@ -1,0 +1,87 @@
+{
+  "orgnr": "989277626",
+  "run_timestamp": "2026-10-17T10:20:08.699791+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:08.699791+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1 .BORGESTAD SPEIDERGRUPPE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989277626"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:08.699791+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989277626"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:08.699791+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2010-09-07",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989277626"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:08.699791+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1932-09-22",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989277626"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:08.699791+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Petter Borgestad Gunnar Knudsens veg 150",
+        "postal_code": "3712",
+        "city": "SKIEN",
+        "municipality": "SKIEN",
+        "municipality_number": "4003",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989277626"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:08.699791+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989277626"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:08.699791+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989277626"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:08.699791+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Petter Borgestad",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989277626"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

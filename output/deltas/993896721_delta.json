@@ -1,0 +1,95 @@
+{
+  "orgnr": "993896721",
+  "run_timestamp": "2026-10-17T10:21:20.940414+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:21:20.940414+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1. STOKMARKNES SPEIDERGRUPPE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993896721"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:20.940414+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993896721"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:20.940414+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2009-04-18",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993896721"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:20.940414+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1929-03-15",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993896721"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:20.940414+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Ann-Katrin Grimstad Rådhusgata 1",
+        "postal_code": "8450",
+        "city": "STOKMARKNES",
+        "municipality": "HADSEL",
+        "municipality_number": "1866",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993896721"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:20.940414+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993896721"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:20.940414+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993896721"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:20.940414+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Ann Katrin Grimstad",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993896721"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:20.940414+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Ann Katrin Grimstad",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993896721"
+    }
+  ],
+  "facts_created": 9,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

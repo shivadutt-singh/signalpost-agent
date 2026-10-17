@@ -1,0 +1,103 @@
+{
+  "orgnr": "993802980",
+  "run_timestamp": "2026-10-17T10:20:37.129133+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:37.129133+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1. GRIMSTAD MSK",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993802980"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:37.129133+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993802980"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:37.129133+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2009-02-28",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993802980"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:37.129133+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1943-09-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993802980"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:37.129133+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Grooseveien 36",
+        "postal_code": "4876",
+        "city": "GRIMSTAD",
+        "municipality": "GRIMSTAD",
+        "municipality_number": "4202",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993802980"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:37.129133+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "www.nmu.grimstad.cc",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993802980"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:37.129133+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993802980"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:37.129133+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993802980"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:37.129133+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Roy Slettene",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993802980"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:37.129133+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Roy Slettene",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993802980"
+    }
+  ],
+  "facts_created": 10,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

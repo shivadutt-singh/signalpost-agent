@@ -1,0 +1,111 @@
+{
+  "orgnr": "931352970",
+  "run_timestamp": "2026-10-17T10:23:14.380810+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:23:14.380810+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "10MHOLDING AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931352970"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.380810+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931352970"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.380810+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-05-06",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931352970"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.380810+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-04-10",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931352970"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.380810+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Nadlane 29",
+        "postal_code": "5708",
+        "city": "VOSS",
+        "municipality": "VOSS",
+        "municipality_number": "4621",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931352970"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.380810+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "85.597",
+        "beskrivelse": "Annen undervisning ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931352970"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.380810+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931352970"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.380810+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931352970"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.380810+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kjøp og salg av eiendom, samt utleie og annet som naturlig faller sammen med dette. Eie aksjer og investere i virksomheter av enhver art og annet som naturlig faller sammen med dette. Holdingselskapet vil motta utbytte og royalty for bruk av patenter og varemerker, åndsverksarbeid, skapt etter stiftelsesdato",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931352970"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.380810+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931352970"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.380810+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Tone Hille",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931352970"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

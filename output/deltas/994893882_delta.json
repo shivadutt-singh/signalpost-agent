@@ -1,0 +1,87 @@
+{
+  "orgnr": "994893882",
+  "run_timestamp": "2026-10-17T10:21:27.391737+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:21:27.391737+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1. TVEDESTRAND SPEIDERGRUPPE AV NORGES SPEIDERFORBUND",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/994893882"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:27.391737+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/994893882"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:27.391737+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2009-12-16",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/994893882"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:27.391737+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1948-03-23",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/994893882"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:27.391737+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Sonja May Amundsen Havenveien 33",
+        "postal_code": "4915",
+        "city": "VESTRE SANDØYA",
+        "municipality": "TVEDESTRAND",
+        "municipality_number": "4213",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/994893882"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:27.391737+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/994893882"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:27.391737+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/994893882"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:27.391737+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Sonja May Amundsen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/994893882"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

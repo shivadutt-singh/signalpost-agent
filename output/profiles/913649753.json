@@ -1,0 +1,260 @@
+{
+  "orgnr": "913649753",
+  "legal_name": "1. EIKSMARKA SPEIDERGRUPPE",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-10-17T10:21:08.969220+00:00",
+  "updated_at": "2026-10-17T10:21:08.969220+00:00",
+  "schema_version": "1.0.0",
+  "profile_verification_explanation": "Enterprise profile for 1. EIKSMARKA SPEIDERGRUPPE (orgnr: 913649753) deterministically verified. 10 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 2 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "1. EIKSMARKA SPEIDERGRUPPE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913649753",
+        "source_tier": "official_registry",
+        "source_date": "2014-05-30",
+        "retrieval_timestamp": "2026-10-17T10:20:31.720454+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '1. EIKSMARKA SPEIDERGRUPPE'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913649753",
+        "source_tier": "official_registry",
+        "source_date": "2014-05-30",
+        "retrieval_timestamp": "2026-10-17T10:20:31.720454+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form FLI (Forening/lag/innretning)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2014-05-30",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913649753",
+        "source_tier": "official_registry",
+        "source_date": "2014-05-30",
+        "retrieval_timestamp": "2026-10-17T10:20:31.720454+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "registry.founding_date": {
+      "fact_key": "registry.founding_date",
+      "current_value": "1956-03-22",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913649753",
+        "source_tier": "official_registry",
+        "source_date": "2014-05-30",
+        "retrieval_timestamp": "2026-10-17T10:20:31.720454+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official founding date (stiftelsesdato) recorded in registry."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Grinidammen 6",
+        "postal_code": "1359",
+        "city": "EIKSMARKA",
+        "municipality": "BÆRUM",
+        "municipality_number": "3201",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913649753",
+        "source_tier": "official_registry",
+        "source_date": "2014-05-30",
+        "retrieval_timestamp": "2026-10-17T10:20:31.720454+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in EIKSMARKA."
+      },
+      "previous_values": []
+    },
+    "contact.website": {
+      "fact_key": "contact.website",
+      "current_value": "www.1eiksmarka.no",
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913649753",
+        "source_tier": "official_registry",
+        "source_date": "2014-05-30",
+        "retrieval_timestamp": "2026-10-17T10:20:31.720454+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary homepage domain declared to registry: www.1eiksmarka.no."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913649753",
+        "source_tier": "official_registry",
+        "source_date": "2014-05-30",
+        "retrieval_timestamp": "2026-10-17T10:20:31.720454+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 94.992: Aktiviteter i andre medlemsorganisasjoner ellers)."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913649753",
+        "source_tier": "official_registry",
+        "source_date": "2014-05-30",
+        "retrieval_timestamp": "2026-10-17T10:20:31.720454+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    },
+    "governance.board_chair": {
+      "fact_key": "governance.board_chair",
+      "current_value": "Martin Lentz",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913649753",
+        "source_tier": "official_registry",
+        "source_date": "2014-05-30",
+        "retrieval_timestamp": "2026-10-17T10:20:31.720454+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "structure.subunits": {
+      "fact_key": "structure.subunits",
+      "current_value": [
+        {
+          "orgnr": "920300502",
+          "name": "1. EIKSMARKA SPEIDERGRUPPE",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "category": "structure",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913649753",
+        "source_tier": "official_registry",
+        "source_date": "2014-05-30",
+        "retrieval_timestamp": "2026-10-17T10:20:31.720454+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Registered active operational sub-units count: 1."
+      },
+      "previous_values": []
+    },
+    "contact.email": {
+      "fact_key": "contact.email",
+      "current_value": "gl@1eiksmarka.no",
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://1eiksmarka.no",
+        "source_tier": "official_homepage",
+        "source_date": null,
+        "retrieval_timestamp": "2026-10-17T10:21:08.968940+00:00",
+        "verbatim_quote": "gl@1eiksmarka.no",
+        "entity_match_rule": "OFFICIAL_DOMAIN_MATCH",
+        "entity_confidence": 0.98,
+        "raw_digits_verified": false,
+        "verification_explanation": "Direct email address identified on verified page. Sourced from https://1eiksmarka.no (Entity verified via OFFICIAL_DOMAIN_MATCH)."
+      },
+      "previous_values": []
+    },
+    "operations.summary": {
+      "fact_key": "operations.summary",
+      "current_value": "1. Eiksmarka speidergruppe – Norges Speiderforbund Skip to content Meny Lyst til bli speider? 1.",
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://1eiksmarka.no",
+        "source_tier": "official_homepage",
+        "source_date": null,
+        "retrieval_timestamp": "2026-10-17T10:21:08.969011+00:00",
+        "verbatim_quote": "1. Eiksmarka speidergruppe – Norges Speiderforbund Skip to content Meny Lyst til bli speider? 1.",
+        "entity_match_rule": "OFFICIAL_DOMAIN_MATCH",
+        "entity_confidence": 0.98,
+        "raw_digits_verified": false,
+        "verification_explanation": "Company profile description extracted from verified page text. Sourced from https://1eiksmarka.no (Entity verified via OFFICIAL_DOMAIN_MATCH)."
+      },
+      "previous_values": []
+    }
+  },
+  "metadata": {}
+}

@@ -1,0 +1,111 @@
+{
+  "orgnr": "999142389",
+  "run_timestamp": "2026-10-17T10:21:53.377702+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:21:53.377702+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1'ST VISUALS AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999142389"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.377702+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999142389"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.377702+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2013-01-05",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999142389"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.377702+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2012-11-08",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999142389"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.377702+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Vardeveien 70B",
+        "postal_code": "5141",
+        "city": "FYLLINGSDALEN",
+        "municipality": "BERGEN",
+        "municipality_number": "4601",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999142389"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.377702+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "74.120",
+        "beskrivelse": "Grafisk design og visuell kommunikasjonsdesign"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999142389"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.377702+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999142389"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.377702+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999142389"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.377702+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Å drive datagrafikk, lyd, programmering og fotovirksomhet og alt hva dermed kan forbindes, herunder deltakelse i andre selskaper.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999142389"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.377702+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999142389"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.377702+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Petter Horneland",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999142389"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

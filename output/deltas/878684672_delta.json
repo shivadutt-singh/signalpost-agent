@@ -1,0 +1,87 @@
+{
+  "orgnr": "878684672",
+  "run_timestamp": "2026-10-17T10:22:24.757452+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:24.757452+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1000 & 1 DIGITALE EVENTYR DA",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/878684672"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:24.757452+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "DA",
+        "beskrivelse": "Ansvarlig selskap med delt ansvar"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/878684672"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:24.757452+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1997-07-09",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/878684672"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:24.757452+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1997-06-16",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/878684672"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:24.757452+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Sagveien 17",
+        "postal_code": "0459",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/878684672"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:24.757452+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "82.990",
+        "beskrivelse": "Annen forretningsmessig tjenesteyting ikke nevnt annet sted"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/878684672"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:24.757452+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Konsept og manusutvukling, samt regi innen området interaktive medier.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/878684672"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:24.757452+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "IN_LIQUIDATION",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/878684672"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

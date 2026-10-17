@@ -1,0 +1,86 @@
+{
+  "orgnr": "919725737",
+  "run_timestamp": "2026-10-17T10:20:00.584355+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:00.584355+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "06 TOMMY RYKHUS JOHANSEN",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919725737"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:00.584355+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919725737"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:00.584355+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2017-10-14",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919725737"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:00.584355+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Eckersbergs gate 2A",
+        "postal_code": "0267",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919725737"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:00.584355+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "90.112",
+        "beskrivelse": "Skapende kunstnerisk virksomhet innenfor komposisjon av musikk"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919725737"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:00.584355+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919725737"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:00.584355+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "934694422",
+          "name": "06 TOMMY RYKHUS JOHANSEN",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919725737"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

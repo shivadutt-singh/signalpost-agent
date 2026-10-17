@@ -1,0 +1,71 @@
+{
+  "orgnr": "922999007",
+  "run_timestamp": "2026-10-17T10:22:31.937289+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:31.937289+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1000 KUNSTNER BONDE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922999007"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:31.937289+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922999007"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:31.937289+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-07-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922999007"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:31.937289+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Øyaveien 20",
+        "postal_code": "7374",
+        "city": "RØROS",
+        "municipality": "RØROS",
+        "municipality_number": "5025",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922999007"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:31.937289+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "96.990",
+        "beskrivelse": "Andre personlige tjenester ikke nevnt annet sted"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922999007"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:31.937289+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922999007"
+    }
+  ],
+  "facts_created": 6,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

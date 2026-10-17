@@ -1,0 +1,142 @@
+{
+  "orgnr": "991937099",
+  "run_timestamp": "2026-10-17T10:21:59.121645+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:21:59.121645+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1+1 REGNSKAP AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991937099"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:59.121645+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991937099"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:59.121645+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2007-11-13",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991937099"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:59.121645+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2007-10-22",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991937099"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:59.121645+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Damsgårdsveien 167",
+        "postal_code": "5160",
+        "city": "LAKSEVÅG",
+        "municipality": "BERGEN",
+        "municipality_number": "4601",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991937099"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:59.121645+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "69.202",
+        "beskrivelse": "Regnskapsføring og bokføring"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991937099"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:59.121645+00:00",
+      "fact_key": "operations.employee_count",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 9,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991937099"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:59.121645+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991937099"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:59.121645+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 102000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991937099"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:59.121645+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Yte regnskapstjenester, økonomisk rådgivning og hva hermed står i forbindelse.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991937099"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:59.121645+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991937099"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:59.121645+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Trond Atle Hansen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991937099"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:59.121645+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Siv Rikstad",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991937099"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:59.121645+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "991944958",
+          "name": "1+1 REGNSKAP AS",
+          "employees": 9,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991937099"
+    }
+  ],
+  "facts_created": 14,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

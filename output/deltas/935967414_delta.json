@@ -1,0 +1,134 @@
+{
+  "orgnr": "935967414",
+  "run_timestamp": "2026-10-17T10:20:13.897968+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:13.897968+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1 GLAD AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935967414"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.897968+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935967414"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.897968+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-08-13",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935967414"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.897968+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-07-22",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935967414"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.897968+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Observatorie terrasse 2A",
+        "postal_code": "0254",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935967414"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.897968+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "56.110",
+        "beskrivelse": "Drift av restauranter"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935967414"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.897968+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935967414"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.897968+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935967414"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.897968+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Selge varer og tjenester innen restaurantdrift - og annet som naturlig sammenfaller med dette - samt deltakelse i andre selskaper, investeringer og nærliggende virksomhet.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935967414"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.897968+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935967414"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.897968+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Sverre Haug",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935967414"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.897968+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Sverre Haug",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935967414"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.897968+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "936379613",
+          "name": "1 GLAD AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935967414"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

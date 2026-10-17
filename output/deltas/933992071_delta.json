@@ -1,0 +1,134 @@
+{
+  "orgnr": "933992071",
+  "run_timestamp": "2026-10-17T10:24:01.866753+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:24:01.866753+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1202 HOLDING AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933992071"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:01.866753+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933992071"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:01.866753+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2024-08-29",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933992071"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:01.866753+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2024-08-08",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933992071"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:01.866753+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Gamle Riksvei 261",
+        "postal_code": "3055",
+        "city": "KROKSTADELVA",
+        "municipality": "DRAMMEN",
+        "municipality_number": "3301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933992071"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:01.866753+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "56.110",
+        "beskrivelse": "Drift av restauranter"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933992071"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:01.866753+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933992071"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:01.866753+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933992071"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:01.866753+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Investere i selskaper og eiendom og alt annet som naturlig faller sammen med dette, herunder å delta i andre selskaper med lignende virksomhet, kjøp og salg av aksjer, eller på annen måte gjøre seg interessert i andre foretagende.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933992071"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:01.866753+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933992071"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:01.866753+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Tor Erik Fredheim",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933992071"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:01.866753+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Tor Erik Fredheim",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933992071"
+    },
+    {
+      "timestamp": "2026-10-17T10:24:01.866753+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "833995022",
+          "name": "1202 HOLDING AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933992071"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

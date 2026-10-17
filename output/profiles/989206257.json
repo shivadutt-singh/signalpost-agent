@@ -1,0 +1,234 @@
+{
+  "orgnr": "989206257",
+  "legal_name": "1 EGERSUND SPEIDERGRUPPE",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-10-17T10:20:26.448167+00:00",
+  "updated_at": "2026-10-17T10:20:26.448167+00:00",
+  "schema_version": "1.0.0",
+  "profile_verification_explanation": "Enterprise profile for 1 EGERSUND SPEIDERGRUPPE (orgnr: 989206257) deterministically verified. 9 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 2 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "1 EGERSUND SPEIDERGRUPPE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989206257",
+        "source_tier": "official_registry",
+        "source_date": "2006-01-09",
+        "retrieval_timestamp": "2026-10-17T10:20:12.545857+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '1 EGERSUND SPEIDERGRUPPE'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989206257",
+        "source_tier": "official_registry",
+        "source_date": "2006-01-09",
+        "retrieval_timestamp": "2026-10-17T10:20:12.545857+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form FLI (Forening/lag/innretning)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2006-01-09",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989206257",
+        "source_tier": "official_registry",
+        "source_date": "2006-01-09",
+        "retrieval_timestamp": "2026-10-17T10:20:12.545857+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "registry.founding_date": {
+      "fact_key": "registry.founding_date",
+      "current_value": "1921-12-31",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989206257",
+        "source_tier": "official_registry",
+        "source_date": "2006-01-09",
+        "retrieval_timestamp": "2026-10-17T10:20:12.545857+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official founding date (stiftelsesdato) recorded in registry."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Langevannsveien 95",
+        "postal_code": "4373",
+        "city": "EGERSUND",
+        "municipality": "EIGERSUND",
+        "municipality_number": "1101",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989206257",
+        "source_tier": "official_registry",
+        "source_date": "2006-01-09",
+        "retrieval_timestamp": "2026-10-17T10:20:12.545857+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in EGERSUND."
+      },
+      "previous_values": []
+    },
+    "contact.website": {
+      "fact_key": "contact.website",
+      "current_value": "www.1egersund.no/",
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989206257",
+        "source_tier": "official_registry",
+        "source_date": "2006-01-09",
+        "retrieval_timestamp": "2026-10-17T10:20:12.545857+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary homepage domain declared to registry: www.1egersund.no/."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989206257",
+        "source_tier": "official_registry",
+        "source_date": "2006-01-09",
+        "retrieval_timestamp": "2026-10-17T10:20:12.545857+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 94.992: Aktiviteter i andre medlemsorganisasjoner ellers)."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989206257",
+        "source_tier": "official_registry",
+        "source_date": "2006-01-09",
+        "retrieval_timestamp": "2026-10-17T10:20:12.545857+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    },
+    "governance.board_chair": {
+      "fact_key": "governance.board_chair",
+      "current_value": "Oddvar Aamodt",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989206257",
+        "source_tier": "official_registry",
+        "source_date": "2006-01-09",
+        "retrieval_timestamp": "2026-10-17T10:20:12.545857+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "contact.email": {
+      "fact_key": "contact.email",
+      "current_value": "oddvar.aamodt@speiding.no",
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://1egersund.no",
+        "source_tier": "official_homepage",
+        "source_date": null,
+        "retrieval_timestamp": "2026-10-17T10:20:26.447891+00:00",
+        "verbatim_quote": "oddvar.aamodt@speiding.no",
+        "entity_match_rule": "OFFICIAL_DOMAIN_MATCH",
+        "entity_confidence": 0.98,
+        "raw_digits_verified": false,
+        "verification_explanation": "Direct email address identified on verified page. Sourced from https://1egersund.no (Entity verified via OFFICIAL_DOMAIN_MATCH)."
+      },
+      "previous_values": []
+    },
+    "contact.phone": {
+      "fact_key": "contact.phone",
+      "current_value": "48880912",
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://1egersund.no",
+        "source_tier": "official_homepage",
+        "source_date": null,
+        "retrieval_timestamp": "2026-10-17T10:20:26.447956+00:00",
+        "verbatim_quote": "telefon: 48880912",
+        "entity_match_rule": "OFFICIAL_DOMAIN_MATCH",
+        "entity_confidence": 0.98,
+        "raw_digits_verified": false,
+        "verification_explanation": "Direct telephone number identified on verified page. Sourced from https://1egersund.no (Entity verified via OFFICIAL_DOMAIN_MATCH)."
+      },
+      "previous_values": []
+    }
+  },
+  "metadata": {}
+}

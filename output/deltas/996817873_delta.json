@@ -1,0 +1,71 @@
+{
+  "orgnr": "996817873",
+  "run_timestamp": "2026-10-17T10:22:50.901674+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:50.901674+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "101 BYGGESERVICE Tomas Tamasauskas",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/996817873"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:50.901674+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/996817873"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:50.901674+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2011-04-20",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/996817873"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:50.901674+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Fjordvegen 424",
+        "postal_code": "9107",
+        "city": "KVALØYA",
+        "municipality": "TROMSØ",
+        "municipality_number": "5501",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/996817873"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:50.901674+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "62.100",
+        "beskrivelse": "Dataprogrammeringstjenester"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/996817873"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:50.901674+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/996817873"
+    }
+  ],
+  "facts_created": 6,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

@@ -1,0 +1,87 @@
+{
+  "orgnr": "993194034",
+  "run_timestamp": "2026-10-17T10:21:53.130299+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:21:53.130299+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1.VÅLER ST. GEORGSGILDE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993194034"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.130299+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993194034"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.130299+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2008-11-27",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993194034"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.130299+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1992-08-29",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993194034"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.130299+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Åkerveien 15",
+        "postal_code": "1591",
+        "city": "SPERREBOTN",
+        "municipality": "VÅLER",
+        "municipality_number": "3114",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993194034"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.130299+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993194034"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.130299+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993194034"
+    },
+    {
+      "timestamp": "2026-10-17T10:21:53.130299+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Jon Gunnar Olsen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993194034"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

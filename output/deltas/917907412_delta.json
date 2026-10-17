@@ -1,0 +1,134 @@
+{
+  "orgnr": "917907412",
+  "run_timestamp": "2026-10-17T10:20:28.210697+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:28.210697+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1-VENN AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917907412"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:28.210697+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917907412"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:28.210697+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2016-10-20",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917907412"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:28.210697+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2016-10-09",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917907412"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:28.210697+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Astrids vei 11",
+        "postal_code": "1473",
+        "city": "LØRENSKOG",
+        "municipality": "LØRENSKOG",
+        "municipality_number": "3222",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917907412"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:28.210697+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "56.110",
+        "beskrivelse": "Drift av restauranter"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917907412"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:28.210697+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917907412"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:28.210697+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917907412"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:28.210697+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Takeaway og restaurant.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917907412"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:28.210697+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917907412"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:28.210697+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Hoang Quoc Thao Nguyen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917907412"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:28.210697+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Van Toan Le",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917907412"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:28.210697+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "936275885",
+          "name": "1-VENN AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917907412"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

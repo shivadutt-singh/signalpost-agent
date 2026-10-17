@@ -1,0 +1,148 @@
+{
+  "orgnr": "925273236",
+  "run_timestamp": "2026-10-17T10:20:14.069446+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:14.069446+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1 HJELPENDE HÅND AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925273236"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:14.069446+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925273236"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:14.069446+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2020-06-30",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925273236"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:14.069446+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2020-06-19",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925273236"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:14.069446+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Stålfjæra 17",
+        "postal_code": "0975",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925273236"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:14.069446+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "81.100",
+        "beskrivelse": "Kombinerte tjenester tilknyttet eiendomsdrift"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925273236"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:14.069446+00:00",
+      "fact_key": "operations.employee_count",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 23,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925273236"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:14.069446+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925273236"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:14.069446+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 67399.8,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925273236"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:14.069446+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Tjenester innen drift og vedlikehold knyttet til fast eiendom som vaktmestertjeneste, renhold, håndverkstjenester, snørydding og utemiljø, samt andre tjenester som naturlig faller sammen med dette. Kan også inkludere deltakelse i andre selskaper med lignende virksomhet, kjøp og salg av aksjer, eller på annen måte gjøre seg interessert i andre foretak.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925273236"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:14.069446+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925273236"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:14.069446+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Milo Waagaard",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925273236"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:14.069446+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Tommy Fredriksen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925273236"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:14.069446+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "984181396",
+          "name": "1 HJELPENDE HÅND AS AVD LIER",
+          "employees": null,
+          "municipality": null
+        },
+        {
+          "orgnr": "996713660",
+          "name": "1 HJELPENDE HÅND AS AVD OSLO",
+          "employees": 23,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925273236"
+    }
+  ],
+  "facts_created": 14,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

@@ -1,0 +1,142 @@
+{
+  "orgnr": "932165376",
+  "run_timestamp": "2026-10-17T10:20:13.266283+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:13.266283+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1 EASY SERVICE AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932165376"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.266283+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932165376"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.266283+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-10-02",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932165376"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.266283+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-09-04",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932165376"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.266283+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Trålveien 16",
+        "postal_code": "8013",
+        "city": "BODØ",
+        "municipality": "BODØ",
+        "municipality_number": "1804",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932165376"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.266283+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "81.100",
+        "beskrivelse": "Kombinerte tjenester tilknyttet eiendomsdrift"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932165376"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.266283+00:00",
+      "fact_key": "operations.employee_count",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 6,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932165376"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.266283+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932165376"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.266283+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932165376"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.266283+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Selge varer og tjenester innen vaktmesterarbeid - og annet som naturlig sammenfaller med dette - samt deltakelse i andre selskaper, investeringer og nærliggende virksomhet.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932165376"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.266283+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932165376"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.266283+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Christian Engenes",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932165376"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.266283+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Odd-Tore Hansen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932165376"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.266283+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "932195844",
+          "name": "1 EASY SERVICE AS",
+          "employees": 6,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932165376"
+    }
+  ],
+  "facts_created": 14,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

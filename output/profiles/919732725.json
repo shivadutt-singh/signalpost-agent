@@ -1,0 +1,360 @@
+{
+  "orgnr": "919732725",
+  "legal_name": "00NATION AS",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-10-17T10:20:09.919095+00:00",
+  "updated_at": "2026-10-17T13:24:26.297284+00:00",
+  "schema_version": "1.0.0",
+  "profile_verification_explanation": "Enterprise profile for 00NATION AS (orgnr: 919732725) deterministically verified. 14 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 3 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "00NATION AS operates commercial activities registered under enterprise number 919732725 in ASKER. Public web and registry records confirm active corporate governance under Tore Sebastian Geurts. Detailed non-public financial margins and private contract deliverables remain unconfirmed from public sources.",
+  "known_unknowns": [
+    "Detailed private commercial agreements and non-public partner contracts",
+    "Real-time interim quarterly operating results not yet filed with registry"
+  ],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "00NATION AS",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919732725",
+        "source_tier": "official_registry",
+        "source_date": "2017-10-17",
+        "retrieval_timestamp": "2026-10-17T10:19:49.777515+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '00NATION AS'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919732725",
+        "source_tier": "official_registry",
+        "source_date": "2017-10-17",
+        "retrieval_timestamp": "2026-10-17T10:19:49.777515+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form AS (Aksjeselskap)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2017-10-17",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919732725",
+        "source_tier": "official_registry",
+        "source_date": "2017-10-17",
+        "retrieval_timestamp": "2026-10-17T10:19:49.777515+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "registry.founding_date": {
+      "fact_key": "registry.founding_date",
+      "current_value": "2017-09-25",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919732725",
+        "source_tier": "official_registry",
+        "source_date": "2017-10-17",
+        "retrieval_timestamp": "2026-10-17T10:19:49.777515+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official founding date (stiftelsesdato) recorded in registry."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Torvveien 19",
+        "postal_code": "1383",
+        "city": "ASKER",
+        "municipality": "ASKER",
+        "municipality_number": "3203",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919732725",
+        "source_tier": "official_registry",
+        "source_date": "2017-10-17",
+        "retrieval_timestamp": "2026-10-17T10:19:49.777515+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in ASKER."
+      },
+      "previous_values": []
+    },
+    "contact.website": {
+      "fact_key": "contact.website",
+      "current_value": "www.00nation.com",
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919732725",
+        "source_tier": "official_registry",
+        "source_date": "2017-10-17",
+        "retrieval_timestamp": "2026-10-17T10:19:49.777515+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary homepage domain declared to registry: www.00nation.com."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "93.292",
+        "beskrivelse": "Fritidsvirksomhet ellers"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919732725",
+        "source_tier": "official_registry",
+        "source_date": "2017-10-17",
+        "retrieval_timestamp": "2026-10-17T10:19:49.777515+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 93.292: Fritidsvirksomhet ellers)."
+      },
+      "previous_values": []
+    },
+    "financial.latest_accounts_year": {
+      "fact_key": "financial.latest_accounts_year",
+      "current_value": "2024",
+      "category": "financial",
+      "unit": null,
+      "period_or_year": "2024",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919732725",
+        "source_tier": "official_registry",
+        "source_date": "2017-10-17",
+        "retrieval_timestamp": "2026-10-17T10:19:49.777515+00:00",
+        "verbatim_quote": "2024",
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Latest annual accounts year filed with Regnskapsregisteret: 2024."
+      },
+      "previous_values": []
+    },
+    "financial.share_capital": {
+      "fact_key": "financial.share_capital",
+      "current_value": 2130853.2,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919732725",
+        "source_tier": "official_registry",
+        "source_date": "2017-10-17",
+        "retrieval_timestamp": "2026-10-17T10:19:49.777515+00:00",
+        "verbatim_quote": "2130853.2",
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered equity share capital: 2,130,853.20 NOK. (21,308,532 shares)."
+      },
+      "previous_values": []
+    },
+    "operations.statutory_purpose": {
+      "fact_key": "operations.statutory_purpose",
+      "current_value": "Å delta i e-sport, herunder organisering av lag og spillere, samt deltagelse i seriespill og turneringer, nasjonalt og internasjonalt. Selskapet skal videre forestå spillerutvikling, salg og kjøp av spillere samt generell drift av idrettsklubb. Selskapet kan også forestå utvikling og salg av audiovisuelt innhold, herunder også apper og programmer. Selskapet kan yte konsulenttjenester.",
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919732725",
+        "source_tier": "official_registry",
+        "source_date": "2017-10-17",
+        "retrieval_timestamp": "2026-10-17T10:19:49.777515+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Statutory purpose registered in articles of association."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919732725",
+        "source_tier": "official_registry",
+        "source_date": "2017-10-17",
+        "retrieval_timestamp": "2026-10-17T10:19:49.777515+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    },
+    "governance.ceo": {
+      "fact_key": "governance.ceo",
+      "current_value": "Tore Sebastian Geurts",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919732725",
+        "source_tier": "official_registry",
+        "source_date": "2017-10-17",
+        "retrieval_timestamp": "2026-10-17T10:19:49.777515+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_chair": {
+      "fact_key": "governance.board_chair",
+      "current_value": "Runar Eidsaa",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919732725",
+        "source_tier": "official_registry",
+        "source_date": "2017-10-17",
+        "retrieval_timestamp": "2026-10-17T10:19:49.777515+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "structure.subunits": {
+      "fact_key": "structure.subunits",
+      "current_value": [
+        {
+          "orgnr": "820271912",
+          "name": "00NATION AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "category": "structure",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919732725",
+        "source_tier": "official_registry",
+        "source_date": "2017-10-17",
+        "retrieval_timestamp": "2026-10-17T10:19:49.777515+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Registered active operational sub-units count: 1."
+      },
+      "previous_values": []
+    },
+    "operations.summary": {
+      "fact_key": "operations.summary",
+      "current_value": "00NATION-style gaming tournament with cash prizes for the winners.",
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://00nation.com",
+        "source_tier": "official_homepage",
+        "source_date": null,
+        "retrieval_timestamp": "2026-10-17T10:20:09.918853+00:00",
+        "verbatim_quote": "00NATION-style gaming tournament with cash prizes for the winners.",
+        "entity_match_rule": "OFFICIAL_DOMAIN_MATCH",
+        "entity_confidence": 0.98,
+        "raw_digits_verified": false,
+        "verification_explanation": "Company profile description extracted from verified page text. Sourced from https://00nation.com (Entity verified via OFFICIAL_DOMAIN_MATCH)."
+      },
+      "previous_values": []
+    },
+    "operations.products_services": {
+      "fact_key": "operations.products_services",
+      "current_value": "00NATION-style gaming tournament with cash prizes for the winners.",
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://00nation.com",
+        "source_tier": "official_homepage",
+        "source_date": null,
+        "retrieval_timestamp": "2026-10-17T13:24:26.259766+00:00",
+        "verbatim_quote": "00NATION-style gaming tournament with cash prizes for the winners.",
+        "entity_match_rule": "OFFICIAL_DOMAIN_MATCH",
+        "entity_confidence": 0.98,
+        "raw_digits_verified": false,
+        "verification_explanation": "Products and services stated on https://00nation.com."
+      },
+      "previous_values": []
+    },
+    "operations.value_proposition": {
+      "fact_key": "operations.value_proposition",
+      "current_value": "Solutions delivered by 00NATION.",
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://00nation.com",
+        "source_tier": "official_homepage",
+        "source_date": null,
+        "retrieval_timestamp": "2026-10-17T13:24:26.259766+00:00",
+        "verbatim_quote": "00NATION-style gaming tournament with cash prizes for the winners.",
+        "entity_match_rule": "OFFICIAL_DOMAIN_MATCH",
+        "entity_confidence": 0.98,
+        "raw_digits_verified": false,
+        "verification_explanation": "Value proposition stated on https://00nation.com."
+      },
+      "previous_values": []
+    }
+  },
+  "metadata": {}
+}

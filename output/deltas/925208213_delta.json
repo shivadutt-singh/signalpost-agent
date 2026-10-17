@@ -1,0 +1,134 @@
+{
+  "orgnr": "925208213",
+  "run_timestamp": "2026-10-17T10:22:37.670891+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:37.670891+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1001 EVENTYR AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925208213"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:37.670891+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925208213"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:37.670891+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2020-06-17",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925208213"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:37.670891+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2020-06-03",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925208213"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:37.670891+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Utsikten 7",
+        "postal_code": "4026",
+        "city": "STAVANGER",
+        "municipality": "STAVANGER",
+        "municipality_number": "1103",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925208213"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:37.670891+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "74.110",
+        "beskrivelse": "Industri-, produkt- og motedesignvirksomhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925208213"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:37.670891+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925208213"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:37.670891+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925208213"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:37.670891+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Selge tjenester og varer innen design, utvikling, innovasjon og rådgivning innen petroleum, marinteknikk, akvakultur og prosjektledelse, og annet som naturlig sammenfaller med dette, samt deltakelse i andre selskaper, investeringer og nærliggende virksomhet.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925208213"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:37.670891+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925208213"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:37.670891+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Tord Ludvigsen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925208213"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:37.670891+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Tord Ludvigsen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925208213"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:37.670891+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "925227013",
+          "name": "1001 EVENTYR AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925208213"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

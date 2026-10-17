@@ -1,0 +1,68 @@
+{
+  "orgnr": "936019005",
+  "run_timestamp": "2026-10-17T10:23:35.560760+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:23:35.560760+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1111 SOLUTIONS LTD",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936019005"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:35.560760+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "UTLA",
+        "beskrivelse": "Utenlandsk enhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936019005"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:35.560760+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-08-22",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936019005"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:35.560760+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-12-07",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936019005"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:35.560760+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Goldwells House Grange Road, Peterhead,",
+        "postal_code": null,
+        "city": "BANFFSHIRE AB42 1WN SCOTLAND",
+        "municipality": null,
+        "municipality_number": null,
+        "country": "Storbritannia"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936019005"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:35.560760+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936019005"
+    }
+  ],
+  "facts_created": 6,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

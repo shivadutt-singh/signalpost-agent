@@ -1,0 +1,126 @@
+{
+  "orgnr": "926940740",
+  "run_timestamp": "2026-10-17T10:20:07.006456+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:07.006456+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "0FRI10 AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926940740"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.006456+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926940740"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.006456+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-04-14",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926940740"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.006456+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-02-25",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926940740"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.006456+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Evenrødveien 114",
+        "postal_code": "1615",
+        "city": "FREDRIKSTAD",
+        "municipality": "FREDRIKSTAD",
+        "municipality_number": "3107",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926940740"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.006456+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "68.200",
+        "beskrivelse": "Utleie av egen eller leid fast eiendom"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926940740"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.006456+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926940740"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.006456+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926940740"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.006456+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Investering i andre selskap. Kjøp og salg av aksjer, fast eiendom og investeringer tilknyttet forannevnte. Utleie av fast eiendom.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926940740"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.006456+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926940740"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.006456+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "John George Tilley",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926940740"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.006456+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "826963832",
+          "name": "0FRI10 AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926940740"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

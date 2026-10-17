@@ -1,0 +1,103 @@
+{
+  "orgnr": "885818552",
+  "run_timestamp": "2026-10-17T10:20:33.227742+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:33.227742+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1. BODØ SPEIDERGRUPPE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/885818552"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.227742+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/885818552"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.227742+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2003-06-26",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/885818552"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.227742+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1912-03-19",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/885818552"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.227742+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Kristine Perander Leitebakken 16",
+        "postal_code": "8009",
+        "city": "BODØ",
+        "municipality": "BODØ",
+        "municipality_number": "1804",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/885818552"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.227742+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "www.19mars1912.com",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/885818552"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.227742+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/885818552"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.227742+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/885818552"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.227742+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kristine Perander",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/885818552"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.227742+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kristine Perander",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/885818552"
+    }
+  ],
+  "facts_created": 10,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

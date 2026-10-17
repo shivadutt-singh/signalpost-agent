@@ -1,0 +1,111 @@
+{
+  "orgnr": "913646533",
+  "run_timestamp": "2026-10-17T10:20:19.126666+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:19.126666+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1 SAX AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/913646533"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:19.126666+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/913646533"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:19.126666+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2014-05-16",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/913646533"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:19.126666+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2014-05-12",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/913646533"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:19.126666+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Støtvigveien 78",
+        "postal_code": "1560",
+        "city": "LARKOLLEN",
+        "municipality": "MOSS",
+        "municipality_number": "3103",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/913646533"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:19.126666+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "68.200",
+        "beskrivelse": "Utleie av egen eller leid fast eiendom"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/913646533"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:19.126666+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/913646533"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:19.126666+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/913646533"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:19.126666+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Å eie, drifte, utvikle, kjøpe og selge eiendom og annet som står i forbindelse med dette, herunder deltakelse i andre selskaper.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/913646533"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:19.126666+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/913646533"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:19.126666+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Jan-Erik Garen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/913646533"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

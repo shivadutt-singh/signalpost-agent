@@ -1,0 +1,86 @@
+{
+  "orgnr": "925202711",
+  "run_timestamp": "2026-10-17T10:23:48.530603+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:23:48.530603+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "123 BAGOCIENÉ",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925202711"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.530603+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925202711"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.530603+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2020-06-16",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925202711"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.530603+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Ringnesveien 1",
+        "postal_code": "1960",
+        "city": "LØKEN",
+        "municipality": "AURSKOG-HØLAND",
+        "municipality_number": "3226",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925202711"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.530603+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "70.200",
+        "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925202711"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.530603+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925202711"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:48.530603+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "925265586",
+          "name": "123 BAGOCIENÉ",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925202711"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

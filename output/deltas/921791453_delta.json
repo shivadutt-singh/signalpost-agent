@@ -1,0 +1,86 @@
+{
+  "orgnr": "921791453",
+  "run_timestamp": "2026-10-17T10:20:07.081787+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:07.081787+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "0936245 B.C. LTD",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921791453"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.081787+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "NUF",
+        "beskrivelse": "Norskregistrert utenlandsk foretak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921791453"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.081787+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2018-12-04",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921791453"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.081787+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "126 Blackberry Drive",
+        "postal_code": null,
+        "city": "ANMORE B.C. V3H 5B4",
+        "municipality": null,
+        "municipality_number": null,
+        "country": "Canada"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921791453"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.081787+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "09.109",
+        "beskrivelse": "Andre tjenester tilknyttet utvinning av råolje og naturgass"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921791453"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.081787+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921791453"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:07.081787+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "921959885",
+          "name": "0936245 B.C. LTD",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921791453"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

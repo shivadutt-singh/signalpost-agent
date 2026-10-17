@@ -1,0 +1,134 @@
+{
+  "orgnr": "936608612",
+  "run_timestamp": "2026-10-17T10:20:33.454088+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:33.454088+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1. ETASJE AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936608612"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.454088+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936608612"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.454088+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-11-19",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936608612"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.454088+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-10-23",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936608612"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.454088+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Brinken 25B",
+        "postal_code": "0654",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936608612"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.454088+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "70.200",
+        "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936608612"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.454088+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936608612"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.454088+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936608612"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.454088+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Selge varer og tjenester innen bedriftsrådgivning  og annet som naturlig sammenfaller med dette, samt deltakelse i andre selskaper, investeringer og nærliggende virksomhet.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936608612"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.454088+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936608612"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.454088+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Erlend Moe",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936608612"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.454088+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Erlend Moe",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936608612"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:33.454088+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "936914322",
+          "name": "1. ETASJE AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936608612"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

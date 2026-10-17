@@ -1,0 +1,87 @@
+{
+  "orgnr": "818278462",
+  "run_timestamp": "2026-10-17T10:23:31.489956+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:23:31.489956+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "11 STARS IDRETTSLAG",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818278462"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:31.489956+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818278462"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:31.489956+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2017-01-23",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818278462"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:31.489956+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1987-12-31",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818278462"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:31.489956+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Edmund Rajadurai Gurinestubben 4A",
+        "postal_code": "0584",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818278462"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:31.489956+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "93.120",
+        "beskrivelse": "Aktiviteter i idrettslag og -klubber"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818278462"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:31.489956+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818278462"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:31.489956+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Edmund Shandulla Rajesan Rajadurai",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818278462"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

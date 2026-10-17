@@ -1,0 +1,139 @@
+{
+  "orgnr": "926831798",
+  "legal_name": "1-2-3 TRE NED OLE PETTER FOSSUM",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-10-17T10:20:26.058240+00:00",
+  "updated_at": "2026-10-17T10:20:26.058240+00:00",
+  "schema_version": "1.0.0",
+  "profile_verification_explanation": "Enterprise profile for 1-2-3 TRE NED OLE PETTER FOSSUM (orgnr: 926831798) deterministically verified. 6 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "1-2-3 TRE NED OLE PETTER FOSSUM",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/926831798",
+        "source_tier": "official_registry",
+        "source_date": "2021-03-19",
+        "retrieval_timestamp": "2026-10-17T10:20:24.527345+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '1-2-3 TRE NED OLE PETTER FOSSUM'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/926831798",
+        "source_tier": "official_registry",
+        "source_date": "2021-03-19",
+        "retrieval_timestamp": "2026-10-17T10:20:24.527345+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form ENK (Enkeltpersonforetak)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2021-03-19",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/926831798",
+        "source_tier": "official_registry",
+        "source_date": "2021-03-19",
+        "retrieval_timestamp": "2026-10-17T10:20:24.527345+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Vælerenveien 100",
+        "postal_code": "3533",
+        "city": "TYRISTRAND",
+        "municipality": "RINGERIKE",
+        "municipality_number": "3305",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/926831798",
+        "source_tier": "official_registry",
+        "source_date": "2021-03-19",
+        "retrieval_timestamp": "2026-10-17T10:20:24.527345+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in TYRISTRAND."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "02.100",
+        "beskrivelse": "Skogskjøtsel og andre skogbruksaktiviteter"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/926831798",
+        "source_tier": "official_registry",
+        "source_date": "2021-03-19",
+        "retrieval_timestamp": "2026-10-17T10:20:24.527345+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 02.100: Skogskjøtsel og andre skogbruksaktiviteter)."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/926831798",
+        "source_tier": "official_registry",
+        "source_date": "2021-03-19",
+        "retrieval_timestamp": "2026-10-17T10:20:24.527345+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    }
+  },
+  "metadata": {}
+}

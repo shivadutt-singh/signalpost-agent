@@ -1,0 +1,126 @@
+{
+  "orgnr": "923810390",
+  "run_timestamp": "2026-10-17T10:22:52.515629+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:52.515629+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "101 TECH AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923810390"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.515629+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923810390"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.515629+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-11-12",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923810390"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.515629+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-10-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923810390"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.515629+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Majorstuveien 32A",
+        "postal_code": "0367",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923810390"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.515629+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "62.100",
+        "beskrivelse": "Dataprogrammeringstjenester"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923810390"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.515629+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923810390"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.515629+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923810390"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.515629+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Drift og utvikling av datasystemer og programvare, samt det som hører naturlig inn under dette i tillegg til investeringer i aksjer og eiendom.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923810390"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.515629+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923810390"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.515629+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Carl Marcus Dahlmo",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923810390"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.515629+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "923967540",
+          "name": "101 TECH AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923810390"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

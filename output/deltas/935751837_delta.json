@@ -1,0 +1,134 @@
+{
+  "orgnr": "935751837",
+  "run_timestamp": "2026-10-17T10:20:22.630617+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:22.630617+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1 ØRE AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935751837"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:22.630617+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935751837"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:22.630617+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-06-25",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935751837"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:22.630617+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-06-07",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935751837"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:22.630617+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Osnordic AS Brynsveien 3",
+        "postal_code": "0667",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935751837"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:22.630617+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "47.790",
+        "beskrivelse": "Detaljhandel med brukte varer"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935751837"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:22.630617+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935751837"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:22.630617+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935751837"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:22.630617+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Drift av internettbasert markedsplass for markedsføring og omsetning av brukte og nye varer og tjenester, samt investering i eiendom, verdipapirer eller andre selskaper med gjerne samme eller lignende formål.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935751837"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:22.630617+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935751837"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:22.630617+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Jonas Fredrik Roland Andersson",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935751837"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:22.630617+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Jonas Fredrik Roland Andersson",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935751837"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:22.630617+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "935781558",
+          "name": "1 ØRE AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935751837"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

@@ -1,0 +1,71 @@
+{
+  "orgnr": "916217536",
+  "run_timestamp": "2026-10-17T10:22:52.416014+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:52.416014+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "101 GRAPHIC DESIGN RUDI DAVID MINELLE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916217536"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.416014+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916217536"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.416014+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2015-11-11",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916217536"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.416014+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Øvre Smidsrødvei 67D",
+        "postal_code": "3120",
+        "city": "NØTTERØY",
+        "municipality": "FÆRDER",
+        "municipality_number": "3911",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916217536"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.416014+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "74.120",
+        "beskrivelse": "Grafisk design og visuell kommunikasjonsdesign"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916217536"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:52.416014+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916217536"
+    }
+  ],
+  "facts_created": 6,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

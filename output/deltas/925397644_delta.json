@@ -1,0 +1,126 @@
+{
+  "orgnr": "925397644",
+  "run_timestamp": "2026-10-17T10:20:13.610383+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:13.610383+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1 ELEKTRIKER AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925397644"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.610383+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925397644"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.610383+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2020-07-27",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925397644"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.610383+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2020-07-12",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925397644"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.610383+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Reealleen 48",
+        "postal_code": "7506",
+        "city": "STJØRDAL",
+        "municipality": "STJØRDAL",
+        "municipality_number": "5035",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925397644"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.610383+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "43.210",
+        "beskrivelse": "Elektrisk installasjonsarbeid"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925397644"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.610383+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925397644"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.610383+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925397644"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.610383+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Salg av elektrotjenester og elektromateriell, samt hva hermed står i forbindelse, herunder å delta i andre selskaper.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925397644"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.610383+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925397644"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.610383+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Jon Ragnar Jensen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925397644"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.610383+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "825471642",
+          "name": "1 ELEKTRIKER AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925397644"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

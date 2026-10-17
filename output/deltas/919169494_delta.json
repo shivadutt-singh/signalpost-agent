@@ -1,0 +1,134 @@
+{
+  "orgnr": "919169494",
+  "run_timestamp": "2026-10-17T10:23:14.590115+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:23:14.590115+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "10MILESNORTH AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919169494"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.590115+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919169494"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.590115+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2017-07-11",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919169494"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.590115+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2017-05-09",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919169494"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.590115+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Fagerheim",
+        "postal_code": "8185",
+        "city": "VÅGAHOLMEN",
+        "municipality": "RØDØY",
+        "municipality_number": "1836",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919169494"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.590115+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "55.200",
+        "beskrivelse": "Drift av vandrerhjem og ferieleiligheter"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919169494"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.590115+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919169494"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.590115+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 100000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919169494"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.590115+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Turisme, overnatting, fiskecamp med utleie av hytter, båter, biler og næringslokaler. Selskapet skal i tillegg kunne delta i investeringer, også kunne delta i andre selskap med tilsvarende virksomheter.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919169494"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.590115+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919169494"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.590115+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Christopher Heinrich Wilhelm Scheibe",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919169494"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.590115+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Irmela Ingeborg Copray",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919169494"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.590115+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "919375876",
+          "name": "10MILESNORTH AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919169494"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

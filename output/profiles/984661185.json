@@ -1,0 +1,358 @@
+{
+  "orgnr": "984661185",
+  "legal_name": "POSTEN BRING AS",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-10-17T09:43:50.431796+00:00",
+  "updated_at": "2026-10-17T13:35:30.688321+00:00",
+  "schema_version": "1.0.0",
+  "profile_verification_explanation": "Enterprise profile for POSTEN BRING AS (orgnr: 984661185) deterministically verified. 14 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "POSTEN BRING AS is a registered Norwegian enterprise located in OSLO focused on its statutory activities. Official registration records confirm corporate standing with verified leadership (Petter-Børre Furberg) and verified Modulo-11 enterprise number 984661185. Unfiled interim financial statements, private commercial contracts, and internal headcount fluctuations remain unverified from public registry filings.",
+  "known_unknowns": [
+    "Current unfiled interim quarterly revenue and operating margins",
+    "Detailed private commercial agreements and non-public partner contracts",
+    "Real-time headcount variance beyond latest annual Aa-registeret submission"
+  ],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "POSTEN BRING AS",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984661185",
+        "source_tier": "official_registry",
+        "source_date": "2002-07-01",
+        "retrieval_timestamp": "2026-10-17T09:43:49.009878+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name 'POSTEN BRING AS'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984661185",
+        "source_tier": "official_registry",
+        "source_date": "2002-07-01",
+        "retrieval_timestamp": "2026-10-17T09:43:49.009878+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form AS (Aksjeselskap)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2002-07-01",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984661185",
+        "source_tier": "official_registry",
+        "source_date": "2002-07-01",
+        "retrieval_timestamp": "2026-10-17T09:43:49.009878+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "registry.founding_date": {
+      "fact_key": "registry.founding_date",
+      "current_value": "2002-07-01",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984661185",
+        "source_tier": "official_registry",
+        "source_date": "2002-07-01",
+        "retrieval_timestamp": "2026-10-17T09:43:49.009878+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official founding date (stiftelsesdato) recorded in registry."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Biskop Gunnerus' gate 14A",
+        "postal_code": "0185",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984661185",
+        "source_tier": "official_registry",
+        "source_date": "2002-07-01",
+        "retrieval_timestamp": "2026-10-17T09:43:49.009878+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in OSLO."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "53.100",
+        "beskrivelse": "Landsdekkende posttjenester"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984661185",
+        "source_tier": "official_registry",
+        "source_date": "2002-07-01",
+        "retrieval_timestamp": "2026-10-17T09:43:49.009878+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 53.100: Landsdekkende posttjenester)."
+      },
+      "previous_values": []
+    },
+    "operations.employee_count": {
+      "fact_key": "operations.employee_count",
+      "current_value": 10033,
+      "category": "operations",
+      "unit": "count",
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984661185",
+        "source_tier": "official_registry",
+        "source_date": "2002-07-01",
+        "retrieval_timestamp": "2026-10-17T09:43:49.009878+00:00",
+        "verbatim_quote": "10033",
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official reported employee count (10033) from NAV Aa-registeret cross-reference."
+      },
+      "previous_values": []
+    },
+    "financial.latest_accounts_year": {
+      "fact_key": "financial.latest_accounts_year",
+      "current_value": "2025",
+      "category": "financial",
+      "unit": null,
+      "period_or_year": "2025",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984661185",
+        "source_tier": "official_registry",
+        "source_date": "2002-07-01",
+        "retrieval_timestamp": "2026-10-17T09:43:49.009878+00:00",
+        "verbatim_quote": "2025",
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Latest annual accounts year filed with Regnskapsregisteret: 2025."
+      },
+      "previous_values": []
+    },
+    "financial.share_capital": {
+      "fact_key": "financial.share_capital",
+      "current_value": 3120000000.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984661185",
+        "source_tier": "official_registry",
+        "source_date": "2002-07-01",
+        "retrieval_timestamp": "2026-10-17T09:43:49.009878+00:00",
+        "verbatim_quote": "3120000000.0",
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered equity share capital: 3,120,000,000.00 NOK. (3,120,000 shares)."
+      },
+      "previous_values": []
+    },
+    "operations.statutory_purpose": {
+      "fact_key": "operations.statutory_purpose",
+      "current_value": "På forretningsmessig grunnlag drive post- og logistikkvirksomhet, samt annen virksomhet som står i direkte sammenheng med dette. Virksomheten kan drives av selskapet selv, av heleide datterselskaper, eller gjennom andre selskaper det har eierandeler i eller samarbeider med. Selskapet skal være en tilbyder som kan møte samfunnets behov for landsdekkende posttjenester.",
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984661185",
+        "source_tier": "official_registry",
+        "source_date": "2002-07-01",
+        "retrieval_timestamp": "2026-10-17T09:43:49.009878+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Statutory purpose registered in articles of association."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984661185",
+        "source_tier": "official_registry",
+        "source_date": "2002-07-01",
+        "retrieval_timestamp": "2026-10-17T09:43:49.009878+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    },
+    "governance.ceo": {
+      "fact_key": "governance.ceo",
+      "current_value": "Petter-Børre Furberg",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984661185",
+        "source_tier": "official_registry",
+        "source_date": "2002-07-01",
+        "retrieval_timestamp": "2026-10-17T09:43:49.009878+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_chair": {
+      "fact_key": "governance.board_chair",
+      "current_value": "Pål Wibe",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984661185",
+        "source_tier": "official_registry",
+        "source_date": "2002-07-01",
+        "retrieval_timestamp": "2026-10-17T09:43:49.009878+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "structure.subunits": {
+      "fact_key": "structure.subunits",
+      "current_value": [
+        {
+          "orgnr": "918018395",
+          "name": "POSTEN BRING AS ALFASET OMDELING",
+          "employees": 68,
+          "municipality": null
+        },
+        {
+          "orgnr": "983498221",
+          "name": "POSTEN BRING AS ALNABRU BEDRIFTSSENTER",
+          "employees": 11,
+          "municipality": null
+        },
+        {
+          "orgnr": "992524162",
+          "name": "POSTEN BRING AS ALNABRU POSTEN OG BRING BYGGET",
+          "employees": 81,
+          "municipality": null
+        },
+        {
+          "orgnr": "979853793",
+          "name": "POSTEN BRING AS ALTA",
+          "employees": 55,
+          "municipality": null
+        },
+        {
+          "orgnr": "979852673",
+          "name": "POSTEN BRING AS ARENDAL DISTRIBUSJON",
+          "employees": 72,
+          "municipality": null
+        },
+        {
+          "orgnr": "974652803",
+          "name": "POSTEN BRING AS ASKER",
+          "employees": null,
+          "municipality": null
+        },
+        {
+          "orgnr": "979852304",
+          "name": "POSTEN BRING AS ASKIM",
+          "employees": 55,
+          "municipality": null
+        },
+        {
+          "orgnr": "979853823",
+          "name": "POSTEN BRING AS AVD ØST FINNMARK",
+          "employees": 15,
+          "municipality": null
+        },
+        {
+          "orgnr": "979854544",
+          "name": "POSTEN BRING AS BERGEN TERMINAL",
+          "employees": 298,
+          "municipality": null
+        },
+        {
+          "orgnr": "913599314",
+          "name": "POSTEN BRING AS BERGEN VEST",
+          "employees": 32,
+          "municipality": null
+        }
+      ],
+      "category": "structure",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984661185",
+        "source_tier": "official_registry",
+        "source_date": "2002-07-01",
+        "retrieval_timestamp": "2026-10-17T09:43:49.009878+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Registered active operational sub-units count: 10."
+      },
+      "previous_values": []
+    }
+  },
+  "metadata": {}
+}

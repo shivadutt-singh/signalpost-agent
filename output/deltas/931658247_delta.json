@@ -1,0 +1,134 @@
+{
+  "orgnr": "931658247",
+  "run_timestamp": "2026-10-17T10:23:45.425153+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:23:45.425153+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1190 PLAY AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931658247"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:45.425153+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931658247"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:45.425153+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-06-28",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931658247"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:45.425153+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-05-11",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931658247"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:45.425153+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Rådhusgata 9",
+        "postal_code": "1830",
+        "city": "ASKIM",
+        "municipality": "INDRE ØSTFOLD",
+        "municipality_number": "3118",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931658247"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:45.425153+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "85.510",
+        "beskrivelse": "Undervisning innenfor idrett og rekreasjon"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931658247"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:45.425153+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931658247"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:45.425153+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931658247"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:45.425153+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Arbeide med å utvikle spillere både på og utenfor banen, personlig trener, fotball akademi, trening, konsulenttjenester og utleie av coach.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931658247"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:45.425153+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931658247"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:45.425153+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Håkon Tangerud",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931658247"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:45.425153+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "John Ole Dybdal",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931658247"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:45.425153+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "931659197",
+          "name": "1190 PLAY AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931658247"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

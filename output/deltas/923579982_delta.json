@@ -1,0 +1,166 @@
+{
+  "orgnr": "923579982",
+  "run_timestamp": "2026-10-17T10:22:09.612023+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "100% REGNSKAP AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923579982"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923579982"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-10-10",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923579982"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-09-27",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923579982"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Krogstadveien 26B",
+        "postal_code": "1643",
+        "city": "RÅDE",
+        "municipality": "RÅDE",
+        "municipality_number": "3112",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923579982"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "www.r100.no",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923579982"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "69.202",
+        "beskrivelse": "Regnskapsføring og bokføring"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923579982"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923579982"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923579982"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Bokførings-, regnskaps-, og rådgivningsvirksomhet, med alt som hører inn under dette. Deltakelse i annen virksomhet samt investering i aksjer og verdipapirer.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923579982"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923579982"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Marit Alise Schjødt",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923579982"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Marit Alise Schjødt",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923579982"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "923602070",
+          "name": "100% REGNSKAP AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923579982"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "contact.email",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "kontakt@r100.no",
+      "reason": "Initial discovery from https://r100.no"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "operations.summary",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "100% Regnskap er et Autorisert regnskapsførerselskap som tilbyr regnskapstjenester og rådgivning til mindre og mellomstore bedrifter i Norge.",
+      "reason": "Initial discovery from https://r100.no"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:09.612023+00:00",
+      "fact_key": "operations.summary",
+      "action": "REJECTED_STALE",
+      "old_value": "100% Regnskap er et Autorisert regnskapsførerselskap som tilbyr regnskapstjenester og rådgivning til mindre og mellomstore bedrifter i Norge.",
+      "new_value": "100% Regnskap AS er et Autorisert regnskapsførerselskap som tilbyr skybaserte regnskapstjenester og rådgivning små og mellomstore bedrifter i Norge.",
+      "reason": "RETAINED_EXISTING: equal/higher authority tier"
+    }
+  ],
+  "facts_created": 16,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 1
+}

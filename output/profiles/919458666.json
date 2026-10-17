@@ -1,0 +1,139 @@
+{
+  "orgnr": "919458666",
+  "legal_name": "1010MICROBLADING NAMSOS THUNSUDA SIANGBUN KJELBOTN",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-10-17T10:22:53.748961+00:00",
+  "updated_at": "2026-10-17T10:22:53.748961+00:00",
+  "schema_version": "1.0.0",
+  "profile_verification_explanation": "Enterprise profile for 1010MICROBLADING NAMSOS THUNSUDA SIANGBUN KJELBOTN (orgnr: 919458666) deterministically verified. 6 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "1010MICROBLADING NAMSOS THUNSUDA SIANGBUN KJELBOTN",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919458666",
+        "source_tier": "official_registry",
+        "source_date": "2017-08-24",
+        "retrieval_timestamp": "2026-10-17T10:22:37.186438+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '1010MICROBLADING NAMSOS THUNSUDA SIANGBUN KJELBOTN'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919458666",
+        "source_tier": "official_registry",
+        "source_date": "2017-08-24",
+        "retrieval_timestamp": "2026-10-17T10:22:37.186438+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form ENK (Enkeltpersonforetak)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2017-08-24",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919458666",
+        "source_tier": "official_registry",
+        "source_date": "2017-08-24",
+        "retrieval_timestamp": "2026-10-17T10:22:37.186438+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "St. Olavs gate 3",
+        "postal_code": "7800",
+        "city": "NAMSOS",
+        "municipality": "NAMSOS",
+        "municipality_number": "5007",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919458666",
+        "source_tier": "official_registry",
+        "source_date": "2017-08-24",
+        "retrieval_timestamp": "2026-10-17T10:22:37.186438+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in NAMSOS."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "96.220",
+        "beskrivelse": "Skjønnhetspleie"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919458666",
+        "source_tier": "official_registry",
+        "source_date": "2017-08-24",
+        "retrieval_timestamp": "2026-10-17T10:22:37.186438+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 96.220: Skjønnhetspleie)."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919458666",
+        "source_tier": "official_registry",
+        "source_date": "2017-08-24",
+        "retrieval_timestamp": "2026-10-17T10:22:37.186438+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    }
+  },
+  "metadata": {}
+}

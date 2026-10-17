@@ -1,0 +1,134 @@
+{
+  "orgnr": "936507433",
+  "run_timestamp": "2026-10-17T10:23:13.357349+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:23:13.357349+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "10M FORMIDLING AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936507433"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:13.357349+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936507433"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:13.357349+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-11-03",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936507433"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:13.357349+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-11-02",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936507433"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:13.357349+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Solheimsgaten 60",
+        "postal_code": "5054",
+        "city": "BERGEN",
+        "municipality": "BERGEN",
+        "municipality_number": "4601",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936507433"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:13.357349+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "85.597",
+        "beskrivelse": "Annen undervisning ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936507433"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:13.357349+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936507433"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:13.357349+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936507433"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:13.357349+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Drive formidlingsvirksomhet innenfor kultur, kunst og samfunn, samt bidra til økt engasjement og kunnskap gjennom ulike prosjekter, arrangementer og samarbeid.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936507433"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:13.357349+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936507433"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:13.357349+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Tone Hille",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936507433"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:13.357349+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Tone Hille",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936507433"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:13.357349+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "936758673",
+          "name": "10M FORMIDLING AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936507433"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

@@ -1,0 +1,102 @@
+{
+  "orgnr": "938522782",
+  "run_timestamp": "2026-10-17T10:22:02.168569+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:02.168569+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "10 TRINN MØVIG SKOLE FORELDREFORENING",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938522782"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:02.168569+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938522782"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:02.168569+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-10-06",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938522782"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:02.168569+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-09-18",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938522782"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:02.168569+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Are Nøkland Voieåsen 2",
+        "postal_code": "4623",
+        "city": "KRISTIANSAND S",
+        "municipality": "KRISTIANSAND",
+        "municipality_number": "4204",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938522782"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:02.168569+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938522782"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:02.168569+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938522782"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:02.168569+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Are Nøkland",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938522782"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:02.168569+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "938624186",
+          "name": "10 TRINN MØVIG SKOLE FORELDREFORENING",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938522782"
+    }
+  ],
+  "facts_created": 9,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

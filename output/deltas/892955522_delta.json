@@ -1,0 +1,102 @@
+{
+  "orgnr": "892955522",
+  "run_timestamp": "2026-10-17T10:20:13.863288+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:13.863288+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1 AID NORGE - LØVTANGEN",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/892955522"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.863288+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/892955522"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.863288+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2008-08-11",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/892955522"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.863288+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Skomakervegen 4",
+        "postal_code": "2040",
+        "city": "KLØFTA",
+        "municipality": "ULLENSAKER",
+        "municipality_number": "3209",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/892955522"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.863288+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "www.1aid.no",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/892955522"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.863288+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "70.200",
+        "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/892955522"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.863288+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/892955522"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.863288+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Bjørn-Tore Løvtangen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/892955522"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:13.863288+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "912909832",
+          "name": "1 AID NORGE - LØVTANGEN",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/892955522"
+    }
+  ],
+  "facts_created": 9,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

@@ -1,0 +1,110 @@
+{
+  "orgnr": "991272658",
+  "run_timestamp": "2026-10-17T10:22:00.923062+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:00.923062+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "10. APRIL ANS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991272658"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:00.923062+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ANS",
+        "beskrivelse": "Ansvarlig selskap med solidarisk ansvar"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991272658"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:00.923062+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2007-06-30",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991272658"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:00.923062+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2007-05-14",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991272658"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:00.923062+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Bjerkelundgata 1B",
+        "postal_code": "0553",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991272658"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:00.923062+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "74.990",
+        "beskrivelse": "All annen faglig, vitenskapelig og teknisk virksomhet ikke nevnt annet sted"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991272658"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:00.923062+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991272658"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:00.923062+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Handel med/produksjon av konsulenttjenester og produkter som naturlig hører sammen med dette samt deltakelse i andre virksomheter innenfor samme bransje.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991272658"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:00.923062+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991272658"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:00.923062+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "833658212",
+          "name": "10. APRIL ANS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991272658"
+    }
+  ],
+  "facts_created": 10,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

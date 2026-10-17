@@ -1,0 +1,111 @@
+{
+  "orgnr": "989206257",
+  "run_timestamp": "2026-10-17T10:20:26.448167+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:26.448167+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1 EGERSUND SPEIDERGRUPPE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989206257"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.448167+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989206257"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.448167+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2006-01-09",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989206257"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.448167+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1921-12-31",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989206257"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.448167+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Langevannsveien 95",
+        "postal_code": "4373",
+        "city": "EGERSUND",
+        "municipality": "EIGERSUND",
+        "municipality_number": "1101",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989206257"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.448167+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "www.1egersund.no/",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989206257"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.448167+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989206257"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.448167+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989206257"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.448167+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Oddvar Aamodt",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/989206257"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.448167+00:00",
+      "fact_key": "contact.email",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "oddvar.aamodt@speiding.no",
+      "reason": "Initial discovery from https://1egersund.no"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:26.448167+00:00",
+      "fact_key": "contact.phone",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "48880912",
+      "reason": "Initial discovery from https://1egersund.no"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

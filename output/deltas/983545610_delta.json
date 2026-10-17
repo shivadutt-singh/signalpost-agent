@@ -1,0 +1,72 @@
+{
+  "orgnr": "983545610",
+  "run_timestamp": "2026-10-17T10:20:37.162013+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:37.162013+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1. HELLE SPEIDERGRUPPE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983545610"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:37.162013+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983545610"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:37.162013+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2002-11-28",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983545610"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:37.162013+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1978-04-23",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983545610"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:37.162013+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983545610"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:37.162013+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983545610"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:37.162013+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Helge Uberg",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983545610"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

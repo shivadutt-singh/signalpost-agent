@@ -1,0 +1,134 @@
+{
+  "orgnr": "924790822",
+  "run_timestamp": "2026-10-17T10:22:21.795531+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:21.795531+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "100% LYD AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/924790822"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.795531+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/924790822"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.795531+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2020-03-30",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/924790822"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.795531+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2020-01-02",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/924790822"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.795531+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Josefines gate 3A",
+        "postal_code": "0351",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/924790822"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.795531+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "90.390",
+        "beskrivelse": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/924790822"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.795531+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/924790822"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.795531+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/924790822"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.795531+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Konsulenttjenester innen film, TV og reklame, samt alt som dertil hører til. Selskapet kan også ved behov, leie ut utstyr og personell til produksjonsopptak innen samme bransje.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/924790822"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.795531+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/924790822"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.795531+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Per Egil Nygård",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/924790822"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.795531+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kenneth Gustavsen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/924790822"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:21.795531+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "924891602",
+          "name": "100% LYD AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/924790822"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

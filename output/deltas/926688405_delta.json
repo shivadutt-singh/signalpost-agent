@@ -1,0 +1,86 @@
+{
+  "orgnr": "926688405",
+  "run_timestamp": "2026-10-17T10:20:21.436106+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:21.436106+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1 TOUCH 5 STARS PISULA",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926688405"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:21.436106+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926688405"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:21.436106+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-02-26",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926688405"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:21.436106+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Ingar Nilsens vei 7",
+        "postal_code": "0268",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926688405"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:21.436106+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "81.210",
+        "beskrivelse": "Rengjøring av bygninger"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926688405"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:21.436106+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926688405"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:21.436106+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "826808942",
+          "name": "1 TOUCH 5 STARS PISULA",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926688405"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

@@ -1,0 +1,134 @@
+{
+  "orgnr": "999413706",
+  "run_timestamp": "2026-10-17T10:20:23.763677+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:20:23.763677+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1-2-3 BYGG VEST AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999413706"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:23.763677+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999413706"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:23.763677+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2013-01-15",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999413706"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:23.763677+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2012-12-03",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999413706"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:23.763677+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Skogshaugane 81A",
+        "postal_code": "5218",
+        "city": "NORDSTRØNO",
+        "municipality": "BJØRNAFJORDEN",
+        "municipality_number": "4624",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999413706"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:23.763677+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "41.000",
+        "beskrivelse": "Oppføring av bygninger"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999413706"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:23.763677+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999413706"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:23.763677+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 50000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999413706"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:23.763677+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Snekker og tømrertjenester",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999413706"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:23.763677+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999413706"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:23.763677+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Vaidas Vaicas",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999413706"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:23.763677+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Jurgita Vaiciene",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999413706"
+    },
+    {
+      "timestamp": "2026-10-17T10:20:23.763677+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "996243796",
+          "name": "1-2-3 BYGG VEST AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999413706"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

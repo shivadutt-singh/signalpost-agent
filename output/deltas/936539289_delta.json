@@ -1,0 +1,94 @@
+{
+  "orgnr": "936539289",
+  "run_timestamp": "2026-10-17T10:22:10.006237+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:10.006237+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "10/10 STUDIO ROSENBORG",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936539289"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:10.006237+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936539289"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:10.006237+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-11-07",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936539289"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:10.006237+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Lerkeveien 4",
+        "postal_code": "3089",
+        "city": "HOLMESTRAND",
+        "municipality": "HOLMESTRAND",
+        "municipality_number": "3903",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936539289"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:10.006237+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "74.110",
+        "beskrivelse": "Industri-, produkt- og motedesignvirksomhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936539289"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:10.006237+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936539289"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:10.006237+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Stephanie Mari Rosenborg",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936539289"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:10.006237+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "936768474",
+          "name": "10/10 STUDIO ROSENBORG",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936539289"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

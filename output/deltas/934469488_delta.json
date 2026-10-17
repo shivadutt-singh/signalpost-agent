@@ -1,0 +1,102 @@
+{
+  "orgnr": "934469488",
+  "run_timestamp": "2026-10-17T10:22:30.221881+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:22:30.221881+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1000 BALLONGER DA",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934469488"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:30.221881+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "DA",
+        "beskrivelse": "Ansvarlig selskap med delt ansvar"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934469488"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:30.221881+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2024-11-18",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934469488"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:30.221881+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2024-11-04",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934469488"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:30.221881+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Martin Andersson Inga Gulbrandsens veg 6",
+        "postal_code": "2069",
+        "city": "JESSHEIM",
+        "municipality": "ULLENSAKER",
+        "municipality_number": "3209",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934469488"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:30.221881+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "90.201",
+        "beskrivelse": "Utøvende kunstnerisk virksomhet og underholdningsvirksomhet innenfor musikk"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934469488"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:30.221881+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Produksjon av musikk og annen virksomhet som naturlig hører sammen med dette.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934469488"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:30.221881+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934469488"
+    },
+    {
+      "timestamp": "2026-10-17T10:22:30.221881+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "934600282",
+          "name": "1000 BALLONGER DA",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934469488"
+    }
+  ],
+  "facts_created": 9,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

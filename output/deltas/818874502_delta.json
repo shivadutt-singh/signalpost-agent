@@ -1,0 +1,126 @@
+{
+  "orgnr": "818874502",
+  "run_timestamp": "2026-10-17T10:23:14.887055+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-10-17T10:23:14.887055+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "10NA'S FRISØR AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818874502"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.887055+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818874502"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.887055+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2017-04-24",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818874502"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.887055+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2017-03-19",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818874502"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.887055+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Skytterveien 18",
+        "postal_code": "5038",
+        "city": "BERGEN",
+        "municipality": "BERGEN",
+        "municipality_number": "4601",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818874502"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.887055+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "96.210",
+        "beskrivelse": "Frisering og barbering"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818874502"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.887055+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818874502"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.887055+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818874502"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.887055+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Herre og dameklipp, herunder utførelse make up og annen skjønnetspleie, oppkjøp/investering i andre selskaper samt det som naturlig står i forbindelse med dette.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818874502"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.887055+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818874502"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.887055+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Tina Størkson",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818874502"
+    },
+    {
+      "timestamp": "2026-10-17T10:23:14.887055+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "918957375",
+          "name": "10NA'S FRISØR AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/818874502"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}
