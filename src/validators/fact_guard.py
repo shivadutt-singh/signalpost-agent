@@ -86,7 +86,7 @@ class EntityVerificationGate:
             return ""
 
     @classmethod
-    def verify_source(
+    def verify_entity_ownership(
         cls,
         anchor: EntityAnchor,
         source_url: str,

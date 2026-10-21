@@ -12,7 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from src.config import settings
-from src.collectors.http_budget import BudgetedAsyncClient, HttpBudgetTracker
+from src.collectors.http_budget import AsyncHttpBudgetClient, HttpBudgetTracker
 from src.collectors.brreg_client import BrregClient
 from src.cli import run_batch
 
@@ -32,7 +32,7 @@ async def run_seed_1000(limit: int = 1000, concurrency: int = 25):
     # 1. Fetch active enterprise numbers
     print("[1/2] Fetching active enterprise numbers from Brønnøysund Register Centre...")
     budget_tracker = HttpBudgetTracker.create_for_batch(batch_size=limit)
-    async with BudgetedAsyncClient(budget_tracker=budget_tracker) as client:
+    async with AsyncHttpBudgetClient(budget_tracker=budget_tracker) as client:
         brreg = BrregClient(client)
         start_fetch = time.time()
         orgnrs = await brreg.fetch_active_orgnrs(limit=limit)

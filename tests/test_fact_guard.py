@@ -25,7 +25,7 @@ class TestEntityVerificationGate:
 
     def test_gate_pass_on_orgnr_match(self):
         raw_text = "Firmaet med organisasjonsnummer 923609016 rapporterer sterk vekst i fjerde kvartal."
-        result = EntityVerificationGate.verify_source(
+        result = EntityVerificationGate.verify_entity_ownership(
             anchor=self.anchor,
             source_url="https://external-news.no/article123",
             raw_source_text=raw_text,
@@ -37,7 +37,7 @@ class TestEntityVerificationGate:
 
     def test_gate_pass_on_formatted_orgnr_match(self):
         raw_text = "For mer informasjon, se Brønnøysundoppføringen under NO 923 609 016 MVA."
-        result = EntityVerificationGate.verify_source(
+        result = EntityVerificationGate.verify_entity_ownership(
             anchor=self.anchor,
             source_url="https://news.org/report",
             raw_source_text=raw_text,
@@ -47,7 +47,7 @@ class TestEntityVerificationGate:
 
     def test_gate_pass_on_official_domain_match(self):
         raw_text = "Våre prinsipper for fornybar energi og bærekraftig utvikling."
-        result = EntityVerificationGate.verify_source(
+        result = EntityVerificationGate.verify_entity_ownership(
             anchor=self.anchor,
             source_url="https://investor.equinor.com/reports/2024",
             raw_source_text=raw_text,
@@ -58,7 +58,7 @@ class TestEntityVerificationGate:
 
     def test_gate_pass_on_name_and_municipality_match(self):
         raw_text = "Energiselskapet Equinor ASA har sitt hovedkontor plassert i Stavanger kommune."
-        result = EntityVerificationGate.verify_source(
+        result = EntityVerificationGate.verify_entity_ownership(
             anchor=self.anchor,
             source_url="https://energiwatch.no/nyheter",
             raw_source_text=raw_text,
@@ -69,7 +69,7 @@ class TestEntityVerificationGate:
 
     def test_gate_pass_on_name_and_ceo_match(self):
         raw_text = "Konsernsjef Anders Opedal i Equinor uttalte seg om de nye havvindprosjektene."
-        result = EntityVerificationGate.verify_source(
+        result = EntityVerificationGate.verify_entity_ownership(
             anchor=self.anchor,
             source_url="https://e24.no/bors/nyheter",
             raw_source_text=raw_text,
@@ -81,7 +81,7 @@ class TestEntityVerificationGate:
     def test_gate_reject_wrong_company_bleed(self):
         """Must reject unrelated company page to eliminate wrong-company bleed risk."""
         raw_text = "Statkraft AS produserer ren fornybar energi i Oslo. Konsernsjef Christian Rynning-Tønnesen."
-        result = EntityVerificationGate.verify_source(
+        result = EntityVerificationGate.verify_entity_ownership(
             anchor=self.anchor,
             source_url="https://statkraft.com/om-oss",
             raw_source_text=raw_text,
