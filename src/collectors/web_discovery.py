@@ -9,7 +9,7 @@ from dataclasses import dataclass
 from typing import List, Optional
 from bs4 import BeautifulSoup
 
-from src.collectors.http_budget import BudgetedAsyncClient
+from src.collectors.http_budget import AsyncHttpBudgetClient
 from src.validators.fact_guard import EntityAnchor, EntityVerificationGate, EntityVerificationResult
 
 
@@ -30,7 +30,7 @@ class WebDiscoveryCollector:
     while strictly abiding by the per-company HTTP budget.
     """
 
-    def __init__(self, client: BudgetedAsyncClient):
+    def __init__(self, client: AsyncHttpBudgetClient):
         self.client = client
 
     async def fetch_page(
@@ -65,7 +65,7 @@ class WebDiscoveryCollector:
             text = soup.get_text(separator=" ", strip=True)
 
             # Run Entity Verification Gate
-            verification = EntityVerificationGate.verify_source(
+            verification = EntityVerificationGate.verify_entity_ownership(
                 anchor=anchor,
                 source_url=url,
                 raw_source_text=text,

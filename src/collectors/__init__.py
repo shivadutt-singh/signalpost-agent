@@ -4,7 +4,7 @@ Collectors and network clients for registry and web discovery.
 
 from src.collectors.http_budget import (
     HttpBudgetTracker,
-    BudgetedAsyncClient,
+    AsyncHttpBudgetClient,
     CompanyHttpBudgetExceededError,
     GlobalHttpBudgetExceededError,
 )
@@ -13,7 +13,7 @@ from src.collectors.web_discovery import WebDiscoveryCollector, WebPageContent
 
 __all__ = [
     "HttpBudgetTracker",
-    "BudgetedAsyncClient",
+    "AsyncHttpBudgetClient",
     "CompanyHttpBudgetExceededError",
     "GlobalHttpBudgetExceededError",
     "BrregClient",

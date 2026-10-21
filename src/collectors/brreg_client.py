@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 import httpx
 
 from src.config import settings
-from src.collectors.http_budget import BudgetedAsyncClient
+from src.collectors.http_budget import AsyncHttpBudgetClient
 from src.models.schema import ExtractedFactCandidate, FactCategory, FactEvidence, SourceTier
 from src.validators.fact_guard import EntityAnchor
 from src.validators.mod11 import normalize_orgnr
@@ -20,7 +20,7 @@ class BrregClient:
     Client for interacting with the Norwegian Enhetsregisteret API.
     """
 
-    def __init__(self, client: BudgetedAsyncClient):
+    def __init__(self, client: AsyncHttpBudgetClient):
         self.client = client
         self.base_url = settings.BRREG_BASE_URL
 
@@ -30,6 +30,26 @@ class BrregClient:
         """
         clean_orgnr = normalize_orgnr(orgnr)
         url = f"{self.base_url}/enheter/{clean_orgnr}"
+        try:
+            resp = await self.client.get(url, orgnr=clean_orgnr)
+            if resp.status_code == 200:
+                return resp.json()
+            elif resp.status_code == 404:
+                return None
+            else:
+                resp.raise_for_status()
+                return None
+        except httpx.HTTPStatusError as e:
+            if e.response.status_code == 404:
+                return None
+            raise
+
+    async def get_underenhet(self, orgnr: str) -> Optional[Dict[str, Any]]:
+        """
+        Fetches the primary entity record from /enhetsregisteret/api/underenheter/{orgnr}.
+        """
+        clean_orgnr = normalize_orgnr(orgnr)
+        url = f"{self.base_url}/underenheter/{clean_orgnr}"
         try:
             resp = await self.client.get(url, orgnr=clean_orgnr)
             if resp.status_code == 200:
