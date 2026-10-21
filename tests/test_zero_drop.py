@@ -1,10 +1,7 @@
 import pytest
-import asyncio
 from src.cli import process_single_company
-from src.collectors.http_budget import AsyncHttpBudgetClient
 from src.state.profile_store import ProfileStore
 from src.extraction.llm_extractor import FactExtractor
-from src.models.schema import CompanyProfile
 import tempfile
 from pathlib import Path
 

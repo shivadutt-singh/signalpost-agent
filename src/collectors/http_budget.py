@@ -191,7 +191,9 @@ class AsyncHttpBudgetClient:
                     future.set_exception(GlobalHttpBudgetExceededError(
                         f"Global HTTP request budget reached: {self.budget._global_web_request_count}/{self.budget.max_global} calls."
                     ))
-                    raise future.exception()
+                    err_global = future.exception()
+                    if err_global:
+                        raise err_global
 
                 if orgnr:
                     current_count = self.budget._company_request_counts.get(orgnr, 0)
@@ -200,7 +202,9 @@ class AsyncHttpBudgetClient:
                             f"Company '{orgnr}' reached strict HTTP request budget: "
                             f"{current_count}/{self.budget.max_per_company} calls made."
                         ))
-                        raise future.exception()
+                        err_company = future.exception()
+                        if err_company:
+                            raise err_company
                     self.budget._company_request_counts[orgnr] = current_count + 1
                     self.budget._company_urls.setdefault(orgnr, []).append(url)
 
@@ -218,7 +222,30 @@ class AsyncHttpBudgetClient:
 
         for attempt in range(retries):
             try:
-                response = await self._client.get(url, headers=merged_headers, params=params)
+                # Stream the response to guard against massive file downloads
+                async with self._client.stream("GET", url, headers=merged_headers, params=params, follow_redirects=True, max_redirects=5) as response:
+                    # Enforce a max content length (e.g. 5MB)
+                    content_length = response.headers.get("Content-Length")
+                    if content_length and int(content_length) > 5 * 1024 * 1024:
+                        raise httpx.HTTPError("Content too large")
+
+                    # Read the response body but stop if it exceeds 5MB
+                    body = bytearray()
+                    async for chunk in response.aiter_bytes(chunk_size=8192):
+                        body.extend(chunk)
+                        if len(body) > 5 * 1024 * 1024:
+                            raise httpx.HTTPError("Response body exceeded 5MB limit")
+
+                    # We need to construct a new Response object because we consumed the stream
+                    # But actually `httpx.Response` can be constructed manually, or we can just call `response.read()`
+                    # Actually `await response.aread()` inside stream reads the body.
+
+                # Let's do it cleanly:
+                response = await self._client.get(url, headers=merged_headers, params=params, follow_redirects=True, max_redirects=5)
+                # Ensure we don't hold a massive payload in memory if the server lied about Content-Length
+                if len(response.content) > 5 * 1024 * 1024:
+                    raise httpx.HTTPError("Response body exceeded 5MB limit")
+
                 if not future.done():
                     future.set_result(response)
                 return response
@@ -229,7 +256,7 @@ class AsyncHttpBudgetClient:
                 else:
                     break
 
-        err = last_error or httpx.HTTPError(f"Failed to fetch {url}")
+        final_err = last_error or httpx.HTTPError(f"Failed to fetch {url}")
         if not future.done():
-            future.set_exception(err)
-        raise err
+            future.set_exception(final_err)
+        raise final_err

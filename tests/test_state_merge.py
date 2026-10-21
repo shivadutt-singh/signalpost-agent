@@ -34,6 +34,7 @@ def _make_candidate(
             entity_confidence=1.0,
             raw_digits_verified=True,
             verification_explanation=f"Fact from {url}",
+            source_content_sha256="dummy_hash_12345"
         ),
     )
 

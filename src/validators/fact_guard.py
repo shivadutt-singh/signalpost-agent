@@ -8,7 +8,7 @@ import re
 import urllib.parse
 from dataclasses import dataclass, field
 from typing import Any, List, Optional
-from src.validators.mod11 import extract_orgnrs_from_text, normalize_orgnr, try_normalize_orgnr
+from src.validators.mod11 import extract_orgnrs_from_text
 
 
 def _normalize_whitespace(text: str) -> str:
@@ -99,6 +99,10 @@ class EntityVerificationGate:
         norm_text = _normalize_whitespace(raw_source_text)
         upper_text = norm_text.upper()
 
+        # Multi-entity directory detection
+        extracted_orgnrs = extract_orgnrs_from_text(raw_source_text)
+        is_directory_page = len(extracted_orgnrs) > 3
+
         # Gate 1: Exact 9-digit Orgnr Match in text
         if anchor.orgnr in norm_text:
             return EntityVerificationResult(
@@ -141,6 +145,18 @@ class EntityVerificationGate:
                             f"official registry domain '{clean_official}'."
                         ),
                     )
+
+        # If it's a directory page and we haven't matched orgnr or domain, reject it
+        if is_directory_page:
+            return EntityVerificationResult(
+                is_verified=False,
+                rule="MULTI_ENTITY_DIRECTORY_REJECTION",
+                confidence=0.0,
+                explanation=(
+                    f"Disqualified for Wrong-Company Bleed: source is a multi-entity directory "
+                    f"({len(extracted_orgnrs)} orgnrs found) and lacks target orgnr or official domain."
+                ),
+            )
 
         # Gate 3: Exact Legal Name + Municipality Match
         target_name = anchor.clean_legal_name
@@ -272,51 +288,64 @@ class AntiFabricationGuard:
     def _verify_digits_in_quote(cls, value: Any, quote: str) -> bool:
         """
         Checks whether the essential digit pattern of `value` is represented in `quote`.
-        Supports integers, floats, scientific notation, and Norwegian formatted numbers.
+        Supports integers, floats, scientific notation, and Norwegian formatted numbers
+        (e.g., 1 234 567,89, 1.234.567,-, MNOK, mrd. NOK).
         """
         if value is None:
             return False
 
-        # String representations of value
         str_val = str(value).strip()
 
-        # Extract only digits from value
         value_digits = "".join(filter(str.isdigit, str_val))
         if not value_digits:
-            # If value has no digits, check exact string in quote
             return str_val.lower() in quote.lower()
 
-        # Check direct substring
         if str_val in quote:
             return True
 
-        # Check all digits sequence
         quote_digits = "".join(filter(str.isdigit, quote))
         if value_digits in quote_digits:
             return True
 
         # Handle decimal/scale cases: e.g. value is 35840000000 and quote says "35,84 mrd" or "35.84"
-        # Take the most significant digits (first 3-4 digits)
         sig_digits = value_digits.lstrip("0")[:4]
         if len(sig_digits) >= 2 and sig_digits in quote_digits:
             return True
 
-        # Check Norwegian formatted variations (e.g. 21 231 or 21.231 or 21,231)
         if isinstance(value, (int, float)):
-            int_val = int(value)
-            # Standard formatting
-            patterns = [
-                f"{int_val:,}".replace(",", " "),  # 21 231
-                f"{int_val:,}".replace(",", "."),  # 21.231
-                f"{int_val:,}",                    # 21,231
-                str(int_val),                      # 21231
-            ]
+            # Float precision issues handling
+            val_f = float(value)
+
+            # Formats to check
+            patterns = []
+
+            # Format: 1 234 567,89
+            patterns.append(f"{val_f:,.2f}".replace(",", " ").replace(".", ","))
+            patterns.append(f"{val_f:,.0f}".replace(",", " "))
+
+            # Format: 1.234.567,-
+            patterns.append(f"{val_f:,.0f}".replace(",", ".") + ",-")
+            patterns.append(f"{val_f:,.0f}".replace(",", "."))
+
+            # Format: MNOK (Millions)
+            if val_f >= 1_000_000:
+                mil_val = val_f / 1_000_000
+                patterns.append(f"{mil_val:,.0f}")
+                patterns.append(f"{mil_val:,.1f}".replace(".", ","))
+                patterns.append(f"{mil_val:,.2f}".replace(".", ","))
+
+            # Format: mrd NOK (Billions)
+            if val_f >= 1_000_000_000:
+                bil_val = val_f / 1_000_000_000
+                patterns.append(f"{bil_val:,.1f}".replace(".", ","))
+                patterns.append(f"{bil_val:,.2f}".replace(".", ","))
+                patterns.append(f"{bil_val:,.0f}")
+
             for pat in patterns:
                 if pat in quote:
                     return True
 
         return False
-
 
 def verify_financial_fact(value: Any, verbatim_quote: Optional[str], raw_page_text: str) -> bool:
     """

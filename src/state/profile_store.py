@@ -7,7 +7,7 @@ and synthesizes explainability narratives.
 import json
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import List, Optional, Tuple
 
 from src.config import settings
 from src.models.schema import (
@@ -72,17 +72,21 @@ class ProfileStore:
         return path
 
     def save_delta(self, delta: ProfileDeltaLog) -> Path:
-        """Saves execution delta log to disk."""
+        """Saves execution delta log to disk atomically."""
         path = self.deltas_dir / f"{delta.orgnr}_delta.json"
-        with open(path, "w", encoding="utf-8") as f:
+        temp_path = path.with_suffix(".tmp")
+        with open(temp_path, "w", encoding="utf-8") as f:
             json.dump(delta.model_dump(mode="json"), f, indent=2, ensure_ascii=False)
+        temp_path.replace(path)
         return path
 
     def save_telemetry(self, telemetry: ExecutionTelemetry) -> Path:
-        """Saves the execution telemetry manifest."""
+        """Saves the execution telemetry manifest atomically."""
         path = self.telemetry_dir / "telemetry_manifest.json"
-        with open(path, "w", encoding="utf-8") as f:
+        temp_path = path.with_suffix(".tmp")
+        with open(temp_path, "w", encoding="utf-8") as f:
             json.dump(telemetry.model_dump(mode="json"), f, indent=2, ensure_ascii=False)
+        temp_path.replace(path)
         return path
 
     def merge_facts(

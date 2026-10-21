@@ -72,6 +72,10 @@ class FactEvidence(BaseModel):
         ...,
         description="High-signal explanation detailing source authority and entity resolution method"
     )
+    source_content_sha256: Optional[str] = Field(
+        None,
+        description="SHA-256 hash of the normalized source text snippet ensuring cryptographic provenance"
+    )
 
 
 class ExtractedFactCandidate(BaseModel):

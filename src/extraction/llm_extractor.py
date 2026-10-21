@@ -1,3 +1,4 @@
+import random
 """
 NVIDIA NIM Microservices Extraction & Synthesis Engine.
 Executes structured extraction via NVIDIA NIM (meta/llama-3.3-70b-instruct with
@@ -11,7 +12,7 @@ import json
 import logging
 import re
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, Tuple
 import httpx
@@ -19,7 +20,8 @@ import httpx
 from src.config import settings
 from src.collectors.web_discovery import WebPageContent
 from src.models.schema import ExtractedFactCandidate, FactCategory, FactEvidence, SourceTier
-from src.validators.fact_guard import AntiFabricationGuard, EntityAnchor, verify_financial_fact
+from src.validators.fact_guard import EntityAnchor, verify_financial_fact
+
 
 logger = logging.getLogger("signalpost.nim")
 
@@ -169,12 +171,12 @@ JSON OUTPUT STRUCTURE:
 
 
 def _clean_json_response(raw_text: str) -> Optional[Dict[str, Any]]:
-    """Safely extracts and parses JSON payload, stripping markdown fences if present."""
+    """Safely extracts and parses JSON payload, stripping markdown fences and fixing truncation."""
     if not raw_text:
         return None
 
     cleaned = raw_text.strip()
-    # Strip markdown code fences ```json ... ```
+
     match = re.search(r"```(?:json)?\s*([\s\S]*?)\s*```", cleaned)
     if match:
         cleaned = match.group(1).strip()
@@ -182,8 +184,28 @@ def _clean_json_response(raw_text: str) -> Optional[Dict[str, Any]]:
     try:
         data = json.loads(cleaned)
         return data if isinstance(data, dict) else None
-    except Exception:
-        # Fallback: scan for first '{' and last '}'
+    except json.JSONDecodeError:
+        # Attempt to recover truncated JSON by appending closing braces
+        start = cleaned.find("{")
+        if start != -1:
+            cleaned = cleaned[start:]
+            # Count open and closed brackets
+            open_braces = cleaned.count("{")
+            closed_braces = cleaned.count("}")
+            open_brackets = cleaned.count("[")
+            closed_brackets = cleaned.count("]")
+
+            if open_braces > closed_braces or open_brackets > closed_brackets:
+                # Naive recovery for typical truncation
+                cleaned = cleaned.rstrip(", ") + "]}" * (open_brackets - closed_brackets) + "}" * (open_braces - closed_braces)
+
+            try:
+                data = json.loads(cleaned)
+                return data if isinstance(data, dict) else None
+            except Exception:
+                pass
+
+        # Deep fallback
         start = cleaned.find("{")
         end = cleaned.rfind("}")
         if start != -1 and end != -1 and end > start:
@@ -191,8 +213,38 @@ def _clean_json_response(raw_text: str) -> Optional[Dict[str, Any]]:
                 return json.loads(cleaned[start : end + 1])
             except Exception:
                 pass
-        return None
+    except Exception:
+        pass
 
+    return None
+
+
+
+
+
+async def _post_with_backoff(client, url, headers, payload, max_retries=3):
+    last_error = None
+    for attempt in range(max_retries):
+        try:
+            resp = await client.post(url, headers=headers, json=payload)
+            if resp.status_code == 429 or str(resp.status_code).startswith('5'):
+                base_delay = 1.0
+                max_delay = 15.0
+                delay = min(max_delay, base_delay * (2 ** attempt))
+                jitter = random.uniform(0, delay)
+                await asyncio.sleep(jitter)
+                last_error = httpx.HTTPStatusError("API Error", request=resp.request, response=resp)
+                continue
+            return resp
+        except (httpx.ConnectError, httpx.TimeoutException) as e:
+            last_error = e
+            base_delay = 1.0
+            max_delay = 15.0
+            delay = min(max_delay, base_delay * (2 ** attempt))
+            jitter = random.uniform(0, delay)
+            await asyncio.sleep(jitter)
+    if last_error:
+        raise last_error
 
 class FactExtractor:
     """
@@ -242,7 +294,10 @@ class FactExtractor:
 
         now_iso = datetime.now(timezone.utc).isoformat()
 
+        import hashlib
+
         def _make_evidence(quote: Optional[str], explanation: str, digits_verified: bool = False) -> FactEvidence:
+            sha = hashlib.sha256(page.raw_text.encode("utf-8")).hexdigest()
             return FactEvidence(
                 source_url=page.url,
                 source_tier=source_tier,
@@ -253,6 +308,7 @@ class FactExtractor:
                 entity_confidence=page.verification.confidence,
                 raw_digits_verified=digits_verified,
                 verification_explanation=explanation,
+                source_content_sha256=sha
             )
 
         # 1. Company Details
@@ -440,7 +496,7 @@ class FactExtractor:
             await NIM_RATE_LIMITER.acquire()
             try:
                 async with httpx.AsyncClient(timeout=30.0) as client:
-                    resp = await client.post(url, headers=headers, json=primary_payload)
+                    resp = await _post_with_backoff(client, url, headers, primary_payload)
 
                     if resp.status_code == 200:
                         data = resp.json()
@@ -498,7 +554,7 @@ class FactExtractor:
             "top_p": 0.1,
             "max_tokens": 1200,
         }
-        resp = await client.post(url, headers=headers, json=fallback_payload)
+        resp = await _post_with_backoff(client, url, headers, fallback_payload)
         if resp.status_code == 200:
             data = resp.json()
             usage = data.get("usage", {})
@@ -590,10 +646,9 @@ class FactExtractor:
                     pass
 
         # Deterministic heuristic synthesis fallback
-        activity = None
         for f in registry_facts:
             if "purpose" in f.fact_key or "legal_name" in f.fact_key or "primary_nace" in f.fact_key:
-                activity = f.value
+                pass
                 break
 
         s1 = f"{anchor.legal_name} is a registered Norwegian enterprise located in {anchor.municipality or 'Norway'} focused on its statutory activities."

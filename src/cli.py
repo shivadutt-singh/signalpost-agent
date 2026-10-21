@@ -11,9 +11,7 @@ import sys
 import time
 import uuid
 from datetime import datetime, timezone
-from pathlib import Path
 from typing import List, Optional
-
 import click
 
 from src.config import settings
@@ -21,9 +19,10 @@ from src.collectors.brreg_client import BrregClient
 from src.collectors.http_budget import AsyncHttpBudgetClient, HttpBudgetTracker
 from src.collectors.web_discovery import WebDiscoveryCollector
 from src.extraction.llm_extractor import FactExtractor
-from src.models.schema import CompanyProfile, ExecutionTelemetry, ExtractedFactCandidate, ProfileDeltaLog
+from src.models.schema import CompanyProfile, ExecutionTelemetry
 from src.state.profile_store import ProfileStore
-from src.validators.mod11 import normalize_orgnr, try_normalize_orgnr
+from src.validators.mod11 import try_normalize_orgnr
+
 
 logging.basicConfig(
     level=logging.INFO,

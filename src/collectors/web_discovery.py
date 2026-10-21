@@ -44,6 +44,15 @@ class WebDiscoveryCollector:
         if not url.startswith("http://") and not url.startswith("https://"):
             url = f"https://{url}"
 
+        # Prevent SSRF: block internal IP ranges and localhost
+        try:
+            parsed_url = urllib.parse.urlparse(url)
+            hostname = parsed_url.hostname or ""
+            if hostname in ("localhost", "127.0.0.1", "0.0.0.0") or hostname.startswith("192.168.") or hostname.startswith("10."):
+                return None
+        except Exception:
+            return None
+
         try:
             resp = await self.client.get(url, orgnr=anchor.orgnr)
             if resp.status_code != 200:
