@@ -98,7 +98,7 @@ def run_doctor_audit(
             # Search for Windows file paths (e.g. C:\... or output\... or data\...) or Windows URLs (http:\)
             has_win_path = bool(
                 re.search(
-                    r'(?:[A-Za-z]:\\|output\\|data\\|tests\\|src\\|https?:\\|\\output|\\profiles)',
+                    r'(:[A-Za-z]:\\|output\\|data\\|tests\\|src\\|https:\\|\\output|\\profiles)',
                     content,
                 )
             )
@@ -363,9 +363,9 @@ def print_doctor_table(all_passed: bool, results: list[dict[str, Any]]) -> None:
 
     console.print(table)
     if all_passed:
-        console.print("\n[bold green]✔ ALL 10 PRE-SUBMISSION CHECKS STRICTLY SATISFIED. HARNESS IS 100% READY FOR SUBMISSION.[/bold green]\n")
+        console.print("\n[bold green][PASS] ALL 10 PRE-SUBMISSION CHECKS STRICTLY SATISFIED. HARNESS IS 100% READY FOR SUBMISSION.[/bold green]\n")
     else:
-        console.print("\n[bold red]✖ ONE OR MORE CHECKS FAILED. REVIEW THE AUDIT REPORT ABOVE BEFORE SUBMITTING.[/bold red]\n")
+        console.print("\n[bold red][FAIL] ONE OR MORE CHECKS FAILED. REVIEW THE AUDIT REPORT ABOVE BEFORE SUBMITTING.[/bold red]\n")
 
 
 def main() -> None:
