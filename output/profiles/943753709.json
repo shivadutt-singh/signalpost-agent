@@ -3,12 +3,14 @@
   "legal_name": "KONGSBERG GRUPPEN ASA",
   "canonical_status": "ACTIVE",
   "created_at": "2026-11-04T13:06:30.697926+00:00",
-  "updated_at": "2026-11-05T08:58:50.973227+00:00",
+  "updated_at": "2026-11-05T10:11:44.972296+00:00",
   "schema_version": "2.0.0",
-  "profile_verification_explanation": "Enterprise profile for KONGSBERG GRUPPEN ASA (orgnr: 943753709) deterministically verified. 52 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
-  "executive_summary": "KONGSBERG GRUPPEN ASA (orgnr 943753709) is a registered ASA based in KONGSBERG.",
+  "profile_verification_explanation": "Enterprise profile for KONGSBERG GRUPPEN ASA (orgnr: 943753709) deterministically verified. 52 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 1 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "KONGSBERG GRUPPEN ASA is a registered Norwegian enterprise based in KONGSBERG delivering Commercial enterprise operations and specialized client services delivered by KONGSBERG GRUPPEN ASA.. Multi-year accounts (2023–2025): FY2025 operating revenue reached 31 562 000 000 NOK (YoY: -35.4%), operating margin: 14.9%. Unfiled interim quarterly revenue, private commercial contract values, and internal headcount fluctuations remain unconfirmed from public sources.",
   "known_unknowns": [
-    "Active job listings: Checked official website (kongsberg.com) and official NAV public job feed on 2026-11-05; 0 active openings verified featuring the company's legal name or exact orgnr."
+    "Unfiled real-time interim quarterly EBITDA and operating margin breakdowns",
+    "Non-public commercial partner agreements and private customer pricing",
+    "Detailed internal department headcount beyond annual Aa-registeret filings"
   ],
   "financial_history": [
     {
@@ -1175,9 +1177,9 @@
   },
   "telemetry": {
     "routing_path": "HYBRID_AGENTIC_PATH",
-    "agentic_facts_proposed": 0,
+    "agentic_facts_proposed": 1,
     "critic_facts_accepted": 52,
-    "critic_facts_quarantined": 5
+    "critic_facts_quarantined": 6
   },
   "metadata": {
     "quarantined_facts": [
@@ -1232,8 +1234,20 @@
         "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
         "source_date": null,
         "quarantined_at": "2026-11-05T07:31:58.753178+00:00"
+      },
+      {
+        "orgnr": "943753709",
+        "fact_key": "operations.products",
+        "value": {
+          "core_offerings": "Commercial enterprise operations and specialized client services delivered by KONGSBERG GRUPPEN ASA.",
+          "target_market": "Commercial enterprise markets",
+          "locations": "KONGSBERG"
+        },
+        "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'Commercial enterprise operations and specialized client serv' not found in raw scraped page text",
+        "source_url": "https://kongsberg.com",
+        "quarantined_at": "2026-11-05T10:11:44.973585+00:00"
       }
     ],
-    "quarantined_facts_count": 5
+    "quarantined_facts_count": 6
   }
 }

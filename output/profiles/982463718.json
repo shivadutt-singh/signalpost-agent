@@ -3,13 +3,14 @@
   "legal_name": "TELENOR ASA",
   "canonical_status": "ACTIVE",
   "created_at": "2026-10-17T09:44:01.109305+00:00",
-  "updated_at": "2026-11-05T08:58:50.706229+00:00",
+  "updated_at": "2026-11-05T10:11:49.879639+00:00",
   "schema_version": "1.0.0",
-  "profile_verification_explanation": "Enterprise profile for TELENOR ASA (orgnr: 982463718) deterministically verified. 55 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 1 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 1 prior values preserved in temporal audit lineage. Zero fabrication detected.",
-  "executive_summary": "TELENOR ASA (orgnr 982463718) is a registered ASA based in BÆRUM.",
+  "profile_verification_explanation": "Enterprise profile for TELENOR ASA (orgnr: 982463718) deterministically verified. 55 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 3 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 2 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "TELENOR ASA is a registered Norwegian enterprise based in BÆRUM delivering Telenors sikkerhetspuls Q3 2026 Telenor blokkerte over 926 millioner digitale trusler i tredje kvart. Multi-year accounts (2023–2025): FY2025 operating revenue reached 77 292 000 000 NOK (YoY: -5.1%), operating margin: 23.3%. Unfiled interim quarterly revenue, private commercial contract values, and internal headcount fluctuations remain unconfirmed from public sources.",
   "known_unknowns": [
-    "Detailed private commercial agreements and non-public partner contracts",
-    "Real-time interim quarterly operating results not yet filed with registry"
+    "Unfiled real-time interim quarterly EBITDA and operating margin breakdowns",
+    "Non-public commercial partner agreements and private customer pricing",
+    "Detailed internal department headcount beyond annual Aa-registeret filings"
   ],
   "financial_history": [
     {
@@ -396,52 +397,6 @@
         "verification_explanation": "Registered active operational sub-units count: 3."
       },
       "previous_values": []
-    },
-    "operations.jobs": {
-      "fact_key": "operations.jobs",
-      "current_value": {
-        "status": "Hiring Active",
-        "career_portal_url": "https://telenor.no/karriere",
-        "openings": [
-          "Ledige stillinger",
-          "Se flere ledige stillinger i Telenor",
-          "Fra The Gathering til lærlingplass -og fast jobb som utvikler",
-          "Oda \\ utvikler",
-          "Thita \\ driftsingeniør",
-          "Torstein \\ backend-utvikler"
-        ],
-        "verified_count": 6
-      },
-      "category": "operations",
-      "unit": null,
-      "period_or_year": null,
-      "current_evidence": {
-        "source_url": "https://telenor.no/om/jobbitelenor/",
-        "source_tier": "official_homepage",
-        "source_date": "2026-11-04",
-        "retrieval_timestamp": "2026-11-04T13:06:22.939704+00:00",
-        "verbatim_quote": "Ledige stillinger",
-        "entity_match_rule": "EXACT_COMPANY_NAME_MATCH",
-        "entity_match_method": "EXACT_LEGAL_NAME_ON_OWN_DOMAIN",
-        "entity_confidence": 1.0,
-        "raw_digits_verified": false,
-        "verification_explanation": "Active employment opening verified via OFFICIAL_CAREERS_PORTAL."
-      },
-      "previous_values": [
-        {
-          "value": {
-            "status": "Active Career Portal",
-            "openings": [
-              "Consulting and operational roles"
-            ],
-            "portal": "https://telenor.no/karriere"
-          },
-          "source_url": "https://telenor.no/karriere",
-          "source_date": null,
-          "replaced_at": "2026-11-04T13:06:43.660611+00:00",
-          "reason": "SUPERSEDED_DATED_OVER_UNDATED: dated source supersedes undated fact"
-        }
-      ]
     },
     "financial.revenue_2025": {
       "fact_key": "financial.revenue_2025",
@@ -1290,13 +1245,60 @@
         "verification_explanation": "Official registry announcement 'Godkjent årsregnskap med bærekraftsrapportering' verified from Brønnøysundregistrene Kunngjøringer (orgnr 982463718)."
       },
       "previous_values": []
+    },
+    "operations.news.1": {
+      "fact_key": "operations.news.1",
+      "current_value": {
+        "title": "Nyheter, presse og media",
+        "date": "2026-11-05"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://telenor.no/om/presse-og-media/",
+        "source_tier": "official_homepage",
+        "source_date": "2026-11-05",
+        "retrieval_timestamp": "2026-11-05T10:11:49.869748+00:00",
+        "verbatim_quote": "Nyheter, presse og media",
+        "entity_match_rule": "EXACT_COMPANY_NAME_MATCH",
+        "entity_match_method": "EXACT_LEGAL_NAME_ON_OWN_DOMAIN",
+        "entity_confidence": 0.98,
+        "raw_digits_verified": false,
+        "verification_explanation": "Corporate announcement verified on official company domain."
+      },
+      "previous_values": []
+    },
+    "operations.products": {
+      "fact_key": "operations.products",
+      "current_value": {
+        "core_offerings": "Telenors sikkerhetspuls Q3 2026 Telenor blokkerte over 926 millioner digitale trusler i tredje kvartal.",
+        "target_market": "Commercial enterprise markets",
+        "locations": "BÆRUM"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://telenor.no",
+        "source_tier": "official_homepage",
+        "source_date": "2026-11-05",
+        "retrieval_timestamp": "2026-11-05T10:11:49.869748+00:00",
+        "verbatim_quote": "Telenors sikkerhetspuls Q3 2026 Telenor blokkerte over 926 millioner digitale trusler i tredje kvartal.",
+        "entity_match_rule": "EXACT_COMPANY_NAME_MATCH",
+        "entity_match_method": "EXACT_LEGAL_NAME_ON_OWN_DOMAIN",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": false,
+        "verification_explanation": "Core commercial operations verified on official company domain."
+      },
+      "previous_values": []
     }
   },
   "telemetry": {
     "routing_path": "HYBRID_AGENTIC_PATH",
-    "agentic_facts_proposed": 0,
-    "critic_facts_accepted": 56,
-    "critic_facts_quarantined": 4
+    "agentic_facts_proposed": 3,
+    "critic_facts_accepted": 57,
+    "critic_facts_quarantined": 5
   },
   "metadata": {
     "quarantined_facts": [
@@ -1335,8 +1337,28 @@
         "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
         "source_date": null,
         "quarantined_at": "2026-11-05T07:29:56.410622+00:00"
+      },
+      {
+        "orgnr": "982463718",
+        "fact_key": "operations.jobs",
+        "value": {
+          "status": "Hiring Active",
+          "career_portal_url": "https://telenor.no/om/jobbitelenor/",
+          "openings": [
+            "Ledige stillinger",
+            "Se flere ledige stillinger i Telenor",
+            "Fra The Gathering til lærlingplass -og fast jobb som utvikler",
+            "Software Engineer: – Det er egentlig en fordel å være litt lat!",
+            "Oda \\ utvikler",
+            "Thita \\ driftsingeniør"
+          ],
+          "verified_count": 6
+        },
+        "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'Jobbannonse: Ledige stillinger hos TELENOR ASA' not found in raw scraped page text",
+        "source_url": "https://telenor.no/om/jobbitelenor/",
+        "quarantined_at": "2026-11-05T10:11:49.880539+00:00"
       }
     ],
-    "quarantined_facts_count": 4
+    "quarantined_facts_count": 5
   }
 }

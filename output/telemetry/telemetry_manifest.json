@@ -1,19 +1,24 @@
 {
-  "session_id": "2633118d-622b-4f9d-9ec2-c6d9fc65fde0",
-  "start_time": "2026-11-05T09:05:24.074778+00:00",
-  "end_time": "2026-11-05T09:05:32.639041+00:00",
-  "total_duration_seconds": 8.56,
-  "companies_processed": 5,
-  "companies_succeeded": 5,
+  "session_id": "753b0d44-c073-45e1-97b2-18ba45af9a22",
+  "start_time": "2026-11-05T10:11:33.496040+00:00",
+  "end_time": "2026-11-05T10:11:49.898234+00:00",
+  "total_duration_seconds": 16.4,
+  "companies_processed": 10,
+  "companies_succeeded": 10,
   "companies_failed": 0,
-  "total_http_requests": 31,
-  "web_outbound_requests": 31,
+  "total_http_requests": 80,
+  "web_outbound_requests": 80,
   "http_requests_per_company": {
-    "916627939": 6,
-    "933365573": 5,
-    "934551435": 5,
-    "988539473": 10,
-    "989061593": 5
+    "950639822": 5,
+    "923609016": 10,
+    "984851006": 10,
+    "943753709": 10,
+    "982463718": 10,
+    "984661185": 5,
+    "886581432": 5,
+    "948817705": 5,
+    "914778271": 10,
+    "950285680": 10
   },
   "llm_api_calls": 0,
   "nvidia_primary_calls": 0,
@@ -27,51 +32,146 @@
   "budget_violations": [],
   "quarantined_facts": [
     {
-      "orgnr": "988539473",
+      "orgnr": "984851006",
+      "fact_key": "operations.news.1",
+      "value": {
+        "title": "SamboerkontraktSkap forutsigbarhet og trygghet for økonomien i samlivet",
+        "date": "2026-11-05"
+      },
+      "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'SamboerkontraktSkap forutsigbarhet og trygghet for økonomien' not found in raw scraped page text",
+      "source_url": "https://www.dnb.no/okonomisk-radgiver/juridiske-tjenester",
+      "quarantined_at": "2026-11-05T10:11:43.252986+00:00"
+    },
+    {
+      "orgnr": "984851006",
+      "fact_key": "operations.news.2",
+      "value": {
+        "title": "SameiekontraktAvklar eierandeler og utgifter når dere kjøper bolig sammen",
+        "date": "2026-11-05"
+      },
+      "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'SameiekontraktAvklar eierandeler og utgifter når dere kjøper' not found in raw scraped page text",
+      "source_url": "https://www.dnb.no/okonomisk-radgiver/juridiske-tjenester",
+      "quarantined_at": "2026-11-05T10:11:43.252986+00:00"
+    },
+    {
+      "orgnr": "984851006",
+      "fact_key": "operations.news.3",
+      "value": {
+        "title": "BehovskartleggerFinn ut hvilke juridiske avtaler som passer for deg og din livssituasjon",
+        "date": "2026-11-05"
+      },
+      "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'BehovskartleggerFinn ut hvilke juridiske avtaler som passer ' not found in raw scraped page text",
+      "source_url": "https://www.dnb.no/okonomisk-radgiver/juridiske-tjenester",
+      "quarantined_at": "2026-11-05T10:11:43.252986+00:00"
+    },
+    {
+      "orgnr": "984851006",
+      "fact_key": "operations.jobs",
+      "value": {
+        "status": "Hiring Active",
+        "career_portal_url": "https://dnb.no/om-oss/jobb-og-karriere",
+        "openings": [
+          "Ledige stillinger",
+          "utvikler",
+          "DNB Eiendom er et av Norges eldste og største eiendomsmeglerselskap."
+        ],
+        "verified_count": 3
+      },
+      "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'Jobbannonse: Ledige stillinger hos DNB BANK ASA' not found in raw scraped page text",
+      "source_url": "https://dnb.no/om-oss/jobb-og-karriere",
+      "quarantined_at": "2026-11-05T10:11:43.252986+00:00"
+    },
+    {
+      "orgnr": "984851006",
       "fact_key": "operations.products",
       "value": {
-        "core_offerings": "Commercial enterprise operations and specialized client services delivered by -EBE- DATA Eyolf Berg.",
+        "core_offerings": "Commercial enterprise operations and specialized client services delivered by DNB BANK ASA.",
         "target_market": "Commercial enterprise markets",
-        "locations": "ASKER"
+        "locations": "OSLO"
       },
       "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'Commercial enterprise operations and specialized client serv' not found in raw scraped page text",
-      "source_url": "https://ebe-data.com",
-      "quarantined_at": "2026-11-05T09:05:31.939587+00:00"
+      "source_url": "https://dnb.no",
+      "quarantined_at": "2026-11-05T10:11:43.252986+00:00"
     },
     {
-      "orgnr": "988539473",
-      "fact_key": "contact.email",
-      "value": "eyolf@ebe-data.com",
-      "reason": "DATE_SANITY_CHECK_FAILED: source_date '03 Jun 202' does not match ISO format YYYY-MM-DD",
-      "source_date": "03 Jun 2025",
-      "quarantined_at": "2026-11-05T09:05:31.941778+00:00"
-    },
-    {
-      "orgnr": "988539473",
-      "fact_key": "operations.products_services",
-      "value": "-EBE- DATA Eyolf Berg Category: Other Registration country: Norway Status: Active Profile views 30,911 Registry searches 1,358 Company score 4.",
-      "reason": "DATE_SANITY_CHECK_FAILED: source_date '28 May 202' does not match ISO format YYYY-MM-DD",
-      "source_date": "28 May 2026",
-      "quarantined_at": "2026-11-05T09:05:31.941778+00:00"
-    },
-    {
-      "orgnr": "988539473",
-      "fact_key": "operations.value_proposition",
-      "value": "Solutions delivered by -EBE- DATA EYOLF BERG.",
-      "reason": "DATE_SANITY_CHECK_FAILED: source_date '28 May 202' does not match ISO format YYYY-MM-DD",
-      "source_date": "28 May 2026",
-      "quarantined_at": "2026-11-05T09:05:31.941778+00:00"
-    },
-    {
-      "orgnr": "988539473",
-      "fact_key": "structure.locations",
+      "orgnr": "943753709",
+      "fact_key": "operations.products",
       "value": {
-        "location": "ASKER",
-        "type": "Headquarters"
+        "core_offerings": "Commercial enterprise operations and specialized client services delivered by KONGSBERG GRUPPEN ASA.",
+        "target_market": "Commercial enterprise markets",
+        "locations": "KONGSBERG"
       },
-      "reason": "DATE_SANITY_CHECK_FAILED: source_date '28 May 202' does not match ISO format YYYY-MM-DD",
-      "source_date": "28 May 2026",
-      "quarantined_at": "2026-11-05T09:05:31.941778+00:00"
+      "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'Commercial enterprise operations and specialized client serv' not found in raw scraped page text",
+      "source_url": "https://kongsberg.com",
+      "quarantined_at": "2026-11-05T10:11:44.973585+00:00"
+    },
+    {
+      "orgnr": "950285680",
+      "fact_key": "operations.jobs",
+      "value": {
+        "status": "Hiring Active",
+        "career_portal_url": "https://usbl.no",
+        "openings": [
+          "Kurs for styreledere og styremedlemmer",
+          "Rådgivere på forvaltning",
+          "Ingeniører og prosjekt- og byggeledere",
+          "Energi- og miljørådgivere",
+          "Rådgiver",
+          "Teamleder, Regnskap",
+          "Enten du er styremedlem eller styreleder, finner du alt du trenger for å løse jobben her."
+        ],
+        "verified_count": 7
+      },
+      "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'Jobbannonse: Kurs for styreledere og styremedlemmer hos BOLI' not found in raw scraped page text",
+      "source_url": "https://usbl.no",
+      "quarantined_at": "2026-11-05T10:11:45.931182+00:00"
+    },
+    {
+      "orgnr": "914778271",
+      "fact_key": "operations.jobs",
+      "value": {
+        "status": "Hiring Active",
+        "career_portal_url": "https://hydro.com/en/global/careers/",
+        "openings": [
+          "Engineering"
+        ],
+        "verified_count": 1
+      },
+      "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'Jobbannonse: Engineering hos Norsk Hydro ASA' not found in raw scraped page text",
+      "source_url": "https://hydro.com/en/global/careers/",
+      "quarantined_at": "2026-11-05T10:11:46.536205+00:00"
+    },
+    {
+      "orgnr": "914778271",
+      "fact_key": "operations.products",
+      "value": {
+        "core_offerings": "Commercial enterprise operations and specialized client services delivered by Norsk Hydro ASA.",
+        "target_market": "Commercial enterprise markets",
+        "locations": "OSLO"
+      },
+      "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'Commercial enterprise operations and specialized client serv' not found in raw scraped page text",
+      "source_url": "https://hydro.com",
+      "quarantined_at": "2026-11-05T10:11:46.536205+00:00"
+    },
+    {
+      "orgnr": "982463718",
+      "fact_key": "operations.jobs",
+      "value": {
+        "status": "Hiring Active",
+        "career_portal_url": "https://telenor.no/om/jobbitelenor/",
+        "openings": [
+          "Ledige stillinger",
+          "Se flere ledige stillinger i Telenor",
+          "Fra The Gathering til lærlingplass -og fast jobb som utvikler",
+          "Software Engineer: – Det er egentlig en fordel å være litt lat!",
+          "Oda \\ utvikler",
+          "Thita \\ driftsingeniør"
+        ],
+        "verified_count": 6
+      },
+      "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'Jobbannonse: Ledige stillinger hos TELENOR ASA' not found in raw scraped page text",
+      "source_url": "https://telenor.no/om/jobbitelenor/",
+      "quarantined_at": "2026-11-05T10:11:49.880539+00:00"
     }
   ]
 }

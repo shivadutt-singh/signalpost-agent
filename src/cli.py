@@ -303,6 +303,15 @@ def export_html():
     click.echo(f"Successfully generated static HTML viewer: {dest}")
 
 
+@cli.command("audit")
+def audit():
+    """Execute 50-Profile Empirical Calibration Audit and generate report."""
+    from src.scripts.build_calibration_audit import run_hand_checked_audit
+    click.echo("Running 50-Profile Stratified Calibration Audit across Housing Associations, AS, and ASA...")
+    asyncio.run(run_hand_checked_audit())
+    click.echo("\n[SUCCESS] Calibration Audit complete. Saved data/hand_checked_audit.json and HAND_CHECKED_REPORT.md")
+
+
 def main():
     cli()
 

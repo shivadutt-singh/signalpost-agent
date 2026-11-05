@@ -3,19 +3,14 @@
   "legal_name": "BOLIGBYGGELAGET USBL",
   "canonical_status": "ACTIVE",
   "created_at": "2026-11-04T13:07:30.343300+00:00",
-  "updated_at": "2026-11-05T08:58:50.529606+00:00",
+  "updated_at": "2026-11-05T10:11:45.930001+00:00",
   "schema_version": "2.0.0",
-  "profile_verification_explanation": "Enterprise profile for BOLIGBYGGELAGET USBL (orgnr: 950285680) deterministically verified. 52 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 5 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
-  "executive_summary": "BOLIGBYGGELAGET USBL (orgnr 950285680) is a registered BBL based in OSLO.",
+  "profile_verification_explanation": "Enterprise profile for BOLIGBYGGELAGET USBL (orgnr: 950285680) deterministically verified. 52 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 10 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 1 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "BOLIGBYGGELAGET USBL is a registered Norwegian enterprise based in OSLO delivering Boligbyggelaget Usbl Arbeidersamfunnets plass 1 0181 Oslo Org.. Multi-year accounts (2023–2025): FY2025 operating revenue reached 841 670 000 NOK (YoY: -8.9%), operating margin: 1.6%. Unfiled interim quarterly revenue, private commercial contract values, and internal headcount fluctuations remain unconfirmed from public sources.",
   "known_unknowns": [
-    "Detailed private commercial agreements and non-public partner contracts",
-    "Real-time interim quarterly operating results not yet filed with registry",
-    "Detailed private commercial agreements and non-public partner contracts",
-    "Real-time interim quarterly operating results not yet filed with registry",
-    "Detailed private commercial agreements and non-public partner contracts",
-    "Real-time interim quarterly operating results not yet filed with registry",
-    "Detailed private commercial agreements and non-public partner contracts",
-    "Real-time interim quarterly operating results not yet filed with registry"
+    "Unfiled real-time interim quarterly EBITDA and operating margin breakdowns",
+    "Non-public commercial partner agreements and private customer pricing",
+    "Detailed internal department headcount beyond annual Aa-registeret filings"
   ],
   "financial_history": [
     {
@@ -725,35 +720,6 @@
       },
       "previous_values": []
     },
-    "operations.jobs": {
-      "fact_key": "operations.jobs",
-      "current_value": {
-        "status": "Hiring Active",
-        "career_portal_url": "https://usbl.no/karriere",
-        "openings": [
-          "Rådgivere på forvaltning",
-          "Ingeniører og prosjekt- og byggeledere",
-          "Energi- og miljørådgivere"
-        ],
-        "verified_count": 3
-      },
-      "category": "operations",
-      "unit": null,
-      "period_or_year": null,
-      "current_evidence": {
-        "source_url": "https://usbl.no/om-oss/jobb-hos-oss",
-        "source_tier": "official_homepage",
-        "source_date": "2026-11-04",
-        "retrieval_timestamp": "2026-11-04T13:06:35.999270+00:00",
-        "verbatim_quote": "Rådgivere på forvaltning",
-        "entity_match_rule": "EXACT_ORGNR_MATCH",
-        "entity_match_method": "EXACT_ORGNR_ON_PAGE",
-        "entity_confidence": 1.0,
-        "raw_digits_verified": false,
-        "verification_explanation": "Active employment opening verified via OFFICIAL_CAREERS_PORTAL."
-      },
-      "previous_values": []
-    },
     "operations.news.7999": {
       "fact_key": "operations.news.7999",
       "current_value": {
@@ -1353,13 +1319,129 @@
         "verification_explanation": "Official registry announcement 'Godkjente årsregnskap' verified from Brønnøysundregistrene Kunngjøringer (orgnr 950285680)."
       },
       "previous_values": []
+    },
+    "operations.news.1": {
+      "fact_key": "operations.news.1",
+      "current_value": {
+        "title": "Storbysamarbeidet",
+        "date": "2026-11-05"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://usbl.no",
+        "source_tier": "official_homepage",
+        "source_date": "2026-11-05",
+        "retrieval_timestamp": "2026-11-05T10:11:45.921194+00:00",
+        "verbatim_quote": "Storbysamarbeidet",
+        "entity_match_rule": "EXACT_COMPANY_NAME_MATCH",
+        "entity_match_method": "EXACT_LEGAL_NAME_ON_OWN_DOMAIN",
+        "entity_confidence": 0.98,
+        "raw_digits_verified": false,
+        "verification_explanation": "Corporate announcement verified on official company domain."
+      },
+      "previous_values": []
+    },
+    "operations.news.2": {
+      "fact_key": "operations.news.2",
+      "current_value": {
+        "title": "Samarbeid med Usbl",
+        "date": "2026-11-05"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://usbl.no",
+        "source_tier": "official_homepage",
+        "source_date": "2026-11-05",
+        "retrieval_timestamp": "2026-11-05T10:11:45.921194+00:00",
+        "verbatim_quote": "Samarbeid med Usbl",
+        "entity_match_rule": "EXACT_COMPANY_NAME_MATCH",
+        "entity_match_method": "EXACT_LEGAL_NAME_ON_OWN_DOMAIN",
+        "entity_confidence": 0.98,
+        "raw_digits_verified": false,
+        "verification_explanation": "Corporate announcement verified on official company domain."
+      },
+      "previous_values": []
+    },
+    "operations.news.3": {
+      "fact_key": "operations.news.3",
+      "current_value": {
+        "title": "Nyheter fra Usbl",
+        "date": "2026-11-05"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://usbl.no",
+        "source_tier": "official_homepage",
+        "source_date": "2026-11-05",
+        "retrieval_timestamp": "2026-11-05T10:11:45.921194+00:00",
+        "verbatim_quote": "Nyheter fra Usbl",
+        "entity_match_rule": "EXACT_COMPANY_NAME_MATCH",
+        "entity_match_method": "EXACT_LEGAL_NAME_ON_OWN_DOMAIN",
+        "entity_confidence": 0.98,
+        "raw_digits_verified": false,
+        "verification_explanation": "Corporate announcement verified on official company domain."
+      },
+      "previous_values": []
+    },
+    "operations.news.4": {
+      "fact_key": "operations.news.4",
+      "current_value": {
+        "title": "Usbl inngår samarbeid med Heder Bank",
+        "date": "2026-11-05"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://usbl.no/om-oss/nyheter",
+        "source_tier": "official_homepage",
+        "source_date": "2026-11-05",
+        "retrieval_timestamp": "2026-11-05T10:11:45.921194+00:00",
+        "verbatim_quote": "Usbl inngår samarbeid med Heder Bank",
+        "entity_match_rule": "EXACT_COMPANY_NAME_MATCH",
+        "entity_match_method": "EXACT_LEGAL_NAME_ON_OWN_DOMAIN",
+        "entity_confidence": 0.98,
+        "raw_digits_verified": false,
+        "verification_explanation": "Corporate announcement verified on official company domain."
+      },
+      "previous_values": []
+    },
+    "operations.products": {
+      "fact_key": "operations.products",
+      "current_value": {
+        "core_offerings": "Boligbyggelaget Usbl Arbeidersamfunnets plass 1 0181 Oslo Org.",
+        "target_market": "Commercial enterprise markets",
+        "locations": "OSLO"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://usbl.no",
+        "source_tier": "official_homepage",
+        "source_date": "2026-11-05",
+        "retrieval_timestamp": "2026-11-05T10:11:45.921194+00:00",
+        "verbatim_quote": "Boligbyggelaget Usbl Arbeidersamfunnets plass 1 0181 Oslo Org.",
+        "entity_match_rule": "EXACT_COMPANY_NAME_MATCH",
+        "entity_match_method": "EXACT_LEGAL_NAME_ON_OWN_DOMAIN",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": false,
+        "verification_explanation": "Core commercial operations verified on official company domain."
+      },
+      "previous_values": []
     }
   },
   "telemetry": {
     "routing_path": "HYBRID_AGENTIC_PATH",
-    "agentic_facts_proposed": 0,
-    "critic_facts_accepted": 57,
-    "critic_facts_quarantined": 4
+    "agentic_facts_proposed": 6,
+    "critic_facts_accepted": 61,
+    "critic_facts_quarantined": 5
   },
   "metadata": {
     "quarantined_facts": [
@@ -1401,8 +1483,29 @@
         "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
         "source_date": null,
         "quarantined_at": "2026-11-05T07:33:05.139293+00:00"
+      },
+      {
+        "orgnr": "950285680",
+        "fact_key": "operations.jobs",
+        "value": {
+          "status": "Hiring Active",
+          "career_portal_url": "https://usbl.no",
+          "openings": [
+            "Kurs for styreledere og styremedlemmer",
+            "Rådgivere på forvaltning",
+            "Ingeniører og prosjekt- og byggeledere",
+            "Energi- og miljørådgivere",
+            "Rådgiver",
+            "Teamleder, Regnskap",
+            "Enten du er styremedlem eller styreleder, finner du alt du trenger for å løse jobben her."
+          ],
+          "verified_count": 7
+        },
+        "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'Jobbannonse: Kurs for styreledere og styremedlemmer hos BOLI' not found in raw scraped page text",
+        "source_url": "https://usbl.no",
+        "quarantined_at": "2026-11-05T10:11:45.931182+00:00"
       }
     ],
-    "quarantined_facts_count": 4
+    "quarantined_facts_count": 5
   }
 }
