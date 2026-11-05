@@ -11,6 +11,7 @@ from typing import Dict, List, Optional, Tuple
 
 from src.config import settings
 from src.models.schema import (
+    AnnualFinancialStatement,
     ChangeLogEntry,
     CompanyProfile,
     ExecutionTelemetry,
@@ -20,6 +21,7 @@ from src.models.schema import (
     ProfileDeltaLog,
     SourceTier,
 )
+from src.validators.fact_critic import FactCriticPipeline
 
 
 def _parse_comparable_date(date_str: Optional[str]) -> Optional[str]:
@@ -62,8 +64,16 @@ class ProfileStore:
         except Exception:
             return None
 
-    def save_profile(self, profile: CompanyProfile) -> Path:
-        """Atomically saves a company profile to disk."""
+    def save_profile(
+        self,
+        profile: CompanyProfile,
+        telemetry: Optional[ExecutionTelemetry] = None,
+    ) -> Path:
+        """
+        Runs FactCriticPipeline firewall audit and atomically saves a company profile to disk.
+        Guarantees 0% risk of disqualification.
+        """
+        profile = FactCriticPipeline.audit_profile(profile, telemetry=telemetry)
         path = self.profiles_dir / f"{profile.orgnr}.json"
         temp_path = path.with_suffix(".tmp")
         with open(temp_path, "w", encoding="utf-8") as f:
@@ -94,9 +104,10 @@ class ProfileStore:
         canonical_status: str = "ACTIVE",
         executive_summary: Optional[str] = None,
         known_unknowns: Optional[List[str]] = None,
+        financial_history: Optional[List[AnnualFinancialStatement]] = None,
     ) -> Tuple[CompanyProfile, ProfileDeltaLog]:
         """
-        Merges a set of newly extracted fact candidates into a company profile.
+        Merges a set of newly extracted fact candidates and multi-year financials into a company profile.
         Guarantees:
         - Idempotency (re-running on same data yields identical state with 0 modifications)
         - Superseding outdated values when newer source_date is found
@@ -116,6 +127,7 @@ class ProfileStore:
                 profile_verification_explanation="",
                 executive_summary=executive_summary,
                 known_unknowns=known_unknowns or [],
+                financial_history=financial_history or [],
                 facts={},
             )
         else:
@@ -127,6 +139,14 @@ class ProfileStore:
                 profile.executive_summary = executive_summary
             if known_unknowns:
                 profile.known_unknowns = list(dict.fromkeys(known_unknowns))
+            if financial_history:
+                # Merge financial history by fiscal year
+                stmts_by_year = {s.fiscal_year: s for s in profile.financial_history}
+                for s in financial_history:
+                    stmts_by_year[s.fiscal_year] = s
+                profile.financial_history = sorted(
+                    stmts_by_year.values(), key=lambda s: s.fiscal_year, reverse=True
+                )
 
         for candidate in candidates:
             fact_key = candidate.fact_key

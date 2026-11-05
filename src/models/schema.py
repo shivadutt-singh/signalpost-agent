@@ -58,6 +58,10 @@ class FactEvidence(BaseModel):
         None,
         description="Rule used to verify entity match (e.g., ORGNR_MATCH, OFFICIAL_DOMAIN_MATCH, NAME_AND_LOCATION_MATCH)"
     )
+    entity_match_method: Optional[str] = Field(
+        None,
+        description="Canonical critic entity match method: EXACT_ORGNR_API | EXACT_ORGNR_ON_PAGE | EXACT_LEGAL_NAME_ON_OWN_DOMAIN | OFFICIAL_BRREG_KUNNGJORING"
+    )
     entity_confidence: float = Field(
         default=1.0,
         ge=0.0,
@@ -134,6 +138,28 @@ class ProfileDeltaLog(BaseModel):
     facts_rejected: int = 0
 
 
+class AnnualFinancialStatement(BaseModel):
+    """
+    Structured multi-year annual financial statement covering core P&L and Balance Sheet metrics.
+    All figures backed by exact source URL, registry/table date, and verbatim evidence.
+    """
+    fiscal_year: int = Field(..., description="Fiscal accounting year (e.g. 2024)")
+    accounting_period_from: Optional[str] = Field(None, description="Start date of accounting period (YYYY-MM-DD)")
+    accounting_period_to: Optional[str] = Field(None, description="End date of accounting period (YYYY-MM-DD)")
+    currency: str = Field(default="NOK", description="Reporting currency (usually NOK)")
+    operating_revenue_nok: Optional[float] = Field(None, description="Sum driftsinntekter (Operating Revenue in NOK)")
+    operating_profit_nok: Optional[float] = Field(None, description="Driftsresultat (Operating Profit/EBIT in NOK)")
+    profit_before_tax_nok: Optional[float] = Field(None, description="Ordinært resultat før skattekostnad (EBT in NOK)")
+    net_income_nok: Optional[float] = Field(None, description="Årsresultat (Net Income / Profit for the Year in NOK)")
+    total_assets_nok: Optional[float] = Field(None, description="Sum eiendeler (Total Assets in NOK)")
+    total_equity_nok: Optional[float] = Field(None, description="Sum egenkapital (Total Equity in NOK)")
+    total_liabilities_nok: Optional[float] = Field(None, description="Sum gjeld (Total Liabilities in NOK)")
+    source_url: str = Field(..., description="Exact URL where this statement was reported")
+    source_name: str = Field(..., description="Official entity or document name (e.g. Regnskapsregisteret)")
+    source_date: str = Field(..., description="Filing or publication date of the statement")
+    verbatim_evidence: str = Field(..., description="Verbatim raw evidence or registry record corroborating the figures")
+
+
 class CompanyProfile(BaseModel):
     """Complete, verifiable JSON profile of an enterprise."""
     orgnr: str = Field(..., description="9-digit Norwegian Company Number (Modulo-11 validated)")
@@ -145,7 +171,7 @@ class CompanyProfile(BaseModel):
     updated_at: str = Field(
         default_factory=lambda: datetime.now(timezone.utc).isoformat()
     )
-    schema_version: str = "1.0.0"
+    schema_version: str = "2.0.0"
     profile_verification_explanation: str = Field(
         ...,
         description="Synthesized summary of source verification, official cross-referencing, and entity integrity"
@@ -158,7 +184,20 @@ class CompanyProfile(BaseModel):
         default_factory=list,
         description="Explicit list of verifiable data points that were sought but remain unconfirmed"
     )
+    financial_history: List[AnnualFinancialStatement] = Field(
+        default_factory=list,
+        description="Multi-year annual accounts history sorted descending by fiscal year (2025..2021)"
+    )
     facts: Dict[str, FactAuditHistory] = Field(default_factory=dict)
+    telemetry: Dict[str, Any] = Field(
+        default_factory=lambda: {
+            "routing_path": "DETERMINISTIC_FAST_PATH",
+            "agentic_facts_proposed": 0,
+            "critic_facts_accepted": 0,
+            "critic_facts_quarantined": 0,
+        },
+        description="Hybrid architecture routing telemetry (DETERMINISTIC_FAST_PATH vs HYBRID_AGENTIC_PATH) and critic stats"
+    )
     metadata: Dict[str, Any] = Field(default_factory=dict)
 
     @field_validator("orgnr")
@@ -202,3 +241,7 @@ class ExecutionTelemetry(BaseModel):
     entity_gate_rejections: int = 0
     anti_fabrication_rejections: int = 0
     budget_violations: List[str] = Field(default_factory=list)
+    quarantined_facts: List[Dict[str, Any]] = Field(
+        default_factory=list,
+        description="Facts quarantined by FactCriticPipeline firewall to prevent disqualification"
+    )

@@ -1,19 +1,19 @@
 {
-  "session_id": "3fd1787c-4f62-4596-940f-10068cd9f7c9",
-  "start_time": "2026-10-17T13:35:28.084043+00:00",
-  "end_time": "2026-10-17T13:35:46.683181+00:00",
-  "total_duration_seconds": 18.6,
+  "session_id": "2633118d-622b-4f9d-9ec2-c6d9fc65fde0",
+  "start_time": "2026-11-05T09:05:24.074778+00:00",
+  "end_time": "2026-11-05T09:05:32.639041+00:00",
+  "total_duration_seconds": 8.56,
   "companies_processed": 5,
   "companies_succeeded": 5,
   "companies_failed": 0,
-  "total_http_requests": 30,
-  "web_outbound_requests": 30,
+  "total_http_requests": 31,
+  "web_outbound_requests": 31,
   "http_requests_per_company": {
-    "923609016": 6,
-    "982463718": 9,
-    "984851006": 9,
-    "984661185": 3,
-    "886581432": 3
+    "916627939": 6,
+    "933365573": 5,
+    "934551435": 5,
+    "988539473": 10,
+    "989061593": 5
   },
   "llm_api_calls": 0,
   "nvidia_primary_calls": 0,
@@ -24,5 +24,54 @@
   "llm_cost_per_company": {},
   "entity_gate_rejections": 0,
   "anti_fabrication_rejections": 0,
-  "budget_violations": []
+  "budget_violations": [],
+  "quarantined_facts": [
+    {
+      "orgnr": "988539473",
+      "fact_key": "operations.products",
+      "value": {
+        "core_offerings": "Commercial enterprise operations and specialized client services delivered by -EBE- DATA Eyolf Berg.",
+        "target_market": "Commercial enterprise markets",
+        "locations": "ASKER"
+      },
+      "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'Commercial enterprise operations and specialized client serv' not found in raw scraped page text",
+      "source_url": "https://ebe-data.com",
+      "quarantined_at": "2026-11-05T09:05:31.939587+00:00"
+    },
+    {
+      "orgnr": "988539473",
+      "fact_key": "contact.email",
+      "value": "eyolf@ebe-data.com",
+      "reason": "DATE_SANITY_CHECK_FAILED: source_date '03 Jun 202' does not match ISO format YYYY-MM-DD",
+      "source_date": "03 Jun 2025",
+      "quarantined_at": "2026-11-05T09:05:31.941778+00:00"
+    },
+    {
+      "orgnr": "988539473",
+      "fact_key": "operations.products_services",
+      "value": "-EBE- DATA Eyolf Berg Category: Other Registration country: Norway Status: Active Profile views 30,911 Registry searches 1,358 Company score 4.",
+      "reason": "DATE_SANITY_CHECK_FAILED: source_date '28 May 202' does not match ISO format YYYY-MM-DD",
+      "source_date": "28 May 2026",
+      "quarantined_at": "2026-11-05T09:05:31.941778+00:00"
+    },
+    {
+      "orgnr": "988539473",
+      "fact_key": "operations.value_proposition",
+      "value": "Solutions delivered by -EBE- DATA EYOLF BERG.",
+      "reason": "DATE_SANITY_CHECK_FAILED: source_date '28 May 202' does not match ISO format YYYY-MM-DD",
+      "source_date": "28 May 2026",
+      "quarantined_at": "2026-11-05T09:05:31.941778+00:00"
+    },
+    {
+      "orgnr": "988539473",
+      "fact_key": "structure.locations",
+      "value": {
+        "location": "ASKER",
+        "type": "Headquarters"
+      },
+      "reason": "DATE_SANITY_CHECK_FAILED: source_date '28 May 202' does not match ISO format YYYY-MM-DD",
+      "source_date": "28 May 2026",
+      "quarantined_at": "2026-11-05T09:05:31.941778+00:00"
+    }
+  ]
 }

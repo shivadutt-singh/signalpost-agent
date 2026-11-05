@@ -1,9 +1,9 @@
 {
   "orgnr": "982463718",
-  "run_timestamp": "2026-10-17T13:35:46.674600+00:00",
+  "run_timestamp": "2026-11-05T08:58:50.706229+00:00",
   "changes": [
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
       "fact_key": "registry.legal_name",
       "action": "UNCHANGED",
       "old_value": "TELENOR ASA",
@@ -11,7 +11,7 @@
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
       "fact_key": "registry.organization_form",
       "action": "UNCHANGED",
       "old_value": {
@@ -25,7 +25,7 @@
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
       "fact_key": "registry.registration_date",
       "action": "UNCHANGED",
       "old_value": "2000-10-06",
@@ -33,7 +33,7 @@
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
       "fact_key": "registry.founding_date",
       "action": "UNCHANGED",
       "old_value": "2000-07-21",
@@ -41,7 +41,7 @@
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
       "fact_key": "contact.business_address",
       "action": "UNCHANGED",
       "old_value": {
@@ -63,7 +63,7 @@
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
       "fact_key": "contact.website",
       "action": "UNCHANGED",
       "old_value": "www.telenor.no/",
@@ -71,7 +71,7 @@
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
       "fact_key": "operations.primary_nace",
       "action": "UNCHANGED",
       "old_value": {
@@ -85,7 +85,7 @@
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
       "fact_key": "operations.employee_count",
       "action": "UNCHANGED",
       "old_value": 370,
@@ -93,7 +93,7 @@
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
       "fact_key": "financial.latest_accounts_year",
       "action": "UNCHANGED",
       "old_value": "2025",
@@ -101,7 +101,7 @@
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
       "fact_key": "financial.share_capital",
       "action": "UNCHANGED",
       "old_value": 8210099934.0,
@@ -109,7 +109,7 @@
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
       "fact_key": "operations.statutory_purpose",
       "action": "UNCHANGED",
       "old_value": "Telekommunikasjonsvirksomhet og annen virksomhet som har sammenheng med dette. Virksomheten kan utøves av selskapet selv, av datterselskaper, eller gjennom deltakelse i andre selskaper eller i samarbeid med andre.",
@@ -117,7 +117,7 @@
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
       "fact_key": "registry.status",
       "action": "UNCHANGED",
       "old_value": "ACTIVE",
@@ -125,7 +125,7 @@
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
       "fact_key": "governance.ceo",
       "action": "UNCHANGED",
       "old_value": "Benedicte Fasmer",
@@ -133,7 +133,7 @@
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
       "fact_key": "governance.board_chair",
       "action": "UNCHANGED",
       "old_value": "Jens Petter Olsen",
@@ -141,7 +141,79 @@
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "governance.board_member.gyrid_ingerø",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Gyrid Ingerø",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/982463718"
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "governance.board_member.pieter_cornelis_knook",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Pieter Cornelis Knook",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/982463718"
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "governance.board_member.grethe_bergly",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Grethe Bergly",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/982463718"
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "governance.board_member.ottar_ertzeid",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Ottar Ertzeid",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/982463718"
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "governance.board_member.marianne_dahl_steensen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Marianne Dahl Steensen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/982463718"
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "governance.board_member.mats_ulrik_granryd",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Mats Ulrik Granryd",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/982463718"
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "governance.board_member.irene_vold",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Irene Vold",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/982463718"
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "governance.board_member.sune_johannes_jakobsson",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Sune Johannes Jakobsson",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/982463718"
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "governance.board_member.roger_rønning",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Roger Rønning",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/982463718"
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
       "fact_key": "structure.subunits",
       "action": "UNCHANGED",
       "old_value": [
@@ -187,60 +259,334 @@
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
-      "fact_key": "operations.products_services",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.revenue_2025",
       "action": "UNCHANGED",
-      "old_value": "Telenor – Hele Norges sikkerhetsnett Kampanje Internett på hytta Bestill Trådløst Bredbånd på hytta i dag,  og få 200,- i rabatt per måned de første 6 månedene.",
-      "new_value": "Telenor – Hele Norges sikkerhetsnett Kampanje Internett på hytta Bestill Trådløst Bredbånd på hytta i dag,  og få 200,- i rabatt per måned de første 6 månedene.",
+      "old_value": 77292000000.0,
+      "new_value": 77292000000.0,
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
-      "fact_key": "operations.value_proposition",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.operating_profit_2025",
       "action": "UNCHANGED",
-      "old_value": "Solutions delivered by TELENOR.",
-      "new_value": "Solutions delivered by TELENOR.",
+      "old_value": 17979000000.0,
+      "new_value": 17979000000.0,
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
-      "fact_key": "operations.products_services",
-      "action": "REJECTED_STALE",
-      "old_value": "Telenor – Hele Norges sikkerhetsnett Kampanje Internett på hytta Bestill Trådløst Bredbånd på hytta i dag,  og få 200,- i rabatt per måned de første 6 månedene.",
-      "new_value": "Telenor som pusher grenser, utfordrer og sørger for at vi hele tiden endrer oss.",
-      "reason": "RETAINED_EXISTING: equal/higher authority tier"
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.profit_before_tax_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 16656000000.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/982463718"
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
-      "fact_key": "operations.value_proposition",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.net_income_2025",
       "action": "UNCHANGED",
-      "old_value": "Solutions delivered by TELENOR.",
-      "new_value": "Solutions delivered by TELENOR.",
+      "old_value": 8365000000.0,
+      "new_value": 8365000000.0,
       "reason": "Identical value already recorded in profile."
     },
     {
-      "timestamp": "2026-10-17T13:35:46.674600+00:00",
-      "fact_key": "operations.jobs",
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.total_assets_2025",
+      "action": "UNCHANGED",
+      "old_value": 221650000000.0,
+      "new_value": 221650000000.0,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.total_equity_2025",
+      "action": "UNCHANGED",
+      "old_value": 75629000000.0,
+      "new_value": 75629000000.0,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.revenue_2024",
+      "action": "UNCHANGED",
+      "old_value": 81413000000.0,
+      "new_value": 81413000000.0,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.operating_profit_2024",
+      "action": "UNCHANGED",
+      "old_value": 18623000000.0,
+      "new_value": 18623000000.0,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.profit_before_tax_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 24442000000.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/982463718"
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.net_income_2024",
+      "action": "UNCHANGED",
+      "old_value": 20717000000.0,
+      "new_value": 20717000000.0,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.total_assets_2024",
+      "action": "UNCHANGED",
+      "old_value": 228038000000.0,
+      "new_value": 228038000000.0,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.total_equity_2024",
+      "action": "UNCHANGED",
+      "old_value": 81772000000.0,
+      "new_value": 81772000000.0,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.revenue_2023",
+      "action": "UNCHANGED",
+      "old_value": 80537000000.0,
+      "new_value": 80537000000.0,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.operating_profit_2023",
+      "action": "UNCHANGED",
+      "old_value": 16964000000.0,
+      "new_value": 16964000000.0,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.profit_before_tax_2023",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 19713000000.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/982463718"
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.net_income_2023",
+      "action": "UNCHANGED",
+      "old_value": 15381000000.0,
+      "new_value": 15381000000.0,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.total_assets_2023",
+      "action": "UNCHANGED",
+      "old_value": 218376000000.0,
+      "new_value": 218376000000.0,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.total_equity_2023",
+      "action": "UNCHANGED",
+      "old_value": 70434000000.0,
+      "new_value": 70434000000.0,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.operating_margin_2025",
+      "action": "UNCHANGED",
+      "old_value": 23.26,
+      "new_value": 23.26,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.yoy_revenue_growth_2025",
+      "action": "UNCHANGED",
+      "old_value": -5.06,
+      "new_value": -5.06,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.operating_margin_2024",
+      "action": "UNCHANGED",
+      "old_value": 22.87,
+      "new_value": 22.87,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.yoy_revenue_growth_2024",
+      "action": "UNCHANGED",
+      "old_value": 1.09,
+      "new_value": 1.09,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "financial.operating_margin_2023",
+      "action": "UNCHANGED",
+      "old_value": 21.06,
+      "new_value": 21.06,
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "operations.corporate_event.20260000752074",
       "action": "UNCHANGED",
       "old_value": {
-        "status": "Active Career Portal",
-        "openings": [
-          "Consulting and operational roles"
-        ],
-        "portal": "https://telenor.no/karriere"
+        "title": "Revisor",
+        "date": "2026-09-21",
+        "kid": "20260000752074",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000752074&sokeverdi=982463718&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
       },
       "new_value": {
-        "status": "Active Career Portal",
-        "openings": [
-          "Consulting and operational roles"
-        ],
-        "portal": "https://telenor.no/karriere"
+        "title": "Revisor",
+        "date": "2026-09-21",
+        "kid": "20260000752074",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000752074&sokeverdi=982463718&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
       },
       "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "operations.corporate_event.20260000331938",
+      "action": "UNCHANGED",
+      "old_value": {
+        "title": "Godkjent årsregnskap med bærekraftsrapportering",
+        "date": "2026-06-02",
+        "kid": "20260000331938",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000331938&sokeverdi=982463718&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "new_value": {
+        "title": "Godkjent årsregnskap med bærekraftsrapportering",
+        "date": "2026-06-02",
+        "kid": "20260000331938",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000331938&sokeverdi=982463718&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "operations.corporate_event.20260000286144",
+      "action": "UNCHANGED",
+      "old_value": {
+        "title": "Erverv av egne aksjer-fullmakt",
+        "date": "2026-05-21",
+        "kid": "20260000286144",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000286144&sokeverdi=982463718&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "new_value": {
+        "title": "Erverv av egne aksjer-fullmakt",
+        "date": "2026-05-21",
+        "kid": "20260000286144",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000286144&sokeverdi=982463718&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "operations.corporate_event.20260000286143",
+      "action": "UNCHANGED",
+      "old_value": {
+        "title": "Vedtektsdato",
+        "date": "2026-05-21",
+        "kid": "20260000286143",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000286143&sokeverdi=982463718&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "new_value": {
+        "title": "Vedtektsdato",
+        "date": "2026-05-21",
+        "kid": "20260000286143",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000286143&sokeverdi=982463718&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "operations.corporate_event.20250000493073",
+      "action": "UNCHANGED",
+      "old_value": {
+        "title": "Erverv av egne aksjer-fullmakt",
+        "date": "2025-06-30",
+        "kid": "20250000493073",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000493073&sokeverdi=982463718&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "new_value": {
+        "title": "Erverv av egne aksjer-fullmakt",
+        "date": "2025-06-30",
+        "kid": "20250000493073",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000493073&sokeverdi=982463718&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Identical value already recorded in profile."
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "operations.corporate_event.20250000493072",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Vedtektsdato",
+        "date": "2025-06-30",
+        "kid": "20250000493072",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000493072&sokeverdi=982463718&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000493072&sokeverdi=982463718&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "operations.corporate_event.20250000493071",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Styre",
+        "date": "2025-06-30",
+        "kid": "20250000493071",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000493071&sokeverdi=982463718&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000493071&sokeverdi=982463718&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T08:58:50.706229+00:00",
+      "fact_key": "operations.corporate_event.20250000369180",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjent årsregnskap med bærekraftsrapportering",
+        "date": "2025-06-03",
+        "kid": "20250000369180",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000369180&sokeverdi=982463718&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000369180&sokeverdi=982463718&spraak=nb"
     }
   ],
-  "facts_created": 0,
+  "facts_created": 15,
   "facts_updated": 0,
-  "facts_unchanged": 19,
-  "facts_rejected": 1
+  "facts_unchanged": 40,
+  "facts_rejected": 0
 }

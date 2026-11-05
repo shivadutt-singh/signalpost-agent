@@ -9,6 +9,7 @@ from src.validators.mod11 import (
     try_normalize_orgnr,
     extract_orgnrs_from_text,
 )
+from src.validators.fact_critic import FactCritic, FactCriticPipeline
 from src.validators.fact_guard import (
     EntityAnchor,
     EntityVerificationResult,
@@ -30,4 +31,5 @@ __all__ = [
     "AntiFabricationGuard",
     "FabricationCheckResult",
     "verify_financial_fact",
+    "FactCriticPipeline",
 ]

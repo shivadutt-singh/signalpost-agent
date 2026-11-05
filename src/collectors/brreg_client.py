@@ -11,7 +11,7 @@ import httpx
 from src.config import settings
 from src.collectors.http_budget import BudgetedAsyncClient
 from src.models.schema import ExtractedFactCandidate, FactCategory, FactEvidence, SourceTier
-from src.validators.fact_guard import EntityAnchor
+from src.validators.fact_guard import EntityAnchor, is_own_company_domain
 from src.validators.mod11 import normalize_orgnr
 
 
@@ -35,6 +35,11 @@ class BrregClient:
             if resp.status_code == 200:
                 return resp.json()
             elif resp.status_code == 404:
+                # Fallback to /underenheter/{orgnr} for branch / establishment units
+                sub_url = f"{self.base_url}/underenheter/{clean_orgnr}"
+                sub_resp = await self.client.get(sub_url, orgnr=clean_orgnr)
+                if sub_resp.status_code == 200:
+                    return sub_resp.json()
                 return None
             else:
                 resp.raise_for_status()
@@ -114,6 +119,9 @@ class BrregClient:
     ) -> EntityAnchor:
         """
         Constructs an authoritative EntityAnchor for downstream Entity Verification Gate.
+        Extracts positive governance officers (DAGL, LEDE, MEDL) and isolates
+        external service providers (FFØR=Manager, REVI=Auditor, REGN=Accountant) into
+        external_role_entities to prevent umbrella/manager entity bleed.
         """
         orgnr = enhet_data["organisasjonsnummer"]
         legal_name = enhet_data.get("navn", "")
@@ -124,40 +132,79 @@ class BrregClient:
         if forr.get("kommune"):
             municipality = forr["kommune"]
 
-        # Official domains from Brreg hjemmeside
-        official_domains = []
+        # Parse positive officers and external service provider entities from roller
+        ceo_names: List[str] = []
+        chair_names: List[str] = []
+        positive_officers: List[Dict[str, str]] = []
+        negative_external_entities: List[Dict[str, str]] = []
+
+        if roller_data and "rollegrupper" in roller_data:
+            for group in roller_data["rollegrupper"]:
+                group_type = group.get("type", {}).get("kode", "")
+                for role in group.get("roller", []):
+                    role_type = role.get("type", {}).get("kode", "")
+                    effective_role = role_type or group_type
+
+                    # Extract person name if present
+                    full_name = ""
+                    if "person" in role:
+                        person = role["person"]
+                        name_dict = person.get("navn", {})
+                        first = name_dict.get("fornavn", "")
+                        last = name_dict.get("etternavn", "")
+                        full_name = f"{first} {last}".strip()
+
+                    # Extract company/enhet info if present
+                    enh_org = ""
+                    enh_name = ""
+                    if "enhet" in role:
+                        enh = role["enhet"]
+                        enh_org = enh.get("organisasjonsnummer", "")
+                        raw_navn = enh.get("navn", "")
+                        enh_name = " ".join(raw_navn) if isinstance(raw_navn, list) else str(raw_navn)
+
+                    # 1. External service providers / managers (FFØR, REVI, REGN)
+                    if effective_role in ("FFØR", "REVI", "REGN"):
+                        ext_item = {
+                            "orgnr": enh_org,
+                            "navn": enh_name or full_name,
+                            "role_type": effective_role,
+                        }
+                        if ext_item["navn"] or ext_item["orgnr"]:
+                            if ext_item not in negative_external_entities:
+                                negative_external_entities.append(ext_item)
+                        continue
+
+                    # 2. Positive governance officers (DAGL=CEO, LEDE=Chair, MEDL=Board Member)
+                    officer_name = full_name or enh_name
+                    if officer_name:
+                        officer_item = {
+                            "role_type": effective_role,
+                            "name": officer_name,
+                            "orgnr": enh_org,
+                        }
+                        if officer_item not in positive_officers:
+                            positive_officers.append(officer_item)
+
+                        if effective_role == "DAGL":
+                            ceo_names.append(officer_name)
+                        elif effective_role == "LEDE":
+                            chair_names.append(officer_name)
+
+        # Parse official domains from Brreg hjemmeside with shared manager domain filter
+        official_domains: List[str] = []
+        hjemmeside_is_shared = False
         hjemmeside = enhet_data.get("hjemmeside")
         if hjemmeside:
-            # Clean protocol or leading slashes
             clean_dom = hjemmeside.strip().lower()
             clean_dom = clean_dom.replace("http://", "").replace("https://", "").split("/")[0]
             if clean_dom.startswith("www."):
                 clean_dom = clean_dom[4:]
             if clean_dom:
-                official_domains.append(clean_dom)
-
-        # Parse CEO and Chair names from roller
-        ceo_names: List[str] = []
-        chair_names: List[str] = []
-
-        if roller_data and "rollegrupper" in roller_data:
-            for group in roller_data["rollegrupper"]:
-                group_type = group.get("type", {}).get("kode")
-                for role in group.get("roller", []):
-                    role_type = role.get("type", {}).get("kode")
-                    person = role.get("person", {})
-                    name_dict = person.get("navn", {})
-                    first = name_dict.get("fornavn", "")
-                    last = name_dict.get("etternavn", "")
-                    full_name = f"{first} {last}".strip()
-
-                    if not full_name:
-                        continue
-
-                    if role_type == "DAGL" or group_type == "DAGL":
-                        ceo_names.append(full_name)
-                    elif role_type == "LEDE":
-                        chair_names.append(full_name)
+                if not is_own_company_domain(clean_dom, legal_name, orgnr, negative_external_entities):
+                    hjemmeside_is_shared = True
+                else:
+                    official_domains.append(clean_dom)
 
         return EntityAnchor(
             orgnr=orgnr,
@@ -165,7 +212,11 @@ class BrregClient:
             municipality=municipality,
             ceo_names=ceo_names,
             chair_names=chair_names,
+            positive_officers=positive_officers,
+            negative_external_entities=negative_external_entities,
             official_domains=official_domains,
+            external_role_entities=negative_external_entities,
+            hjemmeside_is_shared_manager=hjemmeside_is_shared,
         )
 
     def extract_registry_facts(
@@ -442,7 +493,7 @@ class BrregClient:
                                 evidence=roles_evidence,
                             )
                         )
-                    elif role_type == "LEDE":
+                    elif role_type == "LEDE" or group_type == "LEDE":
                         facts.append(
                             ExtractedFactCandidate(
                                 fact_key="governance.board_chair",
@@ -451,6 +502,58 @@ class BrregClient:
                                 evidence=roles_evidence,
                             )
                         )
+                    elif role_type == "MEDL" or group_type == "MEDL":
+                        facts.append(
+                            ExtractedFactCandidate(
+                                fact_key=f"governance.board_member.{full_name.lower().replace(' ', '_')}",
+                                value=full_name,
+                                category=FactCategory.GOVERNANCE,
+                                evidence=roles_evidence,
+                            )
+                        )
+
+                    # External service providers recorded with explicit external classification
+                    enh = role.get("enhet", {})
+                    enh_org = enh.get("organisasjonsnummer", "")
+                    raw_navn = enh.get("navn", "")
+                    enh_name = " ".join(raw_navn) if isinstance(raw_navn, list) else str(raw_navn)
+                    role_holder = enh_name or full_name
+
+                    if role_holder:
+                        val_dict = {"name": role_holder, "orgnr": enh_org, "type": "EXTERNAL_SERVICE_PROVIDER"}
+                        if role_type == "FFØR" or group_type == "FFØR":
+                            facts.append(
+                                ExtractedFactCandidate(
+                                    fact_key="governance.property_manager",
+                                    value=val_dict,
+                                    category=FactCategory.GOVERNANCE,
+                                    evidence=_make_evidence(
+                                        explanation=f"Registered external business manager (Forretningsfører: {role_holder})."
+                                    ),
+                                )
+                            )
+                        elif role_type == "REVI" or group_type == "REVI":
+                            facts.append(
+                                ExtractedFactCandidate(
+                                    fact_key="governance.auditor",
+                                    value=val_dict,
+                                    category=FactCategory.GOVERNANCE,
+                                    evidence=_make_evidence(
+                                        explanation=f"Registered external auditor (Revisor: {role_holder})."
+                                    ),
+                                )
+                            )
+                        elif role_type == "REGN" or group_type == "REGN":
+                            facts.append(
+                                ExtractedFactCandidate(
+                                    fact_key="governance.accountant",
+                                    value=val_dict,
+                                    category=FactCategory.GOVERNANCE,
+                                    evidence=_make_evidence(
+                                        explanation=f"Registered external accounting firm (Regnskapsfører: {role_holder})."
+                                    ),
+                                )
+                            )
 
         # 14. Subunits (Underenheter)
         if underenheter_data:

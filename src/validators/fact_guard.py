@@ -11,6 +11,98 @@ from typing import Any, List, Optional
 from src.validators.mod11 import extract_orgnrs_from_text, normalize_orgnr, try_normalize_orgnr
 
 
+SHARED_UMBRELLA_DOMAINS = {
+    # Housing managers & umbrella portals
+    "usbl.no", "obos.no", "nbbo.no", "bate.no", "tobb.no",
+    "vestbo.no", "bob.no", "bonord.no", "boalliansen.no", "garanti.no",
+    "bori.no", "nobl.no", "proff.no", "regnskapstall.no", "purehelp.no",
+    "1881.no", "gulesider.no", "finn.no", "linkedin.com", "facebook.com",
+    # Big-4 & major auditors
+    "pwc.no", "pwc.com", "ey.no", "ey.com", "deloitte.no", "deloitte.com",
+    "kpmg.no", "kpmg.com", "bdo.no", "rsm.no",
+    # Major accounting firms
+    "azets.no", "azets.com", "accountor.no", "aider.no", "sparebank1.no",
+}
+
+EXTERNAL_SERVICE_PROVIDERS_ROLES = {"FFØR", "REVI", "REGN"}
+
+# Known major external service providers in Norway:
+# FFØR (Forretningsfører)
+KNOWN_MANAGERS = {
+    "USBL", "BOLIGBYGGELAGET USBL", "OBOS", "OBOS BBL", "OBOS EIENDOMSFORVALTNING",
+    "NBBO", "BATE", "TOBB", "BOB", "VESTBO", "BONORD", "BOALLIANSEN",
+    "GARANTI", "BORI", "NOBL",
+}
+
+# REVI (Revisor - Big-4 and major auditors)
+KNOWN_AUDITORS = {
+    "PWC", "PRICEWATERHOUSECOOPERS", "EY", "ERNST & YOUNG", "DELOITTE",
+    "KPMG", "BDO", "RSM", "MOORE", "BDO ADVOKATER", "BDO AS",
+}
+
+# REGN (Regnskapsfører - Major accounting providers)
+KNOWN_ACCOUNTANTS = {
+    "AZETS", "AZETS INSIGHT", "ACCOUNTOR", "AIDER", "SPAREBANK 1 REGNSKAPSHUSET",
+    "ECIT", "VIEW LEDGER", "AMESTO",
+}
+
+KNOWN_EXTERNAL_SERVICE_PROVIDERS = KNOWN_MANAGERS | KNOWN_AUDITORS | KNOWN_ACCOUNTANTS
+
+
+def _extract_domain_root(domain: str) -> str:
+    """Extracts base name from domain, e.g. 'usbl.no' -> 'usbl', 'obos.no' -> 'obos'."""
+    clean = domain.lower().strip()
+    if clean.startswith("www."):
+        clean = clean[4:]
+    parts = clean.split(".")
+    return parts[0] if parts else clean
+
+
+def is_own_company_domain(
+    url: str,
+    canonical_name: str,
+    target_orgnr: str = "",
+    external_role_entities: Optional[List[Dict[str, str]]] = None,
+) -> bool:
+    """
+    Checks if a URL belongs to the target company's own verified web property,
+    strictly distinguishing it from shared property managers or umbrella portals.
+    """
+    if not url:
+        return False
+    try:
+        parsed = urllib.parse.urlparse(url if "://" in url else f"https://{url}")
+        host = (parsed.netloc or parsed.path).lower().split(":")[0]
+        if host.startswith("www."):
+            host = host[4:]
+    except Exception:
+        return False
+
+    if not host:
+        return False
+
+    name_lower = canonical_name.lower()
+
+    # Check if host matches any umbrella domain
+    for umbrella in SHARED_UMBRELLA_DOMAINS:
+        if host == umbrella or host.endswith(f".{umbrella}"):
+            umbrella_root = _extract_domain_root(umbrella)
+            # If the umbrella root is NOT an explicit part of canonical_name, reject as manager/umbrella domain
+            if umbrella_root not in name_lower:
+                return False
+
+    # Also check if host matches any manager/external service provider name in external_role_entities
+    if external_role_entities:
+        for ext in external_role_entities:
+            m_name = ext.get("navn", "").lower()
+            # Extract words of length >= 4 e.g. "bori", "usbl", "obos"
+            for word in re.findall(r"\b[a-z]{4,}\b", m_name):
+                if word in host and word not in name_lower:
+                    return False
+
+    return True
+
+
 def _normalize_whitespace(text: str) -> str:
     """Collapses consecutive whitespace characters into a single space and strips ends."""
     if not text:
@@ -28,7 +120,11 @@ class EntityAnchor:
     municipality: Optional[str] = None
     ceo_names: List[str] = field(default_factory=list)
     chair_names: List[str] = field(default_factory=list)
+    positive_officers: List[Dict[str, str]] = field(default_factory=list)
+    negative_external_entities: List[Dict[str, str]] = field(default_factory=list)
     official_domains: List[str] = field(default_factory=list)
+    external_role_entities: List[Dict[str, str]] = field(default_factory=list)
+    hjemmeside_is_shared_manager: bool = False
 
     @property
     def clean_legal_name(self) -> str:
@@ -52,6 +148,137 @@ class EntityAnchor:
         # Clean punctuation
         name = re.sub(r"[,\.-]+$", "", name).strip()
         return name if len(name) >= 3 else self.legal_name.upper()
+
+
+def verify_page_belongs_to_company(
+    target_orgnr: str,
+    canonical_name: str,
+    page_text: str,
+    external_role_entities: Optional[List[Dict[str, str]]] = None,
+    claim_text: Optional[str] = None,
+) -> Tuple[bool, str, float]:
+    """
+    Deterministic page-level entity verification gate preventing umbrella, manager,
+    auditor (Big-4), and accountant bleed:
+    
+    1. Identifies external service providers (FFØR=Manager, REVI=Auditor, REGN=Accountant,
+       plus SHARED_UMBRELLA_DOMAINS and KNOWN_EXTERNAL_SERVICE_PROVIDERS).
+    2. If any external service provider is mentioned on the page/snippet:
+       The item MUST be rejected UNLESS the target company's exact 9-digit orgnr
+       OR exact full legal canonical_name (including legal suffixes like BORETTSLAG,
+       SAMEIE, AS, ASA) appears within the same paragraph/card (within 250 characters
+       of the external provider or claim reference).
+    3. If no external provider is mentioned, standard deterministic gates apply:
+       - Exact 9-digit orgnr on page -> EXACT_ORGNR_MATCH (0.99)
+       - Exact full legal canonical name -> EXACT_COMPANY_NAME_MATCH (0.95)
+       - Otherwise -> MISSING_COMPANY_NAME_AND_ORGNR_ON_PAGE (0.0).
+    """
+    if not page_text:
+        return False, "EMPTY_PAGE_CONTENT", 0.0
+
+    norm_text = _normalize_whitespace(page_text)
+    upper_text = norm_text.upper()
+    clean_target_orgnr = "".join(filter(str.isdigit, target_orgnr))
+    spaced_orgnr = (
+        f"{clean_target_orgnr[:3]} {clean_target_orgnr[3:6]} {clean_target_orgnr[6:]}"
+        if len(clean_target_orgnr) == 9
+        else clean_target_orgnr
+    )
+
+    # Extract all valid Modulo-11 9-digit org numbers from page_text
+    extracted_orgnrs = extract_orgnrs_from_text(page_text)
+
+    # Build negative external provider identifiers (excluding target company's own tokens)
+    target_name_upper = canonical_name.upper()
+    external_provider_names: set = set()
+    external_provider_orgnrs: set = set()
+
+    if external_role_entities:
+        for ent in external_role_entities:
+            m_org = ent.get("orgnr", "").strip()
+            if m_org and m_org != clean_target_orgnr:
+                external_provider_orgnrs.add(m_org)
+            m_navn = ent.get("navn", "").strip()
+            if m_navn and len(m_navn) >= 3 and m_navn.upper() not in target_name_upper:
+                external_provider_names.add(m_navn.upper())
+
+    for prov in KNOWN_EXTERNAL_SERVICE_PROVIDERS:
+        if prov not in target_name_upper and len(prov) >= 3:
+            external_provider_names.add(prov)
+
+    for dom in SHARED_UMBRELLA_DOMAINS:
+        if dom in {"finn.no", "1881.no", "gulesider.no", "linkedin.com", "facebook.com", "proff.no", "purehelp.no", "regnskapstall.no"}:
+            if dom.upper() not in target_name_upper:
+                external_provider_names.add(dom.upper())
+        else:
+            root = _extract_domain_root(dom).upper()
+            if len(root) >= 3 and root not in target_name_upper:
+                external_provider_names.add(root)
+            if dom.upper() not in target_name_upper:
+                external_provider_names.add(dom.upper())
+
+    # Find spans of external service provider occurrences
+    provider_spans: List[Tuple[int, int]] = []
+    for prov in external_provider_names:
+        pattern = rf"(?<!\w){re.escape(prov)}(?!\w)"
+        for m in re.finditer(pattern, upper_text):
+            provider_spans.append(m.span())
+
+    for p_org in external_provider_orgnrs:
+        idx = upper_text.find(p_org)
+        while idx != -1:
+            provider_spans.append((idx, idx + len(p_org)))
+            idx = upper_text.find(p_org, idx + 1)
+
+    norm_canonical = _normalize_whitespace(canonical_name).upper()
+    canonical_pattern = rf"(?<!\w){re.escape(norm_canonical)}(?!\w)"
+
+    # Check if claim_text is provided to also check its span
+    if claim_text:
+        claim_norm = _normalize_whitespace(claim_text).upper()
+        c_idx = upper_text.find(claim_norm)
+        if c_idx != -1:
+            provider_spans.append((c_idx, c_idx + len(claim_norm)))
+
+    # Step: If any external service provider is mentioned, enforce strict 250-character window
+    if provider_spans:
+        corroborated_rule = None
+        for span_start, span_end in provider_spans:
+            w_start = max(0, span_start - 250)
+            w_end = min(len(upper_text), span_end + 250)
+            window = upper_text[w_start:w_end]
+
+            # Check if target orgnr is inside 250-character window
+            if clean_target_orgnr in window or spaced_orgnr in window:
+                corroborated_rule = "EXACT_ORGNR_MATCH"
+                break
+
+            # Check if exact full canonical name (preserving legal form) is inside 250-character window
+            if re.search(canonical_pattern, window):
+                corroborated_rule = "EXACT_COMPANY_NAME_MATCH"
+                break
+
+        if corroborated_rule == "EXACT_ORGNR_MATCH":
+            return True, "EXACT_ORGNR_MATCH", 0.99
+        elif corroborated_rule == "EXACT_COMPANY_NAME_MATCH":
+            return True, "EXACT_COMPANY_NAME_MATCH", 0.95
+        else:
+            return False, "REJECTED_MANAGER_OR_UMBRELLA_ENTITY_BLEED", 0.0
+
+    # Step: If no external service provider is mentioned on the page
+    target_in_text = (
+        clean_target_orgnr in norm_text
+        or spaced_orgnr in norm_text
+        or clean_target_orgnr in extracted_orgnrs
+    )
+    if target_in_text:
+        return True, "EXACT_ORGNR_MATCH", 0.99
+
+    has_exact_name = bool(re.search(canonical_pattern, upper_text))
+    if has_exact_name:
+        return True, "EXACT_COMPANY_NAME_MATCH", 0.95
+
+    return False, "MISSING_COMPANY_NAME_AND_ORGNR_ON_PAGE", 0.0
 
 
 @dataclass
@@ -99,6 +326,25 @@ class EntityVerificationGate:
         norm_text = _normalize_whitespace(raw_source_text)
         upper_text = norm_text.upper()
 
+        # Gate 0: Umbrella & Property Manager Entity Bleed Check
+        page_verified, page_rule, page_conf = verify_page_belongs_to_company(
+            target_orgnr=anchor.orgnr,
+            canonical_name=anchor.legal_name,
+            page_text=raw_source_text,
+            external_role_entities=anchor.external_role_entities,
+        )
+        if page_rule == "REJECTED_MANAGER_OR_UMBRELLA_ENTITY_BLEED":
+            return EntityVerificationResult(
+                is_verified=False,
+                rule="REJECTED_MANAGER_OR_UMBRELLA_ENTITY_BLEED",
+                confidence=0.0,
+                explanation=(
+                    f"Disqualified for Umbrella/Manager Entity Bleed: source content matches external property manager "
+                    f"or umbrella service provider without target company's exact orgnr ({anchor.orgnr}) "
+                    f"or full canonical legal name ({anchor.legal_name})."
+                ),
+            )
+
         # Gate 1: Exact 9-digit Orgnr Match in text
         if anchor.orgnr in norm_text:
             return EntityVerificationResult(
@@ -124,9 +370,11 @@ class EntityVerificationGate:
                 ),
             )
 
-        # Gate 2: Official Homepage Domain Match
+        # Gate 2: Official Homepage Domain Match (Excluding Shared Manager/Umbrella Domains)
         source_domain = cls._extract_domain(source_url)
-        if source_domain and anchor.official_domains:
+        is_own_domain = is_own_company_domain(source_url, anchor.legal_name, anchor.orgnr)
+
+        if source_domain and anchor.official_domains and not anchor.hjemmeside_is_shared_manager and is_own_domain:
             for official_domain in anchor.official_domains:
                 clean_official = cls._extract_domain(official_domain)
                 if not clean_official:
