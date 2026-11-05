@@ -1,0 +1,126 @@
+{
+  "orgnr": "923879595",
+  "run_timestamp": "2026-11-05T14:08:05.350929+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:08:05.350929+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2007 BARN ØVREBØ",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923879595"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:05.350929+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923879595"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:05.350929+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-11-23",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923879595"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:05.350929+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-10-07",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923879595"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:05.350929+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Åshild  Botnen Slettebrotan 92A",
+        "postal_code": "4715",
+        "city": "ØVREBØ",
+        "municipality": "VENNESLA",
+        "municipality_number": "4223",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923879595"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:05.350929+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923879595"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:05.350929+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923879595"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:05.350929+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Øystein Lie",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923879595"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:05.350929+00:00",
+      "fact_key": "governance.board_member.åshild_botnen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Åshild Botnen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923879595"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:05.350929+00:00",
+      "fact_key": "governance.board_member.helene_skaugerud",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Helene Skaugerud",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923879595"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:05.350929+00:00",
+      "fact_key": "governance.board_member.roger_larsen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Roger Larsen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923879595"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:05.350929+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "924037644",
+          "name": "2007 BARN ØVREBØ",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923879595"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

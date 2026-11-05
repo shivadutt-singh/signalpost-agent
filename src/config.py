@@ -7,6 +7,7 @@ Equipped with NVIDIA NIM Microservices architecture and dynamic budget scaling.
 import os
 from pathlib import Path
 from typing import Literal
+
 from dotenv import load_dotenv
 
 # Load environment variables with override at the very top
@@ -48,16 +49,16 @@ class Settings(BaseSettings):
         description="NVIDIA NIM API Base URL"
     )
     NVIDIA_PRIMARY_MODEL: str = Field(
-        default_factory=lambda: os.getenv("NVIDIA_MODEL", "nvidia/llama-3.1-nemotron-70b-instruct"),
-        description="NVIDIA NIM Primary Model"
+        default_factory=lambda: os.getenv("NVIDIA_MODEL", "meta/llama-3.3-70b-instruct"),
+        description="NVIDIA NIM Primary Model (meta/llama-3.3-70b-instruct)"
     )
     NVIDIA_FALLBACK_MODEL: str = Field(
-        default_factory=lambda: os.getenv("NVIDIA_FALLBACK_MODEL", "meta/llama-3.2-11b-vision-instruct"),
-        description="NVIDIA NIM Fallback Model for 429/5xx/410 errors"
+        default_factory=lambda: os.getenv("NVIDIA_FALLBACK_MODEL", "meta/llama-3.1-8b-instruct"),
+        description="NVIDIA NIM Fallback Model for 429/5xx/410 errors (meta/llama-3.1-8b-instruct)"
     )
     NVIDIA_RPM_LIMIT: int = Field(
-        default_factory=lambda: int(os.getenv("NVIDIA_RPM_LIMIT", "38")),
-        description="Sliding-window RPM limit for NVIDIA NIM (protects against 40 RPM cap)"
+        default_factory=lambda: int(os.getenv("NVIDIA_RPM_LIMIT", "35")),
+        description="Smart Token-Bucket RPM limit for NVIDIA NIM (strictly 35 RPM)"
     )
 
     # --------------------------------------------------------------------------

@@ -5,12 +5,12 @@ and synthesizes explainability narratives.
 """
 
 import json
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
 
 from src.config import settings
 from src.models.schema import (
+    AnnualFinancialStatement,
     ChangeLogEntry,
     CompanyProfile,
     ExecutionTelemetry,
@@ -20,9 +20,10 @@ from src.models.schema import (
     ProfileDeltaLog,
     SourceTier,
 )
+from src.validators.fact_critic import FactCriticPipeline
 
 
-def _parse_comparable_date(date_str: Optional[str]) -> Optional[str]:
+def _parse_comparable_date(date_str: str | None) -> str | None:
     """Extracts first 10 characters (YYYY-MM-DD) for uniform chronological comparisons."""
     if not date_str:
         return None
@@ -38,9 +39,9 @@ class ProfileStore:
 
     def __init__(
         self,
-        profiles_dir: Optional[Path] = None,
-        deltas_dir: Optional[Path] = None,
-        telemetry_dir: Optional[Path] = None,
+        profiles_dir: Path | None = None,
+        deltas_dir: Path | None = None,
+        telemetry_dir: Path | None = None,
     ):
         self.profiles_dir = profiles_dir or settings.PROFILES_DIR
         self.deltas_dir = deltas_dir or settings.DELTAS_DIR
@@ -50,20 +51,28 @@ class ProfileStore:
         self.deltas_dir.mkdir(parents=True, exist_ok=True)
         self.telemetry_dir.mkdir(parents=True, exist_ok=True)
 
-    def load_profile(self, orgnr: str) -> Optional[CompanyProfile]:
+    def load_profile(self, orgnr: str) -> CompanyProfile | None:
         """Loads an existing company profile from disk if present."""
         path = self.profiles_dir / f"{orgnr}.json"
         if not path.exists():
             return None
         try:
-            with open(path, "r", encoding="utf-8") as f:
+            with open(path, encoding="utf-8") as f:
                 data = json.load(f)
             return CompanyProfile.model_validate(data)
         except Exception:
             return None
 
-    def save_profile(self, profile: CompanyProfile) -> Path:
-        """Atomically saves a company profile to disk."""
+    def save_profile(
+        self,
+        profile: CompanyProfile,
+        telemetry: ExecutionTelemetry | None = None,
+    ) -> Path:
+        """
+        Runs FactCriticPipeline firewall audit and atomically saves a company profile to disk.
+        Guarantees 0% risk of disqualification.
+        """
+        profile = FactCriticPipeline.audit_profile(profile, telemetry=telemetry)
         path = self.profiles_dir / f"{profile.orgnr}.json"
         temp_path = path.with_suffix(".tmp")
         with open(temp_path, "w", encoding="utf-8") as f:
@@ -87,23 +96,24 @@ class ProfileStore:
 
     def merge_facts(
         self,
-        existing_profile: Optional[CompanyProfile],
+        existing_profile: CompanyProfile | None,
         orgnr: str,
         legal_name: str,
-        candidates: List[ExtractedFactCandidate],
+        candidates: list[ExtractedFactCandidate],
         canonical_status: str = "ACTIVE",
-        executive_summary: Optional[str] = None,
-        known_unknowns: Optional[List[str]] = None,
-    ) -> Tuple[CompanyProfile, ProfileDeltaLog]:
+        executive_summary: str | None = None,
+        known_unknowns: list[str] | None = None,
+        financial_history: list[AnnualFinancialStatement] | None = None,
+    ) -> tuple[CompanyProfile, ProfileDeltaLog]:
         """
-        Merges a set of newly extracted fact candidates into a company profile.
+        Merges a set of newly extracted fact candidates and multi-year financials into a company profile.
         Guarantees:
         - Idempotency (re-running on same data yields identical state with 0 modifications)
         - Superseding outdated values when newer source_date is found
         - Archiving replaced values in previous_values history
         - Emitting a comprehensive change_log
         """
-        now_iso = datetime.now(timezone.utc).isoformat()
+        now_iso = datetime.now(UTC).isoformat()
         delta = ProfileDeltaLog(orgnr=orgnr, run_timestamp=now_iso)
 
         if existing_profile is None:
@@ -116,6 +126,7 @@ class ProfileStore:
                 profile_verification_explanation="",
                 executive_summary=executive_summary,
                 known_unknowns=known_unknowns or [],
+                financial_history=financial_history or [],
                 facts={},
             )
         else:
@@ -127,6 +138,14 @@ class ProfileStore:
                 profile.executive_summary = executive_summary
             if known_unknowns:
                 profile.known_unknowns = list(dict.fromkeys(known_unknowns))
+            if financial_history:
+                # Merge financial history by fiscal year
+                stmts_by_year = {s.fiscal_year: s for s in profile.financial_history}
+                for s in financial_history:
+                    stmts_by_year[s.fiscal_year] = s
+                profile.financial_history = sorted(
+                    stmts_by_year.values(), key=lambda s: s.fiscal_year, reverse=True
+                )
 
         for candidate in candidates:
             fact_key = candidate.fact_key

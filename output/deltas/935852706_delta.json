@@ -1,0 +1,130 @@
+{
+  "orgnr": "935852706",
+  "run_timestamp": "2026-11-05T14:04:39.279633+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:04:39.279633+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "13B INTERACTIVE DA",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935852706"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:39.279633+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "DA",
+        "beskrivelse": "Ansvarlig selskap med delt ansvar"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935852706"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:39.279633+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-07-15",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935852706"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:39.279633+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-07-04",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935852706"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:39.279633+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Brattørveita 13B",
+        "postal_code": "7010",
+        "city": "TRONDHEIM",
+        "municipality": "TRONDHEIM",
+        "municipality_number": "5001",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935852706"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:39.279633+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "58.210",
+        "beskrivelse": "Utgivelse av programvare for dataspill"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935852706"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:39.279633+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Publisere dataspill.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935852706"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:39.279633+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "IN_LIQUIDATION",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935852706"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:39.279633+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "936233449",
+          "name": "13B INTERACTIVE DA",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935852706"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:39.279633+00:00",
+      "fact_key": "operations.corporate_event.20260000354182",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Oppløsning",
+        "date": "2026-06-08",
+        "kid": "20260000354182",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000354182&sokeverdi=935852706&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000354182&sokeverdi=935852706&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:39.279633+00:00",
+      "fact_key": "operations.corporate_event.20250000585372",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2025-07-15",
+        "kid": "20250000585372",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000585372&sokeverdi=935852706&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000585372&sokeverdi=935852706&spraak=nb"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

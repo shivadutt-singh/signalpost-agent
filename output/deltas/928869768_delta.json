@@ -1,0 +1,118 @@
+{
+  "orgnr": "928869768",
+  "run_timestamp": "2026-11-05T14:07:47.630241+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:07:47.630241+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2 RETT & 2 VRANG",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928869768"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:47.630241+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928869768"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:47.630241+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2022-03-04",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928869768"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:47.630241+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2022-02-02",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928869768"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:47.630241+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Havagul Duymaz Kuyu Lauritz Hervigs vei 164A",
+        "postal_code": "3035",
+        "city": "DRAMMEN",
+        "municipality": "DRAMMEN",
+        "municipality_number": "3301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928869768"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:47.630241+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928869768"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:47.630241+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928869768"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:47.630241+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Havagul Kuyu",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928869768"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:47.630241+00:00",
+      "fact_key": "governance.board_member.özlen_arikan",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Özlen Arikan",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928869768"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:47.630241+00:00",
+      "fact_key": "governance.board_member.rahsan_cetin",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Rahsan Cetin",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928869768"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:47.630241+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "928872939",
+          "name": "2 RETT & 2 VRANG",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928869768"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

@@ -1,0 +1,365 @@
+{
+  "orgnr": "954659623",
+  "legal_name": "1300 KJ ERLAND",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-11-05T14:04:25.949365+00:00",
+  "updated_at": "2026-11-05T14:04:25.949365+00:00",
+  "schema_version": "2.0.0",
+  "profile_verification_explanation": "Enterprise profile for 1300 KJ ERLAND (orgnr: 954659623) deterministically verified. 14 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "1300 KJ ERLAND is a registered Norwegian enterprise located in TIME governed under enterprise number 954659623. Registration records confirm corporate standing with active leadership under Executive Board. Unfiled interim quarterly results, private partner contracts, and internal headcount fluctuations remain unconfirmed from public records.",
+  "known_unknowns": [
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 954659623. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret."
+  ],
+  "financial_history": [],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "1300 KJ ERLAND",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954659623",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-19",
+        "retrieval_timestamp": "2026-11-05T14:04:14.105178+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '1300 KJ ERLAND'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954659623",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-19",
+        "retrieval_timestamp": "2026-11-05T14:04:14.105178+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form ENK (Enkeltpersonforetak)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "1995-02-19",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954659623",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-19",
+        "retrieval_timestamp": "2026-11-05T14:04:14.105178+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Hetlandsgata 14",
+        "postal_code": "4344",
+        "city": "BRYNE",
+        "municipality": "TIME",
+        "municipality_number": "1121",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954659623",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-19",
+        "retrieval_timestamp": "2026-11-05T14:04:14.105178+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in BRYNE."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "23.410",
+        "beskrivelse": "Produksjon av keramiske husholdningsartikler og dekorasjonsgjenstander"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954659623",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-19",
+        "retrieval_timestamp": "2026-11-05T14:04:14.105178+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 23.410: Produksjon av keramiske husholdningsartikler og dekorasjonsgjenstander)."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954659623",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-19",
+        "retrieval_timestamp": "2026-11-05T14:04:14.105178+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    },
+    "structure.subunits": {
+      "fact_key": "structure.subunits",
+      "current_value": [
+        {
+          "orgnr": "975161021",
+          "name": "SMIÅ KERAMIKK",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "category": "structure",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954659623",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-19",
+        "retrieval_timestamp": "2026-11-05T14:04:14.105178+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Registered active operational sub-units count: 1."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20120000478065": {
+      "fact_key": "operations.corporate_event.20120000478065",
+      "current_value": {
+        "title": "Rettelse av forretningsadresse",
+        "date": "2012-10-06",
+        "kid": "20120000478065",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20120000478065&sokeverdi=954659623&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20120000478065&sokeverdi=954659623&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2012-10-06",
+        "retrieval_timestamp": "2026-11-05T14:04:25.948683+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2012-10-06): Rettelse av forretningsadresse (KID: 20120000478065, Orgnr: 954659623)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Rettelse av forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 954659623)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20110000560307": {
+      "fact_key": "operations.corporate_event.20110000560307",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2011-12-03",
+        "kid": "20110000560307",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20110000560307&sokeverdi=954659623&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20110000560307&sokeverdi=954659623&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2011-12-03",
+        "retrieval_timestamp": "2026-11-05T14:04:25.948683+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2011-12-03): Forretningsadresse (KID: 20110000560307, Orgnr: 954659623)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 954659623)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20070000061762": {
+      "fact_key": "operations.corporate_event.20070000061762",
+      "current_value": {
+        "title": "Rettelse av forretningsadresse",
+        "date": "2007-03-13",
+        "kid": "20070000061762",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20070000061762&sokeverdi=954659623&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20070000061762&sokeverdi=954659623&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2007-03-13",
+        "retrieval_timestamp": "2026-11-05T14:04:25.948683+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2007-03-13): Rettelse av forretningsadresse (KID: 20070000061762, Orgnr: 954659623)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Rettelse av forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 954659623)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20060000262396": {
+      "fact_key": "operations.corporate_event.20060000262396",
+      "current_value": {
+        "title": "Virksomhet/bransje",
+        "date": "2006-07-11",
+        "kid": "20060000262396",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000262396&sokeverdi=954659623&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000262396&sokeverdi=954659623&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2006-07-11",
+        "retrieval_timestamp": "2026-11-05T14:04:25.948683+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2006-07-11): Virksomhet/bransje (KID: 20060000262396, Orgnr: 954659623)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Virksomhet/bransje' verified from Brønnøysundregistrene Kunngjøringer (orgnr 954659623)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20060000262395": {
+      "fact_key": "operations.corporate_event.20060000262395",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2006-07-11",
+        "kid": "20060000262395",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000262395&sokeverdi=954659623&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000262395&sokeverdi=954659623&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2006-07-11",
+        "retrieval_timestamp": "2026-11-05T14:04:25.948683+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2006-07-11): Forretningsadresse (KID: 20060000262395, Orgnr: 954659623)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 954659623)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20060000262394": {
+      "fact_key": "operations.corporate_event.20060000262394",
+      "current_value": {
+        "title": "Foretaksnavn",
+        "date": "2006-07-11",
+        "kid": "20060000262394",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000262394&sokeverdi=954659623&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000262394&sokeverdi=954659623&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2006-07-11",
+        "retrieval_timestamp": "2026-11-05T14:04:25.948683+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2006-07-11): Foretaksnavn (KID: 20060000262394, Orgnr: 954659623)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Foretaksnavn' verified from Brønnøysundregistrene Kunngjøringer (orgnr 954659623)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20060000206429": {
+      "fact_key": "operations.corporate_event.20060000206429",
+      "current_value": {
+        "title": "Rettelse av forretningsadresse",
+        "date": "2006-06-13",
+        "kid": "20060000206429",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000206429&sokeverdi=954659623&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000206429&sokeverdi=954659623&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2006-06-13",
+        "retrieval_timestamp": "2026-11-05T14:04:25.948683+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2006-06-13): Rettelse av forretningsadresse (KID: 20060000206429, Orgnr: 954659623)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Rettelse av forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 954659623)."
+      },
+      "previous_values": []
+    }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 14,
+    "critic_facts_quarantined": 0
+  },
+  "metadata": {}
+}

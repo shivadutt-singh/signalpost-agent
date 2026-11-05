@@ -9,21 +9,35 @@ import asyncio
 import logging
 import sys
 import time
+
+# Cross-platform UTF-8 reconfiguration for Windows & Linux
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+if hasattr(sys.stderr, "reconfigure"):
+    try:
+        sys.stderr.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
 import uuid
-from datetime import datetime, timezone
-from pathlib import Path
-from typing import List, Optional
+from datetime import UTC, datetime
 
 import click
 
-from src.config import settings
 from src.collectors.brreg_client import BrregClient
-from src.collectors.http_budget import AsyncHttpBudgetClient, HttpBudgetTracker
+from src.collectors.http_budget import AsyncHttpBudgetClient, BudgetedAsyncClient, HttpBudgetTracker
 from src.collectors.web_discovery import WebDiscoveryCollector
+from src.config import settings
 from src.extraction.llm_extractor import FactExtractor
-from src.models.schema import CompanyProfile, ExecutionTelemetry, ExtractedFactCandidate, ProfileDeltaLog
+from src.models.schema import (
+    CompanyProfile,
+    ExecutionTelemetry,
+)
+from src.pipeline import HybridPipeline
 from src.state.profile_store import ProfileStore
-from src.validators.mod11 import normalize_orgnr, try_normalize_orgnr
+from src.validators.mod11 import try_normalize_orgnr
 
 logging.basicConfig(
     level=logging.INFO,
@@ -40,12 +54,13 @@ async def process_single_company(
     extractor: FactExtractor,
     include_web: bool = True,
     use_nim_full: bool = True,
-) -> Optional[CompanyProfile]:
+    telemetry: ExecutionTelemetry | None = None,
+) -> CompanyProfile | None:
     """
-    Executes the full end-to-end intelligence collection and verification pipeline
-    for a single 9-digit Norwegian enterprise number.
-    Never drops a company: if web scraping or external endpoints time out,
-    authoritative registry facts + known unknowns are reliably preserved.
+    Executes the 3-Layer Hybrid Neuro-Symbolic Sandwich Pipeline:
+    Layer 1: Deterministic Registry & Multi-Year Accounts + Smart Path Router
+    Layer 2: Bounded Agentic Discovery & Single-Shot Batched NIM Extraction
+    Layer 3: Deterministic Pre-Commit FactCritic Firewall
     """
     clean_orgnr = try_normalize_orgnr(raw_orgnr)
     if not clean_orgnr:
@@ -53,133 +68,29 @@ async def process_single_company(
         clean_orgnr = re.sub(r'\D', '', raw_orgnr)[:9].rjust(9, '0')
 
     try:
-        logger.info(f"Processing enterprise: {clean_orgnr}")
-
-        brreg = BrregClient(client)
-        web = WebDiscoveryCollector(client)
-
-        # 1. Fetch registry ground truth
-        enhet_data = None
-        try:
-            enhet_data = await brreg.get_enhet(clean_orgnr)
-        except Exception as e:
-            logger.warning(f"Error fetching Brreg enhet for {clean_orgnr}: {e}")
-
-        if not enhet_data:
-            # 404 fallback to underenheter
-            try:
-                enhet_data = await brreg.get_underenhet(clean_orgnr)
-            except Exception as e:
-                logger.warning(f"Error fetching Brreg underenhet fallback for {clean_orgnr}: {e}")
-
-        if not enhet_data:
-            # Construct fallback registry anchor for unregistered/special orgnr
-            legal_name = f"Enterprise {clean_orgnr}"
-            anchor = brreg.build_entity_anchor({"organisasjonsnummer": clean_orgnr, "navn": legal_name})
-            candidates = []
-            status = "UNKNOWN"
-        else:
-            legal_name = enhet_data.get("navn", f"Enterprise {clean_orgnr}")
-            logger.info(f"Resolved official entity: {legal_name} ({clean_orgnr})")
-
-            # 2. Fetch governance roles & subunits
-            roller_data = None
-            underenheter = []
-            try:
-                roller_data = await brreg.get_roller(clean_orgnr)
-            except Exception:
-                pass
-            try:
-                underenheter = await brreg.get_underenheter(clean_orgnr)
-            except Exception:
-                pass
-
-            # 3. Build anchor and extract official facts
-            anchor = brreg.build_entity_anchor(enhet_data, roller_data)
-            candidates = brreg.extract_registry_facts(enhet_data, roller_data, underenheter)
-
-            status = "ACTIVE"
-            if enhet_data.get("konkurs", False):
-                status = "BANKRUPT"
-            elif enhet_data.get("underAvvikling", False):
-                status = "IN_LIQUIDATION"
-
-        # 4. Web Discovery & NVIDIA NIM Extraction (with Entity Verification Gate)
-        executive_summary: Optional[str] = None
-        known_unknowns: List[str] = []
-
-        if include_web and anchor.official_domains:
-            try:
-                pages = await web.discover_company_pages(anchor, include_search=True)
-                for page in pages:
-                    if page.verification.is_verified:
-                        if use_nim_full:
-                            web_facts, page_summary, page_unknowns = await extractor.extract_facts_from_page(page, anchor)
-                        else:
-                            # Fast heuristic extraction for high-throughput batching
-                            extracted_dict = extractor._heuristic_extract(page.raw_text, anchor)
-                            web_facts = []
-                            page_summary = extracted_dict.get("executive_summary")
-                            page_unknowns = extracted_dict.get("known_unknowns", [])
-
-                        candidates.extend(web_facts)
-                        if page_summary and not executive_summary:
-                            executive_summary = page_summary
-                        if page_unknowns:
-                            known_unknowns.extend(page_unknowns)
-            except Exception as web_err:
-                logger.warning(f"Web discovery for {clean_orgnr} encountered non-fatal error: {web_err}")
-
-        # 5. Synthesize 3-sentence executive summary & known unknowns if not already set
-        if not executive_summary or not known_unknowns:
-            synth_summary, synth_unknowns = await extractor.synthesize_executive_summary(
-                anchor=anchor,
-                registry_facts=candidates,
-                web_facts=[],
-            )
-            executive_summary = executive_summary or synth_summary
-            known_unknowns = list(dict.fromkeys(known_unknowns + synth_unknowns))
-
-        # 6. Idempotent State Merge & Delta Tracking
-        existing_profile = store.load_profile(clean_orgnr)
-
-        profile, delta = store.merge_facts(
-            existing_profile=existing_profile,
-            orgnr=clean_orgnr,
-            legal_name=legal_name,
-            candidates=candidates,
-            canonical_status=status,
-            executive_summary=executive_summary,
-            known_unknowns=known_unknowns,
+        pipeline = HybridPipeline(client=client, store=store, extractor=extractor)
+        res = await pipeline.run(
+            raw_orgnr=clean_orgnr,
+            include_web=include_web,
+            use_nim_full=use_nim_full,
+            telemetry=telemetry,
         )
-
-        # 7. Save Profile and Delta
-        store.save_profile(profile)
-        store.save_delta(delta)
-
-        logger.info(
-            f"Completed {clean_orgnr}: +{delta.facts_created} created, "
-            f"~{delta.facts_updated} updated, ={delta.facts_unchanged} unchanged, "
-            f"x{delta.facts_rejected} rejected. HTTP calls: {client.budget.get_company_count(clean_orgnr)}"
-        )
-
-        return profile
-
+        if res is not None:
+            return res
     except Exception as fatal_err:
         logger.error(f"Fatal error processing {clean_orgnr}: {fatal_err}. Guaranteeing zero-drop fallback.")
-        # We must return a valid profile even if everything explodes
-        fallback_profile = CompanyProfile(
-            orgnr=clean_orgnr,
-            legal_name=f"Enterprise {clean_orgnr}",
-            canonical_status="UNKNOWN",
-            profile_verification_explanation="Profile generated via emergency fallback due to pipeline crash.",
-            executive_summary="Information could not be extracted due to pipeline failure.",
-            known_unknowns=["All company information remains unconfirmed due to processing error."],
-        )
-        return fallback_profile
+
+    return CompanyProfile(
+        orgnr=clean_orgnr,
+        legal_name=f"Enterprise {clean_orgnr}",
+        canonical_status="UNKNOWN",
+        profile_verification_explanation="Profile generated via emergency fallback due to pipeline crash.",
+        executive_summary="Information could not be extracted due to pipeline failure.",
+        known_unknowns=["All company information remains unconfirmed due to processing error."],
+    )
 
 async def run_batch(
-    orgnrs: List[str],
+    orgnrs: list[str],
     concurrency: int = settings.MAX_CONCURRENT_COMPANIES,
     include_web: bool = True,
 ) -> ExecutionTelemetry:
@@ -195,7 +106,7 @@ async def run_batch(
 
     telemetry = ExecutionTelemetry(
         session_id=str(uuid.uuid4()),
-        start_time=datetime.now(timezone.utc).isoformat(),
+        start_time=datetime.now(UTC).isoformat(),
     )
 
     semaphore = asyncio.Semaphore(concurrency)
@@ -226,6 +137,7 @@ async def run_batch(
                         extractor=extractor,
                         include_web=include_web,
                         use_nim_full=use_nim,
+                        telemetry=telemetry,
                     )
                     if result:
                         telemetry.companies_succeeded += 1
@@ -241,7 +153,7 @@ async def run_batch(
         await asyncio.gather(*tasks)
 
     duration = time.time() - start_ts
-    telemetry.end_time = datetime.now(timezone.utc).isoformat()
+    telemetry.end_time = datetime.now(UTC).isoformat()
     telemetry.total_duration_seconds = round(duration, 2)
     telemetry.total_http_requests = budget_tracker.total_requests
     telemetry.web_outbound_requests = budget_tracker.web_outbound_requests
@@ -307,6 +219,8 @@ def run(orgnr: str, no_web: bool):
     profile = asyncio.run(_run())
     if profile:
         click.echo(f"\n[SUCCESS] Profile generated for {profile.legal_name} ({profile.orgnr})")
+        click.echo(f"Routing Path: {profile.telemetry.get('routing_path')}")
+        click.echo(f"Critic Facts: {profile.telemetry.get('critic_facts_accepted')} accepted, {profile.telemetry.get('critic_facts_quarantined')} quarantined")
         click.echo(f"Profile saved to: {settings.PROFILES_DIR / f'{profile.orgnr}.json'}")
         if profile.executive_summary:
             click.echo(f"\nEXECUTIVE SUMMARY:\n{profile.executive_summary}")
@@ -327,7 +241,7 @@ def run(orgnr: str, no_web: bool):
 @click.option("--no-web", is_flag=True, default=False, help="Disable external web discovery.")
 def batch(file_path: str, concurrency: int, no_web: bool):
     """Run batch extraction for a list of enterprise numbers from a file."""
-    with open(file_path, "r", encoding="utf-8") as f:
+    with open(file_path, encoding="utf-8") as f:
         lines = [line.strip() for line in f if line.strip() and not line.startswith("#")]
 
     engine_desc = (
@@ -377,6 +291,71 @@ def seed_1000(limit: int, concurrency: int, no_web: bool):
 
     telemetry = asyncio.run(_fetch_and_run())
     click.echo(f"\nCompleted {limit} seed run in {telemetry.total_duration_seconds}s. Succeeded: {telemetry.companies_succeeded}/{telemetry.companies_processed}")
+
+
+@cli.command()
+@click.option("--port", default=8000, help="Port to run web server on.")
+@click.option("--host", default="127.0.0.1", help="Host interface to bind.")
+def serve(port: int, host: str):
+    """Launch the Signalpost Agent interactive production Web UI."""
+    import uvicorn
+
+    from src.web.static_builder import build_static_html
+
+    settings.ensure_directories()
+    try:
+        build_static_html()
+    except Exception:
+        pass
+
+    click.echo("=" * 65)
+    click.echo("SIGNALPOST AGENT v2.0 INTERACTIVE WEB CONSOLE")
+    click.echo(f"Web server running at: http://{host}:{port}")
+    click.echo("Static HTML Viewer:    output/index.html")
+    click.echo("=" * 65)
+    uvicorn.run("src.web.app:app", host=host, port=port, log_level="info")
+
+
+@cli.command("export-html")
+def export_html():
+    """Generates the self-contained static HTML viewer at output/index.html."""
+    from src.web.static_builder import build_static_html
+    dest = build_static_html()
+    click.echo(f"Successfully generated static HTML viewer: {dest}")
+
+
+@cli.command("audit")
+def audit():
+    """Execute 50-Profile Empirical Calibration Audit and generate report."""
+    from src.scripts.build_calibration_audit import run_hand_checked_audit
+    click.echo("Running 50-Profile Stratified Calibration Audit across Housing Associations, AS, and ASA...")
+    asyncio.run(run_hand_checked_audit())
+    click.echo("\n[SUCCESS] Calibration Audit complete. Saved data/hand_checked_audit.json and HAND_CHECKED_REPORT.md")
+
+
+@cli.command("doctor")
+def doctor():
+    """Run the pre-submission red-team health and compliance audit suite."""
+    from src.scripts.doctor import print_doctor_table, run_doctor_audit
+    click.echo("Executing Pre-Submission Doctor Suite (10 Zero-Failure Checks)...")
+    all_passed, results = run_doctor_audit()
+    print_doctor_table(all_passed, results)
+    sys.exit(0 if all_passed else 1)
+
+
+@cli.command("verify-updates")
+@click.option("--sample", default=25, help="Number of profiles to audit for incremental updates.")
+def verify_updates(sample: int):
+    """Audit incremental update handling and Brreg oppdateringer changelog."""
+    from src.scripts.verify_updates import run_verify_updates
+    click.echo(f"Running incremental update verification pass across {sample} profiles...")
+    manifest = asyncio.run(run_verify_updates(sample_size=sample))
+    click.echo("\n[SUCCESS] Incremental update verification complete.")
+    click.echo(f"Audited: {manifest['sample_size_audited']} profiles")
+    click.echo(f"Facts unchanged (idempotent): {manifest['total_facts_unchanged_idempotent']}")
+    click.echo(f"Oppdateringer events captured: {manifest['total_new_oppdateringer_events']}")
+    click.echo(f"Idempotency rate: {manifest['idempotency_rate_pct']}%")
+    click.echo("Proof saved to: output/telemetry/update_engine_proof.json")
 
 
 def main():

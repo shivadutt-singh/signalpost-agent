@@ -1,0 +1,708 @@
+{
+  "orgnr": "995568217",
+  "legal_name": "GJENSIDIGE FORSIKRING ASA",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-11-05T07:32:30.403490+00:00",
+  "updated_at": "2026-11-05T12:25:19.744304+00:00",
+  "schema_version": "2.0.0",
+  "profile_verification_explanation": "Enterprise profile for GJENSIDIGE FORSIKRING ASA (orgnr: 995568217) deterministically verified. 29 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "GJENSIDIGE FORSIKRING ASA (orgnr 995568217) is a registered ASA based in OSLO.",
+  "known_unknowns": [
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 995568217. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret.",
+    "Active job listings: Checked official website (gjensidige.no) and official NAV public job feed on 2026-11-05; 0 active openings verified featuring the company's legal name or exact orgnr."
+  ],
+  "financial_history": [],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "GJENSIDIGE FORSIKRING ASA",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T07:32:22.624413+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name 'GJENSIDIGE FORSIKRING ASA'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "ASA",
+        "beskrivelse": "Allmennaksjeselskap"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T07:32:22.624413+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form ASA (Allmennaksjeselskap)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2010-06-28",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T07:32:22.624413+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "registry.founding_date": {
+      "fact_key": "registry.founding_date",
+      "current_value": "2010-04-23",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T07:32:22.624413+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official founding date (stiftelsesdato) recorded in registry."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Schweigaards gate 21",
+        "postal_code": "0191",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T07:32:22.624413+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in OSLO."
+      },
+      "previous_values": []
+    },
+    "contact.website": {
+      "fact_key": "contact.website",
+      "current_value": "www.gjensidige.no",
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T07:32:22.624413+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary homepage domain declared to registry: www.gjensidige.no."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "65.120",
+        "beskrivelse": "Skadeforsikring"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T07:32:22.624413+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 65.120: Skadeforsikring)."
+      },
+      "previous_values": []
+    },
+    "operations.employee_count": {
+      "fact_key": "operations.employee_count",
+      "current_value": 2314,
+      "category": "operations",
+      "unit": "count",
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T07:32:22.624413+00:00",
+        "verbatim_quote": "2314",
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official reported employee count (2314) from NAV Aa-registeret cross-reference."
+      },
+      "previous_values": []
+    },
+    "financial.latest_accounts_year": {
+      "fact_key": "financial.latest_accounts_year",
+      "current_value": "2025",
+      "category": "financial",
+      "unit": null,
+      "period_or_year": "2025",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T07:32:22.624413+00:00",
+        "verbatim_quote": "2025",
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Latest annual accounts year filed with Regnskapsregisteret: 2025."
+      },
+      "previous_values": []
+    },
+    "financial.share_capital": {
+      "fact_key": "financial.share_capital",
+      "current_value": 1000000000.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T07:32:22.624413+00:00",
+        "verbatim_quote": "1000000000.0",
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered equity share capital: 1,000,000,000.00 NOK. (500,000,000 shares)."
+      },
+      "previous_values": []
+    },
+    "operations.statutory_purpose": {
+      "fact_key": "operations.statutory_purpose",
+      "current_value": "Å dekke kundenes trygghetsbehov ved å tilby konkurransedyktige forsikringsprodukter og andre tjenester som naturlig henger sammen med dette. Selskapet kan utøve enhver form for virksomhet som er lovlig for skadeforsikringsselskap, herunder: a) indirekte skade- og livsforsikring, b) overta rene risikoforsikringer av høyst ett års varighet i livsforsikring, c) eie selskap som driver skadeforsikrings- , livsforsikrings, bank-, finansierings- og verdipapirvirksomhet, d) overta risikoforsikringer og gjenforsikringer innen livsforsikring i den grad loven tillater det, og annen virksomhet som  naturlig henger sammen med dette.",
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T07:32:22.624413+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Statutory purpose registered in articles of association."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T07:32:22.624413+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    },
+    "governance.ceo": {
+      "fact_key": "governance.ceo",
+      "current_value": "Geir Holmgren",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T07:32:22.624413+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_chair": {
+      "fact_key": "governance.board_chair",
+      "current_value": "Dag Mejdell",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T07:32:22.624413+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "structure.subunits": {
+      "fact_key": "structure.subunits",
+      "current_value": [
+        {
+          "orgnr": "923013857",
+          "name": "GJENSIDIGE FORSIKRING ASA AVD MUNKEDAMSVEIEN",
+          "employees": null,
+          "municipality": null
+        },
+        {
+          "orgnr": "823495072",
+          "name": "GJENSIDIGE FORSIKRING ASA AVD MUNKEDAMSVEIEN ANDRE TJENESTER",
+          "employees": null,
+          "municipality": null
+        },
+        {
+          "orgnr": "928963241",
+          "name": "GJENSIDIGE FORSIKRING ASA AVD TRONDHEIM NR 2",
+          "employees": 7,
+          "municipality": null
+        },
+        {
+          "orgnr": "931129724",
+          "name": "GJENSIDIGE FORSIKRING ASA AVD VINSTRA",
+          "employees": null,
+          "municipality": null
+        },
+        {
+          "orgnr": "928311880",
+          "name": "GJENSIDIGE FORSIKRING AVD ARENDAL",
+          "employees": null,
+          "municipality": null
+        },
+        {
+          "orgnr": "973114220",
+          "name": "GJENSIDIGE FORSIKRING AVD BODØ",
+          "employees": 7,
+          "municipality": null
+        },
+        {
+          "orgnr": "922921598",
+          "name": "GJENSIDIGE FORSIKRING AVD BRUMUNDDAL",
+          "employees": 89,
+          "municipality": null
+        },
+        {
+          "orgnr": "973114239",
+          "name": "GJENSIDIGE FORSIKRING AVD DRAMMEN",
+          "employees": 14,
+          "municipality": null
+        },
+        {
+          "orgnr": "936868916",
+          "name": "GJENSIDIGE FORSIKRING AVD FAGERNES",
+          "employees": null,
+          "municipality": null
+        },
+        {
+          "orgnr": "973083066",
+          "name": "GJENSIDIGE FORSIKRING AVD FREDRIKSTAD",
+          "employees": 146,
+          "municipality": null
+        }
+      ],
+      "category": "structure",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T07:32:22.624413+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Registered active operational sub-units count: 10."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000491829": {
+      "fact_key": "operations.corporate_event.20260000491829",
+      "current_value": {
+        "title": "Erverv av egne aksjer-fullmakt",
+        "date": "2026-07-03",
+        "kid": "20260000491829",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000491829&sokeverdi=995568217&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000491829&sokeverdi=995568217&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-07-03",
+        "retrieval_timestamp": "2026-11-05T07:32:23.721133+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-07-03): Erverv av egne aksjer-fullmakt (KID: 20260000491829, Orgnr: 995568217)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Erverv av egne aksjer-fullmakt' verified from Brønnøysundregistrene Kunngjøringer (orgnr 995568217)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000462959": {
+      "fact_key": "operations.corporate_event.20260000462959",
+      "current_value": {
+        "title": "Gjennomføring av fusjon",
+        "date": "2026-07-01",
+        "kid": "20260000462959",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000462959&sokeverdi=995568217&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000462959&sokeverdi=995568217&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-07-01",
+        "retrieval_timestamp": "2026-11-05T07:32:23.721133+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-07-01): Gjennomføring av fusjon (KID: 20260000462959, Orgnr: 995568217)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Gjennomføring av fusjon' verified from Brønnøysundregistrene Kunngjøringer (orgnr 995568217)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000186289": {
+      "fact_key": "operations.corporate_event.20260000186289",
+      "current_value": {
+        "title": "Godkjent årsregnskap med bærekraftsrapportering",
+        "date": "2026-04-20",
+        "kid": "20260000186289",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000186289&sokeverdi=995568217&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000186289&sokeverdi=995568217&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-04-20",
+        "retrieval_timestamp": "2026-11-05T07:32:23.721133+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-04-20): Godkjent årsregnskap med bærekraftsrapportering (KID: 20260000186289, Orgnr: 995568217)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Godkjent årsregnskap med bærekraftsrapportering' verified from Brønnøysundregistrene Kunngjøringer (orgnr 995568217)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000148793": {
+      "fact_key": "operations.corporate_event.20260000148793",
+      "current_value": {
+        "title": "Utdeling av utbytte - fullmakt",
+        "date": "2026-03-30",
+        "kid": "20260000148793",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000148793&sokeverdi=995568217&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000148793&sokeverdi=995568217&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-03-30",
+        "retrieval_timestamp": "2026-11-05T07:32:23.721133+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-03-30): Utdeling av utbytte - fullmakt (KID: 20260000148793, Orgnr: 995568217)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Utdeling av utbytte - fullmakt' verified from Brønnøysundregistrene Kunngjøringer (orgnr 995568217)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000148792": {
+      "fact_key": "operations.corporate_event.20260000148792",
+      "current_value": {
+        "title": "Fullmakt kapitalforhøyelse",
+        "date": "2026-03-30",
+        "kid": "20260000148792",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000148792&sokeverdi=995568217&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000148792&sokeverdi=995568217&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-03-30",
+        "retrieval_timestamp": "2026-11-05T07:32:23.721133+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-03-30): Fullmakt kapitalforhøyelse (KID: 20260000148792, Orgnr: 995568217)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Fullmakt kapitalforhøyelse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 995568217)."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.gunnar_robert_sellæg": {
+      "fact_key": "governance.board_member.gunnar_robert_sellæg",
+      "current_value": "Gunnar Robert Sellæg",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.gyrid_ingerø": {
+      "fact_key": "governance.board_member.gyrid_ingerø",
+      "current_value": "Gyrid Ingerø",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.mari_thjømøe": {
+      "fact_key": "governance.board_member.mari_thjømøe",
+      "current_value": "Mari Thjømøe",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.nils_jakob_røsholt": {
+      "fact_key": "governance.board_member.nils_jakob_røsholt",
+      "current_value": "Nils Jakob Røsholt",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.simona_trombetta": {
+      "fact_key": "governance.board_member.simona_trombetta",
+      "current_value": "Simona Trombetta",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.tor_magne_lønnum": {
+      "fact_key": "governance.board_member.tor_magne_lønnum",
+      "current_value": "Tor Magne Lønnum",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.ellen_kristin_enger": {
+      "fact_key": "governance.board_member.ellen_kristin_enger",
+      "current_value": "Ellen Kristin Enger",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.ruben_pettersen": {
+      "fact_key": "governance.board_member.ruben_pettersen",
+      "current_value": "Ruben Pettersen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.sebastian_buur_kristiansen": {
+      "fact_key": "governance.board_member.sebastian_buur_kristiansen",
+      "current_value": "Sebastian Buur Kristiansen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 0,
+    "critic_facts_quarantined": 0
+  },
+  "metadata": {}
+}

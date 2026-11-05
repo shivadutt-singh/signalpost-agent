@@ -1,0 +1,86 @@
+{
+  "orgnr": "927707888",
+  "run_timestamp": "2026-11-05T14:06:34.177141+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:34.177141+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1ST DAAW RØGEBERG",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927707888"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:34.177141+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927707888"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:34.177141+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-09-11",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927707888"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:34.177141+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Strandvegen 23",
+        "postal_code": "9007",
+        "city": "TROMSØ",
+        "municipality": "TROMSØ",
+        "municipality_number": "5501",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927707888"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:34.177141+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "68.200",
+        "beskrivelse": "Utleie av egen eller leid fast eiendom"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927707888"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:34.177141+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927707888"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:34.177141+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "927920816",
+          "name": "1ST DAAW RØGEBERG",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927707888"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

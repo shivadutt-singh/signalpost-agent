@@ -1,0 +1,364 @@
+{
+  "orgnr": "970923780",
+  "legal_name": "1MOMENT H MILLER",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-11-05T14:06:30.505561+00:00",
+  "updated_at": "2026-11-05T14:06:30.505561+00:00",
+  "schema_version": "2.0.0",
+  "profile_verification_explanation": "Enterprise profile for 1MOMENT H MILLER (orgnr: 970923780) deterministically verified. 14 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "1MOMENT H MILLER is a registered Norwegian enterprise located in BÆRUM governed under enterprise number 970923780. Registration records confirm corporate standing with active leadership under Executive Board. Unfiled interim quarterly results, private partner contracts, and internal headcount fluctuations remain unconfirmed from public records.",
+  "known_unknowns": [
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 970923780. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret."
+  ],
+  "financial_history": [],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "1MOMENT H MILLER",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970923780",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-20",
+        "retrieval_timestamp": "2026-11-05T14:06:28.298978+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '1MOMENT H MILLER'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970923780",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-20",
+        "retrieval_timestamp": "2026-11-05T14:06:28.298978+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form ENK (Enkeltpersonforetak)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "1995-02-20",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970923780",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-20",
+        "retrieval_timestamp": "2026-11-05T14:06:28.298978+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Horniveien 12",
+        "postal_code": "1339",
+        "city": "VØYENENGA",
+        "municipality": "BÆRUM",
+        "municipality_number": "3201",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970923780",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-20",
+        "retrieval_timestamp": "2026-11-05T14:06:28.298978+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in VØYENENGA."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "74.200",
+        "beskrivelse": "Fotografvirksomhet"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970923780",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-20",
+        "retrieval_timestamp": "2026-11-05T14:06:28.298978+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 74.200: Fotografvirksomhet)."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970923780",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-20",
+        "retrieval_timestamp": "2026-11-05T14:06:28.298978+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20240000088891": {
+      "fact_key": "operations.corporate_event.20240000088891",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2024-01-01",
+        "kid": "20240000088891",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000088891&sokeverdi=970923780&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000088891&sokeverdi=970923780&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2024-01-01",
+        "retrieval_timestamp": "2026-11-05T14:06:30.504700+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2024-01-01): Forretningsadresse (KID: 20240000088891, Orgnr: 970923780)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 970923780)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20230000378667": {
+      "fact_key": "operations.corporate_event.20230000378667",
+      "current_value": {
+        "title": "Virksomhet/bransje",
+        "date": "2023-06-20",
+        "kid": "20230000378667",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000378667&sokeverdi=970923780&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000378667&sokeverdi=970923780&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2023-06-20",
+        "retrieval_timestamp": "2026-11-05T14:06:30.504700+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2023-06-20): Virksomhet/bransje (KID: 20230000378667, Orgnr: 970923780)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Virksomhet/bransje' verified from Brønnøysundregistrene Kunngjøringer (orgnr 970923780)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20230000378666": {
+      "fact_key": "operations.corporate_event.20230000378666",
+      "current_value": {
+        "title": "Foretaksnavn",
+        "date": "2023-06-20",
+        "kid": "20230000378666",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000378666&sokeverdi=970923780&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000378666&sokeverdi=970923780&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2023-06-20",
+        "retrieval_timestamp": "2026-11-05T14:06:30.504700+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2023-06-20): Foretaksnavn (KID: 20230000378666, Orgnr: 970923780)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Foretaksnavn' verified from Brønnøysundregistrene Kunngjøringer (orgnr 970923780)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20210000555083": {
+      "fact_key": "operations.corporate_event.20210000555083",
+      "current_value": {
+        "title": "Virksomhet/bransje",
+        "date": "2021-09-14",
+        "kid": "20210000555083",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20210000555083&sokeverdi=970923780&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20210000555083&sokeverdi=970923780&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2021-09-14",
+        "retrieval_timestamp": "2026-11-05T14:06:30.504700+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2021-09-14): Virksomhet/bransje (KID: 20210000555083, Orgnr: 970923780)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Virksomhet/bransje' verified from Brønnøysundregistrene Kunngjøringer (orgnr 970923780)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20210000555082": {
+      "fact_key": "operations.corporate_event.20210000555082",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2021-09-14",
+        "kid": "20210000555082",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20210000555082&sokeverdi=970923780&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20210000555082&sokeverdi=970923780&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2021-09-14",
+        "retrieval_timestamp": "2026-11-05T14:06:30.504700+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2021-09-14): Forretningsadresse (KID: 20210000555082, Orgnr: 970923780)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 970923780)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20200000037641": {
+      "fact_key": "operations.corporate_event.20200000037641",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2020-01-01",
+        "kid": "20200000037641",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20200000037641&sokeverdi=970923780&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20200000037641&sokeverdi=970923780&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2020-01-01",
+        "retrieval_timestamp": "2026-11-05T14:06:30.504700+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2020-01-01): Forretningsadresse (KID: 20200000037641, Orgnr: 970923780)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 970923780)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20080000082097": {
+      "fact_key": "operations.corporate_event.20080000082097",
+      "current_value": {
+        "title": "Rettelse av forretningsadresse",
+        "date": "2008-03-31",
+        "kid": "20080000082097",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20080000082097&sokeverdi=970923780&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20080000082097&sokeverdi=970923780&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2008-03-31",
+        "retrieval_timestamp": "2026-11-05T14:06:30.504700+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2008-03-31): Rettelse av forretningsadresse (KID: 20080000082097, Orgnr: 970923780)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Rettelse av forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 970923780)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20070000440857": {
+      "fact_key": "operations.corporate_event.20070000440857",
+      "current_value": {
+        "title": "Virksomhet/bransje",
+        "date": "2007-10-27",
+        "kid": "20070000440857",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20070000440857&sokeverdi=970923780&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20070000440857&sokeverdi=970923780&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2007-10-27",
+        "retrieval_timestamp": "2026-11-05T14:06:30.504700+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2007-10-27): Virksomhet/bransje (KID: 20070000440857, Orgnr: 970923780)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Virksomhet/bransje' verified from Brønnøysundregistrene Kunngjøringer (orgnr 970923780)."
+      },
+      "previous_values": []
+    }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 14,
+    "critic_facts_quarantined": 0
+  },
+  "metadata": {}
+}

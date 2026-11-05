@@ -1,0 +1,136 @@
+{
+  "orgnr": "993877379",
+  "run_timestamp": "2026-11-05T14:08:01.986279+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:08:01.986279+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2-RAYZ SYNDICATE TOURAY",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993877379"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:01.986279+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993877379"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:01.986279+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2009-03-21",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993877379"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:01.986279+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Jordstjerneveien 38E",
+        "postal_code": "1283",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993877379"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:01.986279+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "www.2-rayz.com",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993877379"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:01.986279+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "59.110",
+        "beskrivelse": "Produksjon av film, video og fjernsynsprogrammer"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993877379"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:01.986279+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993877379"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:01.986279+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "936402259",
+          "name": "2-RAYZ SYNDICATE TOURAY",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993877379"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:01.986279+00:00",
+      "fact_key": "operations.corporate_event.20250000792771",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Virksomhet/bransje",
+        "date": "2025-10-17",
+        "kid": "20250000792771",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000792771&sokeverdi=993877379&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000792771&sokeverdi=993877379&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:01.986279+00:00",
+      "fact_key": "operations.corporate_event.20250000285532",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Forretningsadresse",
+        "date": "2025-05-19",
+        "kid": "20250000285532",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000285532&sokeverdi=993877379&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000285532&sokeverdi=993877379&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:01.986279+00:00",
+      "fact_key": "operations.corporate_event.20130000062432",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2013-03-07",
+        "kid": "20130000062432",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20130000062432&sokeverdi=993877379&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20130000062432&sokeverdi=993877379&spraak=nb"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

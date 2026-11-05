@@ -1,0 +1,109 @@
+{
+  "orgnr": "983381359",
+  "run_timestamp": "2026-11-05T14:07:52.919687+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:07:52.919687+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2 YOU REKLAMEBYRÅ DA",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983381359"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.919687+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "DA",
+        "beskrivelse": "Ansvarlig selskap med delt ansvar"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983381359"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.919687+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2001-05-22",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983381359"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.919687+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2001-03-31",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983381359"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.919687+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Ekebergveien 256 C",
+        "postal_code": "1166",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983381359"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.919687+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "73.110",
+        "beskrivelse": "Reklamebyråvirksomhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983381359"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.919687+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Salg av egenprodusert reklame til kunder.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983381359"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.919687+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983381359"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.919687+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Cato Berge",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/983381359"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.919687+00:00",
+      "fact_key": "operations.corporate_event.20010000117970",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2001-06-07",
+        "kid": "20010000117970",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20010000117970&sokeverdi=983381359&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20010000117970&sokeverdi=983381359&spraak=nb"
+    }
+  ],
+  "facts_created": 10,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

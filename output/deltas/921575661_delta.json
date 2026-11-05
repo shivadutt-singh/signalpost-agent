@@ -1,0 +1,126 @@
+{
+  "orgnr": "921575661",
+  "run_timestamp": "2026-11-05T14:05:51.885425+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:05:51.885425+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "17. MAI MARKER SKOLE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921575661"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:51.885425+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921575661"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:51.885425+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2018-12-31",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921575661"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:51.885425+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2018-12-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921575661"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:51.885425+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Lars Johansson Hammerveien 12",
+        "postal_code": "1870",
+        "city": "ØRJE",
+        "municipality": "MARKER",
+        "municipality_number": "3122",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921575661"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:51.885425+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921575661"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:51.885425+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921575661"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:51.885425+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Lars Johansson",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921575661"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:51.885425+00:00",
+      "fact_key": "governance.board_member.ruth-hege_sydengen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Ruth-Hege Sydengen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921575661"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:51.885425+00:00",
+      "fact_key": "governance.board_member.kjersti_fosser",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kjersti Fosser",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921575661"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:51.885425+00:00",
+      "fact_key": "governance.board_member.anne_julie_buer",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Anne Julie Buer",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921575661"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:51.885425+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "922518696",
+          "name": "17. MAI MARKER SKOLE",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921575661"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

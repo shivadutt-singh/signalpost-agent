@@ -1,0 +1,118 @@
+{
+  "orgnr": "927146037",
+  "run_timestamp": "2026-11-05T14:08:07.382092+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:08:07.382092+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2014-KULLET SAKSVIK SKOLE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927146037"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.382092+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927146037"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.382092+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-07-21",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927146037"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.382092+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-06-02",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927146037"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.382092+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Hege Dahl Moen Haukvegen 2",
+        "postal_code": "7562",
+        "city": "SAKSVIK",
+        "municipality": "MALVIK",
+        "municipality_number": "5031",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927146037"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.382092+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927146037"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.382092+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927146037"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.382092+00:00",
+      "fact_key": "governance.board_member.hege_marianne_moen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Hege Marianne Moen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927146037"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.382092+00:00",
+      "fact_key": "governance.board_member.anne-catrine_leknes",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Anne-Catrine Leknes",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927146037"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.382092+00:00",
+      "fact_key": "governance.board_member.sigrid_dahl",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Sigrid Dahl",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927146037"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.382092+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "927445808",
+          "name": "2014-KULLET SAKSVIK SKOLE",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927146037"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

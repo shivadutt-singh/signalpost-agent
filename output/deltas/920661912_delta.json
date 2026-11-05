@@ -1,0 +1,118 @@
+{
+  "orgnr": "920661912",
+  "run_timestamp": "2026-11-05T14:07:07.058948+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:07:07.058948+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2 HALVE OG 1 HEL",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920661912"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:07.058948+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920661912"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:07.058948+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2018-03-27",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920661912"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:07.058948+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2018-01-31",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920661912"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:07.058948+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Ken Are Johnsen Bjørkåsen 4B",
+        "postal_code": "9610",
+        "city": "RYPEFJORD",
+        "municipality": "HAMMERFEST",
+        "municipality_number": "5603",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920661912"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:07.058948+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "90.202",
+        "beskrivelse": "Utøvende kunstnerisk virksomhet og underholdningsvirksomhet innenfor scenekunst"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920661912"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:07.058948+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920661912"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:07.058948+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Ken Are Johnsen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920661912"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:07.058948+00:00",
+      "fact_key": "governance.board_member.hans_morten_olafson",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Hans Morten Olafson",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920661912"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:07.058948+00:00",
+      "fact_key": "governance.board_member.knut_alfred_olaussen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Knut Alfred Olaussen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920661912"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:07.058948+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "922458790",
+          "name": "2 HALVE OG 1 HEL",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920661912"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

@@ -1,0 +1,118 @@
+{
+  "orgnr": "927400227",
+  "run_timestamp": "2026-11-05T14:05:16.380492+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:05:16.380492+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1532-186/468",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927400227"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.380492+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ESEK",
+        "beskrivelse": "Eierseksjonssameie"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927400227"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.380492+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-10-08",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927400227"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.380492+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1992-04-03",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927400227"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.380492+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Martin Joakim Valderhaug Skjongstranda 50",
+        "postal_code": "6050",
+        "city": "VALDERØYA",
+        "municipality": "GISKE",
+        "municipality_number": "1532",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927400227"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.380492+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "97.001",
+        "beskrivelse": "Aktiviteter i borettslag og boligsameier"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927400227"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.380492+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927400227"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.380492+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Martin Joakim Valderhaug",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927400227"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.380492+00:00",
+      "fact_key": "governance.board_member.oliver_gjøen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Oliver Gjøen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927400227"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.380492+00:00",
+      "fact_key": "governance.board_member.ruth_elsy_sæther",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Ruth Elsy Sæther",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927400227"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.380492+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "827896012",
+          "name": "1532-186/468",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927400227"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

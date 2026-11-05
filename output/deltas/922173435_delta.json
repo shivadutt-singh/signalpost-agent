@@ -1,0 +1,71 @@
+{
+  "orgnr": "922173435",
+  "run_timestamp": "2026-11-05T14:06:22.673661+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:22.673661+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1995 SONDRE SØBERG RISA",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922173435"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:22.673661+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922173435"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:22.673661+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-02-06",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922173435"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:22.673661+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Vågsmyrgata 32",
+        "postal_code": "4020",
+        "city": "STAVANGER",
+        "municipality": "STAVANGER",
+        "municipality_number": "1103",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922173435"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:22.673661+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "85.510",
+        "beskrivelse": "Undervisning innenfor idrett og rekreasjon"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922173435"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:22.673661+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922173435"
+    }
+  ],
+  "facts_created": 6,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

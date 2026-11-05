@@ -1,0 +1,140 @@
+{
+  "orgnr": "938343373",
+  "run_timestamp": "2026-11-05T14:04:34.101938+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:04:34.101938+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1340 APEX AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938343373"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:34.101938+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938343373"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:34.101938+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-08-25",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938343373"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:34.101938+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-08-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938343373"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:34.101938+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Stormyrvegen 6",
+        "postal_code": "2005",
+        "city": "RÆLINGEN",
+        "municipality": "RÆLINGEN",
+        "municipality_number": "3224",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938343373"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:34.101938+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "70.200",
+        "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938343373"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:34.101938+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938343373"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:34.101938+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Levere konsulent-, rådgivnings- og utviklingstjenester innen finans, idrett og dataanalyse.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938343373"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:34.101938+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938343373"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:34.101938+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Joachim Lien",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938343373"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:34.101938+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Joachim Lien",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938343373"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:34.101938+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "938467811",
+          "name": "1340 APEX AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938343373"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:34.101938+00:00",
+      "fact_key": "operations.corporate_event.20260000713120",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2026-08-25",
+        "kid": "20260000713120",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000713120&sokeverdi=938343373&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000713120&sokeverdi=938343373&spraak=nb"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

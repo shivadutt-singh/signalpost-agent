@@ -1,0 +1,86 @@
+{
+  "orgnr": "930306231",
+  "run_timestamp": "2026-11-05T14:06:11.583608+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:11.583608+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1883 ROSENVINGE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930306231"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.583608+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930306231"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.583608+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2022-11-24",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930306231"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.583608+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Trollringen 12",
+        "postal_code": "2054",
+        "city": "MOGREINA",
+        "municipality": "ULLENSAKER",
+        "municipality_number": "3209",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930306231"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.583608+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "85.597",
+        "beskrivelse": "Annen undervisning ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930306231"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.583608+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930306231"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.583608+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "930551147",
+          "name": "1883 ROSENVINGE",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930306231"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

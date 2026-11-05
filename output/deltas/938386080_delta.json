@@ -1,0 +1,140 @@
+{
+  "orgnr": "938386080",
+  "run_timestamp": "2026-11-05T14:04:06.770047+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:04:06.770047+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "123ENKELT AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938386080"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.770047+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938386080"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.770047+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-09-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938386080"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.770047+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-08-21",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938386080"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.770047+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Henrik Ibsens gate 7",
+        "postal_code": "3022",
+        "city": "DRAMMEN",
+        "municipality": "DRAMMEN",
+        "municipality_number": "3301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938386080"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.770047+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "43.320",
+        "beskrivelse": "Snekkerarbeid"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938386080"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.770047+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 200000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938386080"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.770047+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Hageservice, snørydding, snekkertjenester mindre gravemaskinoppdrag, hjemlevering og montering samt investering i aksjer og eiendom.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938386080"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.770047+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938386080"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.770047+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Bue Sørensen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938386080"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.770047+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Bue Sørensen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938386080"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.770047+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "938428999",
+          "name": "123ENKELT AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938386080"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.770047+00:00",
+      "fact_key": "operations.corporate_event.20260000722586",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2026-09-01",
+        "kid": "20260000722586",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000722586&sokeverdi=938386080&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000722586&sokeverdi=938386080&spraak=nb"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

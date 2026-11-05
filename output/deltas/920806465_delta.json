@@ -1,0 +1,126 @@
+{
+  "orgnr": "920806465",
+  "run_timestamp": "2026-11-05T14:05:43.209483+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:05:43.209483+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "17. MAI KOMITE BYGSTAD",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920806465"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:43.209483+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920806465"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:43.209483+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2018-05-02",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920806465"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:43.209483+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2018-02-15",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920806465"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:43.209483+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Thomas Haugsbø",
+        "postal_code": "6977",
+        "city": "BYGSTAD",
+        "municipality": "SUNNFJORD",
+        "municipality_number": "4647",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920806465"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:43.209483+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920806465"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:43.209483+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920806465"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:43.209483+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Thomas Endre Haugsbø",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920806465"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:43.209483+00:00",
+      "fact_key": "governance.board_member.bjørn_johannes_mundal",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Bjørn Johannes Mundal",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920806465"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:43.209483+00:00",
+      "fact_key": "governance.board_member.jorunn_solheim",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Jorunn Solheim",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920806465"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:43.209483+00:00",
+      "fact_key": "governance.board_member.bente_gunn_melheim",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Bente Gunn Melheim",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920806465"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:43.209483+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "922466734",
+          "name": "17. MAI KOMITE BYGSTAD",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920806465"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

@@ -1,0 +1,86 @@
+{
+  "orgnr": "936224520",
+  "run_timestamp": "2026-11-05T14:04:11.176093+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:04:11.176093+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "12F STENSRUD",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936224520"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:11.176093+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936224520"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:11.176093+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-09-25",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936224520"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:11.176093+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Saudegata øst 9",
+        "postal_code": "3717",
+        "city": "SKIEN",
+        "municipality": "SKIEN",
+        "municipality_number": "4003",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936224520"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:11.176093+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "70.200",
+        "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936224520"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:11.176093+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936224520"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:11.176093+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "936544878",
+          "name": "12F STENSRUD",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/936224520"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

@@ -1,0 +1,118 @@
+{
+  "orgnr": "917569142",
+  "run_timestamp": "2026-11-05T14:05:10.257533+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:05:10.257533+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "144 EDUCATION NGO",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917569142"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:10.257533+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917569142"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:10.257533+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2016-08-15",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917569142"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:10.257533+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2016-08-09",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917569142"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:10.257533+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Rolf E. Stenersens allé 4",
+        "postal_code": "0858",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917569142"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:10.257533+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917569142"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:10.257533+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917569142"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:10.257533+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Linn Kristin Angell",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917569142"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:10.257533+00:00",
+      "fact_key": "governance.board_member.elliot_james_bowmer",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Elliot James Bowmer",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917569142"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:10.257533+00:00",
+      "fact_key": "governance.board_member.karen_emilie_bowmer",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Karen Emilie Bowmer",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917569142"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:10.257533+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "917643334",
+          "name": "144 EDUCATION NGO",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/917569142"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

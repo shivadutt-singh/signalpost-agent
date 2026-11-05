@@ -1,0 +1,110 @@
+{
+  "orgnr": "921227639",
+  "run_timestamp": "2026-11-05T14:07:49.972872+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:07:49.972872+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2 SAVE ME",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921227639"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:49.972872+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921227639"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:49.972872+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2018-08-29",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921227639"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:49.972872+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2018-07-04",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921227639"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:49.972872+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Årsvollveien 214",
+        "postal_code": "4312",
+        "city": "SANDNES",
+        "municipality": "SANDNES",
+        "municipality_number": "1108",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921227639"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:49.972872+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921227639"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:49.972872+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921227639"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:49.972872+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Elin Herlofsen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921227639"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:49.972872+00:00",
+      "fact_key": "governance.board_member.eli_marie_jacobsen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Eli Marie Jacobsen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921227639"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:49.972872+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "922488061",
+          "name": "2 SAVE ME",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/921227639"
+    }
+  ],
+  "facts_created": 10,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

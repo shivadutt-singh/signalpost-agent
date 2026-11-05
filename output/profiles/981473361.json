@@ -1,0 +1,70 @@
+{
+  "orgnr": "981473361",
+  "legal_name": "LEADERSHIP PARTNER GRUPPEN",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-11-05T07:32:14.784132+00:00",
+  "updated_at": "2026-11-05T12:25:02.694597+00:00",
+  "schema_version": "2.0.0",
+  "profile_verification_explanation": "Enterprise profile for LEADERSHIP PARTNER GRUPPEN (orgnr: 981473361) deterministically verified. 3 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "LEADERSHIP PARTNER GRUPPEN (orgnr 981473361) is a registered BEDR based in Norway.",
+  "known_unknowns": [
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 981473361. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret.",
+    "Active job listings: Checked registry records and official NAV public job feed on 2026-11-05; 0 active openings verified featuring the company's legal name or exact orgnr."
+  ],
+  "financial_history": [],
+  "facts": {},
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 0,
+    "critic_facts_quarantined": 0
+  },
+  "metadata": {
+    "quarantined_facts": [
+      {
+        "orgnr": "981473361",
+        "fact_key": "registry.legal_name",
+        "value": "TELENOR ASA",
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
+        "source_date": null,
+        "quarantined_at": "2026-11-05T07:32:14.784583+00:00"
+      },
+      {
+        "orgnr": "981473361",
+        "fact_key": "registry.status",
+        "value": "ACTIVE",
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
+        "source_date": null,
+        "quarantined_at": "2026-11-05T07:32:14.784583+00:00"
+      },
+      {
+        "orgnr": "981473361",
+        "fact_key": "registry.legal_name",
+        "value": "LEADERSHIP PARTNER GRUPPEN",
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
+        "source_date": null,
+        "quarantined_at": "2026-11-05T12:25:02.695145+00:00"
+      },
+      {
+        "orgnr": "981473361",
+        "fact_key": "registry.organization_form",
+        "value": {
+          "kode": "BEDR",
+          "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning"
+        },
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
+        "source_date": null,
+        "quarantined_at": "2026-11-05T12:25:02.695145+00:00"
+      },
+      {
+        "orgnr": "981473361",
+        "fact_key": "registry.status",
+        "value": "ACTIVE",
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
+        "source_date": null,
+        "quarantined_at": "2026-11-05T12:25:02.695145+00:00"
+      }
+    ],
+    "quarantined_facts_count": 5
+  }
+}

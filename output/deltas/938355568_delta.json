@@ -1,0 +1,94 @@
+{
+  "orgnr": "938355568",
+  "run_timestamp": "2026-11-05T14:06:37.127727+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:37.127727+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1VASK AS KONKURSBO",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938355568"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:37.127727+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "KBO",
+        "beskrivelse": "Konkursbo"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938355568"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:37.127727+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-08-26",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938355568"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:37.127727+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-08-26",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938355568"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:37.127727+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Fortun 10",
+        "postal_code": "6887",
+        "city": "LÆRDAL",
+        "municipality": "LÆRDAL",
+        "municipality_number": "4642",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938355568"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:37.127727+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "81.210",
+        "beskrivelse": "Rengjøring av bygninger"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938355568"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:37.127727+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938355568"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:37.127727+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "938355576",
+          "name": "1VASK AS KONKURSBO",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938355568"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

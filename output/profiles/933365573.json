@@ -3,15 +3,14 @@
   "legal_name": "- ZOTKO .NO",
   "canonical_status": "ACTIVE",
   "created_at": "2026-10-17T09:45:12.757875+00:00",
-  "updated_at": "2026-10-17T13:24:04.103603+00:00",
+  "updated_at": "2026-11-05T09:05:27.521298+00:00",
   "schema_version": "1.0.0",
-  "profile_verification_explanation": "Enterprise profile for - ZOTKO .NO (orgnr: 933365573) deterministically verified. 7 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
-  "executive_summary": "- ZOTKO .NO is a registered Norwegian enterprise located in SURNADAL focused on its statutory activities. Official registration records confirm corporate standing with verified leadership (Executive Board) and verified Modulo-11 enterprise number 933365573. Unfiled interim financial statements, private commercial contracts, and internal headcount fluctuations remain unverified from public registry filings.",
+  "profile_verification_explanation": "Enterprise profile for - ZOTKO .NO (orgnr: 933365573) deterministically verified. 8 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "- ZOTKO .NO is a registered Norwegian enterprise located in SURNADAL governed under enterprise number 933365573. Registration records confirm corporate standing with active leadership under Executive Board. Unfiled interim quarterly results, private partner contracts, and internal headcount fluctuations remain unconfirmed from public records.",
   "known_unknowns": [
-    "Current unfiled interim quarterly revenue and operating margins",
-    "Detailed private commercial agreements and non-public partner contracts",
-    "Real-time headcount variance beyond latest annual Aa-registeret submission"
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 933365573. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret."
   ],
+  "financial_history": [],
   "facts": {
     "registry.legal_name": {
       "fact_key": "registry.legal_name",
@@ -26,6 +25,7 @@
         "retrieval_timestamp": "2026-10-17T09:45:11.951710+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official registered enterprise name '- ZOTKO .NO'."
@@ -48,6 +48,7 @@
         "retrieval_timestamp": "2026-10-17T09:45:11.951710+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official corporate form ENK (Enkeltpersonforetak)."
@@ -67,6 +68,7 @@
         "retrieval_timestamp": "2026-10-17T09:45:11.951710+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official registration date in Enhetsregisteret."
@@ -93,6 +95,7 @@
         "retrieval_timestamp": "2026-10-17T09:45:11.951710+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official registered business address in SURNADAL."
@@ -115,6 +118,7 @@
         "retrieval_timestamp": "2026-10-17T09:45:11.951710+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official primary economic activity code (NACE 47.250: Detaljhandel med drikkevarer)."
@@ -134,6 +138,7 @@
         "retrieval_timestamp": "2026-10-17T09:45:11.951710+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Authoritative corporate standing: ACTIVE."
@@ -160,12 +165,45 @@
         "retrieval_timestamp": "2026-10-17T09:45:11.951710+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Registered active operational sub-units count: 1."
       },
       "previous_values": []
+    },
+    "operations.corporate_event.20240000375657": {
+      "fact_key": "operations.corporate_event.20240000375657",
+      "current_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2024-04-25",
+        "kid": "20240000375657",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000375657&sokeverdi=933365573&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000375657&sokeverdi=933365573&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2024-04-25",
+        "retrieval_timestamp": "2026-11-05T09:05:27.519969+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2024-04-25): Nyregistrering i Foretaksregisteret (KID: 20240000375657, Orgnr: 933365573)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Nyregistrering i Foretaksregisteret' verified from Brønnøysundregistrene Kunngjøringer (orgnr 933365573)."
+      },
+      "previous_values": []
     }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 8,
+    "critic_facts_quarantined": 0
   },
   "metadata": {}
 }

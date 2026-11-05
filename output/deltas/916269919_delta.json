@@ -1,0 +1,110 @@
+{
+  "orgnr": "916269919",
+  "run_timestamp": "2026-11-05T14:08:06.180159+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:08:06.180159+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2010/11 KLUBBEN",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916269919"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.180159+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916269919"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.180159+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2018-10-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916269919"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.180159+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1997-10-20",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916269919"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.180159+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Odd Roar Leere Tunveien 43A",
+        "postal_code": "1475",
+        "city": "FINSTADJORDET",
+        "municipality": "LØRENSKOG",
+        "municipality_number": "3222",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916269919"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.180159+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916269919"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.180159+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916269919"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.180159+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Jonny Nilsen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916269919"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.180159+00:00",
+      "fact_key": "governance.board_member.odd_roar_leere",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Odd Roar Leere",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916269919"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.180159+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "922495408",
+          "name": "2010/11 KLUBBEN",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/916269919"
+    }
+  ],
+  "facts_created": 10,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

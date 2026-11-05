@@ -1,0 +1,100 @@
+{
+  "orgnr": "938698716",
+  "run_timestamp": "2026-11-05T14:03:58.658085+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:03:58.658085+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": ".AMEN DAWAD EXPREEX",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938698716"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:58.658085+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938698716"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:58.658085+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-10-22",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938698716"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:58.658085+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Sandstuveien 56B",
+        "postal_code": "1184",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938698716"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:58.658085+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "49.410",
+        "beskrivelse": "Godstransport på vei"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938698716"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:58.658085+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938698716"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:58.658085+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "938730105",
+          "name": ".AMEN DAWAD EXPREEX",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938698716"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:58.658085+00:00",
+      "fact_key": "operations.corporate_event.20260000811604",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2026-10-22",
+        "kid": "20260000811604",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000811604&sokeverdi=938698716&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000811604&sokeverdi=938698716&spraak=nb"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

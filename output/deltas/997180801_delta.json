@@ -1,0 +1,94 @@
+{
+  "orgnr": "997180801",
+  "run_timestamp": "2026-11-05T14:06:31.194977+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:31.194977+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1NAPRAPAT, STINE KÅSAMOEN",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997180801"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:31.194977+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997180801"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:31.194977+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2011-08-02",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997180801"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:31.194977+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Tom Wilhelmsens vei 2",
+        "postal_code": "3120",
+        "city": "NØTTERØY",
+        "municipality": "FÆRDER",
+        "municipality_number": "3911",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997180801"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:31.194977+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "www.1naprapat.no",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997180801"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:31.194977+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "86.960",
+        "beskrivelse": "Aktiviteter innenfor tradisjonell, komplementær og alternativ medisin"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997180801"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:31.194977+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997180801"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:31.194977+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "997211928",
+          "name": "1NAPRAPAT",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/997180801"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

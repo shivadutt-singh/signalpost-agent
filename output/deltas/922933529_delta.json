@@ -1,0 +1,68 @@
+{
+  "orgnr": "922933529",
+  "run_timestamp": "2026-11-05T14:06:25.686821+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:25.686821+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1CONZEPT APS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922933529"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:25.686821+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "UTLA",
+        "beskrivelse": "Utenlandsk enhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922933529"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:25.686821+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-06-20",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922933529"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:25.686821+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Højderyggen 17",
+        "postal_code": null,
+        "city": "DK-7120 VEJLE Ø",
+        "municipality": null,
+        "municipality_number": null,
+        "country": "Danmark"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922933529"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:25.686821+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "www.1consept.dk",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922933529"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:25.686821+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922933529"
+    }
+  ],
+  "facts_created": 6,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

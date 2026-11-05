@@ -1,0 +1,102 @@
+{
+  "orgnr": "993350990",
+  "run_timestamp": "2026-11-05T14:06:18.521236+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:18.521236+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1975 STIAN AAGAARD",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993350990"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:18.521236+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993350990"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:18.521236+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2008-11-24",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993350990"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:18.521236+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Bergheimsvegen 28",
+        "postal_code": "7049",
+        "city": "TRONDHEIM",
+        "municipality": "TRONDHEIM",
+        "municipality_number": "5001",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993350990"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:18.521236+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "www.1975.no",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993350990"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:18.521236+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "74.990",
+        "beskrivelse": "All annen faglig, vitenskapelig og teknisk virksomhet ikke nevnt annet sted"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993350990"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:18.521236+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993350990"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:18.521236+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Stian Aagaard",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993350990"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:18.521236+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "993367168",
+          "name": "1975 STIAN AAGAARD",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/993350990"
+    }
+  ],
+  "facts_created": 9,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

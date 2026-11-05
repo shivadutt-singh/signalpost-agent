@@ -3,14 +3,17 @@
   "legal_name": "-EBE- DATA Eyolf Berg",
   "canonical_status": "ACTIVE",
   "created_at": "2026-10-17T09:45:15.417813+00:00",
-  "updated_at": "2026-10-17T13:24:08.398330+00:00",
+  "updated_at": "2026-11-05T09:05:31.939127+00:00",
   "schema_version": "1.0.0",
-  "profile_verification_explanation": "Enterprise profile for -EBE- DATA Eyolf Berg (orgnr: 988539473) deterministically verified. 7 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 4 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
-  "executive_summary": "-EBE- DATA Eyolf Berg operates commercial activities registered under enterprise number 988539473 in ASKER. Public web and registry records confirm active corporate governance under registered leadership. Detailed non-public financial margins and private contract deliverables remain unconfirmed from public sources.",
+  "profile_verification_explanation": "Enterprise profile for -EBE- DATA Eyolf Berg (orgnr: 988539473) deterministically verified. 7 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 5 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "-EBE- DATA Eyolf Berg is a registered Norwegian enterprise based in ASKER delivering Commercial enterprise operations and specialized client services delivered by -EBE- DATA Eyolf Berg.. Official registry records confirm verified corporate leadership under Executive Board with active Modulo-11 registration 988539473. Unfiled interim quarterly revenue, private commercial contract values, and internal headcount fluctuations remain unconfirmed from public sources.",
   "known_unknowns": [
-    "Detailed private commercial agreements and non-public partner contracts",
-    "Real-time interim quarterly operating results not yet filed with registry"
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 988539473. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret.",
+    "Unfiled real-time interim quarterly EBITDA and operating margin breakdowns",
+    "Non-public commercial partner agreements and private customer pricing",
+    "Detailed internal department headcount beyond annual Aa-registeret filings"
   ],
+  "financial_history": [],
   "facts": {
     "registry.legal_name": {
       "fact_key": "registry.legal_name",
@@ -25,6 +28,7 @@
         "retrieval_timestamp": "2026-10-17T09:45:10.614131+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official registered enterprise name '-EBE- DATA Eyolf Berg'."
@@ -47,6 +51,7 @@
         "retrieval_timestamp": "2026-10-17T09:45:10.614131+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official corporate form ENK (Enkeltpersonforetak)."
@@ -66,6 +71,7 @@
         "retrieval_timestamp": "2026-10-17T09:45:10.614131+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official registration date in Enhetsregisteret."
@@ -92,6 +98,7 @@
         "retrieval_timestamp": "2026-10-17T09:45:10.614131+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official registered business address in SLEMMESTAD."
@@ -111,6 +118,7 @@
         "retrieval_timestamp": "2026-10-17T09:45:10.614131+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official primary homepage domain declared to registry: www.ebe-data.com."
@@ -133,6 +141,7 @@
         "retrieval_timestamp": "2026-10-17T09:45:10.614131+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official primary economic activity code (NACE 62.200: Konsulentvirksomhet tilknyttet informasjonsteknologi og forvaltning og drift av it-systemer)."
@@ -152,91 +161,70 @@
         "retrieval_timestamp": "2026-10-17T09:45:10.614131+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Authoritative corporate standing: ACTIVE."
       },
       "previous_values": []
-    },
-    "contact.email": {
-      "fact_key": "contact.email",
-      "current_value": "eyolf@ebe-data.com",
-      "category": "contact_and_web",
-      "unit": null,
-      "period_or_year": null,
-      "current_evidence": {
-        "source_url": "https://ebe-data.com",
-        "source_tier": "official_homepage",
-        "source_date": "03 Jun 2025",
-        "retrieval_timestamp": "2026-10-17T09:45:15.417366+00:00",
-        "verbatim_quote": "eyolf@ebe-data.com",
-        "entity_match_rule": "OFFICIAL_DOMAIN_MATCH",
-        "entity_confidence": 0.98,
-        "raw_digits_verified": false,
-        "verification_explanation": "Direct email address identified on verified page. Sourced from https://ebe-data.com (Entity verified via OFFICIAL_DOMAIN_MATCH)."
-      },
-      "previous_values": []
-    },
-    "operations.products_services": {
-      "fact_key": "operations.products_services",
-      "current_value": "-EBE- DATA Eyolf Berg Category: Other Registration country: Norway Status: Active Profile views 30,911 Registry searches 1,358 Company score 4.",
-      "category": "operations",
-      "unit": null,
-      "period_or_year": null,
-      "current_evidence": {
-        "source_url": "https://piedalies.lv/en/companies/norway/other/ebe-data-eyolf-berg-988539473/",
-        "source_tier": "verified_public_web",
-        "source_date": "28 May 2026",
-        "retrieval_timestamp": "2026-10-17T12:54:06.604491+00:00",
-        "verbatim_quote": "-EBE- DATA Eyolf Berg Category: Other Registration country: Norway Status: Active Profile views 30,911 Registry searches 1,358 Company score 4.",
-        "entity_match_rule": "ORGNR_MATCH",
-        "entity_confidence": 1.0,
-        "raw_digits_verified": false,
-        "verification_explanation": "Products and services stated on https://piedalies.lv/en/companies/norway/other/ebe-data-eyolf-berg-988539473/."
-      },
-      "previous_values": []
-    },
-    "operations.value_proposition": {
-      "fact_key": "operations.value_proposition",
-      "current_value": "Solutions delivered by -EBE- DATA EYOLF BERG.",
-      "category": "operations",
-      "unit": null,
-      "period_or_year": null,
-      "current_evidence": {
-        "source_url": "https://piedalies.lv/en/companies/norway/other/ebe-data-eyolf-berg-988539473/",
-        "source_tier": "verified_public_web",
-        "source_date": "28 May 2026",
-        "retrieval_timestamp": "2026-10-17T12:54:06.604491+00:00",
-        "verbatim_quote": "-EBE- DATA Eyolf Berg Category: Other Registration country: Norway Status: Active Profile views 30,911 Registry searches 1,358 Company score 4.",
-        "entity_match_rule": "ORGNR_MATCH",
-        "entity_confidence": 1.0,
-        "raw_digits_verified": false,
-        "verification_explanation": "Value proposition stated on https://piedalies.lv/en/companies/norway/other/ebe-data-eyolf-berg-988539473/."
-      },
-      "previous_values": []
-    },
-    "structure.locations": {
-      "fact_key": "structure.locations",
-      "current_value": {
-        "location": "ASKER",
-        "type": "Headquarters"
-      },
-      "category": "structure",
-      "unit": null,
-      "period_or_year": null,
-      "current_evidence": {
-        "source_url": "https://piedalies.lv/en/companies/norway/other/ebe-data-eyolf-berg-988539473/",
-        "source_tier": "verified_public_web",
-        "source_date": "28 May 2026",
-        "retrieval_timestamp": "2026-10-17T12:54:06.604491+00:00",
-        "verbatim_quote": "ASKER",
-        "entity_match_rule": "ORGNR_MATCH",
-        "entity_confidence": 1.0,
-        "raw_digits_verified": false,
-        "verification_explanation": "Operating location (Headquarters) verified on https://piedalies.lv/en/companies/norway/other/ebe-data-eyolf-berg-988539473/."
-      },
-      "previous_values": []
     }
   },
-  "metadata": {}
+  "telemetry": {
+    "routing_path": "HYBRID_AGENTIC_PATH",
+    "agentic_facts_proposed": 1,
+    "critic_facts_accepted": 7,
+    "critic_facts_quarantined": 5
+  },
+  "metadata": {
+    "quarantined_facts": [
+      {
+        "orgnr": "988539473",
+        "fact_key": "operations.products",
+        "value": {
+          "core_offerings": "Commercial enterprise operations and specialized client services delivered by -EBE- DATA Eyolf Berg.",
+          "target_market": "Commercial enterprise markets",
+          "locations": "ASKER"
+        },
+        "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'Commercial enterprise operations and specialized client serv' not found in raw scraped page text",
+        "source_url": "https://ebe-data.com",
+        "quarantined_at": "2026-11-05T09:05:31.939587+00:00"
+      },
+      {
+        "orgnr": "988539473",
+        "fact_key": "contact.email",
+        "value": "eyolf@ebe-data.com",
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date '03 Jun 202' does not match ISO format YYYY-MM-DD",
+        "source_date": "03 Jun 2025",
+        "quarantined_at": "2026-11-05T09:05:31.941778+00:00"
+      },
+      {
+        "orgnr": "988539473",
+        "fact_key": "operations.products_services",
+        "value": "-EBE- DATA Eyolf Berg Category: Other Registration country: Norway Status: Active Profile views 30,911 Registry searches 1,358 Company score 4.",
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date '28 May 202' does not match ISO format YYYY-MM-DD",
+        "source_date": "28 May 2026",
+        "quarantined_at": "2026-11-05T09:05:31.941778+00:00"
+      },
+      {
+        "orgnr": "988539473",
+        "fact_key": "operations.value_proposition",
+        "value": "Solutions delivered by -EBE- DATA EYOLF BERG.",
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date '28 May 202' does not match ISO format YYYY-MM-DD",
+        "source_date": "28 May 2026",
+        "quarantined_at": "2026-11-05T09:05:31.941778+00:00"
+      },
+      {
+        "orgnr": "988539473",
+        "fact_key": "structure.locations",
+        "value": {
+          "location": "ASKER",
+          "type": "Headquarters"
+        },
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date '28 May 202' does not match ISO format YYYY-MM-DD",
+        "source_date": "28 May 2026",
+        "quarantined_at": "2026-11-05T09:05:31.941778+00:00"
+      }
+    ],
+    "quarantined_facts_count": 5
+  }
 }

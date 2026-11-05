@@ -2,20 +2,21 @@
 Validation modules for Norwegian company identifiers and anti-hallucination guardrails.
 """
 
-from src.validators.mod11 import (
-    validate_mod11,
-    calculate_check_digit,
-    normalize_orgnr,
-    try_normalize_orgnr,
-    extract_orgnrs_from_text,
-)
+from src.validators.fact_critic import FactCritic, FactCriticPipeline
 from src.validators.fact_guard import (
-    EntityAnchor,
-    EntityVerificationResult,
-    EntityVerificationGate,
     AntiFabricationGuard,
+    EntityAnchor,
+    EntityVerificationGate,
+    EntityVerificationResult,
     FabricationCheckResult,
     verify_financial_fact,
+)
+from src.validators.mod11 import (
+    calculate_check_digit,
+    extract_orgnrs_from_text,
+    normalize_orgnr,
+    try_normalize_orgnr,
+    validate_mod11,
 )
 
 __all__ = [
@@ -30,4 +31,5 @@ __all__ = [
     "AntiFabricationGuard",
     "FabricationCheckResult",
     "verify_financial_fact",
+    "FactCriticPipeline",
 ]

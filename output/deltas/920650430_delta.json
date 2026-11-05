@@ -1,0 +1,134 @@
+{
+  "orgnr": "920650430",
+  "run_timestamp": "2026-11-05T14:06:00.741332+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:00.741332+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "17.MAI-KOMITEEN I VINJAR SKULEKRETS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920650430"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.741332+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920650430"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.741332+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2018-03-23",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920650430"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.741332+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2018-02-26",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920650430"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.741332+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Kjersti Moe Gullingvegen 22",
+        "postal_code": "4230",
+        "city": "SAND",
+        "municipality": "SULDAL",
+        "municipality_number": "1134",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920650430"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.741332+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920650430"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.741332+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920650430"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.741332+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Lars Christian Øystad",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920650430"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.741332+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kjersti Moe",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920650430"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.741332+00:00",
+      "fact_key": "governance.board_member.arne_vold",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Arne Vold",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920650430"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.741332+00:00",
+      "fact_key": "governance.board_member.inger_kristin_mehus",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Inger Kristin Mehus",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920650430"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.741332+00:00",
+      "fact_key": "governance.board_member.kristian_slagstad",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kristian Slagstad",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920650430"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.741332+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "922458049",
+          "name": "17.MAI-KOMITEEN I VINJAR SKULEKRET",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/920650430"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

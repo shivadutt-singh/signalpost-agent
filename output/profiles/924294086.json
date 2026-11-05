@@ -1,0 +1,170 @@
+{
+  "orgnr": "924294086",
+  "legal_name": "ONLY4GAMERS SASCHA D. HOCHWEBER",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-11-05T07:33:10.326389+00:00",
+  "updated_at": "2026-11-05T12:26:15.139764+00:00",
+  "schema_version": "2.0.0",
+  "profile_verification_explanation": "Enterprise profile for ONLY4GAMERS SASCHA D. HOCHWEBER (orgnr: 924294086) deterministically verified. 6 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "ONLY4GAMERS SASCHA D. HOCHWEBER (orgnr 924294086) is a registered BEDR based in Norway.",
+  "known_unknowns": [
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 924294086. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret.",
+    "Active job listings: Checked official website (only4gamers.de) and official NAV public job feed on 2026-11-05; 0 active openings verified featuring the company's legal name or exact orgnr."
+  ],
+  "financial_history": [],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "ONLY4GAMERS SASCHA D. HOCHWEBER",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924294086",
+        "source_tier": "official_registry",
+        "source_date": "2019-12-19",
+        "retrieval_timestamp": "2026-11-05T12:25:46.715657+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name 'ONLY4GAMERS SASCHA D. HOCHWEBER'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "BEDR",
+        "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924294086",
+        "source_tier": "official_registry",
+        "source_date": "2019-12-19",
+        "retrieval_timestamp": "2026-11-05T12:25:46.715657+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form BEDR (Underenhet til næringsdrivende og offentlig forvaltning)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2019-12-19",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924294086",
+        "source_tier": "official_registry",
+        "source_date": "2019-12-19",
+        "retrieval_timestamp": "2026-11-05T12:25:46.715657+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "contact.website": {
+      "fact_key": "contact.website",
+      "current_value": "www.only4gamers.de",
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924294086",
+        "source_tier": "official_registry",
+        "source_date": "2019-12-19",
+        "retrieval_timestamp": "2026-11-05T12:25:46.715657+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary homepage domain declared to registry: www.only4gamers.de."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "73.110",
+        "beskrivelse": "Reklamebyråvirksomhet"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924294086",
+        "source_tier": "official_registry",
+        "source_date": "2019-12-19",
+        "retrieval_timestamp": "2026-11-05T12:25:46.715657+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 73.110: Reklamebyråvirksomhet)."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924294086",
+        "source_tier": "official_registry",
+        "source_date": "2019-12-19",
+        "retrieval_timestamp": "2026-11-05T12:25:46.715657+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 0,
+    "critic_facts_quarantined": 0
+  },
+  "metadata": {
+    "quarantined_facts": [
+      {
+        "orgnr": "924294086",
+        "fact_key": "registry.legal_name",
+        "value": "OBOS BBL",
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
+        "source_date": null,
+        "quarantined_at": "2026-11-05T07:33:10.327022+00:00"
+      },
+      {
+        "orgnr": "924294086",
+        "fact_key": "registry.status",
+        "value": "ACTIVE",
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
+        "source_date": null,
+        "quarantined_at": "2026-11-05T07:33:10.327022+00:00"
+      }
+    ],
+    "quarantined_facts_count": 2
+  }
+}

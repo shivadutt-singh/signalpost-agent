@@ -1,0 +1,68 @@
+{
+  "orgnr": "934989058",
+  "run_timestamp": "2026-11-05T14:06:40.182452+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:40.182452+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1X TECHNOLOGIES INC",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934989058"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:40.182452+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "UTLA",
+        "beskrivelse": "Utenlandsk enhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934989058"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:40.182452+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-02-06",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934989058"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:40.182452+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-03-04",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934989058"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:40.182452+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "1233 Reamwood Ave",
+        "postal_code": null,
+        "city": "CA 94089, SUNNYVALE",
+        "municipality": null,
+        "municipality_number": null,
+        "country": "USA"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934989058"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:40.182452+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934989058"
+    }
+  ],
+  "facts_created": 6,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

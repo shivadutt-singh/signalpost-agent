@@ -1,0 +1,118 @@
+{
+  "orgnr": "922750610",
+  "run_timestamp": "2026-11-05T14:05:58.706263+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:05:58.706263+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "17.MAI NEMNDA I DALE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922750610"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.706263+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922750610"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.706263+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-07-10",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922750610"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.706263+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-01-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922750610"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.706263+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Torill Øen Dalsåsvegen 34A",
+        "postal_code": "6963",
+        "city": "DALE I SUNNFJORD",
+        "municipality": "FJALER",
+        "municipality_number": "4646",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922750610"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.706263+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922750610"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.706263+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922750610"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.706263+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Annikken Myklebust",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922750610"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.706263+00:00",
+      "fact_key": "governance.board_member.torill_øen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Torill Øen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922750610"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.706263+00:00",
+      "fact_key": "governance.board_member.stein_haugen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Stein Haugen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922750610"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.706263+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "923230521",
+          "name": "17.MAI NEMNDA I DALE",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922750610"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

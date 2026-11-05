@@ -1,0 +1,260 @@
+{
+  "orgnr": "935435331",
+  "run_timestamp": "2026-11-05T14:06:29.562118+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1INCH INNREDNING AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-05-02",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-02-28",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Frøyas gate 12",
+        "postal_code": "0273",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "43.320",
+        "beskrivelse": "Snekkerarbeid"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "operations.employee_count",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 38,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Salg av varer og tjenester innen innredning av bygg, samt annet som naturlig hører inn under dette.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Marcis Paeglis",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "935456541",
+          "name": "1INCH INNREDNING AS",
+          "employees": 38,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "financial.revenue_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 13803361.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "financial.operating_profit_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 214901.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "financial.profit_before_tax_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 203499.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "financial.net_income_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 158729.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "financial.total_assets_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 4517828.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "financial.total_equity_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 188729.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "financial.operating_margin_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 1.56,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935435331"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "operations.corporate_event.20260000561737",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Revisor",
+        "date": "2026-07-17",
+        "kid": "20260000561737",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000561737&sokeverdi=935435331&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000561737&sokeverdi=935435331&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "operations.corporate_event.20260000385948",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Manglende roller",
+        "date": "2026-06-16",
+        "kid": "20260000385948",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000385948&sokeverdi=935435331&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000385948&sokeverdi=935435331&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "operations.corporate_event.20260000252620",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2026-05-09",
+        "kid": "20260000252620",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000252620&sokeverdi=935435331&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000252620&sokeverdi=935435331&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "operations.corporate_event.20260000071246",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Signatur",
+        "date": "2026-02-21",
+        "kid": "20260000071246",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000071246&sokeverdi=935435331&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000071246&sokeverdi=935435331&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:29.562118+00:00",
+      "fact_key": "operations.corporate_event.20250000220075",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2025-05-02",
+        "kid": "20250000220075",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000220075&sokeverdi=935435331&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000220075&sokeverdi=935435331&spraak=nb"
+    }
+  ],
+  "facts_created": 25,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

@@ -1,0 +1,71 @@
+{
+  "orgnr": "988440809",
+  "run_timestamp": "2026-11-05T14:04:06.852064+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:04:06.852064+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1280 DESIGN AV CHRISTOFFER SVENDSEN",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/988440809"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.852064+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/988440809"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.852064+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2005-09-07",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/988440809"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.852064+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Ystenesgata 32",
+        "postal_code": "6007",
+        "city": "ÅLESUND",
+        "municipality": "ÅLESUND",
+        "municipality_number": "1508",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/988440809"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.852064+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "23.310",
+        "beskrivelse": "Produksjon av keramiske vegg- og gulvfliser"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/988440809"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:06.852064+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/988440809"
+    }
+  ],
+  "facts_created": 6,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

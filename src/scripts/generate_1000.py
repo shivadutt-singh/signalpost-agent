@@ -11,10 +11,10 @@ from pathlib import Path
 # Add project root to path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-from src.config import settings
-from src.collectors.http_budget import AsyncHttpBudgetClient, HttpBudgetTracker
-from src.collectors.brreg_client import BrregClient
 from src.cli import run_batch
+from src.collectors.brreg_client import BrregClient
+from src.collectors.http_budget import AsyncHttpBudgetClient, BudgetedAsyncClient, HttpBudgetTracker
+from src.config import settings
 
 
 async def run_seed_1000(limit: int = 1000, concurrency: int = 25):

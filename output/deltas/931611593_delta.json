@@ -1,0 +1,68 @@
+{
+  "orgnr": "931611593",
+  "run_timestamp": "2026-11-05T14:04:07.947358+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:04:07.947358+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "12HUS INVEST LIMITED",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931611593"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:07.947358+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "UTLA",
+        "beskrivelse": "Utenlandsk enhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931611593"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:07.947358+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-06-21",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931611593"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:07.947358+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-05-30",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931611593"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:07.947358+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Stron Legal, The Clubhouse St James 8, St James's Square, St James's",
+        "postal_code": null,
+        "city": "LONDON SW1Y 4JU ENGLAND",
+        "municipality": null,
+        "municipality_number": null,
+        "country": "Storbritannia"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931611593"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:07.947358+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/931611593"
+    }
+  ],
+  "facts_created": 6,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

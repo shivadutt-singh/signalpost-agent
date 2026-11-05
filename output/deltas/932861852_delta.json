@@ -1,0 +1,232 @@
+{
+  "orgnr": "932861852",
+  "run_timestamp": "2026-11-05T14:06:01.380801+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1702 INVEST AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2024-01-22",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2024-01-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Kilgata 15D",
+        "postal_code": "3217",
+        "city": "SANDEFJORD",
+        "municipality": "SANDEFJORD",
+        "municipality_number": "3907",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "00.000",
+        "beskrivelse": "Uoppgitt"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Investere i aksjer og verdipapirer samt annen virksomhet som står i naturlig tilknytning til dette.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Fredric Schau",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "932864908",
+          "name": "1702 INVEST AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "financial.net_income_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 0.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "financial.total_assets_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 52711.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "financial.total_equity_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 24211.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "financial.operating_profit_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -7.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "financial.profit_before_tax_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -7.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "financial.net_income_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -5.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "financial.total_assets_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 52711.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "financial.total_equity_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 24211.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/932861852"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "operations.corporate_event.20260000371755",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2026-06-11",
+        "kid": "20260000371755",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000371755&sokeverdi=932861852&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000371755&sokeverdi=932861852&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "operations.corporate_event.20250000364707",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2025-06-02",
+        "kid": "20250000364707",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000364707&sokeverdi=932861852&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000364707&sokeverdi=932861852&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:01.380801+00:00",
+      "fact_key": "operations.corporate_event.20240000216682",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2024-01-22",
+        "kid": "20240000216682",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000216682&sokeverdi=932861852&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000216682&sokeverdi=932861852&spraak=nb"
+    }
+  ],
+  "facts_created": 23,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

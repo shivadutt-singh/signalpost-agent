@@ -1,0 +1,320 @@
+{
+  "orgnr": "993517410",
+  "legal_name": "1991 INTERACTIVE ANS",
+  "canonical_status": "IN_LIQUIDATION",
+  "created_at": "2026-11-05T14:06:20.838913+00:00",
+  "updated_at": "2026-11-05T14:06:20.838913+00:00",
+  "schema_version": "2.0.0",
+  "profile_verification_explanation": "Enterprise profile for 1991 INTERACTIVE ANS (orgnr: 993517410) deterministically verified. 13 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "1991 INTERACTIVE ANS is a registered Norwegian enterprise located in BERGEN governed under enterprise number 993517410. Registration records confirm corporate standing with active leadership under Frode Brændø. Unfiled interim quarterly results, private partner contracts, and internal headcount fluctuations remain unconfirmed from public records.",
+  "known_unknowns": [
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 993517410. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret."
+  ],
+  "financial_history": [],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "1991 INTERACTIVE ANS",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993517410",
+        "source_tier": "official_registry",
+        "source_date": "2009-01-13",
+        "retrieval_timestamp": "2026-11-05T14:06:18.836336+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '1991 INTERACTIVE ANS'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "ANS",
+        "beskrivelse": "Ansvarlig selskap med solidarisk ansvar"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993517410",
+        "source_tier": "official_registry",
+        "source_date": "2009-01-13",
+        "retrieval_timestamp": "2026-11-05T14:06:18.836336+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form ANS (Ansvarlig selskap med solidarisk ansvar)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2009-01-13",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993517410",
+        "source_tier": "official_registry",
+        "source_date": "2009-01-13",
+        "retrieval_timestamp": "2026-11-05T14:06:18.836336+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "registry.founding_date": {
+      "fact_key": "registry.founding_date",
+      "current_value": "2009-01-05",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993517410",
+        "source_tier": "official_registry",
+        "source_date": "2009-01-13",
+        "retrieval_timestamp": "2026-11-05T14:06:18.836336+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official founding date (stiftelsesdato) recorded in registry."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Sandviksveien 3A",
+        "postal_code": "5036",
+        "city": "BERGEN",
+        "municipality": "BERGEN",
+        "municipality_number": "4601",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993517410",
+        "source_tier": "official_registry",
+        "source_date": "2009-01-13",
+        "retrieval_timestamp": "2026-11-05T14:06:18.836336+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in BERGEN."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "62.100",
+        "beskrivelse": "Dataprogrammeringstjenester"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993517410",
+        "source_tier": "official_registry",
+        "source_date": "2009-01-13",
+        "retrieval_timestamp": "2026-11-05T14:06:18.836336+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 62.100: Dataprogrammeringstjenester)."
+      },
+      "previous_values": []
+    },
+    "operations.statutory_purpose": {
+      "fact_key": "operations.statutory_purpose",
+      "current_value": "Produksjon av interaktiv digital underholdning til ulike plattformer som iPhone, Playstation Portable og Playstation 3.",
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993517410",
+        "source_tier": "official_registry",
+        "source_date": "2009-01-13",
+        "retrieval_timestamp": "2026-11-05T14:06:18.836336+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Statutory purpose registered in articles of association."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "IN_LIQUIDATION",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993517410",
+        "source_tier": "official_registry",
+        "source_date": "2009-01-13",
+        "retrieval_timestamp": "2026-11-05T14:06:18.836336+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: IN_LIQUIDATION."
+      },
+      "previous_values": []
+    },
+    "governance.board_chair": {
+      "fact_key": "governance.board_chair",
+      "current_value": "Frode Brændø",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993517410",
+        "source_tier": "official_registry",
+        "source_date": "2009-01-13",
+        "retrieval_timestamp": "2026-11-05T14:06:18.836336+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000731136": {
+      "fact_key": "operations.corporate_event.20260000731136",
+      "current_value": {
+        "title": "Styre",
+        "date": "2026-09-07",
+        "kid": "20260000731136",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000731136&sokeverdi=993517410&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000731136&sokeverdi=993517410&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-09-07",
+        "retrieval_timestamp": "2026-11-05T14:06:20.837898+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-09-07): Styre (KID: 20260000731136, Orgnr: 993517410)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Styre' verified from Brønnøysundregistrene Kunngjøringer (orgnr 993517410)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000731135": {
+      "fact_key": "operations.corporate_event.20260000731135",
+      "current_value": {
+        "title": "Oppløsning",
+        "date": "2026-09-07",
+        "kid": "20260000731135",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000731135&sokeverdi=993517410&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000731135&sokeverdi=993517410&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-09-07",
+        "retrieval_timestamp": "2026-11-05T14:06:20.837898+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-09-07): Oppløsning (KID: 20260000731135, Orgnr: 993517410)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Oppløsning' verified from Brønnøysundregistrene Kunngjøringer (orgnr 993517410)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20200000205749": {
+      "fact_key": "operations.corporate_event.20200000205749",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2020-01-01",
+        "kid": "20200000205749",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20200000205749&sokeverdi=993517410&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20200000205749&sokeverdi=993517410&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2020-01-01",
+        "retrieval_timestamp": "2026-11-05T14:06:20.837898+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2020-01-01): Forretningsadresse (KID: 20200000205749, Orgnr: 993517410)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 993517410)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20090000010667": {
+      "fact_key": "operations.corporate_event.20090000010667",
+      "current_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2009-01-13",
+        "kid": "20090000010667",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20090000010667&sokeverdi=993517410&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20090000010667&sokeverdi=993517410&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2009-01-13",
+        "retrieval_timestamp": "2026-11-05T14:06:20.837898+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2009-01-13): Nyregistrering i Foretaksregisteret (KID: 20090000010667, Orgnr: 993517410)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Nyregistrering i Foretaksregisteret' verified from Brønnøysundregistrene Kunngjøringer (orgnr 993517410)."
+      },
+      "previous_values": []
+    }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 13,
+    "critic_facts_quarantined": 0
+  },
+  "metadata": {}
+}

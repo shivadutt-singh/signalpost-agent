@@ -1,0 +1,74 @@
+# ==============================================================================
+# JBOX Container Execution Manifest - Signalpost Agent (v4.0 God-Tier Edition)
+# Official Evaluation Specification for Main Track ($2,000) & JBOX Bonus Track ($500)
+# ==============================================================================
+version: "1.0"
+name: "signalpost-agent"
+displayName: "Signalpost Agent - Norwegian Corporate Intelligence Pipeline"
+description: >
+  Autonomous, 100% entity-precise Norwegian company profiling agent.
+  Features official Brreg registry extraction, w2.brreg.no Kunngjøringer event feeds,
+  ATS-verified career page job harvesting, multi-year financial time-series with deterministic
+  YoY growth metrics, and the FactCriticPipeline zero-disqualification firewall.
+
+runtime:
+  language: "python"
+  version: "3.11"
+  base_image: "python:3.11-slim"
+  os: "linux/amd64"
+
+build:
+  dependencies:
+    system:
+      - curl
+      - ca-certificates
+    python:
+      - pip install --upgrade pip
+      - pip install -e ".[dev]"
+  setup:
+    - mkdir -p output/profiles output/deltas output/telemetry data
+
+entrypoint: "./run_agent.sh"
+
+commands:
+  # Default execution run when harness launches container with no arguments
+  default: "./run_agent.sh"
+  
+  # Single company profile run
+  run_single: "./run_agent.sh {orgnr}"
+  
+  # Batch company profile run
+  run_batch: "./run_agent.sh {batch_file}"
+  
+  # Unit & integration regression tests
+  test: "python -m pytest tests -v --tb=short"
+  
+  # 50-Profile hand-checked calibration audit generator
+  audit: "python -m src.scripts.build_calibration_audit"
+  
+  # Static HTML viewer generator (Auditor Mode)
+  export_html: "python -m src.web.static_builder"
+  
+  # Local interactive inspection web server
+  serve: "python -m src.cli serve --host 0.0.0.0 --port 8000"
+
+environment:
+  PYTHONUNBUFFERED: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+  REQUEST_TIMEOUT: "12"
+  MAX_REQUESTS_PER_COMPANY: "18"
+  HTTP_USER_AGENT: "Signalpost-Agent/4.0 (Norwegian-Company-Profiler; Evaluation-Runner)"
+
+resources:
+  cpu: "2"
+  memory: "2GiB"
+  timeout_seconds: 300
+  network: "egress_enabled"
+
+artifacts:
+  profiles_dir: "output/profiles/"
+  deltas_dir: "output/deltas/"
+  telemetry_dir: "output/telemetry/"
+  calibration_report: "HAND_CHECKED_REPORT.md"
+  calibration_matrix: "data/hand_checked_audit.json"
+  auditor_dashboard: "output/index.html"

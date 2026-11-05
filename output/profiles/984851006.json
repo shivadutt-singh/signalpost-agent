@@ -3,14 +3,15 @@
   "legal_name": "DNB BANK ASA",
   "canonical_status": "ACTIVE",
   "created_at": "2026-10-17T09:43:51.802656+00:00",
-  "updated_at": "2026-10-17T13:35:36.907354+00:00",
+  "updated_at": "2026-11-05T12:24:34.963194+00:00",
   "schema_version": "1.0.0",
-  "profile_verification_explanation": "Enterprise profile for DNB BANK ASA (orgnr: 984851006) deterministically verified. 15 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 5 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
-  "executive_summary": "DNB BANK ASA operates commercial activities registered under enterprise number 984851006 in OSLO. Public web and registry records confirm active corporate governance under Kjerstin Elisabeth Braathen. Detailed non-public financial margins and private contract deliverables remain unconfirmed from public sources.",
+  "profile_verification_explanation": "Enterprise profile for DNB BANK ASA (orgnr: 984851006) deterministically verified. 32 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "DNB BANK ASA (orgnr 984851006) is a registered ASA based in OSLO.",
   "known_unknowns": [
-    "Detailed private commercial agreements and non-public partner contracts",
-    "Real-time interim quarterly operating results not yet filed with registry"
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 984851006. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret.",
+    "Active job listings: Checked official website (dnb.no) and official NAV public job feed on 2026-11-05; 0 active openings verified featuring the company's legal name or exact orgnr."
   ],
+  "financial_history": [],
   "facts": {
     "registry.legal_name": {
       "fact_key": "registry.legal_name",
@@ -25,6 +26,7 @@
         "retrieval_timestamp": "2026-10-17T09:43:48.996655+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official registered enterprise name 'DNB BANK ASA'."
@@ -47,6 +49,7 @@
         "retrieval_timestamp": "2026-10-17T09:43:48.996655+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official corporate form ASA (Allmennaksjeselskap)."
@@ -66,6 +69,7 @@
         "retrieval_timestamp": "2026-10-17T09:43:48.996655+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official registration date in Enhetsregisteret."
@@ -85,6 +89,7 @@
         "retrieval_timestamp": "2026-10-17T09:43:48.996655+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official founding date (stiftelsesdato) recorded in registry."
@@ -111,6 +116,7 @@
         "retrieval_timestamp": "2026-10-17T09:43:48.996655+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official registered business address in OSLO."
@@ -130,6 +136,7 @@
         "retrieval_timestamp": "2026-10-17T09:43:48.996655+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official primary homepage domain declared to registry: www.dnb.no."
@@ -152,6 +159,7 @@
         "retrieval_timestamp": "2026-10-17T09:43:48.996655+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official primary economic activity code (NACE 64.190: Banker og kredittforetak)."
@@ -171,6 +179,7 @@
         "retrieval_timestamp": "2026-10-17T09:43:48.996655+00:00",
         "verbatim_quote": "7347",
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official reported employee count (7347) from NAV Aa-registeret cross-reference."
@@ -190,6 +199,7 @@
         "retrieval_timestamp": "2026-10-17T09:43:48.996655+00:00",
         "verbatim_quote": "2025",
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Latest annual accounts year filed with Regnskapsregisteret: 2025."
@@ -209,6 +219,7 @@
         "retrieval_timestamp": "2026-10-17T09:43:48.996655+00:00",
         "verbatim_quote": "18008310800.0",
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official registered equity share capital: 18,008,310,800.00 NOK. (1,440,664,864 shares)."
@@ -228,6 +239,7 @@
         "retrieval_timestamp": "2026-10-17T09:43:48.996655+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Statutory purpose registered in articles of association."
@@ -247,6 +259,7 @@
         "retrieval_timestamp": "2026-10-17T09:43:48.996655+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Authoritative corporate standing: ACTIVE."
@@ -266,6 +279,7 @@
         "retrieval_timestamp": "2026-10-17T09:43:48.996655+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
@@ -285,6 +299,7 @@
         "retrieval_timestamp": "2026-10-17T09:43:48.996655+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
@@ -365,116 +380,522 @@
         "retrieval_timestamp": "2026-10-17T09:43:48.996655+00:00",
         "verbatim_quote": null,
         "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
         "entity_confidence": 1.0,
         "raw_digits_verified": true,
         "verification_explanation": "Registered active operational sub-units count: 10."
       },
       "previous_values": []
     },
-    "operations.summary": {
-      "fact_key": "operations.summary",
-      "current_value": "DNB Bank uten Internett Ikke alle ønsker en digtial bankhverdag.",
-      "category": "operations",
-      "unit": null,
-      "period_or_year": null,
-      "current_evidence": {
-        "source_url": "https://dnb.no/om-oss",
-        "source_tier": "official_homepage",
-        "source_date": null,
-        "retrieval_timestamp": "2026-10-17T09:43:51.802401+00:00",
-        "verbatim_quote": "DNB Bank uten Internett Ikke alle ønsker en digtial bankhverdag.",
-        "entity_match_rule": "OFFICIAL_DOMAIN_MATCH",
-        "entity_confidence": 0.98,
-        "raw_digits_verified": false,
-        "verification_explanation": "Company profile description extracted from verified page text. Sourced from https://dnb.no/om-oss (Entity verified via OFFICIAL_DOMAIN_MATCH)."
-      },
-      "previous_values": []
-    },
-    "operations.products_services": {
-      "fact_key": "operations.products_services",
-      "current_value": "DNB Bank uten Internett Ikke alle ønsker en digtial bankhverdag.",
-      "category": "operations",
-      "unit": null,
-      "period_or_year": null,
-      "current_evidence": {
-        "source_url": "https://dnb.no/om-oss",
-        "source_tier": "official_homepage",
-        "source_date": null,
-        "retrieval_timestamp": "2026-10-17T13:21:38.834933+00:00",
-        "verbatim_quote": "DNB Bank uten Internett Ikke alle ønsker en digtial bankhverdag.",
-        "entity_match_rule": "OFFICIAL_DOMAIN_MATCH",
-        "entity_confidence": 0.98,
-        "raw_digits_verified": false,
-        "verification_explanation": "Products and services stated on https://dnb.no/om-oss."
-      },
-      "previous_values": []
-    },
-    "operations.value_proposition": {
-      "fact_key": "operations.value_proposition",
-      "current_value": "Solutions delivered by DNB BANK.",
-      "category": "operations",
-      "unit": null,
-      "period_or_year": null,
-      "current_evidence": {
-        "source_url": "https://dnb.no/om-oss",
-        "source_tier": "official_homepage",
-        "source_date": null,
-        "retrieval_timestamp": "2026-10-17T13:21:38.834933+00:00",
-        "verbatim_quote": "DNB Bank uten Internett Ikke alle ønsker en digtial bankhverdag.",
-        "entity_match_rule": "OFFICIAL_DOMAIN_MATCH",
-        "entity_confidence": 0.98,
-        "raw_digits_verified": false,
-        "verification_explanation": "Value proposition stated on https://dnb.no/om-oss."
-      },
-      "previous_values": []
-    },
-    "operations.jobs": {
-      "fact_key": "operations.jobs",
+    "operations.corporate_event.20260000392555": {
+      "fact_key": "operations.corporate_event.20260000392555",
       "current_value": {
-        "status": "Active Career Portal",
-        "openings": [
-          "Consulting and operational roles"
-        ],
-        "portal": "https://dnb.no/karriere"
+        "title": "Kapital",
+        "date": "2026-06-17",
+        "kid": "20260000392555",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000392555&sokeverdi=984851006&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
       },
       "category": "operations",
       "unit": null,
       "period_or_year": null,
       "current_evidence": {
-        "source_url": "https://dnb.no/om-oss",
-        "source_tier": "official_homepage",
-        "source_date": null,
-        "retrieval_timestamp": "2026-10-17T13:21:38.834933+00:00",
-        "verbatim_quote": "karrieremuligheter i Norge og internasjonalt",
-        "entity_match_rule": "OFFICIAL_DOMAIN_MATCH",
-        "entity_confidence": 0.98,
-        "raw_digits_verified": false,
-        "verification_explanation": "Career and hiring status verified on https://dnb.no/om-oss."
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000392555&sokeverdi=984851006&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-06-17",
+        "retrieval_timestamp": "2026-11-05T07:31:35.857809+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-06-17): Kapital (KID: 20260000392555, Orgnr: 984851006)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Kapital' verified from Brønnøysundregistrene Kunngjøringer (orgnr 984851006)."
       },
       "previous_values": []
     },
-    "structure.locations": {
-      "fact_key": "structure.locations",
+    "operations.corporate_event.20260000392554": {
+      "fact_key": "operations.corporate_event.20260000392554",
       "current_value": {
-        "location": "OSLO",
-        "type": "Headquarters"
+        "title": "Vedtektsdato",
+        "date": "2026-06-17",
+        "kid": "20260000392554",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000392554&sokeverdi=984851006&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
       },
-      "category": "structure",
+      "category": "operations",
       "unit": null,
       "period_or_year": null,
       "current_evidence": {
-        "source_url": "https://dnb.no/investor",
-        "source_tier": "official_homepage",
-        "source_date": null,
-        "retrieval_timestamp": "2026-10-17T13:21:38.835764+00:00",
-        "verbatim_quote": "OSLO",
-        "entity_match_rule": "OFFICIAL_DOMAIN_MATCH",
-        "entity_confidence": 0.98,
-        "raw_digits_verified": false,
-        "verification_explanation": "Operating location (Headquarters) verified on https://dnb.no/investor."
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000392554&sokeverdi=984851006&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-06-17",
+        "retrieval_timestamp": "2026-11-05T07:31:35.857809+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-06-17): Vedtektsdato (KID: 20260000392554, Orgnr: 984851006)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Vedtektsdato' verified from Brønnøysundregistrene Kunngjøringer (orgnr 984851006)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000230550": {
+      "fact_key": "operations.corporate_event.20260000230550",
+      "current_value": {
+        "title": "Styre",
+        "date": "2026-05-04",
+        "kid": "20260000230550",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000230550&sokeverdi=984851006&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000230550&sokeverdi=984851006&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-05-04",
+        "retrieval_timestamp": "2026-11-05T07:31:35.857809+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-05-04): Styre (KID: 20260000230550, Orgnr: 984851006)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Styre' verified from Brønnøysundregistrene Kunngjøringer (orgnr 984851006)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000223325": {
+      "fact_key": "operations.corporate_event.20260000223325",
+      "current_value": {
+        "title": "Godkjent årsregnskap med bærekraftsrapportering",
+        "date": "2026-04-30",
+        "kid": "20260000223325",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000223325&sokeverdi=984851006&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000223325&sokeverdi=984851006&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-04-30",
+        "retrieval_timestamp": "2026-11-05T07:31:35.857809+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-04-30): Godkjent årsregnskap med bærekraftsrapportering (KID: 20260000223325, Orgnr: 984851006)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Godkjent årsregnskap med bærekraftsrapportering' verified from Brønnøysundregistrene Kunngjøringer (orgnr 984851006)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000210373": {
+      "fact_key": "operations.corporate_event.20260000210373",
+      "current_value": {
+        "title": "Avtalepant i egne aksjer-fullmakt",
+        "date": "2026-04-27",
+        "kid": "20260000210373",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000210373&sokeverdi=984851006&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000210373&sokeverdi=984851006&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-04-27",
+        "retrieval_timestamp": "2026-11-05T07:31:35.857809+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-04-27): Avtalepant i egne aksjer-fullmakt (KID: 20260000210373, Orgnr: 984851006)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Avtalepant i egne aksjer-fullmakt' verified from Brønnøysundregistrene Kunngjøringer (orgnr 984851006)."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.gro_bakstad": {
+      "fact_key": "governance.board_member.gro_bakstad",
+      "current_value": "Gro Bakstad",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984851006",
+        "source_tier": "official_registry",
+        "source_date": "2002-09-12",
+        "retrieval_timestamp": "2026-11-05T08:58:31.154028+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.petter-børre_furberg": {
+      "fact_key": "governance.board_member.petter-børre_furberg",
+      "current_value": "Petter-Børre Furberg",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984851006",
+        "source_tier": "official_registry",
+        "source_date": "2002-09-12",
+        "retrieval_timestamp": "2026-11-05T08:58:31.154028+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.jens_petter_olsen": {
+      "fact_key": "governance.board_member.jens_petter_olsen",
+      "current_value": "Jens Petter Olsen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984851006",
+        "source_tier": "official_registry",
+        "source_date": "2002-09-12",
+        "retrieval_timestamp": "2026-11-05T08:58:31.154028+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.berit_irene_behring": {
+      "fact_key": "governance.board_member.berit_irene_behring",
+      "current_value": "Berit Irene Behring",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984851006",
+        "source_tier": "official_registry",
+        "source_date": "2002-09-12",
+        "retrieval_timestamp": "2026-11-05T08:58:31.154028+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.vivian_lund": {
+      "fact_key": "governance.board_member.vivian_lund",
+      "current_value": "Vivian Lund",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984851006",
+        "source_tier": "official_registry",
+        "source_date": "2002-09-12",
+        "retrieval_timestamp": "2026-11-05T08:58:31.154028+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.lars_røsæg": {
+      "fact_key": "governance.board_member.lars_røsæg",
+      "current_value": "Lars Røsæg",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984851006",
+        "source_tier": "official_registry",
+        "source_date": "2002-09-12",
+        "retrieval_timestamp": "2026-11-05T08:58:31.154028+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.lillian_christin_hattrem": {
+      "fact_key": "governance.board_member.lillian_christin_hattrem",
+      "current_value": "Lillian Christin Hattrem",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984851006",
+        "source_tier": "official_registry",
+        "source_date": "2002-09-12",
+        "retrieval_timestamp": "2026-11-05T08:58:31.154028+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.eli_solhaug": {
+      "fact_key": "governance.board_member.eli_solhaug",
+      "current_value": "Eli Solhaug",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984851006",
+        "source_tier": "official_registry",
+        "source_date": "2002-09-12",
+        "retrieval_timestamp": "2026-11-05T08:58:31.154028+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.haakon_christopher_sandven": {
+      "fact_key": "governance.board_member.haakon_christopher_sandven",
+      "current_value": "Haakon Christopher Sandven",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984851006",
+        "source_tier": "official_registry",
+        "source_date": "2002-09-12",
+        "retrieval_timestamp": "2026-11-05T08:58:31.154028+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000210372": {
+      "fact_key": "operations.corporate_event.20260000210372",
+      "current_value": {
+        "title": "Erverv av egne aksjer-fullmakt",
+        "date": "2026-04-27",
+        "kid": "20260000210372",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000210372&sokeverdi=984851006&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000210372&sokeverdi=984851006&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-04-27",
+        "retrieval_timestamp": "2026-11-05T08:58:33.490003+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-04-27): Erverv av egne aksjer-fullmakt (KID: 20260000210372, Orgnr: 984851006)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Erverv av egne aksjer-fullmakt' verified from Brønnøysundregistrene Kunngjøringer (orgnr 984851006)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000210371": {
+      "fact_key": "operations.corporate_event.20260000210371",
+      "current_value": {
+        "title": "Nedsettelse av kapital",
+        "date": "2026-04-27",
+        "kid": "20260000210371",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000210371&sokeverdi=984851006&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000210371&sokeverdi=984851006&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-04-27",
+        "retrieval_timestamp": "2026-11-05T08:58:33.490003+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-04-27): Nedsettelse av kapital (KID: 20260000210371, Orgnr: 984851006)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Nedsettelse av kapital' verified from Brønnøysundregistrene Kunngjøringer (orgnr 984851006)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000028634": {
+      "fact_key": "operations.corporate_event.20260000028634",
+      "current_value": {
+        "title": "Kapital",
+        "date": "2026-01-24",
+        "kid": "20260000028634",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000028634&sokeverdi=984851006&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000028634&sokeverdi=984851006&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-01-24",
+        "retrieval_timestamp": "2026-11-05T08:58:33.490003+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-01-24): Kapital (KID: 20260000028634, Orgnr: 984851006)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Kapital' verified from Brønnøysundregistrene Kunngjøringer (orgnr 984851006)."
       },
       "previous_values": []
     }
   },
-  "metadata": {}
+  "telemetry": {
+    "routing_path": "HYBRID_AGENTIC_PATH",
+    "agentic_facts_proposed": 5,
+    "critic_facts_accepted": 32,
+    "critic_facts_quarantined": 10
+  },
+  "metadata": {
+    "quarantined_facts": [
+      {
+        "orgnr": "984851006",
+        "fact_key": "operations.summary",
+        "value": "DNB Bank uten Internett Ikke alle ønsker en digtial bankhverdag.",
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
+        "source_date": null,
+        "quarantined_at": "2026-11-05T07:31:43.851837+00:00"
+      },
+      {
+        "orgnr": "984851006",
+        "fact_key": "operations.products_services",
+        "value": "DNB Bank uten Internett Ikke alle ønsker en digtial bankhverdag.",
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
+        "source_date": null,
+        "quarantined_at": "2026-11-05T07:31:43.851837+00:00"
+      },
+      {
+        "orgnr": "984851006",
+        "fact_key": "operations.value_proposition",
+        "value": "Solutions delivered by DNB BANK.",
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
+        "source_date": null,
+        "quarantined_at": "2026-11-05T07:31:43.851837+00:00"
+      },
+      {
+        "orgnr": "984851006",
+        "fact_key": "operations.jobs",
+        "value": {
+          "status": "Active Career Portal",
+          "openings": [
+            "Consulting and operational roles"
+          ],
+          "portal": "https://dnb.no/karriere"
+        },
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
+        "source_date": null,
+        "quarantined_at": "2026-11-05T07:31:43.851837+00:00"
+      },
+      {
+        "orgnr": "984851006",
+        "fact_key": "structure.locations",
+        "value": {
+          "location": "OSLO",
+          "type": "Headquarters"
+        },
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
+        "source_date": null,
+        "quarantined_at": "2026-11-05T07:31:43.851837+00:00"
+      },
+      {
+        "orgnr": "984851006",
+        "fact_key": "operations.news.1",
+        "value": {
+          "title": "SamboerkontraktSkap forutsigbarhet og trygghet for økonomien i samlivet",
+          "date": "2026-11-05"
+        },
+        "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'SamboerkontraktSkap forutsigbarhet og trygghet for økonomien' not found in raw scraped page text",
+        "source_url": "https://www.dnb.no/okonomisk-radgiver/juridiske-tjenester",
+        "quarantined_at": "2026-11-05T10:11:43.252986+00:00"
+      },
+      {
+        "orgnr": "984851006",
+        "fact_key": "operations.news.2",
+        "value": {
+          "title": "SameiekontraktAvklar eierandeler og utgifter når dere kjøper bolig sammen",
+          "date": "2026-11-05"
+        },
+        "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'SameiekontraktAvklar eierandeler og utgifter når dere kjøper' not found in raw scraped page text",
+        "source_url": "https://www.dnb.no/okonomisk-radgiver/juridiske-tjenester",
+        "quarantined_at": "2026-11-05T10:11:43.252986+00:00"
+      },
+      {
+        "orgnr": "984851006",
+        "fact_key": "operations.news.3",
+        "value": {
+          "title": "BehovskartleggerFinn ut hvilke juridiske avtaler som passer for deg og din livssituasjon",
+          "date": "2026-11-05"
+        },
+        "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'BehovskartleggerFinn ut hvilke juridiske avtaler som passer ' not found in raw scraped page text",
+        "source_url": "https://www.dnb.no/okonomisk-radgiver/juridiske-tjenester",
+        "quarantined_at": "2026-11-05T10:11:43.252986+00:00"
+      },
+      {
+        "orgnr": "984851006",
+        "fact_key": "operations.jobs",
+        "value": {
+          "status": "Hiring Active",
+          "career_portal_url": "https://dnb.no/om-oss/jobb-og-karriere",
+          "openings": [
+            "Ledige stillinger",
+            "utvikler",
+            "DNB Eiendom er et av Norges eldste og største eiendomsmeglerselskap."
+          ],
+          "verified_count": 3
+        },
+        "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'Jobbannonse: Ledige stillinger hos DNB BANK ASA' not found in raw scraped page text",
+        "source_url": "https://dnb.no/om-oss/jobb-og-karriere",
+        "quarantined_at": "2026-11-05T10:11:43.252986+00:00"
+      },
+      {
+        "orgnr": "984851006",
+        "fact_key": "operations.products",
+        "value": {
+          "core_offerings": "Commercial enterprise operations and specialized client services delivered by DNB BANK ASA.",
+          "target_market": "Commercial enterprise markets",
+          "locations": "OSLO"
+        },
+        "reason": "QUOTE_EXISTENCE_CHECK_FAILED: Verbatim quote 'Commercial enterprise operations and specialized client serv' not found in raw scraped page text",
+        "source_url": "https://dnb.no",
+        "quarantined_at": "2026-11-05T10:11:43.252986+00:00"
+      }
+    ],
+    "quarantined_facts_count": 10
+  }
 }

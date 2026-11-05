@@ -1,0 +1,118 @@
+{
+  "orgnr": "922592233",
+  "run_timestamp": "2026-11-05T14:05:54.450676+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:05:54.450676+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "17. MAI-NEMNDA I VIKSDALEN",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922592233"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:54.450676+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922592233"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:54.450676+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-04-05",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922592233"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:54.450676+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-03-21",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922592233"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:54.450676+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Skulen",
+        "postal_code": "6978",
+        "city": "VIKSDALEN",
+        "municipality": "SUNNFJORD",
+        "municipality_number": "4647",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922592233"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:54.450676+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922592233"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:54.450676+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922592233"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:54.450676+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Terje Steinar Vallestad",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922592233"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:54.450676+00:00",
+      "fact_key": "governance.board_member.hildegunn_hana",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Hildegunn Hana",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922592233"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:54.450676+00:00",
+      "fact_key": "governance.board_member.gro_haga",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Gro Haga",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922592233"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:54.450676+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "922774064",
+          "name": "17. MAI VIKSDALEN",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922592233"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

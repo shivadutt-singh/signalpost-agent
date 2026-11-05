@@ -1,0 +1,384 @@
+{
+  "orgnr": "992516844",
+  "legal_name": "1985 BY HAIDAR",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-11-05T14:06:19.888922+00:00",
+  "updated_at": "2026-11-05T14:06:19.888922+00:00",
+  "schema_version": "2.0.0",
+  "profile_verification_explanation": "Enterprise profile for 1985 BY HAIDAR (orgnr: 992516844) deterministically verified. 15 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "1985 BY HAIDAR is a registered Norwegian enterprise located in INDRE ØSTFOLD governed under enterprise number 992516844. Registration records confirm corporate standing with active leadership under Burhan Haidar. Unfiled interim quarterly results, private partner contracts, and internal headcount fluctuations remain unconfirmed from public records.",
+  "known_unknowns": [
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 992516844. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret."
+  ],
+  "financial_history": [],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "1985 BY HAIDAR",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992516844",
+        "source_tier": "official_registry",
+        "source_date": "2008-04-07",
+        "retrieval_timestamp": "2026-11-05T14:06:17.671872+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '1985 BY HAIDAR'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992516844",
+        "source_tier": "official_registry",
+        "source_date": "2008-04-07",
+        "retrieval_timestamp": "2026-11-05T14:06:17.671872+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form ENK (Enkeltpersonforetak)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2008-04-07",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992516844",
+        "source_tier": "official_registry",
+        "source_date": "2008-04-07",
+        "retrieval_timestamp": "2026-11-05T14:06:17.671872+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Løkkekroken 3",
+        "postal_code": "1815",
+        "city": "ASKIM",
+        "municipality": "INDRE ØSTFOLD",
+        "municipality_number": "3118",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992516844",
+        "source_tier": "official_registry",
+        "source_date": "2008-04-07",
+        "retrieval_timestamp": "2026-11-05T14:06:17.671872+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in ASKIM."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "70.200",
+        "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992516844",
+        "source_tier": "official_registry",
+        "source_date": "2008-04-07",
+        "retrieval_timestamp": "2026-11-05T14:06:17.671872+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 70.200: Bedriftsrådgivning og annen administrativ rådgivning)."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992516844",
+        "source_tier": "official_registry",
+        "source_date": "2008-04-07",
+        "retrieval_timestamp": "2026-11-05T14:06:17.671872+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    },
+    "governance.ceo": {
+      "fact_key": "governance.ceo",
+      "current_value": "Burhan Haidar",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992516844",
+        "source_tier": "official_registry",
+        "source_date": "2008-04-07",
+        "retrieval_timestamp": "2026-11-05T14:06:17.671872+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20240000083172": {
+      "fact_key": "operations.corporate_event.20240000083172",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2024-01-01",
+        "kid": "20240000083172",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000083172&sokeverdi=992516844&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000083172&sokeverdi=992516844&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2024-01-01",
+        "retrieval_timestamp": "2026-11-05T14:06:19.888138+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2024-01-01): Forretningsadresse (KID: 20240000083172, Orgnr: 992516844)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 992516844)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20220000142489": {
+      "fact_key": "operations.corporate_event.20220000142489",
+      "current_value": {
+        "title": "Virksomhet/bransje",
+        "date": "2022-04-07",
+        "kid": "20220000142489",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000142489&sokeverdi=992516844&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000142489&sokeverdi=992516844&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2022-04-07",
+        "retrieval_timestamp": "2026-11-05T14:06:19.888138+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2022-04-07): Virksomhet/bransje (KID: 20220000142489, Orgnr: 992516844)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Virksomhet/bransje' verified from Brønnøysundregistrene Kunngjøringer (orgnr 992516844)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20220000142488": {
+      "fact_key": "operations.corporate_event.20220000142488",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2022-04-07",
+        "kid": "20220000142488",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000142488&sokeverdi=992516844&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000142488&sokeverdi=992516844&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2022-04-07",
+        "retrieval_timestamp": "2026-11-05T14:06:19.888138+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2022-04-07): Forretningsadresse (KID: 20220000142488, Orgnr: 992516844)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 992516844)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20220000142487": {
+      "fact_key": "operations.corporate_event.20220000142487",
+      "current_value": {
+        "title": "Foretaksnavn",
+        "date": "2022-04-07",
+        "kid": "20220000142487",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000142487&sokeverdi=992516844&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000142487&sokeverdi=992516844&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2022-04-07",
+        "retrieval_timestamp": "2026-11-05T14:06:19.888138+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2022-04-07): Foretaksnavn (KID: 20220000142487, Orgnr: 992516844)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Foretaksnavn' verified from Brønnøysundregistrene Kunngjøringer (orgnr 992516844)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20200000018542": {
+      "fact_key": "operations.corporate_event.20200000018542",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2020-01-01",
+        "kid": "20200000018542",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20200000018542&sokeverdi=992516844&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20200000018542&sokeverdi=992516844&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2020-01-01",
+        "retrieval_timestamp": "2026-11-05T14:06:19.888138+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2020-01-01): Forretningsadresse (KID: 20200000018542, Orgnr: 992516844)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 992516844)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20120000120084": {
+      "fact_key": "operations.corporate_event.20120000120084",
+      "current_value": {
+        "title": "Virksomhet/bransje",
+        "date": "2012-04-24",
+        "kid": "20120000120084",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20120000120084&sokeverdi=992516844&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20120000120084&sokeverdi=992516844&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2012-04-24",
+        "retrieval_timestamp": "2026-11-05T14:06:19.888138+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2012-04-24): Virksomhet/bransje (KID: 20120000120084, Orgnr: 992516844)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Virksomhet/bransje' verified from Brønnøysundregistrene Kunngjøringer (orgnr 992516844)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20120000120083": {
+      "fact_key": "operations.corporate_event.20120000120083",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2012-04-24",
+        "kid": "20120000120083",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20120000120083&sokeverdi=992516844&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20120000120083&sokeverdi=992516844&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2012-04-24",
+        "retrieval_timestamp": "2026-11-05T14:06:19.888138+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2012-04-24): Forretningsadresse (KID: 20120000120083, Orgnr: 992516844)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 992516844)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20120000120082": {
+      "fact_key": "operations.corporate_event.20120000120082",
+      "current_value": {
+        "title": "Daglig leder",
+        "date": "2012-04-24",
+        "kid": "20120000120082",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20120000120082&sokeverdi=992516844&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20120000120082&sokeverdi=992516844&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2012-04-24",
+        "retrieval_timestamp": "2026-11-05T14:06:19.888138+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2012-04-24): Daglig leder (KID: 20120000120082, Orgnr: 992516844)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Daglig leder' verified from Brønnøysundregistrene Kunngjøringer (orgnr 992516844)."
+      },
+      "previous_values": []
+    }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 15,
+    "critic_facts_quarantined": 0
+  },
+  "metadata": {}
+}

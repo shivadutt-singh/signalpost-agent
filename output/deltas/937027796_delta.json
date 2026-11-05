@@ -1,0 +1,140 @@
+{
+  "orgnr": "937027796",
+  "run_timestamp": "2026-11-05T14:08:02.769452+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:08:02.769452+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2.ETG AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937027796"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:02.769452+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937027796"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:02.769452+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-01-23",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937027796"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:02.769452+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-01-13",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937027796"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:02.769452+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Rådhusgata 22",
+        "postal_code": "4200",
+        "city": "SAUDA",
+        "municipality": "SAUDA",
+        "municipality_number": "1135",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937027796"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:02.769452+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "56.300",
+        "beskrivelse": "Drift av barer"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937027796"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:02.769452+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937027796"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:02.769452+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Selge varer og tjenester innen pubdrift og annet som naturlig sammenfaller med dette, samt deltakelse i andre selskaper, investeringer og nærliggende virksomhet.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937027796"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:02.769452+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937027796"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:02.769452+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Alexander Hauge",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937027796"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:02.769452+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Alexander Hauge",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937027796"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:02.769452+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "937043562",
+          "name": "2.ETG AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937027796"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:02.769452+00:00",
+      "fact_key": "operations.corporate_event.20260000028172",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2026-01-23",
+        "kid": "20260000028172",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000028172&sokeverdi=937027796&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000028172&sokeverdi=937027796&spraak=nb"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

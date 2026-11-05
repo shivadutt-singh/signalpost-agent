@@ -1,0 +1,94 @@
+{
+  "orgnr": "925861456",
+  "run_timestamp": "2026-11-05T14:06:58.633922+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:58.633922+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2 B ELETTRONICA S.R.L.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925861456"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:58.633922+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "NUF",
+        "beskrivelse": "Norskregistrert utenlandsk foretak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925861456"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:58.633922+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-02-20",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925861456"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:58.633922+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "2/d Via Della Praia",
+        "postal_code": null,
+        "city": "IT-10090 BUTTIGLIERA ALTA (TO)",
+        "municipality": null,
+        "municipality_number": null,
+        "country": "Italia"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925861456"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:58.633922+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "33.120",
+        "beskrivelse": "Reparasjon og vedlikehold av maskiner"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925861456"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:58.633922+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925861456"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:58.633922+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Ubaldo Baglioni",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925861456"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:58.633922+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "926640933",
+          "name": "2 B ELETTRONICA S.R.L.",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/925861456"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

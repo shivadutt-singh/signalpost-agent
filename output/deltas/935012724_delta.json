@@ -1,0 +1,131 @@
+{
+  "orgnr": "935012724",
+  "run_timestamp": "2026-11-05T14:05:27.607248+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:05:27.607248+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Enterprise 935012724",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935012724"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:27.607248+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935012724"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:27.607248+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Jon-Ivar Bydal",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935012724"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:27.607248+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "935016851",
+          "name": "150 HOLDING AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935012724"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:27.607248+00:00",
+      "fact_key": "financial.operating_profit_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -11790.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935012724"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:27.607248+00:00",
+      "fact_key": "financial.profit_before_tax_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 4813212.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935012724"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:27.607248+00:00",
+      "fact_key": "financial.net_income_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 3868839.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935012724"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:27.607248+00:00",
+      "fact_key": "financial.total_assets_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 123358246.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935012724"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:27.607248+00:00",
+      "fact_key": "financial.total_equity_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 122999065.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935012724"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:27.607248+00:00",
+      "fact_key": "operations.corporate_event.20260000708647",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2026-08-22",
+        "kid": "20260000708647",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000708647&sokeverdi=935012724&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000708647&sokeverdi=935012724&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:27.607248+00:00",
+      "fact_key": "operations.corporate_event.20250000053673",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2025-02-10",
+        "kid": "20250000053673",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000053673&sokeverdi=935012724&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000053673&sokeverdi=935012724&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:27.607248+00:00",
+      "fact_key": "operations.corporate_event.20250000053602",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Gjennomføring av fisjon",
+        "date": "2025-02-10",
+        "kid": "20250000053602",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000053602&sokeverdi=935012724&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000053602&sokeverdi=935012724&spraak=nb"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

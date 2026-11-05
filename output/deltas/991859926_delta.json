@@ -1,0 +1,131 @@
+{
+  "orgnr": "991859926",
+  "run_timestamp": "2026-11-05T14:04:08.050928+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:04:08.050928+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "123SPORT DA",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991859926"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:08.050928+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "DA",
+        "beskrivelse": "Ansvarlig selskap med delt ansvar"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991859926"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:08.050928+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2007-10-26",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991859926"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:08.050928+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2007-10-20",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991859926"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:08.050928+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Frode Hansen Bysteinveien 10B",
+        "postal_code": "4331",
+        "city": "ÅLGÅRD",
+        "municipality": "GJESDAL",
+        "municipality_number": "1122",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991859926"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:08.050928+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "www.123Sport.no",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991859926"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:08.050928+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "47.631",
+        "beskrivelse": "Detaljhandel med sportsvarer"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991859926"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:08.050928+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Salg av sportsutstyr med hovedvekt på golf og fiske utstyr. Importere varer, og selge videre i nettbutikk.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991859926"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:08.050928+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991859926"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:08.050928+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Frode Hansen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/991859926"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:08.050928+00:00",
+      "fact_key": "operations.corporate_event.20190000686575",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Forretningsadresse",
+        "date": "2019-09-21",
+        "kid": "20190000686575",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20190000686575&sokeverdi=991859926&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20190000686575&sokeverdi=991859926&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:08.050928+00:00",
+      "fact_key": "operations.corporate_event.20070000439374",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2007-10-26",
+        "kid": "20070000439374",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20070000439374&sokeverdi=991859926&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20070000439374&sokeverdi=991859926&spraak=nb"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}
