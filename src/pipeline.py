@@ -80,6 +80,8 @@ class HybridPipeline:
         enhet_data = None
         try:
             enhet_data = await self.brreg.get_enhet(clean_orgnr)
+            if not enhet_data:
+                enhet_data = await self.brreg.get_underenhet(clean_orgnr)
         except Exception as e:
             logger.warning(f"Brreg enhet retrieval error for {clean_orgnr}: {e}")
 

@@ -6,6 +6,7 @@ Tracks web outbound scraping requests separately from LLM API calls.
 """
 
 import asyncio
+from typing import Any
 
 import httpx
 
@@ -56,7 +57,7 @@ class HttpBudgetTracker:
         self._llm_api_call_count: int = 0
         self._company_request_counts: dict[str, int] = {}
         self._company_urls: dict[str, list[str]] = {}
-        self._cache: dict[str, httpx.Response] = {}
+        self._cache: dict[str, asyncio.Future] = {}
 
     @classmethod
     def create_for_batch(cls, batch_size: int) -> "HttpBudgetTracker":
@@ -99,16 +100,6 @@ class HttpBudgetTracker:
         async with self._lock:
             self._llm_api_call_count += 1
 
-    async def store_cache(self, orgnr: str | None, url: str, response: httpx.Response) -> None:
-        cache_key = f"{orgnr or 'global'}::{url}"
-        async with self._lock:
-            self._cache[cache_key] = response
-
-    async def get_cached(self, orgnr: str | None, url: str) -> httpx.Response | None:
-        cache_key = f"{orgnr or 'global'}::{url}"
-        async with self._lock:
-            return self._cache.get(cache_key)
-
     @property
     def total_requests(self) -> int:
         """Total outbound web requests."""
@@ -130,10 +121,10 @@ class HttpBudgetTracker:
         return self._company_request_counts.get(orgnr, 0)
 
 
-class BudgetedAsyncClient:
+class AsyncHttpBudgetClient:
     """
     Wrapper around httpx.AsyncClient that strictly passes all network I/O
-    through the HttpBudgetTracker.
+    through the HttpBudgetTracker with concurrent Future de-duplication.
     """
 
     def __init__(
@@ -174,23 +165,50 @@ class BudgetedAsyncClient:
         retries: int = settings.HTTP_MAX_RETRIES,
     ) -> httpx.Response:
         """
-        Executes a budgeted GET request.
+        Executes a budgeted GET request with future-based deduplication for concurrent identical requests.
         """
         if self._client is None:
-            self._client = httpx.AsyncClient(
-                timeout=httpx.Timeout(self.timeout, connect=5.0),
-                headers=self.headers,
-                follow_redirects=True,
-            )
+            raise RuntimeError("AsyncHttpBudgetClient must be used as an async context manager")
 
-        # Check cache
-        cached = await self.budget.get_cached(orgnr, url)
-        if cached is not None:
-            return cached
+        cache_key = f"{orgnr or 'global'}::{url}"
 
-        # Check budget before sending wire request
-        await self.budget.check_and_increment(orgnr, url)
+        future = None
+        is_owner = False
 
+        async with self.budget._lock:
+            if cache_key in self.budget._cache:
+                future = self.budget._cache[cache_key]
+            else:
+                # First requester creates the future
+                future = asyncio.Future()
+                self.budget._cache[cache_key] = future
+                is_owner = True
+
+                # Check and increment while holding the lock
+                if self.budget._global_web_request_count >= self.budget.max_global:
+                    future.set_exception(GlobalHttpBudgetExceededError(
+                        f"Global HTTP request budget reached: {self.budget._global_web_request_count}/{self.budget.max_global} calls."
+                    ))
+                    raise future.exception()
+
+                if orgnr:
+                    current_count = self.budget._company_request_counts.get(orgnr, 0)
+                    if current_count >= self.budget.max_per_company:
+                        future.set_exception(CompanyHttpBudgetExceededError(
+                            f"Company '{orgnr}' reached strict HTTP request budget: "
+                            f"{current_count}/{self.budget.max_per_company} calls made."
+                        ))
+                        raise future.exception()
+                    self.budget._company_request_counts[orgnr] = current_count + 1
+                    self.budget._company_urls.setdefault(orgnr, []).append(url)
+
+                self.budget._global_web_request_count += 1
+
+        # Await existing request if not the owner
+        if not is_owner:
+            return await future
+
+        # Execute outbound HTTP call
         last_error = None
         merged_headers = dict(self.headers)
         if headers:
@@ -199,8 +217,8 @@ class BudgetedAsyncClient:
         for attempt in range(retries):
             try:
                 response = await self._client.get(url, headers=merged_headers, params=params)
-                # Store in session cache
-                await self.budget.store_cache(orgnr, url, response)
+                if not future.done():
+                    future.set_result(response)
                 return response
             except (httpx.ConnectError, httpx.TimeoutException, httpx.HTTPError) as err:
                 last_error = err
@@ -209,4 +227,11 @@ class BudgetedAsyncClient:
                 else:
                     break
 
-        raise last_error or httpx.HTTPError(f"Failed to fetch {url}")
+        err = last_error or httpx.HTTPError(f"Failed to fetch {url}")
+        if not future.done():
+            future.set_exception(err)
+        raise err
+
+
+# Backward compatibility alias
+BudgetedAsyncClient = AsyncHttpBudgetClient

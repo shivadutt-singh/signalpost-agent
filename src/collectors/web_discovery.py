@@ -16,7 +16,7 @@ from typing import Any
 
 from bs4 import BeautifulSoup
 
-from src.collectors.http_budget import BudgetedAsyncClient
+from src.collectors.http_budget import AsyncHttpBudgetClient, BudgetedAsyncClient
 from src.domain.text_normalizer import normalize_norwegian_text
 from src.validators.fact_guard import (
     EntityAnchor,
@@ -52,6 +52,7 @@ ABOUT_REGEX = re.compile(
 )
 
 
+
 @dataclass
 class WebPageContent:
     """Raw parsed content, entity resolution verdict, and HTML of a discovered web page."""
@@ -70,7 +71,7 @@ class WebDiscoveryCollector:
     Strictly follows Careers-Page-First and strict news discovery rules without generic search-engine bleed.
     """
 
-    def __init__(self, client: BudgetedAsyncClient):
+    def __init__(self, client: AsyncHttpBudgetClient):
         self.client = client
 
     async def fetch_page(
@@ -112,7 +113,7 @@ class WebDiscoveryCollector:
             text = normalize_norwegian_text(clean_soup.get_text(separator=" ", strip=True))
 
             # Run Entity Verification Gate
-            verification = EntityVerificationGate.verify_source(
+            verification = EntityVerificationGate.verify_entity_ownership(
                 anchor=anchor,
                 source_url=url,
                 raw_source_text=text,

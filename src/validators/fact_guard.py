@@ -312,8 +312,13 @@ class EntityVerificationGate:
         except Exception:
             return ""
 
+    # Alias for backwards compatibility
     @classmethod
-    def verify_source(
+    def verify_source(cls, *args, **kwargs):
+        return cls.verify_entity_ownership(*args, **kwargs)
+
+    @classmethod
+    def verify_entity_ownership(
         cls,
         anchor: EntityAnchor,
         source_url: str,

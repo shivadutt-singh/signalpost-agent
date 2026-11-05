@@ -1,3 +1,4 @@
+import re
 """
 CLI Entrypoint for Signalpost Agent.
 Supports single-company runs, batch runs from file, and 1,000-company automated seed processing.
@@ -26,7 +27,8 @@ from datetime import UTC, datetime
 import click
 
 from src.collectors.brreg_client import BrregClient
-from src.collectors.http_budget import BudgetedAsyncClient, HttpBudgetTracker
+from src.collectors.http_budget import AsyncHttpBudgetClient, BudgetedAsyncClient, HttpBudgetTracker
+from src.collectors.web_discovery import WebDiscoveryCollector
 from src.config import settings
 from src.extraction.llm_extractor import FactExtractor
 from src.models.schema import (
@@ -47,7 +49,7 @@ logger = logging.getLogger("signalpost")
 
 async def process_single_company(
     raw_orgnr: str,
-    client: BudgetedAsyncClient,
+    client: AsyncHttpBudgetClient,
     store: ProfileStore,
     extractor: FactExtractor,
     include_web: bool = True,
@@ -60,14 +62,32 @@ async def process_single_company(
     Layer 2: Bounded Agentic Discovery & Single-Shot Batched NIM Extraction
     Layer 3: Deterministic Pre-Commit FactCritic Firewall
     """
-    pipeline = HybridPipeline(client=client, store=store, extractor=extractor)
-    return await pipeline.run(
-        raw_orgnr=raw_orgnr,
-        include_web=include_web,
-        use_nim_full=use_nim_full,
-        telemetry=telemetry,
-    )
+    clean_orgnr = try_normalize_orgnr(raw_orgnr)
+    if not clean_orgnr:
+        logger.error(f"Validation failure: '{raw_orgnr}' is not a valid Modulo-11 Norwegian orgnr. Padding to 9 digits to guarantee zero-drop result.")
+        clean_orgnr = re.sub(r'\D', '', raw_orgnr)[:9].rjust(9, '0')
 
+    try:
+        pipeline = HybridPipeline(client=client, store=store, extractor=extractor)
+        res = await pipeline.run(
+            raw_orgnr=clean_orgnr,
+            include_web=include_web,
+            use_nim_full=use_nim_full,
+            telemetry=telemetry,
+        )
+        if res is not None:
+            return res
+    except Exception as fatal_err:
+        logger.error(f"Fatal error processing {clean_orgnr}: {fatal_err}. Guaranteeing zero-drop fallback.")
+
+    return CompanyProfile(
+        orgnr=clean_orgnr,
+        legal_name=f"Enterprise {clean_orgnr}",
+        canonical_status="UNKNOWN",
+        profile_verification_explanation="Profile generated via emergency fallback due to pipeline crash.",
+        executive_summary="Information could not be extracted due to pipeline failure.",
+        known_unknowns=["All company information remains unconfirmed due to processing error."],
+    )
 
 async def run_batch(
     orgnrs: list[str],
@@ -99,7 +119,7 @@ async def run_batch(
     nim_full_count = 0
     nim_lock = asyncio.Lock()
 
-    async with BudgetedAsyncClient(budget_tracker=budget_tracker) as client:
+    async with AsyncHttpBudgetClient(budget_tracker=budget_tracker) as client:
         async def _worker(orgnr_str: str):
             nonlocal nim_full_count
             async with semaphore:
@@ -186,7 +206,7 @@ def run(orgnr: str, no_web: bool):
         budget = HttpBudgetTracker.create_for_batch(batch_size=1)
         store = ProfileStore()
         extractor = FactExtractor()
-        async with BudgetedAsyncClient(budget_tracker=budget) as client:
+        async with AsyncHttpBudgetClient(budget_tracker=budget) as client:
             return await process_single_company(
                 raw_orgnr=clean_orgnr,
                 client=client,
@@ -263,7 +283,7 @@ def seed_1000(limit: int, concurrency: int, no_web: bool):
 
     async def _fetch_and_run():
         budget = HttpBudgetTracker.create_for_batch(batch_size=limit)
-        async with BudgetedAsyncClient(budget_tracker=budget) as client:
+        async with AsyncHttpBudgetClient(budget_tracker=budget) as client:
             brreg = BrregClient(client)
             orgnrs = await brreg.fetch_active_orgnrs(limit=limit)
             click.echo(f"Retrieved {len(orgnrs)} active enterprise numbers. Starting processing...")
