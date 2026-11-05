@@ -6,8 +6,9 @@ Tracks web outbound scraping requests separately from LLM API calls.
 """
 
 import asyncio
-from typing import Dict, List, Optional
+
 import httpx
+
 from src.config import settings
 
 
@@ -30,9 +31,9 @@ class HttpBudgetTracker:
 
     def __init__(
         self,
-        batch_size: Optional[int] = None,
+        batch_size: int | None = None,
         max_per_company: int = settings.MAX_HTTP_REQUESTS_PER_COMPANY,
-        max_global: Optional[int] = None,
+        max_global: int | None = None,
     ):
         self.batch_size = batch_size
         self.max_per_company = max_per_company
@@ -53,16 +54,16 @@ class HttpBudgetTracker:
         self._lock = asyncio.Lock()
         self._global_web_request_count: int = 0
         self._llm_api_call_count: int = 0
-        self._company_request_counts: Dict[str, int] = {}
-        self._company_urls: Dict[str, List[str]] = {}
-        self._cache: Dict[str, httpx.Response] = {}
+        self._company_request_counts: dict[str, int] = {}
+        self._company_urls: dict[str, list[str]] = {}
+        self._cache: dict[str, httpx.Response] = {}
 
     @classmethod
     def create_for_batch(cls, batch_size: int) -> "HttpBudgetTracker":
         """Factory constructor that sets optimal dynamic budget scaling for the batch size."""
         return cls(batch_size=batch_size)
 
-    async def check_and_increment(self, orgnr: Optional[str], url: str) -> bool:
+    async def check_and_increment(self, orgnr: str | None, url: str) -> bool:
         """
         Validates whether an outbound web request can be executed without exceeding budget limits.
         If the URL was already fetched for this orgnr in the current session, it is served
@@ -98,12 +99,12 @@ class HttpBudgetTracker:
         async with self._lock:
             self._llm_api_call_count += 1
 
-    async def store_cache(self, orgnr: Optional[str], url: str, response: httpx.Response) -> None:
+    async def store_cache(self, orgnr: str | None, url: str, response: httpx.Response) -> None:
         cache_key = f"{orgnr or 'global'}::{url}"
         async with self._lock:
             self._cache[cache_key] = response
 
-    async def get_cached(self, orgnr: Optional[str], url: str) -> Optional[httpx.Response]:
+    async def get_cached(self, orgnr: str | None, url: str) -> httpx.Response | None:
         cache_key = f"{orgnr or 'global'}::{url}"
         async with self._lock:
             return self._cache.get(cache_key)
@@ -122,7 +123,7 @@ class HttpBudgetTracker:
         return self._llm_api_call_count
 
     @property
-    def requests_per_company(self) -> Dict[str, int]:
+    def requests_per_company(self) -> dict[str, int]:
         return dict(self._company_request_counts)
 
     def get_company_count(self, orgnr: str) -> int:
@@ -137,7 +138,7 @@ class BudgetedAsyncClient:
 
     def __init__(
         self,
-        budget_tracker: Optional[HttpBudgetTracker] = None,
+        budget_tracker: HttpBudgetTracker | None = None,
         timeout: float = settings.HTTP_TIMEOUT_SECONDS,
         user_agent: str = settings.USER_AGENT,
     ):
@@ -148,7 +149,7 @@ class BudgetedAsyncClient:
             "Accept": "application/json, text/html, application/xhtml+xml, */*",
             "Accept-Language": "no, nb, nn, en;q=0.9",
         }
-        self._client: Optional[httpx.AsyncClient] = None
+        self._client: httpx.AsyncClient | None = None
 
     async def __aenter__(self):
         self._client = httpx.AsyncClient(
@@ -167,9 +168,9 @@ class BudgetedAsyncClient:
     async def get(
         self,
         url: str,
-        orgnr: Optional[str] = None,
-        headers: Optional[Dict[str, str]] = None,
-        params: Optional[Dict[str, str]] = None,
+        orgnr: str | None = None,
+        headers: dict[str, str] | None = None,
+        params: dict[str, str] | None = None,
         retries: int = settings.HTTP_MAX_RETRIES,
     ) -> httpx.Response:
         """

@@ -1,0 +1,184 @@
+{
+  "orgnr": "954659623",
+  "run_timestamp": "2026-11-05T14:04:25.949365+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:04:25.949365+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1300 KJ ERLAND",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/954659623"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:25.949365+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/954659623"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:25.949365+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1995-02-19",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/954659623"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:25.949365+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Hetlandsgata 14",
+        "postal_code": "4344",
+        "city": "BRYNE",
+        "municipality": "TIME",
+        "municipality_number": "1121",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/954659623"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:25.949365+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "23.410",
+        "beskrivelse": "Produksjon av keramiske husholdningsartikler og dekorasjonsgjenstander"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/954659623"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:25.949365+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/954659623"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:25.949365+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "975161021",
+          "name": "SMIÅ KERAMIKK",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/954659623"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:25.949365+00:00",
+      "fact_key": "operations.corporate_event.20120000478065",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Rettelse av forretningsadresse",
+        "date": "2012-10-06",
+        "kid": "20120000478065",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20120000478065&sokeverdi=954659623&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20120000478065&sokeverdi=954659623&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:25.949365+00:00",
+      "fact_key": "operations.corporate_event.20110000560307",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Forretningsadresse",
+        "date": "2011-12-03",
+        "kid": "20110000560307",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20110000560307&sokeverdi=954659623&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20110000560307&sokeverdi=954659623&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:25.949365+00:00",
+      "fact_key": "operations.corporate_event.20070000061762",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Rettelse av forretningsadresse",
+        "date": "2007-03-13",
+        "kid": "20070000061762",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20070000061762&sokeverdi=954659623&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20070000061762&sokeverdi=954659623&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:25.949365+00:00",
+      "fact_key": "operations.corporate_event.20060000262396",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Virksomhet/bransje",
+        "date": "2006-07-11",
+        "kid": "20060000262396",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000262396&sokeverdi=954659623&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000262396&sokeverdi=954659623&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:25.949365+00:00",
+      "fact_key": "operations.corporate_event.20060000262395",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Forretningsadresse",
+        "date": "2006-07-11",
+        "kid": "20060000262395",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000262395&sokeverdi=954659623&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000262395&sokeverdi=954659623&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:25.949365+00:00",
+      "fact_key": "operations.corporate_event.20060000262394",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Foretaksnavn",
+        "date": "2006-07-11",
+        "kid": "20060000262394",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000262394&sokeverdi=954659623&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000262394&sokeverdi=954659623&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:25.949365+00:00",
+      "fact_key": "operations.corporate_event.20060000206429",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Rettelse av forretningsadresse",
+        "date": "2006-06-13",
+        "kid": "20060000206429",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000206429&sokeverdi=954659623&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20060000206429&sokeverdi=954659623&spraak=nb"
+    }
+  ],
+  "facts_created": 14,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

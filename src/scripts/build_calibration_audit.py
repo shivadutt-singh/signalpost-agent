@@ -13,16 +13,15 @@ Outputs:
 import asyncio
 import json
 import logging
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Any, Dict, List
-from datetime import datetime, timezone
+from typing import Any
 
 from src.collectors.brreg_client import BrregClient
 from src.collectors.financials_client import FinancialsClient
-from src.collectors.kunngjoringer_client import KunngjoringerClient
 from src.collectors.http_budget import BudgetedAsyncClient, HttpBudgetTracker
+from src.collectors.kunngjoringer_client import KunngjoringerClient
 from src.collectors.web_discovery import WebDiscoveryCollector
-from src.config import settings
 from src.state.profile_store import ProfileStore
 from src.validators.fact_critic import FactCriticPipeline
 
@@ -94,7 +93,7 @@ AUDIT_SAMPLES = [
 ]
 
 
-async def run_hand_checked_audit() -> Dict[str, Any]:
+async def run_hand_checked_audit() -> dict[str, Any]:
     """
     Executes live verification against all 50 calibration samples and synthesizes
     data/hand_checked_audit.json and HAND_CHECKED_REPORT.md.
@@ -104,7 +103,7 @@ async def run_hand_checked_audit() -> Dict[str, Any]:
 
     store = ProfileStore()
     budget_tracker = HttpBudgetTracker.create_for_batch(batch_size=len(AUDIT_SAMPLES))
-    audit_rows: List[Dict[str, Any]] = []
+    audit_rows: list[dict[str, Any]] = []
 
     total_career_pages_inspected = 0
     total_jobs_verified = 0
@@ -228,7 +227,7 @@ async def run_hand_checked_audit() -> Dict[str, Any]:
             })
 
     audit_summary = {
-        "audit_timestamp": datetime.now(timezone.utc).isoformat(),
+        "audit_timestamp": datetime.now(UTC).isoformat(),
         "profiles_hand_checked": len(audit_rows),
         "wrong_company_contaminations_found": contaminations_detected,
         "entity_isolation_precision_percent": 100.0 if contaminations_detected == 0 else 0.0,
@@ -264,7 +263,7 @@ async def run_hand_checked_audit() -> Dict[str, Any]:
     return audit_summary
 
 
-def _generate_markdown_report(summary: Dict[str, Any]) -> str:
+def _generate_markdown_report(summary: dict[str, Any]) -> str:
     """Generates the GitHub Flavored Markdown audit report."""
     rows = summary["audit_table"]
 

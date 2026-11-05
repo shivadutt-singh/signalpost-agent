@@ -8,7 +8,7 @@ with zero server or network setup required.
 import json
 import logging
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 from src.config import settings
 from src.web.app import get_html_template
@@ -17,9 +17,9 @@ logger = logging.getLogger("signalpost.static_builder")
 
 
 def build_static_html(
-    output_path: Optional[Path] = None,
-    profiles_dir: Optional[Path] = None,
-    audit_file: Optional[Path] = None,
+    output_path: Path | None = None,
+    profiles_dir: Path | None = None,
+    audit_file: Path | None = None,
 ) -> Path:
     """
     Assembles all available profiles and calibration audit data into a single self-contained HTML file.
@@ -30,11 +30,11 @@ def build_static_html(
     a_path = audit_file or Path("./data/hand_checked_audit.json")
 
     # Load all profiles
-    profiles: List[Dict[str, Any]] = []
+    profiles: list[dict[str, Any]] = []
     if p_dir.exists():
         for f in sorted(p_dir.glob("*.json")):
             try:
-                with open(f, "r", encoding="utf-8") as fp:
+                with open(f, encoding="utf-8") as fp:
                     data = json.load(fp)
                 fin_history = data.get("financial_history", [])
                 facts = data.get("facts", {})
@@ -42,7 +42,7 @@ def build_static_html(
 
                 profiles.append({
                     "orgnr": data.get("orgnr"),
-                    "legal_name": data.get("legal_name"),
+                    "legal_name": data.get("legal_name") or data.get("canonical_name"),
                     "canonical_status": data.get("canonical_status", "ACTIVE"),
                     "financial_years_count": len(fin_history),
                     "has_jobs": has_jobs,
@@ -63,7 +63,7 @@ def build_static_html(
     audit_data = None
     if a_path.exists():
         try:
-            with open(a_path, "r", encoding="utf-8") as fp:
+            with open(a_path, encoding="utf-8") as fp:
                 audit_data = json.load(fp)
         except Exception as e:
             logger.debug(f"Error reading audit file {a_path}: {e}")

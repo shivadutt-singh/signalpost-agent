@@ -1,0 +1,118 @@
+{
+  "orgnr": "930266809",
+  "run_timestamp": "2026-11-05T14:08:08.961672+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:08:08.961672+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2013 KLASSEKULL VERDALSØRA",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930266809"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.961672+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930266809"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.961672+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-02-21",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930266809"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.961672+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-01-19",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930266809"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.961672+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Eva Kristin Bjørvik Fridheims gate 10",
+        "postal_code": "7650",
+        "city": "VERDAL",
+        "municipality": "VERDAL",
+        "municipality_number": "5038",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930266809"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.961672+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930266809"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.961672+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930266809"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.961672+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Iselin Langeland",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930266809"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.961672+00:00",
+      "fact_key": "governance.board_member.kari_vangstad",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kari Vangstad",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930266809"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.961672+00:00",
+      "fact_key": "governance.board_member.eva_kristin_bjørvik",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Eva Kristin Bjørvik",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930266809"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.961672+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "930870226",
+          "name": "2013 KLASSEKULL VERDALSØRA",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/930266809"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

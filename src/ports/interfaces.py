@@ -30,6 +30,10 @@ class RegistryPort(Protocol):
         self, orgnr: str
     ) -> Result[list[dict[str, Any]], DomainError]: ...
 
+    async def get_oppdateringer(
+        self, orgnr: str
+    ) -> Result[list[dict[str, Any]], DomainError]: ...
+
 
 @runtime_checkable
 class FinancialsPort(Protocol):

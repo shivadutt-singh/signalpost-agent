@@ -1,0 +1,156 @@
+{
+  "orgnr": "996175057",
+  "legal_name": "1NF1 KNUT ANDRÉ SJØWALL EIDSVIK",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-11-05T14:06:31.543196+00:00",
+  "updated_at": "2026-11-05T14:06:31.543196+00:00",
+  "schema_version": "2.0.0",
+  "profile_verification_explanation": "Enterprise profile for 1NF1 KNUT ANDRÉ SJØWALL EIDSVIK (orgnr: 996175057) deterministically verified. 6 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "1NF1 KNUT ANDRÉ SJØWALL EIDSVIK is a registered Norwegian enterprise located in BERGEN governed under enterprise number 996175057. Registration records confirm corporate standing with active leadership under Executive Board. Unfiled interim quarterly results, private partner contracts, and internal headcount fluctuations remain unconfirmed from public records.",
+  "known_unknowns": [
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 996175057. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret."
+  ],
+  "financial_history": [],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "1NF1 KNUT ANDRÉ SJØWALL EIDSVIK",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/996175057",
+        "source_tier": "official_registry",
+        "source_date": "2010-11-13",
+        "retrieval_timestamp": "2026-11-05T14:06:29.112990+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '1NF1 KNUT ANDRÉ SJØWALL EIDSVIK'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/996175057",
+        "source_tier": "official_registry",
+        "source_date": "2010-11-13",
+        "retrieval_timestamp": "2026-11-05T14:06:29.112990+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form ENK (Enkeltpersonforetak)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2010-11-13",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/996175057",
+        "source_tier": "official_registry",
+        "source_date": "2010-11-13",
+        "retrieval_timestamp": "2026-11-05T14:06:29.112990+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Svingen 6",
+        "postal_code": "5162",
+        "city": "LAKSEVÅG",
+        "municipality": "BERGEN",
+        "municipality_number": "4601",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/996175057",
+        "source_tier": "official_registry",
+        "source_date": "2010-11-13",
+        "retrieval_timestamp": "2026-11-05T14:06:29.112990+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in LAKSEVÅG."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "62.200",
+        "beskrivelse": "Konsulentvirksomhet tilknyttet informasjonsteknologi og forvaltning og drift av it-systemer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/996175057",
+        "source_tier": "official_registry",
+        "source_date": "2010-11-13",
+        "retrieval_timestamp": "2026-11-05T14:06:29.112990+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 62.200: Konsulentvirksomhet tilknyttet informasjonsteknologi og forvaltning og drift av it-systemer)."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/996175057",
+        "source_tier": "official_registry",
+        "source_date": "2010-11-13",
+        "retrieval_timestamp": "2026-11-05T14:06:29.112990+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 6,
+    "critic_facts_quarantined": 0
+  },
+  "metadata": {}
+}

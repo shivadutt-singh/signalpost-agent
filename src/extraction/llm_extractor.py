@@ -6,24 +6,24 @@ asyncio.Semaphore(5), deterministic Anti-Fabrication verification, and exact cos
 """
 
 import asyncio
-import collections
 import json
 import logging
 import random
 import re
 import time
-from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from dataclasses import dataclass
+from datetime import UTC, datetime
 from enum import Enum
-from typing import Any, Dict, List, Optional, Tuple
-from bs4 import BeautifulSoup
+from typing import Any
+
 import httpx
+from bs4 import BeautifulSoup
 from pydantic import BaseModel, Field
 
-from src.config import settings
 from src.collectors.web_discovery import WebPageContent
+from src.config import settings
 from src.models.schema import ExtractedFactCandidate, FactCategory, FactEvidence, SourceTier
-from src.validators.fact_guard import AntiFabricationGuard, EntityAnchor, verify_financial_fact
+from src.validators.fact_guard import EntityAnchor, verify_financial_fact
 
 logger = logging.getLogger("signalpost.nim")
 
@@ -175,14 +175,14 @@ NIM_SEMAPHORE = asyncio.Semaphore(5)
 
 class BatchedExtractionSchema(BaseModel):
     """Structured Pydantic schema for single batched LLM extraction call."""
-    operations: Optional[str] = None
-    products_services: Optional[str] = None
-    recent_news_events: List[Dict[str, Any]] = Field(default_factory=list)
-    verified_jobs: List[Dict[str, Any]] = Field(default_factory=list)
-    verified_news: List[Dict[str, Any]] = Field(default_factory=list)
-    operations_and_products: Optional[Dict[str, Any]] = None
-    executive_summary: Optional[str] = None
-    known_unknowns: List[str] = Field(default_factory=list)
+    operations: str | None = None
+    products_services: str | None = None
+    recent_news_events: list[dict[str, Any]] = Field(default_factory=list)
+    verified_jobs: list[dict[str, Any]] = Field(default_factory=list)
+    verified_news: list[dict[str, Any]] = Field(default_factory=list)
+    operations_and_products: dict[str, Any] | None = None
+    executive_summary: str | None = None
+    known_unknowns: list[str] = Field(default_factory=list)
 
 
 NIM_SYSTEM_PROMPT = """You are an elite enterprise intelligence extraction system for Norwegian companies.
@@ -287,7 +287,7 @@ JSON OUTPUT STRUCTURE:
 """
 
 
-def _clean_json_response(raw_text: str) -> Optional[Dict[str, Any]]:
+def _clean_json_response(raw_text: str) -> dict[str, Any] | None:
     """Safely extracts and parses JSON payload, stripping markdown fences if present."""
     if not raw_text:
         return None
@@ -319,7 +319,7 @@ class FactExtractor:
     Powered by NVIDIA NIM microservices with sliding-window rate limiting and model fallback.
     """
 
-    def __init__(self, provider: Optional[str] = None):
+    def __init__(self, provider: str | None = None):
         self.provider = provider or settings.resolve_provider()
         self.telemetry = ExtractorTelemetry()
 
@@ -327,7 +327,7 @@ class FactExtractor:
         self,
         page: WebPageContent,
         anchor: EntityAnchor,
-    ) -> Tuple[List[ExtractedFactCandidate], Optional[str], List[str]]:
+    ) -> tuple[list[ExtractedFactCandidate], str | None, list[str]]:
         """
         Extracts verified facts, executive summary, and known unknowns from a verified web page.
         Returns:
@@ -343,7 +343,7 @@ class FactExtractor:
             else SourceTier.VERIFIED_PUBLIC_WEB
         )
 
-        extracted_data: Optional[Dict[str, Any]] = None
+        extracted_data: dict[str, Any] | None = None
 
         if self.provider == "nvidia" and settings.NVIDIA_API_KEY:
             extracted_data = await self._call_nvidia_nim(page.raw_text[:7500], anchor)
@@ -355,13 +355,13 @@ class FactExtractor:
         if not extracted_data:
             extracted_data = self._heuristic_extract(page.raw_text, anchor)
 
-        candidates: List[ExtractedFactCandidate] = []
-        executive_summary: Optional[str] = extracted_data.get("executive_summary")
-        known_unknowns: List[str] = extracted_data.get("known_unknowns", [])
+        candidates: list[ExtractedFactCandidate] = []
+        executive_summary: str | None = extracted_data.get("executive_summary")
+        known_unknowns: list[str] = extracted_data.get("known_unknowns", [])
 
-        now_iso = datetime.now(timezone.utc).isoformat()
+        now_iso = datetime.now(UTC).isoformat()
 
-        def _make_evidence(quote: Optional[str], explanation: str, digits_verified: bool = False) -> FactEvidence:
+        def _make_evidence(quote: str | None, explanation: str, digits_verified: bool = False) -> FactEvidence:
             return FactEvidence(
                 source_url=page.url,
                 source_tier=source_tier,
@@ -521,7 +521,7 @@ class FactExtractor:
 
         return candidates, executive_summary, known_unknowns
 
-    async def _call_nvidia_nim(self, text_chunk: str, anchor: EntityAnchor) -> Optional[Dict[str, Any]]:
+    async def _call_nvidia_nim(self, text_chunk: str, anchor: EntityAnchor) -> dict[str, Any] | None:
         """
         Invokes NVIDIA NIM microservice endpoint with sliding-window rate limiting,
         concurrency control (Semaphore 5), and automatic primary -> fallback model switching.
@@ -602,9 +602,9 @@ class FactExtractor:
         self,
         client: httpx.AsyncClient,
         url: str,
-        headers: Dict[str, str],
+        headers: dict[str, str],
         user_prompt: str,
-    ) -> Optional[Dict[str, Any]]:
+    ) -> dict[str, Any] | None:
         """Fallback invocation using meta/llama-3.1-8b-instruct."""
         await NIM_RATE_LIMITER.acquire()
         fallback_payload = {
@@ -634,9 +634,9 @@ class FactExtractor:
     async def synthesize_executive_summary(
         self,
         anchor: EntityAnchor,
-        registry_facts: List[ExtractedFactCandidate],
-        web_facts: List[ExtractedFactCandidate],
-    ) -> Tuple[str, List[str]]:
+        registry_facts: list[ExtractedFactCandidate],
+        web_facts: list[ExtractedFactCandidate],
+    ) -> tuple[str, list[str]]:
         """
         Synthesizes a 3-sentence executive summary and list of known unknowns:
         (1) what the company does,
@@ -727,7 +727,7 @@ class FactExtractor:
         ]
         return summary, known_unknowns
 
-    async def _call_gemini(self, text_chunk: str, anchor: EntityAnchor) -> Optional[Dict[str, Any]]:
+    async def _call_gemini(self, text_chunk: str, anchor: EntityAnchor) -> dict[str, Any] | None:
         """Gemini fallback if explicitly configured."""
         url = (
             f"https://generativelanguage.googleapis.com/v1beta/models/"
@@ -754,7 +754,7 @@ class FactExtractor:
             pass
         return None
 
-    async def _call_openai(self, text_chunk: str, anchor: EntityAnchor) -> Optional[Dict[str, Any]]:
+    async def _call_openai(self, text_chunk: str, anchor: EntityAnchor) -> dict[str, Any] | None:
         """OpenAI fallback if explicitly configured."""
         url = "https://api.openai.com/v1/chat/completions"
         headers = {"Authorization": f"Bearer {settings.OPENAI_API_KEY}", "Content-Type": "application/json"}
@@ -781,13 +781,13 @@ class FactExtractor:
             pass
         return None
 
-    def _heuristic_extract(self, text: str, anchor: EntityAnchor) -> Dict[str, Any]:
+    def _heuristic_extract(self, text: str, anchor: EntityAnchor) -> dict[str, Any]:
         """
         Deterministic, offline extraction engine.
         Extracts company details, leadership, financial figures with verbatim quotes,
         jobs, and recent activity directly from source text without external API calls.
         """
-        data: Dict[str, Any] = {
+        data: dict[str, Any] = {
             "company_details": {},
             "people": [],
             "locations": [],
@@ -894,9 +894,9 @@ class FactExtractor:
     async def extract_batched_from_verified_pages(
         self,
         anchor: EntityAnchor,
-        verified_pages: List[WebPageContent],
-        multi_year_trajectory: Optional[str] = None,
-    ) -> Dict[str, Any]:
+        verified_pages: list[WebPageContent],
+        multi_year_trajectory: str | None = None,
+    ) -> dict[str, Any]:
         """
         Stage 2C — Single-Shot Batched NVIDIA NIM Agentic Extraction:
         Consolidates verified subpages into 1 single structured call to NVIDIA NIM
@@ -924,7 +924,7 @@ class FactExtractor:
             f"=== VERIFIED OFFICIAL PAGES ===\n{combined_pages_text}"
         )
 
-        extracted_data: Optional[Dict[str, Any]] = None
+        extracted_data: dict[str, Any] | None = None
         if self.provider == "nvidia" and settings.NVIDIA_API_KEY:
             extracted_data = await self._call_nvidia_batched(prompt, anchor)
         elif self.provider == "gemini" and settings.GEMINI_API_KEY:
@@ -936,8 +936,8 @@ class FactExtractor:
             extracted_data = self._heuristic_extract_batched(anchor, verified_pages, multi_year_trajectory)
 
         # Build candidates
-        candidates: List[ExtractedFactCandidate] = []
-        now_iso = datetime.now(timezone.utc).isoformat()
+        candidates: list[ExtractedFactCandidate] = []
+        now_iso = datetime.now(UTC).isoformat()
         primary_url = verified_pages[0].url if verified_pages else f"https://{anchor.official_domains[0]}" if anchor.official_domains else "https://data.brreg.no"
 
         # 1. Products & Services
@@ -947,7 +947,7 @@ class FactExtractor:
             ps_ev = FactEvidence(
                 source_url=primary_url,
                 source_tier=SourceTier.OFFICIAL_HOMEPAGE,
-                source_date=datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                source_date=datetime.now(UTC).strftime("%Y-%m-%d"),
                 retrieval_timestamp=now_iso,
                 verbatim_quote=ps_clean[:180],
                 entity_match_rule="EXACT_COMPANY_NAME_MATCH",
@@ -972,7 +972,7 @@ class FactExtractor:
             ops_ev = FactEvidence(
                 source_url=primary_url,
                 source_tier=SourceTier.OFFICIAL_HOMEPAGE,
-                source_date=datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                source_date=datetime.now(UTC).strftime("%Y-%m-%d"),
                 retrieval_timestamp=now_iso,
                 verbatim_quote=ops_clean[:180],
                 entity_match_rule="EXACT_COMPANY_NAME_MATCH",
@@ -1005,9 +1005,9 @@ class FactExtractor:
                     continue
                 n_url = n.get("url") or primary_url
                 n_quote = n.get("verbatim_quote") or title
-                n_date = n.get("date") or datetime.now(timezone.utc).strftime("%Y-%m-%d")
+                n_date = n.get("date") or datetime.now(UTC).strftime("%Y-%m-%d")
                 m_date = re.search(r"(\d{4}-\d{2}-\d{2})", str(n_date))
-                clean_date = m_date.group(1) if m_date else datetime.now(timezone.utc).strftime("%Y-%m-%d")
+                clean_date = m_date.group(1) if m_date else datetime.now(UTC).strftime("%Y-%m-%d")
 
                 news_ev = FactEvidence(
                     source_url=n_url,
@@ -1040,7 +1040,7 @@ class FactExtractor:
             job_ev = FactEvidence(
                 source_url=first_url,
                 source_tier=SourceTier.OFFICIAL_HOMEPAGE,
-                source_date=datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                source_date=datetime.now(UTC).strftime("%Y-%m-%d"),
                 retrieval_timestamp=now_iso,
                 verbatim_quote=first_quote,
                 entity_match_rule="EXACT_COMPANY_NAME_MATCH",
@@ -1071,7 +1071,7 @@ class FactExtractor:
             ops_ev = FactEvidence(
                 source_url=ops_url,
                 source_tier=SourceTier.OFFICIAL_HOMEPAGE,
-                source_date=datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                source_date=datetime.now(UTC).strftime("%Y-%m-%d"),
                 retrieval_timestamp=now_iso,
                 verbatim_quote=ops_quote,
                 entity_match_rule="EXACT_COMPANY_NAME_MATCH",
@@ -1105,7 +1105,7 @@ class FactExtractor:
             "recent_news_events": news_items,
         }
 
-    async def _call_nvidia_batched(self, user_prompt: str, anchor: EntityAnchor) -> Optional[Dict[str, Any]]:
+    async def _call_nvidia_batched(self, user_prompt: str, anchor: EntityAnchor) -> dict[str, Any] | None:
         """
         Invokes NVIDIA NIM for single-shot batched extraction with Smart Token-Bucket Limiter,
         Circuit Breaker, and exponential backoff with full jitter.
@@ -1182,7 +1182,7 @@ class FactExtractor:
                 logger.warning(f"NVIDIA NIM batched call exception: {e}")
         return None
 
-    async def _call_gemini_batched(self, user_prompt: str, anchor: EntityAnchor) -> Optional[Dict[str, Any]]:
+    async def _call_gemini_batched(self, user_prompt: str, anchor: EntityAnchor) -> dict[str, Any] | None:
         """Gemini fallback for batched extraction."""
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{settings.GEMINI_MODEL}:generateContent?key={settings.GEMINI_API_KEY}"
         payload = {
@@ -1200,7 +1200,7 @@ class FactExtractor:
             pass
         return None
 
-    async def _call_openai_batched(self, user_prompt: str, anchor: EntityAnchor) -> Optional[Dict[str, Any]]:
+    async def _call_openai_batched(self, user_prompt: str, anchor: EntityAnchor) -> dict[str, Any] | None:
         """OpenAI fallback for batched extraction."""
         url = "https://api.openai.com/v1/chat/completions"
         headers = {"Authorization": f"Bearer {settings.OPENAI_API_KEY}", "Content-Type": "application/json"}
@@ -1226,16 +1226,16 @@ class FactExtractor:
     def _heuristic_extract_batched(
         self,
         anchor: EntityAnchor,
-        verified_pages: List[WebPageContent],
-        multi_year_trajectory: Optional[str] = None,
-    ) -> Dict[str, Any]:
+        verified_pages: list[WebPageContent],
+        multi_year_trajectory: str | None = None,
+    ) -> dict[str, Any]:
         """
         Deterministic, offline extraction engine for verified subpages.
         Scans page texts for job keywords, news phrases, and operational scope.
         """
-        verified_jobs: List[Dict[str, Any]] = []
-        verified_news: List[Dict[str, Any]] = []
-        now_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        verified_jobs: list[dict[str, Any]] = []
+        verified_news: list[dict[str, Any]] = []
+        now_date = datetime.now(UTC).strftime("%Y-%m-%d")
 
         # Scan for jobs across pages
         for p in verified_pages:

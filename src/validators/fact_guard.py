@@ -7,9 +7,9 @@ and financial hallucinations with zero tolerance.
 import re
 import urllib.parse
 from dataclasses import dataclass, field
-from typing import Any, List, Optional
-from src.validators.mod11 import extract_orgnrs_from_text, normalize_orgnr, try_normalize_orgnr
+from typing import Any, Dict, List, Optional, Tuple
 
+from src.validators.mod11 import extract_orgnrs_from_text
 
 SHARED_UMBRELLA_DOMAINS = {
     # Housing managers & umbrella portals
@@ -62,7 +62,7 @@ def is_own_company_domain(
     url: str,
     canonical_name: str,
     target_orgnr: str = "",
-    external_role_entities: Optional[List[Dict[str, str]]] = None,
+    external_role_entities: list[Dict[str, str]] | None = None,
 ) -> bool:
     """
     Checks if a URL belongs to the target company's own verified web property,
@@ -117,13 +117,13 @@ class EntityAnchor:
     """Ground truth anchor metadata extracted from official Brønnøysund Registry."""
     orgnr: str
     legal_name: str
-    municipality: Optional[str] = None
-    ceo_names: List[str] = field(default_factory=list)
-    chair_names: List[str] = field(default_factory=list)
-    positive_officers: List[Dict[str, str]] = field(default_factory=list)
-    negative_external_entities: List[Dict[str, str]] = field(default_factory=list)
-    official_domains: List[str] = field(default_factory=list)
-    external_role_entities: List[Dict[str, str]] = field(default_factory=list)
+    municipality: str | None = None
+    ceo_names: list[str] = field(default_factory=list)
+    chair_names: list[str] = field(default_factory=list)
+    positive_officers: list[Dict[str, str]] = field(default_factory=list)
+    negative_external_entities: list[Dict[str, str]] = field(default_factory=list)
+    official_domains: list[str] = field(default_factory=list)
+    external_role_entities: list[Dict[str, str]] = field(default_factory=list)
     hjemmeside_is_shared_manager: bool = False
 
     @property
@@ -154,8 +154,8 @@ def verify_page_belongs_to_company(
     target_orgnr: str,
     canonical_name: str,
     page_text: str,
-    external_role_entities: Optional[List[Dict[str, str]]] = None,
-    claim_text: Optional[str] = None,
+    external_role_entities: list[Dict[str, str]] | None = None,
+    claim_text: str | None = None,
 ) -> Tuple[bool, str, float]:
     """
     Deterministic page-level entity verification gate preventing umbrella, manager,
@@ -218,7 +218,7 @@ def verify_page_belongs_to_company(
                 external_provider_names.add(dom.upper())
 
     # Find spans of external service provider occurrences
-    provider_spans: List[Tuple[int, int]] = []
+    provider_spans: list[Tuple[int, int]] = []
     for prov in external_provider_names:
         pattern = rf"(?<!\w){re.escape(prov)}(?!\w)"
         for m in re.finditer(pattern, upper_text):
@@ -450,8 +450,8 @@ class FabricationCheckResult:
     """Outcome of Anti-Fabrication check on numeric/financial facts."""
     is_valid: bool
     raw_digits_verified: bool
-    rejection_reason: Optional[str] = None
-    normalized_quote: Optional[str] = None
+    rejection_reason: str | None = None
+    normalized_quote: str | None = None
 
 
 class AntiFabricationGuard:
@@ -467,7 +467,7 @@ class AntiFabricationGuard:
         cls,
         fact_key: str,
         value: Any,
-        verbatim_quote: Optional[str],
+        verbatim_quote: str | None,
         raw_source_text: str,
     ) -> FabricationCheckResult:
         """
@@ -566,7 +566,7 @@ class AntiFabricationGuard:
         return False
 
 
-def verify_financial_fact(value: Any, verbatim_quote: Optional[str], raw_page_text: str) -> bool:
+def verify_financial_fact(value: Any, verbatim_quote: str | None, raw_page_text: str) -> bool:
     """
     Deterministic anti-fabrication validator matching the competition specification:
     verifies that exact digits and quote exist as an exact substring in raw_page_text.

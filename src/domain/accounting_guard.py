@@ -146,6 +146,43 @@ def calculate_equity_ratio(total_equity: int, total_assets: int) -> float | None
     return round(ratio, 2)
 
 
+def detect_table_unit_multiplier(table_html_or_header: str) -> int:
+    """
+    Detects Norwegian financial reporting scale from HTML headers, footnotes, or captions.
+    Returns:
+        1_000: if header specifies 'i 1 000', 'i 1000', 'tnok', 'tkr', 'tusen kroner'
+        1_000_000: if header specifies 'mnok', 'mill. kr', 'millioner', 'mkr'
+        1: exact NOK basis (default)
+    """
+    if not table_html_or_header:
+        return 1
+    header_lower = table_html_or_header.lower()
+
+    # 1 Million multiplier
+    if any(kw in header_lower for kw in ["mnok", "mill. kr", "millioner kr", "mkr", "i mill"]):
+        return 1_000_000
+
+    # 1 Thousand multiplier
+    if any(
+        kw in header_lower
+        for kw in [
+            "i 1 000",
+            "i 1000",
+            "tnok",
+            "tkr",
+            "tusen kroner",
+            "tusen kr",
+            "beløp i 1",
+            "belop i 1",
+            "tall i 1 000",
+            "tall i 1000",
+        ]
+    ):
+        return 1_000
+
+    return 1
+
+
 def reconcile_multi_year_series(
     accounts: list[AnnualAccount],
 ) -> Result[list[AnnualAccount], FinancialReconciliationError]:
@@ -185,6 +222,27 @@ def reconcile_multi_year_series(
             )
             if new_fields > ex_fields:
                 year_map[acc.year] = acc
+
+    # Scale normalization: prevent mixing TNOK with NOK in multi-year accounts
+    non_zero_revs = [acc.revenue_nok for acc in year_map.values() if acc.revenue_nok and acc.revenue_nok > 0]
+    if non_zero_revs:
+        max_rev = max(non_zero_revs)
+        if max_rev >= 100_000:
+            for yr, a in list(year_map.items()):
+                if a.revenue_nok and 0 < a.revenue_nok < 10_000 and (max_rev / a.revenue_nok) > 200:
+                    year_map[yr] = AnnualAccount(
+                        year=a.year,
+                        revenue_nok=a.revenue_nok * 1000,
+                        operating_profit_nok=a.operating_profit_nok * 1000 if a.operating_profit_nok is not None else None,
+                        profit_before_tax_nok=a.profit_before_tax_nok * 1000 if a.profit_before_tax_nok is not None else None,
+                        net_income_nok=a.net_income_nok * 1000 if a.net_income_nok is not None else None,
+                        total_assets_nok=a.total_assets_nok * 1000 if a.total_assets_nok is not None else None,
+                        total_equity_nok=a.total_equity_nok * 1000 if a.total_equity_nok is not None else None,
+                        source_url=a.source_url,
+                        verbatim_evidence=a.verbatim_evidence,
+                        raw_reported_value=str(a.revenue_nok),
+                        unit_scale="TNOK_SCALED_TO_NOK",
+                    )
 
     sorted_years = sorted(year_map.keys())  # Oldest to newest
     reconciled: list[AnnualAccount] = []

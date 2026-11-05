@@ -1,0 +1,126 @@
+{
+  "orgnr": "932470004",
+  "run_timestamp": "2026-11-05T14:08:06.330237+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:08:06.330237+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2011-BARN ØVREBØ",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932470004"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.330237+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932470004"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.330237+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-11-23",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932470004"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.330237+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2023-10-11",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932470004"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.330237+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Ken Arne Skaugerud Einerlia 2",
+        "postal_code": "4715",
+        "city": "ØVREBØ",
+        "municipality": "VENNESLA",
+        "municipality_number": "4223",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932470004"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.330237+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932470004"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.330237+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932470004"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.330237+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Frank Eilertsen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932470004"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.330237+00:00",
+      "fact_key": "governance.board_member.ken_arne_skaugerud",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Ken Arne Skaugerud",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932470004"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.330237+00:00",
+      "fact_key": "governance.board_member.john_erik_eriksen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "John Erik Eriksen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932470004"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.330237+00:00",
+      "fact_key": "governance.board_member.siv_kathrine_torgersen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Siv Kathrine Torgersen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932470004"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.330237+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "932517256",
+          "name": "2011-BARN ØVREBØ",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/932470004"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

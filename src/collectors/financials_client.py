@@ -6,10 +6,10 @@ with Norwegian numeric normalization (NOK/TNOK/MNOK), anti-fabrication guards, a
 
 import logging
 import re
-from datetime import datetime, timezone
-from typing import Any, Dict, List, Optional, Tuple
+from datetime import UTC, datetime
+from typing import Any
+
 from bs4 import BeautifulSoup
-import httpx
 
 from src.collectors.http_budget import BudgetedAsyncClient
 from src.models.schema import (
@@ -21,7 +21,6 @@ from src.models.schema import (
 )
 from src.validators.fact_guard import (
     EntityAnchor,
-    verify_financial_fact,
     verify_page_belongs_to_company,
 )
 from src.validators.mod11 import normalize_orgnr
@@ -31,7 +30,7 @@ logger = logging.getLogger("signalpost.financials")
 REGNSKAP_API_URL = "https://data.brreg.no/regnskapsregisteret/regnskap"
 
 
-def parse_norwegian_financial_number(raw_str: str, multiplier: float = 1.0) -> Optional[float]:
+def parse_norwegian_financial_number(raw_str: str, multiplier: float = 1.0) -> float | None:
     """
     Parses a Norwegian formatted financial number string (supporting space/dot thousand separators,
     comma decimal separators, parenthesized negatives, and currency unit multipliers).
@@ -113,18 +112,18 @@ class FinancialsClient:
         self,
         orgnr: str,
         anchor: EntityAnchor,
-        discovered_html_pages: Optional[List[Dict[str, str]]] = None,
-    ) -> Tuple[List[AnnualFinancialStatement], List[str], List[ExtractedFactCandidate]]:
+        discovered_html_pages: list[dict[str, str]] | None = None,
+    ) -> tuple[list[AnnualFinancialStatement], list[str], list[ExtractedFactCandidate]]:
         """
         Gathers multi-year annual financial accounts.
         Returns:
             (financial_history, known_unknowns_contributions, extracted_fact_candidates)
         """
         clean_orgnr = normalize_orgnr(orgnr)
-        statements_by_year: Dict[int, AnnualFinancialStatement] = {}
-        known_unknowns: List[str] = []
-        candidates: List[ExtractedFactCandidate] = []
-        now_iso = datetime.now(timezone.utc).isoformat()
+        statements_by_year: dict[int, AnnualFinancialStatement] = {}
+        known_unknowns: list[str] = []
+        candidates: list[ExtractedFactCandidate] = []
+        now_iso = datetime.now(UTC).isoformat()
 
         # ----------------------------------------------------------------------
         # Layer 1: Official Brønnøysund Regnskapsregisteret REST API
@@ -306,8 +305,8 @@ class FinancialsClient:
 
     @staticmethod
     def compute_multi_year_insights(
-        statements: List[AnnualFinancialStatement],
-    ) -> Tuple[List[ExtractedFactCandidate], Optional[str]]:
+        statements: list[AnnualFinancialStatement],
+    ) -> tuple[list[ExtractedFactCandidate], str | None]:
         """
         Deterministically computes multi-year financial ratios and trajectory insights in Python:
         1. Operating Margin % = (operating_profit_nok / operating_revenue_nok) * 100
@@ -315,12 +314,12 @@ class FinancialsClient:
         3. Multi-year trajectory synthesis for executive summary
         Never asks LLM to do math.
         """
-        candidates: List[ExtractedFactCandidate] = []
+        candidates: list[ExtractedFactCandidate] = []
         if not statements:
             return [], None
 
         stmts_by_year = {s.fiscal_year: s for s in statements}
-        now_iso = datetime.now(timezone.utc).isoformat()
+        now_iso = datetime.now(UTC).isoformat()
         trajectory_summary = None
 
         # Sort descending by year
@@ -427,10 +426,10 @@ class FinancialsClient:
 
     def _parse_regnskap_item(
         self,
-        item: Dict[str, Any],
+        item: dict[str, Any],
         orgnr: str,
         source_url: str,
-    ) -> Optional[AnnualFinancialStatement]:
+    ) -> AnnualFinancialStatement | None:
         """Parses a single JSON statement record from Regnskapsregisteret API."""
         periode = item.get("regnskapsperiode", {})
         til_dato = periode.get("tilDato")
@@ -509,11 +508,11 @@ class FinancialsClient:
 
     def _parse_comparative_regnskap_item(
         self,
-        item: Dict[str, Any],
-        current_statement: Optional[AnnualFinancialStatement],
+        item: dict[str, Any],
+        current_statement: AnnualFinancialStatement | None,
         orgnr: str,
         source_url: str,
-    ) -> Optional[AnnualFinancialStatement]:
+    ) -> AnnualFinancialStatement | None:
         """
         Parses prior-year comparative figures ('sammenligningstall' / 'fjoraret')
         often embedded within an annual filing record.
@@ -594,12 +593,12 @@ class FinancialsClient:
         html: str,
         source_url: str,
         clean_orgnr: str,
-    ) -> List[AnnualFinancialStatement]:
+    ) -> list[AnnualFinancialStatement]:
         """
         Extracts multi-year financial series from HTML tables (e.g. from company annual reports).
         Matches column headers to 4-digit fiscal years (2021-2025) and row labels to core metrics.
         """
-        statements_by_year: Dict[int, Dict[str, Any]] = {}
+        statements_by_year: dict[int, dict[str, Any]] = {}
         soup = BeautifulSoup(html, "html.parser")
 
         # Multiplier check on entire page/table
@@ -616,7 +615,7 @@ class FinancialsClient:
                 continue
 
             # Step 1: Detect year columns from header row
-            col_years: Dict[int, int] = {}  # col_index -> fiscal_year
+            col_years: dict[int, int] = {}  # col_index -> fiscal_year
             header_row = rows[0]
             cells = header_row.find_all(["th", "td"])
             for idx, cell in enumerate(cells):
@@ -679,7 +678,7 @@ class FinancialsClient:
                                 }
                             statements_by_year[yr][target_field] = num
 
-        result: List[AnnualFinancialStatement] = []
+        result: list[AnnualFinancialStatement] = []
         for yr, data in statements_by_year.items():
             result.append(
                 AnnualFinancialStatement(

@@ -102,6 +102,8 @@ class AnnualAccount(BaseModel):
 
     source_url: str
     verbatim_evidence: str
+    raw_reported_value: str | None = None
+    unit_scale: str = "NOK"
 
 
 class JobPosting(BaseModel):
@@ -144,6 +146,9 @@ class EntityAnchor(BaseModel):
     external_service_providers: list[str] = Field(default_factory=list)
     address_municipality: str | None = None
     address_postal_code: str | None = None
+    parent_orgnr: str | None = None
+    is_subsidiary: bool = False
+    corporate_group_name: str | None = None
 
 
 class CompanyProfile(BaseModel):

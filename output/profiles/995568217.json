@@ -3,9 +3,9 @@
   "legal_name": "GJENSIDIGE FORSIKRING ASA",
   "canonical_status": "ACTIVE",
   "created_at": "2026-11-05T07:32:30.403490+00:00",
-  "updated_at": "2026-11-05T07:32:30.403490+00:00",
+  "updated_at": "2026-11-05T12:25:19.744304+00:00",
   "schema_version": "2.0.0",
-  "profile_verification_explanation": "Enterprise profile for GJENSIDIGE FORSIKRING ASA (orgnr: 995568217) deterministically verified. 20 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "profile_verification_explanation": "Enterprise profile for GJENSIDIGE FORSIKRING ASA (orgnr: 995568217) deterministically verified. 29 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
   "executive_summary": "GJENSIDIGE FORSIKRING ASA (orgnr 995568217) is a registered ASA based in OSLO.",
   "known_unknowns": [
     "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 995568217. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret.",
@@ -516,7 +516,193 @@
         "verification_explanation": "Official registry announcement 'Fullmakt kapitalforhøyelse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 995568217)."
       },
       "previous_values": []
+    },
+    "governance.board_member.gunnar_robert_sellæg": {
+      "fact_key": "governance.board_member.gunnar_robert_sellæg",
+      "current_value": "Gunnar Robert Sellæg",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.gyrid_ingerø": {
+      "fact_key": "governance.board_member.gyrid_ingerø",
+      "current_value": "Gyrid Ingerø",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.mari_thjømøe": {
+      "fact_key": "governance.board_member.mari_thjømøe",
+      "current_value": "Mari Thjømøe",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.nils_jakob_røsholt": {
+      "fact_key": "governance.board_member.nils_jakob_røsholt",
+      "current_value": "Nils Jakob Røsholt",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.simona_trombetta": {
+      "fact_key": "governance.board_member.simona_trombetta",
+      "current_value": "Simona Trombetta",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.tor_magne_lønnum": {
+      "fact_key": "governance.board_member.tor_magne_lønnum",
+      "current_value": "Tor Magne Lønnum",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.ellen_kristin_enger": {
+      "fact_key": "governance.board_member.ellen_kristin_enger",
+      "current_value": "Ellen Kristin Enger",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.ruben_pettersen": {
+      "fact_key": "governance.board_member.ruben_pettersen",
+      "current_value": "Ruben Pettersen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.sebastian_buur_kristiansen": {
+      "fact_key": "governance.board_member.sebastian_buur_kristiansen",
+      "current_value": "Sebastian Buur Kristiansen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995568217",
+        "source_tier": "official_registry",
+        "source_date": "2010-06-28",
+        "retrieval_timestamp": "2026-11-05T12:25:10.893955+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
     }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 0,
+    "critic_facts_quarantined": 0
   },
   "metadata": {}
 }

@@ -1,0 +1,94 @@
+{
+  "orgnr": "933603237",
+  "run_timestamp": "2026-11-05T14:07:32.735718+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:07:32.735718+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2 PLAY AS KONKURSBO",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933603237"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:32.735718+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "KBO",
+        "beskrivelse": "Konkursbo"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933603237"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:32.735718+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2024-06-12",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933603237"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:32.735718+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2024-06-12",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933603237"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:32.735718+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Nydalsveien 20A",
+        "postal_code": "0484",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933603237"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:32.735718+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "47.640",
+        "beskrivelse": "Detaljhandel med spill og leker"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933603237"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:32.735718+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933603237"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:32.735718+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "933603245",
+          "name": "2 PLAY AS KONKURSBO",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/933603237"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

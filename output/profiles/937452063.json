@@ -1,0 +1,367 @@
+{
+  "orgnr": "937452063",
+  "legal_name": "13B PRODUCTIONS AS",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-11-05T14:04:49.383735+00:00",
+  "updated_at": "2026-11-05T14:04:49.383735+00:00",
+  "schema_version": "2.0.0",
+  "profile_verification_explanation": "Enterprise profile for 13B PRODUCTIONS AS (orgnr: 937452063) deterministically verified. 15 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "13B PRODUCTIONS AS is a registered Norwegian enterprise located in TRONDHEIM governed under enterprise number 937452063. Registration records confirm corporate standing with active leadership under Jonathan Jørgensen. Unfiled interim quarterly results, private partner contracts, and internal headcount fluctuations remain unconfirmed from public records.",
+  "known_unknowns": [
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 937452063. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret."
+  ],
+  "financial_history": [],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "13B PRODUCTIONS AS",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/937452063",
+        "source_tier": "official_registry",
+        "source_date": "2026-03-30",
+        "retrieval_timestamp": "2026-11-05T14:04:31.136756+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '13B PRODUCTIONS AS'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/937452063",
+        "source_tier": "official_registry",
+        "source_date": "2026-03-30",
+        "retrieval_timestamp": "2026-11-05T14:04:31.136756+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form AS (Aksjeselskap)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2026-03-30",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/937452063",
+        "source_tier": "official_registry",
+        "source_date": "2026-03-30",
+        "retrieval_timestamp": "2026-11-05T14:04:31.136756+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "registry.founding_date": {
+      "fact_key": "registry.founding_date",
+      "current_value": "2026-03-17",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/937452063",
+        "source_tier": "official_registry",
+        "source_date": "2026-03-30",
+        "retrieval_timestamp": "2026-11-05T14:04:31.136756+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official founding date (stiftelsesdato) recorded in registry."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Ormen Langes vei 12",
+        "postal_code": "7041",
+        "city": "TRONDHEIM",
+        "municipality": "TRONDHEIM",
+        "municipality_number": "5001",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/937452063",
+        "source_tier": "official_registry",
+        "source_date": "2026-03-30",
+        "retrieval_timestamp": "2026-11-05T14:04:31.136756+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in TRONDHEIM."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "62.100",
+        "beskrivelse": "Dataprogrammeringstjenester"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/937452063",
+        "source_tier": "official_registry",
+        "source_date": "2026-03-30",
+        "retrieval_timestamp": "2026-11-05T14:04:31.136756+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 62.100: Dataprogrammeringstjenester)."
+      },
+      "previous_values": []
+    },
+    "financial.share_capital": {
+      "fact_key": "financial.share_capital",
+      "current_value": 80000.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/937452063",
+        "source_tier": "official_registry",
+        "source_date": "2026-03-30",
+        "retrieval_timestamp": "2026-11-05T14:04:31.136756+00:00",
+        "verbatim_quote": "80000.0",
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered equity share capital: 80,000.00 NOK. (80,000 shares)."
+      },
+      "previous_values": []
+    },
+    "operations.statutory_purpose": {
+      "fact_key": "operations.statutory_purpose",
+      "current_value": "Tilby programvareutviklingstjenester, inkludert, men ikke begrenset til, utvikling av dataspill.",
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/937452063",
+        "source_tier": "official_registry",
+        "source_date": "2026-03-30",
+        "retrieval_timestamp": "2026-11-05T14:04:31.136756+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Statutory purpose registered in articles of association."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/937452063",
+        "source_tier": "official_registry",
+        "source_date": "2026-03-30",
+        "retrieval_timestamp": "2026-11-05T14:04:31.136756+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    },
+    "governance.board_chair": {
+      "fact_key": "governance.board_chair",
+      "current_value": "Jonathan Jørgensen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/937452063",
+        "source_tier": "official_registry",
+        "source_date": "2026-03-30",
+        "retrieval_timestamp": "2026-11-05T14:04:31.136756+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "structure.subunits": {
+      "fact_key": "structure.subunits",
+      "current_value": [
+        {
+          "orgnr": "937479255",
+          "name": "13B PRODUCTIONS AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "category": "structure",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/937452063",
+        "source_tier": "official_registry",
+        "source_date": "2026-03-30",
+        "retrieval_timestamp": "2026-11-05T14:04:31.136756+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Registered active operational sub-units count: 1."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000754260": {
+      "fact_key": "operations.corporate_event.20260000754260",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2026-09-22",
+        "kid": "20260000754260",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000754260&sokeverdi=937452063&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000754260&sokeverdi=937452063&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-09-22",
+        "retrieval_timestamp": "2026-11-05T14:04:49.382944+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-09-22): Forretningsadresse (KID: 20260000754260, Orgnr: 937452063)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 937452063)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000598707": {
+      "fact_key": "operations.corporate_event.20260000598707",
+      "current_value": {
+        "title": "Kapital",
+        "date": "2026-07-24",
+        "kid": "20260000598707",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000598707&sokeverdi=937452063&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000598707&sokeverdi=937452063&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-07-24",
+        "retrieval_timestamp": "2026-11-05T14:04:49.382944+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-07-24): Kapital (KID: 20260000598707, Orgnr: 937452063)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Kapital' verified from Brønnøysundregistrene Kunngjøringer (orgnr 937452063)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000598706": {
+      "fact_key": "operations.corporate_event.20260000598706",
+      "current_value": {
+        "title": "Vedtektsdato",
+        "date": "2026-07-24",
+        "kid": "20260000598706",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000598706&sokeverdi=937452063&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000598706&sokeverdi=937452063&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-07-24",
+        "retrieval_timestamp": "2026-11-05T14:04:49.382944+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-07-24): Vedtektsdato (KID: 20260000598706, Orgnr: 937452063)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Vedtektsdato' verified from Brønnøysundregistrene Kunngjøringer (orgnr 937452063)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000148676": {
+      "fact_key": "operations.corporate_event.20260000148676",
+      "current_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2026-03-30",
+        "kid": "20260000148676",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000148676&sokeverdi=937452063&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000148676&sokeverdi=937452063&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-03-30",
+        "retrieval_timestamp": "2026-11-05T14:04:49.382944+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-03-30): Nyregistrering i Foretaksregisteret (KID: 20260000148676, Orgnr: 937452063)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Nyregistrering i Foretaksregisteret' verified from Brønnøysundregistrene Kunngjøringer (orgnr 937452063)."
+      },
+      "previous_values": []
+    }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 15,
+    "critic_facts_quarantined": 0
+  },
+  "metadata": {}
+}

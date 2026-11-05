@@ -9,15 +9,14 @@ Layer 3: Deterministic Pre-Commit Critic (Quote Substring Lock, Negative-Entity 
 """
 
 import logging
-from datetime import datetime, timezone
-from typing import Any, Dict, List, Optional, Tuple
+from datetime import UTC, datetime
+from typing import Any
 
-from src.config import settings
 from src.collectors.brreg_client import BrregClient
 from src.collectors.financials_client import FinancialsClient
-from src.collectors.kunngjoringer_client import KunngjoringerClient
 from src.collectors.http_budget import BudgetedAsyncClient
-from src.collectors.web_discovery import WebDiscoveryCollector, WebPageContent
+from src.collectors.kunngjoringer_client import KunngjoringerClient
+from src.collectors.web_discovery import WebDiscoveryCollector
 from src.extraction.llm_extractor import FactExtractor
 from src.models.schema import (
     CompanyProfile,
@@ -32,7 +31,6 @@ from src.validators.fact_critic import FactCritic
 from src.validators.fact_guard import (
     EntityAnchor,
     is_own_company_domain,
-    verify_page_belongs_to_company,
 )
 from src.validators.mod11 import try_normalize_orgnr
 
@@ -47,8 +45,8 @@ class HybridPipeline:
     def __init__(
         self,
         client: BudgetedAsyncClient,
-        store: Optional[ProfileStore] = None,
-        extractor: Optional[FactExtractor] = None,
+        store: ProfileStore | None = None,
+        extractor: FactExtractor | None = None,
     ):
         self.client = client
         self.store = store or ProfileStore()
@@ -63,8 +61,8 @@ class HybridPipeline:
         raw_orgnr: str,
         include_web: bool = True,
         use_nim_full: bool = True,
-        telemetry: Optional[ExecutionTelemetry] = None,
-    ) -> Optional[CompanyProfile]:
+        telemetry: ExecutionTelemetry | None = None,
+    ) -> CompanyProfile | None:
         """
         Executes the 3-Layer Hybrid Pipeline for a single Norwegian organization number.
         """
@@ -95,7 +93,7 @@ class HybridPipeline:
 
         # 2. Fetch Governance Roles & Subunits
         roller_data = None
-        underenheter_data: List[Dict[str, Any]] = []
+        underenheter_data: list[dict[str, Any]] = []
         try:
             roller_data = await self.brreg.get_roller(clean_orgnr)
         except Exception:
@@ -118,9 +116,9 @@ class HybridPipeline:
 
         # 3. Multi-Year Financial Accounts (Regnskapsregisteret & Python YoY / Margins)
         financial_history = []
-        fin_unknowns: List[str] = []
-        fin_facts: List[ExtractedFactCandidate] = []
-        multi_year_trajectory: Optional[str] = None
+        fin_unknowns: list[str] = []
+        fin_facts: list[ExtractedFactCandidate] = []
+        multi_year_trajectory: str | None = None
         try:
             financial_history, fin_unknowns, fin_facts = await self.financials.fetch_multi_year_financials(
                 orgnr=clean_orgnr,
@@ -132,7 +130,7 @@ class HybridPipeline:
             logger.warning(f"Financials error for {clean_orgnr}: {fin_err}")
 
         # 4. Official Brreg Kunngjøringer Feed (100% Entity Exact)
-        kj_facts: List[ExtractedFactCandidate] = []
+        kj_facts: list[ExtractedFactCandidate] = []
         try:
             kj_items = await self.kunngjoringer.fetch_kunngjoringer(clean_orgnr, limit=8)
             if kj_items:
@@ -141,9 +139,9 @@ class HybridPipeline:
             logger.debug(f"Kunngjøringer error for {clean_orgnr}: {kj_err}")
 
         # Initial deterministic candidate pool
-        all_candidates: List[ExtractedFactCandidate] = list(registry_candidates + fin_facts + kj_facts)
-        known_unknowns: List[str] = list(fin_unknowns)
-        executive_summary: Optional[str] = None
+        all_candidates: list[ExtractedFactCandidate] = list(registry_candidates + fin_facts + kj_facts)
+        known_unknowns: list[str] = list(fin_unknowns)
+        executive_summary: str | None = None
 
         # 5. Smart Path Router
         hjemmeside = (enhet_data or {}).get("hjemmeside")
@@ -159,7 +157,7 @@ class HybridPipeline:
         )
 
         agentic_facts_proposed = 0
-        raw_scraped_pages: Dict[str, str] = {}
+        raw_scraped_pages: dict[str, str] = {}
         routing_path = "DETERMINISTIC_FAST_PATH"
 
         if not include_web or not has_verified_own_domain:
@@ -210,7 +208,7 @@ class HybridPipeline:
                 )
 
                 # Add deterministic JSON-LD jobs if discovered
-                now_iso = datetime.now(timezone.utc).isoformat()
+                now_iso = datetime.now(UTC).isoformat()
                 for job in ld_json_jobs:
                     job_ev = FactEvidence(
                         source_url=job["url"],

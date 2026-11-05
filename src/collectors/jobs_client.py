@@ -10,8 +10,9 @@ import json
 import logging
 import re
 import urllib.parse
-from datetime import datetime, timezone
-from typing import Any, Dict, List, Optional, Tuple
+from datetime import UTC, datetime
+from typing import Any
+
 from bs4 import BeautifulSoup
 
 from src.collectors.http_budget import BudgetedAsyncClient
@@ -23,7 +24,6 @@ from src.models.schema import (
 )
 from src.validators.fact_guard import (
     EntityAnchor,
-    SHARED_UMBRELLA_DOMAINS,
     is_own_company_domain,
     verify_page_belongs_to_company,
 )
@@ -65,15 +65,15 @@ class JobsClient:
         self,
         orgnr: str,
         anchor: EntityAnchor,
-    ) -> List[Dict[str, Any]]:
+    ) -> list[dict[str, Any]]:
         """
         Queries official Norwegian NAV Public Job Feed (arbeidsplassen.nav.no/public-feed/api/v1/ads?orgnr={orgnr}).
         Parses active listings legally registered under the exact 9-digit orgnr.
         Fallback to NAV search API if public-feed endpoint is unreachable.
         """
         clean_orgnr = normalize_orgnr(orgnr)
-        verified_nav_jobs: List[Dict[str, Any]] = []
-        today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        verified_nav_jobs: list[dict[str, Any]] = []
+        today_str = datetime.now(UTC).strftime("%Y-%m-%d")
 
         # 1. Primary: Official NAV Public Feed API
         feed_url = f"{NAV_PUBLIC_FEED_URL}?orgnr={clean_orgnr}"
@@ -81,7 +81,7 @@ class JobsClient:
             resp = await self.client.get(feed_url, orgnr=clean_orgnr)
             if resp.status_code == 200:
                 payload = resp.json()
-                items: List[Dict[str, Any]] = []
+                items: list[dict[str, Any]] = []
                 if isinstance(payload, dict):
                     items = payload.get("content") or payload.get("ads") or []
                 elif isinstance(payload, list):
@@ -186,7 +186,7 @@ class JobsClient:
         self,
         anchor: EntityAnchor,
         max_pages: int = 3,
-    ) -> Tuple[List[Dict[str, Any]], Optional[str]]:
+    ) -> tuple[list[dict[str, Any]], str | None]:
         """
         Inspects company's own verified domain for career openings:
         1. Verifies homepage is NOT a shared umbrella manager domain (usbl.no, obos.no, etc.).
@@ -194,9 +194,9 @@ class JobsClient:
         3. Parses Schema.org JSON-LD (@type: JobPosting) or career cards.
         4. Entity Guard: Retains job ONLY if target orgnr OR canonical legal name appears on page.
         """
-        verified_career_jobs: List[Dict[str, Any]] = []
-        career_portal_url: Optional[str] = None
-        today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        verified_career_jobs: list[dict[str, Any]] = []
+        career_portal_url: str | None = None
+        today_str = datetime.now(UTC).strftime("%Y-%m-%d")
 
         if not anchor.official_domains or anchor.hjemmeside_is_shared_manager:
             return verified_career_jobs, career_portal_url
@@ -338,17 +338,17 @@ class JobsClient:
     async def discover_jobs(
         self,
         anchor: EntityAnchor,
-    ) -> Tuple[List[Dict[str, Any]], Optional[str], List[str], List[ExtractedFactCandidate]]:
+    ) -> tuple[list[dict[str, Any]], str | None, list[str], list[ExtractedFactCandidate]]:
         """
         Orchestrates Dual-Source Job Discovery (Channel A + Channel B).
         Returns:
             (verified_jobs, career_portal_url, known_unknowns, fact_candidates)
         """
-        all_jobs: List[Dict[str, Any]] = []
-        known_unknowns: List[str] = []
-        candidates: List[ExtractedFactCandidate] = []
-        now_iso = datetime.now(timezone.utc).isoformat()
-        today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        all_jobs: list[dict[str, Any]] = []
+        known_unknowns: list[str] = []
+        candidates: list[ExtractedFactCandidate] = []
+        now_iso = datetime.now(UTC).isoformat()
+        today_str = datetime.now(UTC).strftime("%Y-%m-%d")
 
         # Channel B: Corporate Domain Careers Scraper
         career_jobs, career_portal_url = await self.fetch_career_page_jobs(anchor)

@@ -1,0 +1,86 @@
+{
+  "orgnr": "999042147",
+  "run_timestamp": "2026-11-05T14:07:50.602432+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:07:50.602432+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2 SØSTRE - / BEATE BAKKE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999042147"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:50.602432+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999042147"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:50.602432+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2012-11-13",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999042147"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:50.602432+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Bedriftsvegen 65",
+        "postal_code": "3735",
+        "city": "SKIEN",
+        "municipality": "SKIEN",
+        "municipality_number": "4003",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999042147"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:50.602432+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "96.220",
+        "beskrivelse": "Skjønnhetspleie"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999042147"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:50.602432+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999042147"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:50.602432+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "981018621",
+          "name": "2 SØSTRE / BEATE BAKKE",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999042147"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

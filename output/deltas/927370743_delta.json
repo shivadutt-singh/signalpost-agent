@@ -1,0 +1,414 @@
+{
+  "orgnr": "927370743",
+  "run_timestamp": "2026-11-05T14:03:57.109861+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "123 SUSHI AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-07-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-06-03",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Bibliotekgata 30",
+        "postal_code": "1473",
+        "city": "LØRENSKOG",
+        "municipality": "LØRENSKOG",
+        "municipality_number": "3222",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "56.110",
+        "beskrivelse": "Drift av restauranter"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Drift av spisested. Sushi og varmmat og andre produkter som naturlig faller sammen med dette, herunder å delta i andre selskaper med lignende virksomhet.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Hai Thanh Truong",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Hai Thanh Truong",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "927568349",
+          "name": "123 SUSHI AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.revenue_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 1159708.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.operating_profit_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 324989.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.profit_before_tax_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 320765.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.net_income_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 279133.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.total_assets_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 370784.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.total_equity_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 153533.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.revenue_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 349032.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.operating_profit_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -118594.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.profit_before_tax_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -125632.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.net_income_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -125632.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.total_assets_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 349250.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.total_equity_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -125600.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.revenue_2023",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 0.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.operating_profit_2023",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 0.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.profit_before_tax_2023",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 0.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.net_income_2023",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 0.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.total_assets_2023",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 33.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.total_equity_2023",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 33.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.operating_margin_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 28.02,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.yoy_revenue_growth_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 232.26,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "financial.operating_margin_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -33.98,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/927370743"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "operations.corporate_event.20260000404947",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2026-06-20",
+        "kid": "20260000404947",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000404947&sokeverdi=927370743&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000404947&sokeverdi=927370743&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "operations.corporate_event.20250000581775",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2025-07-14",
+        "kid": "20250000581775",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000581775&sokeverdi=927370743&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000581775&sokeverdi=927370743&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "operations.corporate_event.20240000714972",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Forretningsadresse",
+        "date": "2024-07-16",
+        "kid": "20240000714972",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000714972&sokeverdi=927370743&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000714972&sokeverdi=927370743&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "operations.corporate_event.20240000703813",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2024-07-13",
+        "kid": "20240000703813",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000703813&sokeverdi=927370743&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000703813&sokeverdi=927370743&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "operations.corporate_event.20240000460755",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2024-05-28",
+        "kid": "20240000460755",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000460755&sokeverdi=927370743&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000460755&sokeverdi=927370743&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "operations.corporate_event.20240000180822",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Forretningsadresse",
+        "date": "2024-01-01",
+        "kid": "20240000180822",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000180822&sokeverdi=927370743&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000180822&sokeverdi=927370743&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "operations.corporate_event.20230000356900",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2023-06-13",
+        "kid": "20230000356900",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000356900&sokeverdi=927370743&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000356900&sokeverdi=927370743&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:03:57.109861+00:00",
+      "fact_key": "operations.corporate_event.20220000387264",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2022-06-28",
+        "kid": "20220000387264",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000387264&sokeverdi=927370743&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000387264&sokeverdi=927370743&spraak=nb"
+    }
+  ],
+  "facts_created": 42,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

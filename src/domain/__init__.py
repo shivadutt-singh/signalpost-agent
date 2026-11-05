@@ -4,6 +4,7 @@ from src.domain.accounting_guard import (
     calculate_equity_ratio,
     calculate_operating_margin,
     calculate_yoy_growth,
+    detect_table_unit_multiplier,
     parse_norwegian_number,
     reconcile_multi_year_series,
     verify_number_digits_in_evidence,
@@ -57,12 +58,23 @@ from src.domain.mod11 import (
     validate_orgnr,
 )
 from src.domain.result import Err, Ok, Result
+from src.domain.text_normalizer import (
+    clean_company_name_match,
+    has_mojibake,
+    normalize_norwegian_text,
+    to_posix_path,
+)
 
 __all__ = [
     # Result
     "Result",
     "Ok",
     "Err",
+    # Text Normalization
+    "normalize_norwegian_text",
+    "has_mojibake",
+    "to_posix_path",
+    "clean_company_name_match",
     # Errors
     "DomainError",
     "InvalidOrgnrError",
@@ -101,6 +113,7 @@ __all__ = [
     "split_dom_into_blocks",
     "verify_dom_block_ownership",
     # Accounting Guard
+    "detect_table_unit_multiplier",
     "parse_norwegian_number",
     "verify_number_digits_in_evidence",
     "calculate_yoy_growth",

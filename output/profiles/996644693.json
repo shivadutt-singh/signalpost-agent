@@ -1,0 +1,324 @@
+{
+  "orgnr": "996644693",
+  "legal_name": "123DOMAIN.EU TRUSTEE SERVICES NUF",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-11-05T14:03:58.454643+00:00",
+  "updated_at": "2026-11-05T14:03:58.454643+00:00",
+  "schema_version": "2.0.0",
+  "profile_verification_explanation": "Enterprise profile for 123DOMAIN.EU TRUSTEE SERVICES NUF (orgnr: 996644693) deterministically verified. 13 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "123DOMAIN.EU TRUSTEE SERVICES NUF is a registered Norwegian enterprise located in ASKER governed under enterprise number 996644693. Registration records confirm corporate standing with active leadership under Thomas Klute. Unfiled interim quarterly results, private partner contracts, and internal headcount fluctuations remain unconfirmed from public records.",
+  "known_unknowns": [
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 996644693. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret."
+  ],
+  "financial_history": [],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "123DOMAIN.EU TRUSTEE SERVICES NUF",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/996644693",
+        "source_tier": "official_registry",
+        "source_date": "2011-04-08",
+        "retrieval_timestamp": "2026-11-05T14:03:52.944781+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '123DOMAIN.EU TRUSTEE SERVICES NUF'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "NUF",
+        "beskrivelse": "Norskregistrert utenlandsk foretak"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/996644693",
+        "source_tier": "official_registry",
+        "source_date": "2011-04-08",
+        "retrieval_timestamp": "2026-11-05T14:03:52.944781+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form NUF (Norskregistrert utenlandsk foretak)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2011-04-08",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/996644693",
+        "source_tier": "official_registry",
+        "source_date": "2011-04-08",
+        "retrieval_timestamp": "2026-11-05T14:03:52.944781+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "82.990",
+        "beskrivelse": "Annen forretningsmessig tjenesteyting ikke nevnt annet sted"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/996644693",
+        "source_tier": "official_registry",
+        "source_date": "2011-04-08",
+        "retrieval_timestamp": "2026-11-05T14:03:52.944781+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 82.990: Annen forretningsmessig tjenesteyting ikke nevnt annet sted)."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/996644693",
+        "source_tier": "official_registry",
+        "source_date": "2011-04-08",
+        "retrieval_timestamp": "2026-11-05T14:03:52.944781+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    },
+    "governance.board_chair": {
+      "fact_key": "governance.board_chair",
+      "current_value": "Thomas Klute",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/996644693",
+        "source_tier": "official_registry",
+        "source_date": "2011-04-08",
+        "retrieval_timestamp": "2026-11-05T14:03:52.944781+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20240000103560": {
+      "fact_key": "operations.corporate_event.20240000103560",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2024-01-01",
+        "kid": "20240000103560",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000103560&sokeverdi=996644693&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000103560&sokeverdi=996644693&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2024-01-01",
+        "retrieval_timestamp": "2026-11-05T14:03:58.453825+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2024-01-01): Forretningsadresse (KID: 20240000103560, Orgnr: 996644693)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 996644693)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20200000052789": {
+      "fact_key": "operations.corporate_event.20200000052789",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2020-01-01",
+        "kid": "20200000052789",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20200000052789&sokeverdi=996644693&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20200000052789&sokeverdi=996644693&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2020-01-01",
+        "retrieval_timestamp": "2026-11-05T14:03:58.453825+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2020-01-01): Forretningsadresse (KID: 20200000052789, Orgnr: 996644693)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 996644693)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20180000056065": {
+      "fact_key": "operations.corporate_event.20180000056065",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2018-01-09",
+        "kid": "20180000056065",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20180000056065&sokeverdi=996644693&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20180000056065&sokeverdi=996644693&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2018-01-09",
+        "retrieval_timestamp": "2026-11-05T14:03:58.453825+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2018-01-09): Forretningsadresse (KID: 20180000056065, Orgnr: 996644693)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 996644693)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20170000336445": {
+      "fact_key": "operations.corporate_event.20170000336445",
+      "current_value": {
+        "title": "Daglig leder",
+        "date": "2017-06-29",
+        "kid": "20170000336445",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20170000336445&sokeverdi=996644693&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20170000336445&sokeverdi=996644693&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2017-06-29",
+        "retrieval_timestamp": "2026-11-05T14:03:58.453825+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2017-06-29): Daglig leder (KID: 20170000336445, Orgnr: 996644693)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Daglig leder' verified from Brønnøysundregistrene Kunngjøringer (orgnr 996644693)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20150000140224": {
+      "fact_key": "operations.corporate_event.20150000140224",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2015-05-06",
+        "kid": "20150000140224",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20150000140224&sokeverdi=996644693&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20150000140224&sokeverdi=996644693&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2015-05-06",
+        "retrieval_timestamp": "2026-11-05T14:03:58.453825+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2015-05-06): Forretningsadresse (KID: 20150000140224, Orgnr: 996644693)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 996644693)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20110000088581": {
+      "fact_key": "operations.corporate_event.20110000088581",
+      "current_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2011-04-08",
+        "kid": "20110000088581",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20110000088581&sokeverdi=996644693&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20110000088581&sokeverdi=996644693&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2011-04-08",
+        "retrieval_timestamp": "2026-11-05T14:03:58.453825+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2011-04-08): Nyregistrering i Foretaksregisteret (KID: 20110000088581, Orgnr: 996644693)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Nyregistrering i Foretaksregisteret' verified from Brønnøysundregistrene Kunngjøringer (orgnr 996644693)."
+      },
+      "previous_values": []
+    }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 12,
+    "critic_facts_quarantined": 1
+  },
+  "metadata": {
+    "quarantined_facts": [
+      {
+        "orgnr": "996644693",
+        "fact_key": "contact.business_address",
+        "value": {
+          "street": "c/o Ybin AS Apalstien 43",
+          "postal_code": "1387",
+          "city": "ASKER",
+          "municipality": "ASKER",
+          "municipality_number": "3203",
+          "country": "Norge"
+        },
+        "reason": "NEGATIVE_ENTITY_CONTAMINATION_FAILED: Anti-Bleed lock triggered - external provider 'YBIN AS' mentioned without target company corroboration",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/996644693",
+        "quarantined_at": "2026-11-05T14:03:58.455222+00:00"
+      }
+    ],
+    "quarantined_facts_count": 1
+  }
+}

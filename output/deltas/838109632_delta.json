@@ -1,0 +1,86 @@
+{
+  "orgnr": "838109632",
+  "run_timestamp": "2026-11-05T14:04:15.109481+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:04:15.109481+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "12TRENT SONPRASIT",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/838109632"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:15.109481+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/838109632"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:15.109481+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-07-16",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/838109632"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:15.109481+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Breivangvegen 18",
+        "postal_code": "9010",
+        "city": "TROMSØ",
+        "municipality": "TROMSØ",
+        "municipality_number": "5501",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/838109632"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:15.109481+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "81.210",
+        "beskrivelse": "Rengjøring av bygninger"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/838109632"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:15.109481+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/838109632"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:15.109481+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "938112088",
+          "name": "12TRENT SONPRASIT",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/838109632"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

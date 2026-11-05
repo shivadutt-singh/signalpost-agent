@@ -41,6 +41,11 @@ class MockRegistry:
     ) -> Result[list[dict[str, Any]], DomainError]:
         return Ok([])
 
+    async def get_oppdateringer(
+        self, orgnr: str
+    ) -> Result[list[dict[str, Any]], DomainError]:
+        return Ok([])
+
     def build_anchor(
         self, enhet: dict[str, Any], roller: list[dict[str, Any]]
     ) -> EntityAnchor:
@@ -60,6 +65,7 @@ class MockRegistry:
         enhet: dict[str, Any],
         roller: list[dict[str, Any]],
         under: list[dict[str, Any]],
+        oppdateringer: list[dict[str, Any]] | None = None,
     ) -> list[Any]:
         return []
 

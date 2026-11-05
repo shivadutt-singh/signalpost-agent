@@ -5,9 +5,8 @@ and synthesizes explainability narratives.
 """
 
 import json
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
 
 from src.config import settings
 from src.models.schema import (
@@ -24,7 +23,7 @@ from src.models.schema import (
 from src.validators.fact_critic import FactCriticPipeline
 
 
-def _parse_comparable_date(date_str: Optional[str]) -> Optional[str]:
+def _parse_comparable_date(date_str: str | None) -> str | None:
     """Extracts first 10 characters (YYYY-MM-DD) for uniform chronological comparisons."""
     if not date_str:
         return None
@@ -40,9 +39,9 @@ class ProfileStore:
 
     def __init__(
         self,
-        profiles_dir: Optional[Path] = None,
-        deltas_dir: Optional[Path] = None,
-        telemetry_dir: Optional[Path] = None,
+        profiles_dir: Path | None = None,
+        deltas_dir: Path | None = None,
+        telemetry_dir: Path | None = None,
     ):
         self.profiles_dir = profiles_dir or settings.PROFILES_DIR
         self.deltas_dir = deltas_dir or settings.DELTAS_DIR
@@ -52,13 +51,13 @@ class ProfileStore:
         self.deltas_dir.mkdir(parents=True, exist_ok=True)
         self.telemetry_dir.mkdir(parents=True, exist_ok=True)
 
-    def load_profile(self, orgnr: str) -> Optional[CompanyProfile]:
+    def load_profile(self, orgnr: str) -> CompanyProfile | None:
         """Loads an existing company profile from disk if present."""
         path = self.profiles_dir / f"{orgnr}.json"
         if not path.exists():
             return None
         try:
-            with open(path, "r", encoding="utf-8") as f:
+            with open(path, encoding="utf-8") as f:
                 data = json.load(f)
             return CompanyProfile.model_validate(data)
         except Exception:
@@ -67,7 +66,7 @@ class ProfileStore:
     def save_profile(
         self,
         profile: CompanyProfile,
-        telemetry: Optional[ExecutionTelemetry] = None,
+        telemetry: ExecutionTelemetry | None = None,
     ) -> Path:
         """
         Runs FactCriticPipeline firewall audit and atomically saves a company profile to disk.
@@ -97,15 +96,15 @@ class ProfileStore:
 
     def merge_facts(
         self,
-        existing_profile: Optional[CompanyProfile],
+        existing_profile: CompanyProfile | None,
         orgnr: str,
         legal_name: str,
-        candidates: List[ExtractedFactCandidate],
+        candidates: list[ExtractedFactCandidate],
         canonical_status: str = "ACTIVE",
-        executive_summary: Optional[str] = None,
-        known_unknowns: Optional[List[str]] = None,
-        financial_history: Optional[List[AnnualFinancialStatement]] = None,
-    ) -> Tuple[CompanyProfile, ProfileDeltaLog]:
+        executive_summary: str | None = None,
+        known_unknowns: list[str] | None = None,
+        financial_history: list[AnnualFinancialStatement] | None = None,
+    ) -> tuple[CompanyProfile, ProfileDeltaLog]:
         """
         Merges a set of newly extracted fact candidates and multi-year financials into a company profile.
         Guarantees:
@@ -114,7 +113,7 @@ class ProfileStore:
         - Archiving replaced values in previous_values history
         - Emitting a comprehensive change_log
         """
-        now_iso = datetime.now(timezone.utc).isoformat()
+        now_iso = datetime.now(UTC).isoformat()
         delta = ProfileDeltaLog(orgnr=orgnr, run_timestamp=now_iso)
 
         if existing_profile is None:

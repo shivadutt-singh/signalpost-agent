@@ -1,0 +1,234 @@
+{
+  "orgnr": "827015482",
+  "legal_name": "14G KITTILSEN",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-11-05T14:05:13.281594+00:00",
+  "updated_at": "2026-11-05T14:05:13.281594+00:00",
+  "schema_version": "2.0.0",
+  "profile_verification_explanation": "Enterprise profile for 14G KITTILSEN (orgnr: 827015482) deterministically verified. 9 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "14G KITTILSEN is a registered Norwegian enterprise located in SKIEN governed under enterprise number 827015482. Registration records confirm corporate standing with active leadership under Executive Board. Unfiled interim quarterly results, private partner contracts, and internal headcount fluctuations remain unconfirmed from public records.",
+  "known_unknowns": [
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 827015482. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret."
+  ],
+  "financial_history": [],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "14G KITTILSEN",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/827015482",
+        "source_tier": "official_registry",
+        "source_date": "2021-04-26",
+        "retrieval_timestamp": "2026-11-05T14:04:53.422467+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '14G KITTILSEN'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/827015482",
+        "source_tier": "official_registry",
+        "source_date": "2021-04-26",
+        "retrieval_timestamp": "2026-11-05T14:04:53.422467+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form ENK (Enkeltpersonforetak)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2021-04-26",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/827015482",
+        "source_tier": "official_registry",
+        "source_date": "2021-04-26",
+        "retrieval_timestamp": "2026-11-05T14:04:53.422467+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Luksefjellvegen 206",
+        "postal_code": "3721",
+        "city": "SKIEN",
+        "municipality": "SKIEN",
+        "municipality_number": "4003",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/827015482",
+        "source_tier": "official_registry",
+        "source_date": "2021-04-26",
+        "retrieval_timestamp": "2026-11-05T14:04:53.422467+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in SKIEN."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "47.710",
+        "beskrivelse": "Detaljhandel med klær"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/827015482",
+        "source_tier": "official_registry",
+        "source_date": "2021-04-26",
+        "retrieval_timestamp": "2026-11-05T14:04:53.422467+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 47.710: Detaljhandel med klær)."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/827015482",
+        "source_tier": "official_registry",
+        "source_date": "2021-04-26",
+        "retrieval_timestamp": "2026-11-05T14:04:53.422467+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20240000065820": {
+      "fact_key": "operations.corporate_event.20240000065820",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2024-01-01",
+        "kid": "20240000065820",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000065820&sokeverdi=827015482&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000065820&sokeverdi=827015482&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2024-01-01",
+        "retrieval_timestamp": "2026-11-05T14:05:13.281040+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2024-01-01): Forretningsadresse (KID: 20240000065820, Orgnr: 827015482)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 827015482)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20230000780584": {
+      "fact_key": "operations.corporate_event.20230000780584",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2023-11-11",
+        "kid": "20230000780584",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000780584&sokeverdi=827015482&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000780584&sokeverdi=827015482&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2023-11-11",
+        "retrieval_timestamp": "2026-11-05T14:05:13.281040+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2023-11-11): Forretningsadresse (KID: 20230000780584, Orgnr: 827015482)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 827015482)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20210000166467": {
+      "fact_key": "operations.corporate_event.20210000166467",
+      "current_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2021-04-26",
+        "kid": "20210000166467",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20210000166467&sokeverdi=827015482&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20210000166467&sokeverdi=827015482&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2021-04-26",
+        "retrieval_timestamp": "2026-11-05T14:05:13.281040+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2021-04-26): Nyregistrering i Foretaksregisteret (KID: 20210000166467, Orgnr: 827015482)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Nyregistrering i Foretaksregisteret' verified from Brønnøysundregistrene Kunngjøringer (orgnr 827015482)."
+      },
+      "previous_values": []
+    }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 9,
+    "critic_facts_quarantined": 0
+  },
+  "metadata": {}
+}

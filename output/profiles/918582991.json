@@ -3,9 +3,9 @@
   "legal_name": "USBL BIL",
   "canonical_status": "ACTIVE",
   "created_at": "2026-11-05T07:31:13.585487+00:00",
-  "updated_at": "2026-11-05T07:31:13.585487+00:00",
+  "updated_at": "2026-11-05T12:24:09.888420+00:00",
   "schema_version": "2.0.0",
-  "profile_verification_explanation": "Enterprise profile for USBL BIL (orgnr: 918582991) deterministically verified. 8 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "profile_verification_explanation": "Enterprise profile for USBL BIL (orgnr: 918582991) deterministically verified. 14 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
   "executive_summary": "USBL BIL (orgnr 918582991) is a registered FLI based in OSLO.",
   "known_unknowns": [
     "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 918582991. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret.",
@@ -185,7 +185,133 @@
         "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
       },
       "previous_values": []
+    },
+    "governance.board_member.bjørn_hauge": {
+      "fact_key": "governance.board_member.bjørn_hauge",
+      "current_value": "Bjørn Hauge",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/918582991",
+        "source_tier": "official_registry",
+        "source_date": "2017-02-27",
+        "retrieval_timestamp": "2026-11-05T12:24:07.489281+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.christine_harbitz": {
+      "fact_key": "governance.board_member.christine_harbitz",
+      "current_value": "Christine Harbitz",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/918582991",
+        "source_tier": "official_registry",
+        "source_date": "2017-02-27",
+        "retrieval_timestamp": "2026-11-05T12:24:07.489281+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.maria_kasandra_hansen": {
+      "fact_key": "governance.board_member.maria_kasandra_hansen",
+      "current_value": "Maria Kasandra Hansen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/918582991",
+        "source_tier": "official_registry",
+        "source_date": "2017-02-27",
+        "retrieval_timestamp": "2026-11-05T12:24:07.489281+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.karen_sveggen": {
+      "fact_key": "governance.board_member.karen_sveggen",
+      "current_value": "Karen Sveggen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/918582991",
+        "source_tier": "official_registry",
+        "source_date": "2017-02-27",
+        "retrieval_timestamp": "2026-11-05T12:24:07.489281+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.rune_fredriksen": {
+      "fact_key": "governance.board_member.rune_fredriksen",
+      "current_value": "Rune Fredriksen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/918582991",
+        "source_tier": "official_registry",
+        "source_date": "2017-02-27",
+        "retrieval_timestamp": "2026-11-05T12:24:07.489281+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.birgitte_kroken": {
+      "fact_key": "governance.board_member.birgitte_kroken",
+      "current_value": "Birgitte Kroken",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/918582991",
+        "source_tier": "official_registry",
+        "source_date": "2017-02-27",
+        "retrieval_timestamp": "2026-11-05T12:24:07.489281+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
     }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 0,
+    "critic_facts_quarantined": 0
   },
   "metadata": {}
 }

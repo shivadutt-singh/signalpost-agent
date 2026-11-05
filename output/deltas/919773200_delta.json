@@ -1,0 +1,95 @@
+{
+  "orgnr": "919773200",
+  "run_timestamp": "2026-11-05T14:08:06.666580+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:08:06.666580+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2011-BARNA VED GRØTTE SKOLE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919773200"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.666580+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919773200"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.666580+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2017-10-23",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919773200"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.666580+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2017-09-05",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919773200"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.666580+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Karin Fjelldal By Fjellmobredden 24",
+        "postal_code": "7320",
+        "city": "FANNREM",
+        "municipality": "ORKLAND",
+        "municipality_number": "5059",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919773200"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.666580+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919773200"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.666580+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919773200"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.666580+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Mia Sommerschild",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919773200"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:06.666580+00:00",
+      "fact_key": "governance.board_member.hilde_torjuul",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Hilde Torjuul",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/919773200"
+    }
+  ],
+  "facts_created": 9,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

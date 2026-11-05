@@ -14,8 +14,8 @@ import logging
 import re
 import urllib.parse
 from dataclasses import dataclass
-from datetime import datetime, timezone
-from typing import Any, Dict, List, Optional, Tuple
+from datetime import UTC, datetime
+
 from bs4 import BeautifulSoup
 
 from src.collectors.http_budget import BudgetedAsyncClient
@@ -43,7 +43,7 @@ class KunngjoringItem:
     verbatim_quote: str
 
 
-def parse_norwegian_kunngjoring_date(date_str: str) -> Optional[str]:
+def parse_norwegian_kunngjoring_date(date_str: str) -> str | None:
     """
     Parses Norwegian date format 'DD.MM.YYYY' to ISO 'YYYY-MM-DD'.
     Example: '04.09.2026' -> '2026-09-04'
@@ -76,13 +76,13 @@ class KunngjoringerClient:
         self,
         orgnr: str,
         limit: int = 15,
-    ) -> List[KunngjoringItem]:
+    ) -> list[KunngjoringItem]:
         """
         Fetches official announcements for a given 9-digit Norwegian organization number.
         Returns a chronologically sorted list of KunngjoringItem objects.
         """
         clean_orgnr = normalize_orgnr(orgnr)
-        items: List[KunngjoringItem] = []
+        items: list[KunngjoringItem] = []
 
         # Step 1: Direct GET to hent_nr.jsp
         primary_url = f"{self.base_url}/hent_nr.jsp?orgnr={clean_orgnr}"
@@ -126,13 +126,13 @@ class KunngjoringerClient:
         html_content: str,
         clean_orgnr: str,
         limit: int = 15,
-    ) -> List[KunngjoringItem]:
+    ) -> list[KunngjoringItem]:
         """
         Parses the official HTML table of announcements from Brreg.
         Preserves date carryover for multi-item groupings on the same day.
         """
         soup = BeautifulSoup(html_content, "html.parser")
-        items: List[KunngjoringItem] = []
+        items: list[KunngjoringItem] = []
 
         last_observed_date = ""
         last_observed_raw_date = ""
@@ -187,7 +187,7 @@ class KunngjoringerClient:
                 effective_date_iso = last_observed_date
                 effective_raw_date = last_observed_raw_date
             else:
-                effective_date_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+                effective_date_iso = datetime.now(UTC).strftime("%Y-%m-%d")
                 effective_raw_date = ""
 
             verbatim = (
@@ -215,15 +215,15 @@ class KunngjoringerClient:
 
     def to_fact_candidates(
         self,
-        items: List[KunngjoringItem],
+        items: list[KunngjoringItem],
         clean_orgnr: str,
-    ) -> List[ExtractedFactCandidate]:
+    ) -> list[ExtractedFactCandidate]:
         """
         Converts KunngjoringItem list into ExtractedFactCandidate list for profile state merge.
         Tier 1 Official Registry Ground Truth with 100% entity precision.
         """
-        candidates: List[ExtractedFactCandidate] = []
-        now_iso = datetime.now(timezone.utc).isoformat()
+        candidates: list[ExtractedFactCandidate] = []
+        now_iso = datetime.now(UTC).isoformat()
 
         for idx, item in enumerate(items):
             evidence = FactEvidence(

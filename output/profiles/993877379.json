@@ -1,0 +1,281 @@
+{
+  "orgnr": "993877379",
+  "legal_name": "2-RAYZ SYNDICATE TOURAY",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-11-05T14:08:01.986279+00:00",
+  "updated_at": "2026-11-05T14:08:01.986279+00:00",
+  "schema_version": "2.0.0",
+  "profile_verification_explanation": "Enterprise profile for 2-RAYZ SYNDICATE TOURAY (orgnr: 993877379) deterministically verified. 11 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "2-RAYZ SYNDICATE TOURAY is a registered Norwegian enterprise located in OSLO governed under enterprise number 993877379. Registration records confirm corporate standing with active leadership under Executive Board. Unfiled interim quarterly results, private partner contracts, and internal headcount fluctuations remain unconfirmed from public records.",
+  "known_unknowns": [
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 993877379. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret."
+  ],
+  "financial_history": [],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "2-RAYZ SYNDICATE TOURAY",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993877379",
+        "source_tier": "official_registry",
+        "source_date": "2009-03-21",
+        "retrieval_timestamp": "2026-11-05T14:07:58.651656+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '2-RAYZ SYNDICATE TOURAY'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993877379",
+        "source_tier": "official_registry",
+        "source_date": "2009-03-21",
+        "retrieval_timestamp": "2026-11-05T14:07:58.651656+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form ENK (Enkeltpersonforetak)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2009-03-21",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993877379",
+        "source_tier": "official_registry",
+        "source_date": "2009-03-21",
+        "retrieval_timestamp": "2026-11-05T14:07:58.651656+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Jordstjerneveien 38E",
+        "postal_code": "1283",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993877379",
+        "source_tier": "official_registry",
+        "source_date": "2009-03-21",
+        "retrieval_timestamp": "2026-11-05T14:07:58.651656+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in OSLO."
+      },
+      "previous_values": []
+    },
+    "contact.website": {
+      "fact_key": "contact.website",
+      "current_value": "www.2-rayz.com",
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993877379",
+        "source_tier": "official_registry",
+        "source_date": "2009-03-21",
+        "retrieval_timestamp": "2026-11-05T14:07:58.651656+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary homepage domain declared to registry: www.2-rayz.com."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "59.110",
+        "beskrivelse": "Produksjon av film, video og fjernsynsprogrammer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993877379",
+        "source_tier": "official_registry",
+        "source_date": "2009-03-21",
+        "retrieval_timestamp": "2026-11-05T14:07:58.651656+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 59.110: Produksjon av film, video og fjernsynsprogrammer)."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993877379",
+        "source_tier": "official_registry",
+        "source_date": "2009-03-21",
+        "retrieval_timestamp": "2026-11-05T14:07:58.651656+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    },
+    "structure.subunits": {
+      "fact_key": "structure.subunits",
+      "current_value": [
+        {
+          "orgnr": "936402259",
+          "name": "2-RAYZ SYNDICATE TOURAY",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "category": "structure",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993877379",
+        "source_tier": "official_registry",
+        "source_date": "2009-03-21",
+        "retrieval_timestamp": "2026-11-05T14:07:58.651656+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Registered active operational sub-units count: 1."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20250000792771": {
+      "fact_key": "operations.corporate_event.20250000792771",
+      "current_value": {
+        "title": "Virksomhet/bransje",
+        "date": "2025-10-17",
+        "kid": "20250000792771",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000792771&sokeverdi=993877379&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000792771&sokeverdi=993877379&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2025-10-17",
+        "retrieval_timestamp": "2026-11-05T14:08:01.985654+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2025-10-17): Virksomhet/bransje (KID: 20250000792771, Orgnr: 993877379)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Virksomhet/bransje' verified from Brønnøysundregistrene Kunngjøringer (orgnr 993877379)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20250000285532": {
+      "fact_key": "operations.corporate_event.20250000285532",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2025-05-19",
+        "kid": "20250000285532",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000285532&sokeverdi=993877379&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000285532&sokeverdi=993877379&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2025-05-19",
+        "retrieval_timestamp": "2026-11-05T14:08:01.985654+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2025-05-19): Forretningsadresse (KID: 20250000285532, Orgnr: 993877379)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 993877379)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20130000062432": {
+      "fact_key": "operations.corporate_event.20130000062432",
+      "current_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2013-03-07",
+        "kid": "20130000062432",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20130000062432&sokeverdi=993877379&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20130000062432&sokeverdi=993877379&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2013-03-07",
+        "retrieval_timestamp": "2026-11-05T14:08:01.985654+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2013-03-07): Nyregistrering i Foretaksregisteret (KID: 20130000062432, Orgnr: 993877379)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Nyregistrering i Foretaksregisteret' verified from Brønnøysundregistrene Kunngjøringer (orgnr 993877379)."
+      },
+      "previous_values": []
+    }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 11,
+    "critic_facts_quarantined": 0
+  },
+  "metadata": {}
+}

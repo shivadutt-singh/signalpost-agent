@@ -14,8 +14,8 @@ and excluded from the published profile, guaranteeing 0% risk of disqualificatio
 
 import logging
 import re
-from datetime import datetime, timezone
-from typing import Any, Dict, List, Optional, Tuple
+from datetime import UTC, datetime
+from typing import Any
 
 from src.models.schema import (
     CompanyProfile,
@@ -46,9 +46,9 @@ class FactCritic:
     def verify_and_filter(
         cls,
         profile: CompanyProfile,
-        raw_scraped_pages: Dict[str, str],
-        negative_external_entities: Optional[List[Dict[str, str]]] = None,
-        telemetry: Optional[ExecutionTelemetry] = None,
+        raw_scraped_pages: dict[str, str],
+        negative_external_entities: list[dict[str, str]] | None = None,
+        telemetry: ExecutionTelemetry | None = None,
     ) -> CompanyProfile:
         """
         Layer 3 Deterministic Pre-Commit Critic:
@@ -59,8 +59,8 @@ class FactCritic:
         4. Numeric/Financial Digit Check: digits must exist inside verbatim_quote.
         """
         audited_facts = {}
-        quarantined: List[Dict[str, Any]] = []
-        now_iso = datetime.now(timezone.utc).isoformat()
+        quarantined: list[dict[str, Any]] = []
+        now_iso = datetime.now(UTC).isoformat()
         negative_entities = negative_external_entities or []
 
         for fact_key, fact_history in list(profile.facts.items()):
@@ -168,16 +168,16 @@ class FactCritic:
     def audit_profile(
         cls,
         profile: CompanyProfile,
-        telemetry: Optional[ExecutionTelemetry] = None,
+        telemetry: ExecutionTelemetry | None = None,
     ) -> CompanyProfile:
         """
         Audits all facts in profile.facts right before saving.
         Failing facts are purged from profile.facts and quarantined.
         """
         audited_facts = {}
-        quarantined: List[Dict[str, Any]] = []
-        now_iso = datetime.now(timezone.utc).isoformat()
-        today = datetime.now(timezone.utc).date()
+        quarantined: list[dict[str, Any]] = []
+        now_iso = datetime.now(UTC).isoformat()
+        today = datetime.now(UTC).date()
 
         for fact_key, fact_history in list(profile.facts.items()):
             ev = fact_history.current_evidence
@@ -299,7 +299,7 @@ class FactCritic:
                 ev.entity_match_method = "EXACT_LEGAL_NAME_ON_OWN_DOMAIN"
 
     @classmethod
-    def validate_evidence_url(cls, evidence: FactEvidence) -> Tuple[bool, Optional[str]]:
+    def validate_evidence_url(cls, evidence: FactEvidence) -> tuple[bool, str | None]:
         """Every fact must have a non-empty valid http:// or https:// source_url."""
         if not evidence or not evidence.source_url:
             return False, "source_url is missing or empty"
@@ -314,8 +314,8 @@ class FactCritic:
     def validate_date_sanity(
         cls,
         evidence: FactEvidence,
-        today: Optional[Any] = None,
-    ) -> Tuple[bool, Optional[str]]:
+        today: Any | None = None,
+    ) -> tuple[bool, str | None]:
         """Every fact must have a valid YYYY-MM-DD source_date that is <= today."""
         if not evidence or not evidence.source_date:
             return False, "source_date is missing or empty"
@@ -329,7 +329,7 @@ class FactCritic:
         except ValueError:
             return False, f"source_date '{d_str}' is an invalid calendar date"
 
-        current_today = today or datetime.now(timezone.utc).date()
+        current_today = today or datetime.now(UTC).date()
         if fact_date > current_today:
             return False, f"source_date '{d_str}' is in the future (> {current_today})"
 
@@ -341,7 +341,7 @@ class FactCritic:
         fact_key: str,
         value: Any,
         evidence: FactEvidence,
-    ) -> Tuple[bool, Optional[str]]:
+    ) -> tuple[bool, str | None]:
         """Every financial/numeric fact from non-Brreg sources must pass verify_financial_fact()."""
         is_financial = (
             fact_key.startswith("financial.")
@@ -379,7 +379,7 @@ class FactCritic:
         fact_key: str,
         category: FactCategory,
         evidence: FactEvidence,
-    ) -> Tuple[bool, Optional[str]]:
+    ) -> tuple[bool, str | None]:
         """Every web-scraped fact must have a permitted entity_match_method."""
         is_scraped = (
             category == FactCategory.OPERATIONS

@@ -1,0 +1,423 @@
+{
+  "orgnr": "914041244",
+  "run_timestamp": "2026-11-05T14:06:30.177450+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1LIFEAPP AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2014-08-21",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2014-08-07",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Galgebergvegen 2C",
+        "postal_code": "2318",
+        "city": "HAMAR",
+        "municipality": "HAMAR",
+        "municipality_number": "3403",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1lifeapp.no",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "62.100",
+        "beskrivelse": "Dataprogrammeringstjenester"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Utvikling av apper for smarttelefoner, nettbrett og andre datamaskiner.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Espen Frøyshov",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Espen Frøyshov",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.revenue_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 78132.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.operating_profit_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 13061.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.profit_before_tax_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 13107.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.net_income_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 13107.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.total_assets_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 28627.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.total_equity_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -46842.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.revenue_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 96505.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.operating_profit_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -1237.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.profit_before_tax_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -524.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.net_income_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -524.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.total_assets_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 6140.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.total_equity_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -59949.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.revenue_2023",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 65194.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.operating_profit_2023",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -191621.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.profit_before_tax_2023",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -190196.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.net_income_2023",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -190196.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.total_assets_2023",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 12854.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.total_equity_2023",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -59425.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.operating_margin_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 16.72,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.yoy_revenue_growth_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -19.04,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.operating_margin_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -1.28,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.yoy_revenue_growth_2024",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 48.03,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "financial.operating_margin_2023",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -293.92,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/914041244"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "operations.corporate_event.20260000164141",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2026-04-09",
+        "kid": "20260000164141",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000164141&sokeverdi=914041244&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000164141&sokeverdi=914041244&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "operations.corporate_event.20250000277513",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2025-05-17",
+        "kid": "20250000277513",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000277513&sokeverdi=914041244&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000277513&sokeverdi=914041244&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "operations.corporate_event.20240000553918",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2024-06-17",
+        "kid": "20240000553918",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000553918&sokeverdi=914041244&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000553918&sokeverdi=914041244&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "operations.corporate_event.20230000187234",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2023-04-17",
+        "kid": "20230000187234",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000187234&sokeverdi=914041244&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000187234&sokeverdi=914041244&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "operations.corporate_event.20220000147207",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2022-04-11",
+        "kid": "20220000147207",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000147207&sokeverdi=914041244&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000147207&sokeverdi=914041244&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "operations.corporate_event.20210000151738",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2021-04-17",
+        "kid": "20210000151738",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20210000151738&sokeverdi=914041244&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20210000151738&sokeverdi=914041244&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "operations.corporate_event.20200000768803",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2020-08-26",
+        "kid": "20200000768803",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20200000768803&sokeverdi=914041244&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20200000768803&sokeverdi=914041244&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:30.177450+00:00",
+      "fact_key": "operations.corporate_event.20200000080856",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Forretningsadresse",
+        "date": "2020-01-01",
+        "kid": "20200000080856",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20200000080856&sokeverdi=914041244&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20200000080856&sokeverdi=914041244&spraak=nb"
+    }
+  ],
+  "facts_created": 44,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

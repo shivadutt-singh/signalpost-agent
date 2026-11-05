@@ -1,0 +1,275 @@
+{
+  "orgnr": "935852706",
+  "legal_name": "13B INTERACTIVE DA",
+  "canonical_status": "IN_LIQUIDATION",
+  "created_at": "2026-11-05T14:04:39.279633+00:00",
+  "updated_at": "2026-11-05T14:04:39.279633+00:00",
+  "schema_version": "2.0.0",
+  "profile_verification_explanation": "Enterprise profile for 13B INTERACTIVE DA (orgnr: 935852706) deterministically verified. 11 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "13B INTERACTIVE DA is a registered Norwegian enterprise located in TRONDHEIM governed under enterprise number 935852706. Registration records confirm corporate standing with active leadership under Executive Board. Unfiled interim quarterly results, private partner contracts, and internal headcount fluctuations remain unconfirmed from public records.",
+  "known_unknowns": [
+    "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 935852706. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret."
+  ],
+  "financial_history": [],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "13B INTERACTIVE DA",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/935852706",
+        "source_tier": "official_registry",
+        "source_date": "2025-07-15",
+        "retrieval_timestamp": "2026-11-05T14:04:35.513340+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '13B INTERACTIVE DA'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "DA",
+        "beskrivelse": "Ansvarlig selskap med delt ansvar"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/935852706",
+        "source_tier": "official_registry",
+        "source_date": "2025-07-15",
+        "retrieval_timestamp": "2026-11-05T14:04:35.513340+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form DA (Ansvarlig selskap med delt ansvar)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2025-07-15",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/935852706",
+        "source_tier": "official_registry",
+        "source_date": "2025-07-15",
+        "retrieval_timestamp": "2026-11-05T14:04:35.513340+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "registry.founding_date": {
+      "fact_key": "registry.founding_date",
+      "current_value": "2025-07-04",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/935852706",
+        "source_tier": "official_registry",
+        "source_date": "2025-07-15",
+        "retrieval_timestamp": "2026-11-05T14:04:35.513340+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official founding date (stiftelsesdato) recorded in registry."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Brattørveita 13B",
+        "postal_code": "7010",
+        "city": "TRONDHEIM",
+        "municipality": "TRONDHEIM",
+        "municipality_number": "5001",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/935852706",
+        "source_tier": "official_registry",
+        "source_date": "2025-07-15",
+        "retrieval_timestamp": "2026-11-05T14:04:35.513340+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in TRONDHEIM."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "58.210",
+        "beskrivelse": "Utgivelse av programvare for dataspill"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/935852706",
+        "source_tier": "official_registry",
+        "source_date": "2025-07-15",
+        "retrieval_timestamp": "2026-11-05T14:04:35.513340+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 58.210: Utgivelse av programvare for dataspill)."
+      },
+      "previous_values": []
+    },
+    "operations.statutory_purpose": {
+      "fact_key": "operations.statutory_purpose",
+      "current_value": "Publisere dataspill.",
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/935852706",
+        "source_tier": "official_registry",
+        "source_date": "2025-07-15",
+        "retrieval_timestamp": "2026-11-05T14:04:35.513340+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Statutory purpose registered in articles of association."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "IN_LIQUIDATION",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/935852706",
+        "source_tier": "official_registry",
+        "source_date": "2025-07-15",
+        "retrieval_timestamp": "2026-11-05T14:04:35.513340+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: IN_LIQUIDATION."
+      },
+      "previous_values": []
+    },
+    "structure.subunits": {
+      "fact_key": "structure.subunits",
+      "current_value": [
+        {
+          "orgnr": "936233449",
+          "name": "13B INTERACTIVE DA",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "category": "structure",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/935852706",
+        "source_tier": "official_registry",
+        "source_date": "2025-07-15",
+        "retrieval_timestamp": "2026-11-05T14:04:35.513340+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Registered active operational sub-units count: 1."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000354182": {
+      "fact_key": "operations.corporate_event.20260000354182",
+      "current_value": {
+        "title": "Oppløsning",
+        "date": "2026-06-08",
+        "kid": "20260000354182",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000354182&sokeverdi=935852706&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000354182&sokeverdi=935852706&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-06-08",
+        "retrieval_timestamp": "2026-11-05T14:04:39.278956+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-06-08): Oppløsning (KID: 20260000354182, Orgnr: 935852706)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Oppløsning' verified from Brønnøysundregistrene Kunngjøringer (orgnr 935852706)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20250000585372": {
+      "fact_key": "operations.corporate_event.20250000585372",
+      "current_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2025-07-15",
+        "kid": "20250000585372",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000585372&sokeverdi=935852706&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000585372&sokeverdi=935852706&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2025-07-15",
+        "retrieval_timestamp": "2026-11-05T14:04:39.278956+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2025-07-15): Nyregistrering i Foretaksregisteret (KID: 20250000585372, Orgnr: 935852706)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Nyregistrering i Foretaksregisteret' verified from Brønnøysundregistrene Kunngjøringer (orgnr 935852706)."
+      },
+      "previous_values": []
+    }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 11,
+    "critic_facts_quarantined": 0
+  },
+  "metadata": {}
+}

@@ -8,26 +8,18 @@ Provides "Judge / Auditor Mode" interactive web console featuring:
 Run with: python -m src.cli serve --port 8000
 """
 
-import asyncio
-import hashlib
 import json
 import logging
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.responses import HTMLResponse
 
-from src.config import settings
 from src.collectors.http_budget import BudgetedAsyncClient, HttpBudgetTracker
-from src.collectors.brreg_client import BrregClient
-from src.collectors.financials_client import FinancialsClient
-from src.collectors.kunngjoringer_client import KunngjoringerClient
-from src.collectors.web_discovery import WebDiscoveryCollector
+from src.config import settings
 from src.extraction.llm_extractor import FactExtractor
-from src.models.schema import CompanyProfile
 from src.state.profile_store import ProfileStore
-from src.validators.fact_critic import FactCriticPipeline
 from src.validators.mod11 import try_normalize_orgnr
 
 logger = logging.getLogger("signalpost.web")
@@ -937,7 +929,7 @@ async def serve_index():
     audit_file = Path("./data/hand_checked_audit.json")
     if audit_file.exists():
         try:
-            with open(audit_file, "r", encoding="utf-8") as f:
+            with open(audit_file, encoding="utf-8") as f:
                 audit_json = f.read()
         except Exception:
             pass
@@ -946,7 +938,7 @@ async def serve_index():
 
 
 @app.get("/api/profiles")
-async def list_profiles() -> List[Dict[str, Any]]:
+async def list_profiles() -> list[dict[str, Any]]:
     """Returns summary metadata of all generated company profiles."""
     profiles_dir = settings.PROFILES_DIR
     if not profiles_dir.exists():
@@ -955,7 +947,7 @@ async def list_profiles() -> List[Dict[str, Any]]:
     summaries = []
     for file_path in profiles_dir.glob("*.json"):
         try:
-            with open(file_path, "r", encoding="utf-8") as f:
+            with open(file_path, encoding="utf-8") as f:
                 data = json.load(f)
             fin_history = data.get("financial_history", [])
             facts = data.get("facts", {})
@@ -984,7 +976,7 @@ async def list_profiles() -> List[Dict[str, Any]]:
 
 
 @app.get("/api/profiles/{orgnr}")
-async def get_profile(orgnr: str) -> Dict[str, Any]:
+async def get_profile(orgnr: str) -> dict[str, Any]:
     """Returns the full verifiable company profile for a 9-digit orgnr."""
     clean_orgnr = try_normalize_orgnr(orgnr)
     if not clean_orgnr:
@@ -998,7 +990,7 @@ async def get_profile(orgnr: str) -> Dict[str, Any]:
 
 
 @app.post("/api/run/{orgnr}")
-async def run_live_company(orgnr: str) -> Dict[str, Any]:
+async def run_live_company(orgnr: str) -> dict[str, Any]:
     """Executes the pipeline live from the browser for any 9-digit Norwegian orgnr."""
     from src.cli import process_single_company
 
@@ -1026,21 +1018,21 @@ async def run_live_company(orgnr: str) -> Dict[str, Any]:
 
 
 @app.get("/api/audit")
-async def get_audit() -> Dict[str, Any]:
+async def get_audit() -> dict[str, Any]:
     """Returns the hand-checked calibration audit summary and 50 verified rows."""
     audit_file = Path("./data/hand_checked_audit.json")
     if not audit_file.exists():
         raise HTTPException(status_code=404, detail="Audit report not generated yet. Run python -m src.scripts.build_calibration_audit.")
 
-    with open(audit_file, "r", encoding="utf-8") as f:
+    with open(audit_file, encoding="utf-8") as f:
         return json.load(f)
 
 
 @app.get("/api/telemetry")
-async def get_telemetry() -> Dict[str, Any]:
+async def get_telemetry() -> dict[str, Any]:
     """Returns the latest execution telemetry manifest."""
     telemetry_file = settings.TELEMETRY_DIR / "telemetry_manifest.json"
     if not telemetry_file.exists():
         return {}
-    with open(telemetry_file, "r", encoding="utf-8") as f:
+    with open(telemetry_file, encoding="utf-8") as f:
         return json.load(f)

@@ -3,9 +3,9 @@
   "legal_name": "AL AMMERUDSLETTAS BORETTSLAG",
   "canonical_status": "ACTIVE",
   "created_at": "2026-11-05T07:29:32.730347+00:00",
-  "updated_at": "2026-11-05T07:29:32.730347+00:00",
+  "updated_at": "2026-11-05T12:22:02.313662+00:00",
   "schema_version": "2.0.0",
-  "profile_verification_explanation": "Enterprise profile for AL AMMERUDSLETTAS BORETTSLAG (orgnr: 955362128) deterministically verified. 36 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "profile_verification_explanation": "Enterprise profile for AL AMMERUDSLETTAS BORETTSLAG (orgnr: 955362128) deterministically verified. 43 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
   "executive_summary": "AL AMMERUDSLETTAS BORETTSLAG (orgnr 955362128) is a registered BRL based in OSLO.",
   "known_unknowns": [
     "Active job listings: Checked registry records and official NAV public job feed on 2026-11-05; 0 active openings verified featuring the company's legal name or exact orgnr."
@@ -833,7 +833,153 @@
         "verification_explanation": "Official registry announcement 'Styre' verified from Brønnøysundregistrene Kunngjøringer (orgnr 955362128)."
       },
       "previous_values": []
+    },
+    "governance.board_member.nina_beathe_kristiansen": {
+      "fact_key": "governance.board_member.nina_beathe_kristiansen",
+      "current_value": "Nina Beathe Kristiansen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/955362128",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-19",
+        "retrieval_timestamp": "2026-11-05T12:22:00.035777+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.bilal_ishqair": {
+      "fact_key": "governance.board_member.bilal_ishqair",
+      "current_value": "Bilal Ishqair",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/955362128",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-19",
+        "retrieval_timestamp": "2026-11-05T12:22:00.035777+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.eddy_oretap": {
+      "fact_key": "governance.board_member.eddy_oretap",
+      "current_value": "Eddy Oretap",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/955362128",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-19",
+        "retrieval_timestamp": "2026-11-05T12:22:00.035777+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.mats_tofthagen": {
+      "fact_key": "governance.board_member.mats_tofthagen",
+      "current_value": "Mats Tofthagen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/955362128",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-19",
+        "retrieval_timestamp": "2026-11-05T12:22:00.035777+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "financial.profit_before_tax_2025": {
+      "fact_key": "financial.profit_before_tax_2025",
+      "current_value": 3053304.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2025",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/955362128",
+        "source_tier": "official_registry",
+        "source_date": "2025-12-31",
+        "retrieval_timestamp": "2026-11-05T12:22:00.036421+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2026463104: Periode 2025-01-01 til 2025-12-31 (SELSKAP). Driftsinntekter: 19587937.0, Driftsresultat: 6599649.0, Ordinært resultat før skatt: 3053304.0, Årsresultat: 3053304.0, Sum eiendeler: 118647006.0, Sum egenkapital: 47649056.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2025 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/955362128)."
+      },
+      "previous_values": []
+    },
+    "financial.profit_before_tax_2024": {
+      "fact_key": "financial.profit_before_tax_2024",
+      "current_value": -1736962.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2024",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/955362128",
+        "source_tier": "official_registry",
+        "source_date": "2024-12-31",
+        "retrieval_timestamp": "2026-11-05T12:22:00.036421+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2025427651: Periode 2024-01-01 til 2024-12-31 (SELSKAP). Driftsinntekter: 18758985.0, Driftsresultat: 1809076.0, Ordinært resultat før skatt: -1736962.0, Årsresultat: -1736962.0, Sum eiendeler: 120141414.0, Sum egenkapital: 44595752.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2024 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/955362128)."
+      },
+      "previous_values": []
+    },
+    "financial.profit_before_tax_2023": {
+      "fact_key": "financial.profit_before_tax_2023",
+      "current_value": 6499686.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2023",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/955362128",
+        "source_tier": "official_registry",
+        "source_date": "2023-12-31",
+        "retrieval_timestamp": "2026-11-05T12:22:00.036421+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2024564617: Periode 2023-01-01 til 2023-12-31 (SELSKAP). Driftsinntekter: 17686674.0, Driftsresultat: 9675453.0, Ordinært resultat før skatt: 6499686.0, Årsresultat: 6499686.0, Sum eiendeler: 123581281.0, Sum egenkapital: 46332713.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2023 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/955362128)."
+      },
+      "previous_values": []
     }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 0,
+    "critic_facts_quarantined": 0
   },
   "metadata": {}
 }

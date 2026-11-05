@@ -1,0 +1,111 @@
+{
+  "orgnr": "938176949",
+  "run_timestamp": "2026-11-05T14:06:04.944505+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:04.944505+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "180 DEGREES CONSULTING OSLO",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938176949"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:04.944505+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938176949"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:04.944505+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-08-04",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938176949"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:04.944505+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-07-24",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938176949"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:04.944505+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938176949"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:04.944505+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938176949"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:04.944505+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Aizhan Taalaibek",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938176949"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:04.944505+00:00",
+      "fact_key": "governance.board_member.kiara_daniel",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kiara Daniel",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938176949"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:04.944505+00:00",
+      "fact_key": "governance.board_member.anna_vass",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Anna Vass",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938176949"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:04.944505+00:00",
+      "fact_key": "governance.board_member.lee_angela_amor_quizon",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Lee Angela Amor Quizon",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938176949"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:04.944505+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "838202632",
+          "name": "180 DEGREES CONSULTING OSLO",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938176949"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

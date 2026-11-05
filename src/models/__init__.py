@@ -3,16 +3,16 @@ Data models and schemas for Signalpost Agent.
 """
 
 from src.models.schema import (
-    SourceTier,
+    ChangeLogEntry,
+    CompanyProfile,
+    ExecutionTelemetry,
+    ExtractedFactCandidate,
+    FactAuditHistory,
     FactCategory,
     FactEvidence,
     PreviousValue,
-    FactAuditHistory,
-    CompanyProfile,
-    ChangeLogEntry,
     ProfileDeltaLog,
-    ExecutionTelemetry,
-    ExtractedFactCandidate,
+    SourceTier,
 )
 
 __all__ = [

@@ -1,0 +1,111 @@
+{
+  "orgnr": "987433973",
+  "run_timestamp": "2026-11-05T14:07:52.971286+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:07:52.971286+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2. GJERPEN SPEIDERGRUPPE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987433973"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.971286+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987433973"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.971286+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2004-12-20",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987433973"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.971286+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1948-11-16",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987433973"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.971286+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Valebøvegen 112",
+        "postal_code": "3721",
+        "city": "SKIEN",
+        "municipality": "SKIEN",
+        "municipality_number": "4003",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987433973"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.971286+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987433973"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.971286+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987433973"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.971286+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kjetil Dahl",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987433973"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.971286+00:00",
+      "fact_key": "governance.board_member.grethe_vidme",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Grethe Vidme",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987433973"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.971286+00:00",
+      "fact_key": "governance.board_member.kristian_kverndalen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kristian Kverndalen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987433973"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:52.971286+00:00",
+      "fact_key": "governance.board_member.marte_steinbakken",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Marte Steinbakken",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/987433973"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

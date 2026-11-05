@@ -4,7 +4,6 @@ Standardized according to Brønnøysund Register Centre official specification.
 """
 
 import re
-from typing import List, Optional
 
 # Official Modulo 11 weights for Norwegian 9-digit enterprise numbers
 MOD11_WEIGHTS = [3, 2, 7, 6, 5, 4, 3, 2]
@@ -16,7 +15,7 @@ ORGN_REGEX = re.compile(
 )
 
 
-def calculate_check_digit(first_8_digits: str) -> Optional[int]:
+def calculate_check_digit(first_8_digits: str) -> int | None:
     """
     Computes the 9th Modulo-11 check digit from the first 8 digits.
     Returns:
@@ -92,7 +91,7 @@ def normalize_orgnr(raw: str) -> str:
     return digits
 
 
-def try_normalize_orgnr(raw: str) -> Optional[str]:
+def try_normalize_orgnr(raw: str) -> str | None:
     """Safe normalizer that returns None instead of raising on failure."""
     try:
         return normalize_orgnr(raw)
@@ -100,7 +99,7 @@ def try_normalize_orgnr(raw: str) -> Optional[str]:
         return None
 
 
-def extract_orgnrs_from_text(text: str) -> List[str]:
+def extract_orgnrs_from_text(text: str) -> list[str]:
     """
     Scans free-form unstructured text (web pages, PDFs, documents)
     and extracts all unique, valid 9-digit Norwegian enterprise numbers.

@@ -1,0 +1,118 @@
+{
+  "orgnr": "927768356",
+  "run_timestamp": "2026-11-05T14:08:09.146750+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:08:09.146750+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2015-LAGET",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927768356"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.146750+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927768356"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.146750+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-09-20",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927768356"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.146750+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-08-31",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927768356"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.146750+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Støperiveien 65",
+        "postal_code": "2010",
+        "city": "STRØMMEN",
+        "municipality": "LILLESTRØM",
+        "municipality_number": "3205",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927768356"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.146750+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "93.120",
+        "beskrivelse": "Aktiviteter i idrettslag og -klubber"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927768356"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.146750+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927768356"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.146750+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Christian Syvertsen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927768356"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.146750+00:00",
+      "fact_key": "governance.board_member.stian_semmerud",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Stian Semmerud",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927768356"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.146750+00:00",
+      "fact_key": "governance.board_member.kristin_birgit_sabine_bali",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kristin Birgit Sabine Bali",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927768356"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.146750+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "927770083",
+          "name": "2015-LAGET",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927768356"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

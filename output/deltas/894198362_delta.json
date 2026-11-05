@@ -1,0 +1,76 @@
+{
+  "orgnr": "894198362",
+  "run_timestamp": "2026-11-05T14:04:28.734533+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:04:28.734533+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1314981 ONTARIO LIMITED",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/894198362"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:28.734533+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "UTLA",
+        "beskrivelse": "Utenlandsk enhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/894198362"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:28.734533+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2009-06-11",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/894198362"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:28.734533+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1998-09-17",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/894198362"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:28.734533+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "60 Hanson Road Unit 128",
+        "postal_code": null,
+        "city": "LB 2P6 MISSISSAUGA ONTARIO",
+        "municipality": null,
+        "municipality_number": null,
+        "country": "Canada"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/894198362"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:28.734533+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "www.aacomputing.com",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/894198362"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:28.734533+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/894198362"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

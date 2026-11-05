@@ -1,0 +1,71 @@
+{
+  "orgnr": "923597573",
+  "run_timestamp": "2026-11-05T14:06:18.370961+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:18.370961+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1966 CHAWEEPHEN KHAMMA",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923597573"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:18.370961+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923597573"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:18.370961+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-10-11",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923597573"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:18.370961+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Chaweephen Khamma Khamma Chalin Massasje Siggerudhagan 142C",
+        "postal_code": "2080",
+        "city": "EIDSVOLL",
+        "municipality": "EIDSVOLL",
+        "municipality_number": "3240",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923597573"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:18.370961+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "96.230",
+        "beskrivelse": "Aktiviteter i dagspa, badstue og dampbad"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923597573"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:18.370961+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923597573"
+    }
+  ],
+  "facts_created": 6,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

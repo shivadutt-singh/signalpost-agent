@@ -1,18 +1,24 @@
 {
   "orgnr": "988347892",
-  "legal_name": "KNOWIT EXPERIENCE OSLO AS",
+  "legal_name": "GUNNEL JENSSEN",
   "canonical_status": "ACTIVE",
   "created_at": "2026-11-05T07:30:30.530791+00:00",
-  "updated_at": "2026-11-05T07:30:30.530791+00:00",
+  "updated_at": "2026-11-05T12:23:14.070566+00:00",
   "schema_version": "2.0.0",
-  "profile_verification_explanation": "Enterprise profile for KNOWIT EXPERIENCE OSLO AS (orgnr: 988347892) deterministically verified. 2 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
-  "executive_summary": "KNOWIT EXPERIENCE OSLO AS (orgnr 988347892) is a registered OTHER based in Norway.",
+  "profile_verification_explanation": "Enterprise profile for GUNNEL JENSSEN (orgnr: 988347892) deterministically verified. 3 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "GUNNEL JENSSEN (orgnr 988347892) is a registered AAFY based in Norway.",
   "known_unknowns": [
     "Multi-year financial accounts: Regnskapsregisteret returned 0 filed accounts for orgnr 988347892. Housing associations (BRL/ESEK), branch units, or small non-corporate entities are frequently exempt from submitting full public annual accounts to Regnskapsregisteret.",
     "Active job listings: Checked registry records and official NAV public job feed on 2026-11-05; 0 active openings verified featuring the company's legal name or exact orgnr."
   ],
   "financial_history": [],
   "facts": {},
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 0,
+    "critic_facts_quarantined": 0
+  },
   "metadata": {
     "quarantined_facts": [
       {
@@ -30,8 +36,35 @@
         "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
         "source_date": null,
         "quarantined_at": "2026-11-05T07:30:30.531407+00:00"
+      },
+      {
+        "orgnr": "988347892",
+        "fact_key": "registry.legal_name",
+        "value": "GUNNEL JENSSEN",
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
+        "source_date": null,
+        "quarantined_at": "2026-11-05T12:23:14.071057+00:00"
+      },
+      {
+        "orgnr": "988347892",
+        "fact_key": "registry.organization_form",
+        "value": {
+          "kode": "AAFY",
+          "beskrivelse": "Underenhet til ikke-næringsdrivende"
+        },
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
+        "source_date": null,
+        "quarantined_at": "2026-11-05T12:23:14.071057+00:00"
+      },
+      {
+        "orgnr": "988347892",
+        "fact_key": "registry.status",
+        "value": "ACTIVE",
+        "reason": "DATE_SANITY_CHECK_FAILED: source_date is missing or empty",
+        "source_date": null,
+        "quarantined_at": "2026-11-05T12:23:14.071057+00:00"
       }
     ],
-    "quarantined_facts_count": 2
+    "quarantined_facts_count": 5
   }
 }

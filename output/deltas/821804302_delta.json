@@ -1,0 +1,110 @@
+{
+  "orgnr": "821804302",
+  "run_timestamp": "2026-11-05T14:08:07.029446+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:08:07.029446+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2012-BARNA VED GRØTTE SKOLE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/821804302"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.029446+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/821804302"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.029446+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2018-11-29",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/821804302"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.029446+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2018-10-30",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/821804302"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.029446+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Lene Haukli Grøttevegen 3",
+        "postal_code": "7320",
+        "city": "FANNREM",
+        "municipality": "ORKLAND",
+        "municipality_number": "5059",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/821804302"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.029446+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/821804302"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.029446+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/821804302"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.029446+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Lene Haukli",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/821804302"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.029446+00:00",
+      "fact_key": "governance.board_member.torhild_engløkk-haldogard",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Torhild Engløkk-Haldogard",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/821804302"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:07.029446+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "922511799",
+          "name": "2012-BARNA VED GRØTTE SKOLE",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/821804302"
+    }
+  ],
+  "facts_created": 10,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

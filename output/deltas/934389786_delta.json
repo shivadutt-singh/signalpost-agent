@@ -1,0 +1,126 @@
+{
+  "orgnr": "934389786",
+  "run_timestamp": "2026-11-05T14:08:08.267895+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:08:08.267895+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2012-BARN ØVREBØ",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934389786"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.267895+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934389786"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.267895+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2024-10-31",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934389786"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.267895+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2024-10-22",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934389786"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.267895+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Eirik Fuskeland Slettebrotan 68",
+        "postal_code": "4715",
+        "city": "ØVREBØ",
+        "municipality": "VENNESLA",
+        "municipality_number": "4223",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934389786"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.267895+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934389786"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.267895+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934389786"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.267895+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Roy Greibesland",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934389786"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.267895+00:00",
+      "fact_key": "governance.board_member.eirik_fuskeland",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Eirik Fuskeland",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934389786"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.267895+00:00",
+      "fact_key": "governance.board_member.øyvind_sørheim",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Øyvind Sørheim",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934389786"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.267895+00:00",
+      "fact_key": "governance.board_member.birgit_øyulvstad",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Birgit Øyulvstad",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934389786"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:08.267895+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "834392852",
+          "name": "2012-BARN ØVREBØ",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934389786"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

@@ -152,6 +152,11 @@ class HttpGateway:
 
         try:
             resp = await client.get(url, headers=headers, timeout=req_timeout)
+            try:
+                if resp.encoding is None or resp.encoding.lower() in ("iso-8859-1", "ascii"):
+                    resp.encoding = "utf-8"
+            except Exception:
+                pass
 
             # Check 429 Too Many Requests
             if resp.status_code == 429:

@@ -1,0 +1,118 @@
+{
+  "orgnr": "922673837",
+  "run_timestamp": "2026-11-05T14:06:00.807424+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:00.807424+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "17.MAI-KOMITEEN PÅ MOSTER",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922673837"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.807424+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922673837"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.807424+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-04-27",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922673837"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.807424+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-01-10",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922673837"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.807424+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Tommy Bjørnevik Hestavollen 47",
+        "postal_code": "5440",
+        "city": "MOSTERHAMN",
+        "municipality": "BØMLO",
+        "municipality_number": "4613",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922673837"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.807424+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922673837"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.807424+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922673837"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.807424+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Cathrine Grimstvedt",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922673837"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.807424+00:00",
+      "fact_key": "governance.board_member.tommy_bjørnevik",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Tommy Bjørnevik",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922673837"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.807424+00:00",
+      "fact_key": "governance.board_member.janne_jyotsna_andreassen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Janne Jyotsna Andreassen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922673837"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:00.807424+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "922852855",
+          "name": "17.MAI-KOMITEEN PÅ MOSTER",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922673837"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

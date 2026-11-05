@@ -1,0 +1,84 @@
+{
+  "orgnr": "935202051",
+  "run_timestamp": "2026-11-05T14:07:50.072600+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:07:50.072600+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2-CON SVERIGE AB",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935202051"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:50.072600+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "UTLA",
+        "beskrivelse": "Utenlandsk enhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935202051"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:50.072600+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-03-12",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935202051"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:50.072600+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2014-04-23",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935202051"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:50.072600+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Tegelbruksvägen 10",
+        "postal_code": null,
+        "city": "SE-746 30 BÅLSTA",
+        "municipality": null,
+        "municipality_number": null,
+        "country": "Sverige"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935202051"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:50.072600+00:00",
+      "fact_key": "contact.website",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "www.2-con.se",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935202051"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:50.072600+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Utenlandsk foretak",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935202051"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:50.072600+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935202051"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

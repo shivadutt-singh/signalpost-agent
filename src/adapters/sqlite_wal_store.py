@@ -111,7 +111,7 @@ class SqliteWalStore(ProfileStorePort):
                         profile.fsm_state_history[-1]
                         if profile.fsm_state_history
                         else "COMPLETED",
-                        str(target_path),
+                        target_path.as_posix(),
                         profile.updated_at,
                     ),
                 )
@@ -131,7 +131,7 @@ class SqliteWalStore(ProfileStorePort):
                     message=f"Failed to write profile atomically for {orgnr}: {exc}",
                     details={
                         "orgnr": orgnr,
-                        "target_path": str(target_path),
+                        "target_path": target_path.as_posix(),
                         "error": str(exc),
                     },
                 )

@@ -1,0 +1,132 @@
+{
+  "orgnr": "938019541",
+  "run_timestamp": "2026-11-05T14:06:09.977649+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:09.977649+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1875 GROUP AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938019541"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:09.977649+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938019541"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:09.977649+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-07-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938019541"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:09.977649+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-06-23",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938019541"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:09.977649+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Hallsgate 5",
+        "postal_code": "3912",
+        "city": "PORSGRUNN",
+        "municipality": "PORSGRUNN",
+        "municipality_number": "4001",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938019541"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:09.977649+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "63.910",
+        "beskrivelse": "Drift av søkemotorer"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938019541"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:09.977649+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938019541"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:09.977649+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Drift av opplysningstjenester og søkemotorer, samt annen virksomhet som står i tilknytning til dette.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938019541"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:09.977649+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938019541"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:09.977649+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Sondre Rossbach",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938019541"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:09.977649+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "938289670",
+          "name": "1875 GROUP AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938019541"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:09.977649+00:00",
+      "fact_key": "operations.corporate_event.20260000464287",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2026-07-01",
+        "kid": "20260000464287",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000464287&sokeverdi=938019541&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000464287&sokeverdi=938019541&spraak=nb"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

@@ -3,9 +3,10 @@ Strict Pydantic v2 Models for Facts, Evidence, Profiles, Delta Logs, and Telemet
 Enforces verifiable data integrity, temporal history, and auditability.
 """
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from enum import Enum
-from typing import Any, Dict, List, Optional
+from typing import Any
+
 from pydantic import BaseModel, Field, field_validator
 
 
@@ -42,23 +43,23 @@ class FactEvidence(BaseModel):
     """Verifiable cryptographic and textual evidence backing an extracted fact."""
     source_url: str = Field(..., description="Canonical source URL where fact was observed")
     source_tier: SourceTier = Field(..., description="Authority tier of the source")
-    source_date: Optional[str] = Field(
+    source_date: str | None = Field(
         None,
         description="ISO-8601 date when source fact was published or reported (YYYY-MM-DD or ISO datetime)"
     )
     retrieval_timestamp: str = Field(
-        default_factory=lambda: datetime.now(timezone.utc).isoformat(),
+        default_factory=lambda: datetime.now(UTC).isoformat(),
         description="ISO-8601 timestamp when the agent fetched this evidence"
     )
-    verbatim_quote: Optional[str] = Field(
+    verbatim_quote: str | None = Field(
         None,
         description="Verbatim exact quote extracted from raw page content (mandatory for numeric/financial facts)"
     )
-    entity_match_rule: Optional[str] = Field(
+    entity_match_rule: str | None = Field(
         None,
         description="Rule used to verify entity match (e.g., ORGNR_MATCH, OFFICIAL_DOMAIN_MATCH, NAME_AND_LOCATION_MATCH)"
     )
-    entity_match_method: Optional[str] = Field(
+    entity_match_method: str | None = Field(
         None,
         description="Canonical critic entity match method: EXACT_ORGNR_API | EXACT_ORGNR_ON_PAGE | EXACT_LEGAL_NAME_ON_OWN_DOMAIN | OFFICIAL_BRREG_KUNNGJORING"
     )
@@ -83,8 +84,8 @@ class ExtractedFactCandidate(BaseModel):
     fact_key: str = Field(..., description="Canonical dot-delimited fact key, e.g., 'financial.revenue_2023'")
     value: Any = Field(..., description="Extracted structured value")
     category: FactCategory = Field(default=FactCategory.REGISTRY_CORE)
-    unit: Optional[str] = Field(None, description="Optional measurement unit (e.g., NOK, USD, count)")
-    period_or_year: Optional[str] = Field(None, description="Target accounting period or year, if applicable")
+    unit: str | None = Field(None, description="Optional measurement unit (e.g., NOK, USD, count)")
+    period_or_year: str | None = Field(None, description="Target accounting period or year, if applicable")
     evidence: FactEvidence = Field(..., description="Evidence supporting this candidate fact")
 
 
@@ -92,9 +93,9 @@ class PreviousValue(BaseModel):
     """Historical value superseded during profile updates, retained for auditability."""
     value: Any
     source_url: str
-    source_date: Optional[str] = None
+    source_date: str | None = None
     replaced_at: str = Field(
-        default_factory=lambda: datetime.now(timezone.utc).isoformat()
+        default_factory=lambda: datetime.now(UTC).isoformat()
     )
     reason: str = Field(..., description="Why this value was superseded (e.g., SUPERSEDED_BY_NEWER_DATE)")
 
@@ -104,24 +105,24 @@ class FactAuditHistory(BaseModel):
     fact_key: str
     current_value: Any
     category: FactCategory = FactCategory.REGISTRY_CORE
-    unit: Optional[str] = None
-    period_or_year: Optional[str] = None
+    unit: str | None = None
+    period_or_year: str | None = None
     current_evidence: FactEvidence
-    previous_values: List[PreviousValue] = Field(default_factory=list)
+    previous_values: list[PreviousValue] = Field(default_factory=list)
 
 
 class ChangeLogEntry(BaseModel):
     """Granular delta record for each fact evaluated during an update."""
     timestamp: str = Field(
-        default_factory=lambda: datetime.now(timezone.utc).isoformat()
+        default_factory=lambda: datetime.now(UTC).isoformat()
     )
     fact_key: str
     action: str = Field(
         ...,
         description="CREATED | UNCHANGED | SUPERSEDED | REJECTED_STALE | REJECTED_FABRICATION | REJECTED_ENTITY_MISMATCH"
     )
-    old_value: Optional[Any] = None
-    new_value: Optional[Any] = None
+    old_value: Any | None = None
+    new_value: Any | None = None
     reason: str
 
 
@@ -129,9 +130,9 @@ class ProfileDeltaLog(BaseModel):
     """Execution delta log produced when updating a company profile."""
     orgnr: str
     run_timestamp: str = Field(
-        default_factory=lambda: datetime.now(timezone.utc).isoformat()
+        default_factory=lambda: datetime.now(UTC).isoformat()
     )
-    changes: List[ChangeLogEntry] = Field(default_factory=list)
+    changes: list[ChangeLogEntry] = Field(default_factory=list)
     facts_created: int = 0
     facts_updated: int = 0
     facts_unchanged: int = 0
@@ -144,16 +145,16 @@ class AnnualFinancialStatement(BaseModel):
     All figures backed by exact source URL, registry/table date, and verbatim evidence.
     """
     fiscal_year: int = Field(..., description="Fiscal accounting year (e.g. 2024)")
-    accounting_period_from: Optional[str] = Field(None, description="Start date of accounting period (YYYY-MM-DD)")
-    accounting_period_to: Optional[str] = Field(None, description="End date of accounting period (YYYY-MM-DD)")
+    accounting_period_from: str | None = Field(None, description="Start date of accounting period (YYYY-MM-DD)")
+    accounting_period_to: str | None = Field(None, description="End date of accounting period (YYYY-MM-DD)")
     currency: str = Field(default="NOK", description="Reporting currency (usually NOK)")
-    operating_revenue_nok: Optional[float] = Field(None, description="Sum driftsinntekter (Operating Revenue in NOK)")
-    operating_profit_nok: Optional[float] = Field(None, description="Driftsresultat (Operating Profit/EBIT in NOK)")
-    profit_before_tax_nok: Optional[float] = Field(None, description="Ordinært resultat før skattekostnad (EBT in NOK)")
-    net_income_nok: Optional[float] = Field(None, description="Årsresultat (Net Income / Profit for the Year in NOK)")
-    total_assets_nok: Optional[float] = Field(None, description="Sum eiendeler (Total Assets in NOK)")
-    total_equity_nok: Optional[float] = Field(None, description="Sum egenkapital (Total Equity in NOK)")
-    total_liabilities_nok: Optional[float] = Field(None, description="Sum gjeld (Total Liabilities in NOK)")
+    operating_revenue_nok: float | None = Field(None, description="Sum driftsinntekter (Operating Revenue in NOK)")
+    operating_profit_nok: float | None = Field(None, description="Driftsresultat (Operating Profit/EBIT in NOK)")
+    profit_before_tax_nok: float | None = Field(None, description="Ordinært resultat før skattekostnad (EBT in NOK)")
+    net_income_nok: float | None = Field(None, description="Årsresultat (Net Income / Profit for the Year in NOK)")
+    total_assets_nok: float | None = Field(None, description="Sum eiendeler (Total Assets in NOK)")
+    total_equity_nok: float | None = Field(None, description="Sum egenkapital (Total Equity in NOK)")
+    total_liabilities_nok: float | None = Field(None, description="Sum gjeld (Total Liabilities in NOK)")
     source_url: str = Field(..., description="Exact URL where this statement was reported")
     source_name: str = Field(..., description="Official entity or document name (e.g. Regnskapsregisteret)")
     source_date: str = Field(..., description="Filing or publication date of the statement")
@@ -166,30 +167,30 @@ class CompanyProfile(BaseModel):
     legal_name: str = Field(..., description="Canonical legal name from official registry")
     canonical_status: str = Field(default="ACTIVE", description="Corporate status: ACTIVE, BANKRUPT, LIQUIDATED, etc.")
     created_at: str = Field(
-        default_factory=lambda: datetime.now(timezone.utc).isoformat()
+        default_factory=lambda: datetime.now(UTC).isoformat()
     )
     updated_at: str = Field(
-        default_factory=lambda: datetime.now(timezone.utc).isoformat()
+        default_factory=lambda: datetime.now(UTC).isoformat()
     )
     schema_version: str = "2.0.0"
     profile_verification_explanation: str = Field(
         ...,
         description="Synthesized summary of source verification, official cross-referencing, and entity integrity"
     )
-    executive_summary: Optional[str] = Field(
+    executive_summary: str | None = Field(
         None,
         description="Crisp 3-sentence synthesis of products/services, recent changes, and known unknowns"
     )
-    known_unknowns: List[str] = Field(
+    known_unknowns: list[str] = Field(
         default_factory=list,
         description="Explicit list of verifiable data points that were sought but remain unconfirmed"
     )
-    financial_history: List[AnnualFinancialStatement] = Field(
+    financial_history: list[AnnualFinancialStatement] = Field(
         default_factory=list,
         description="Multi-year annual accounts history sorted descending by fiscal year (2025..2021)"
     )
-    facts: Dict[str, FactAuditHistory] = Field(default_factory=dict)
-    telemetry: Dict[str, Any] = Field(
+    facts: dict[str, FactAuditHistory] = Field(default_factory=dict)
+    telemetry: dict[str, Any] = Field(
         default_factory=lambda: {
             "routing_path": "DETERMINISTIC_FAST_PATH",
             "agentic_facts_proposed": 0,
@@ -198,7 +199,7 @@ class CompanyProfile(BaseModel):
         },
         description="Hybrid architecture routing telemetry (DETERMINISTIC_FAST_PATH vs HYBRID_AGENTIC_PATH) and critic stats"
     )
-    metadata: Dict[str, Any] = Field(default_factory=dict)
+    metadata: dict[str, Any] = Field(default_factory=dict)
 
     @field_validator("orgnr")
     @classmethod
@@ -213,9 +214,9 @@ class ExecutionTelemetry(BaseModel):
     """Comprehensive performance and resource telemetry manifest."""
     session_id: str
     start_time: str = Field(
-        default_factory=lambda: datetime.now(timezone.utc).isoformat()
+        default_factory=lambda: datetime.now(UTC).isoformat()
     )
-    end_time: Optional[str] = None
+    end_time: str | None = None
     total_duration_seconds: float = 0.0
     companies_processed: int = 0
     companies_succeeded: int = 0
@@ -224,7 +225,7 @@ class ExecutionTelemetry(BaseModel):
     # HTTP request accounting (Web Outbound Requests strictly capped at 18 per company)
     total_http_requests: int = 0
     web_outbound_requests: int = 0
-    http_requests_per_company: Dict[str, int] = Field(default_factory=dict)
+    http_requests_per_company: dict[str, int] = Field(default_factory=dict)
 
     # LLM API Calls (Tracked separately from web scraping calls)
     llm_api_calls: int = 0
@@ -235,13 +236,13 @@ class ExecutionTelemetry(BaseModel):
     total_llm_input_tokens: int = 0
     total_llm_output_tokens: int = 0
     total_llm_cost_usd: float = 0.0
-    llm_cost_per_company: Dict[str, float] = Field(default_factory=dict)
+    llm_cost_per_company: dict[str, float] = Field(default_factory=dict)
 
     # Guardrail metrics (Disqualification prevention)
     entity_gate_rejections: int = 0
     anti_fabrication_rejections: int = 0
-    budget_violations: List[str] = Field(default_factory=list)
-    quarantined_facts: List[Dict[str, Any]] = Field(
+    budget_violations: list[str] = Field(default_factory=list)
+    quarantined_facts: list[dict[str, Any]] = Field(
         default_factory=list,
         description="Facts quarantined by FactCriticPipeline firewall to prevent disqualification"
     )

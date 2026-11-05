@@ -1,0 +1,100 @@
+{
+  "orgnr": "934419871",
+  "run_timestamp": "2026-11-05T14:07:37.697651+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:07:37.697651+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2 METER JASCEMSKAS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934419871"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:37.697651+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934419871"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:37.697651+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2024-11-06",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934419871"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:37.697651+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Sloghaugvegen 49",
+        "postal_code": "6030",
+        "city": "LANGEVÅG",
+        "municipality": "SULA",
+        "municipality_number": "1531",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934419871"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:37.697651+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "95.310",
+        "beskrivelse": "Reparasjon og vedlikehold av motorvogner"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934419871"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:37.697651+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934419871"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:37.697651+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "934547772",
+          "name": "2 METER JASCEMSKAS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/934419871"
+    },
+    {
+      "timestamp": "2026-11-05T14:07:37.697651+00:00",
+      "fact_key": "operations.corporate_event.20240000964299",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2024-11-06",
+        "kid": "20240000964299",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000964299&sokeverdi=934419871&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000964299&sokeverdi=934419871&spraak=nb"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

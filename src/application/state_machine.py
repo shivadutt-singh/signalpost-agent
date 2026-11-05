@@ -104,14 +104,15 @@ class CompanyFsmAgent:
         # -------------------------------------------------------------
         state_history.append(FsmState.INGEST_REGISTRY_DAG.value)
 
-        # Launch concurrent Brreg calls + Financials
+        # Launch concurrent Brreg calls + Financials + Oppdateringer
         enhet_task = self.registry.get_enhet(orgnr)
         roller_task = self.registry.get_roller(orgnr)
         underenheter_task = self.registry.get_underenheter(orgnr)
         financials_task = self.financials.get_multi_year_financials(orgnr)
+        oppd_task = self.registry.get_oppdateringer(orgnr)
 
-        enhet_res, roller_res, under_res, fin_res = await asyncio.gather(
-            enhet_task, roller_task, underenheter_task, financials_task
+        enhet_res, roller_res, under_res, fin_res, oppd_res = await asyncio.gather(
+            enhet_task, roller_task, underenheter_task, financials_task, oppd_task
         )
 
         enhet = enhet_res.unwrap_or(None)
@@ -129,6 +130,7 @@ class CompanyFsmAgent:
         roller = roller_res.unwrap_or([])
         underenheter = under_res.unwrap_or([])
         financial_history: list[AnnualAccount] = fin_res.unwrap_or([])
+        oppdateringer = oppd_res.unwrap_or([])
 
         # Build ground-truth EntityAnchor
         # Use adapter helper if available, otherwise direct instantiation
@@ -145,9 +147,14 @@ class CompanyFsmAgent:
         # Extract deterministic registry candidate facts
         candidate_facts: list[CandidateFact] = []
         if hasattr(self.registry, "extract_registry_candidate_facts"):
-            cand_reg = self.registry.extract_registry_candidate_facts(
-                enhet, roller, underenheter
-            )  # type: ignore
+            try:
+                cand_reg = self.registry.extract_registry_candidate_facts(
+                    enhet, roller, underenheter, oppdateringer
+                )  # type: ignore
+            except TypeError:
+                cand_reg = self.registry.extract_registry_candidate_facts(
+                    enhet, roller, underenheter
+                )  # type: ignore
             candidate_facts.extend(cand_reg)
 
         if hasattr(self.financials, "accounts_to_candidate_facts"):

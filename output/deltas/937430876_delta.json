@@ -1,0 +1,140 @@
+{
+  "orgnr": "937430876",
+  "run_timestamp": "2026-11-05T14:06:11.741495+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:11.741495+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "18KCHRONO AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937430876"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.741495+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937430876"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.741495+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-04-16",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937430876"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.741495+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-01-15",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937430876"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.741495+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Michelets vei 114A",
+        "postal_code": "1368",
+        "city": "STABEKK",
+        "municipality": "BÆRUM",
+        "municipality_number": "3201",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937430876"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.741495+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "46.480",
+        "beskrivelse": "Engroshandel med klokker, ur og smykker"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937430876"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.741495+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 100000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937430876"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.741495+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kjøpe og selge klokker og smykker.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937430876"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.741495+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937430876"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.741495+00:00",
+      "fact_key": "governance.ceo",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Jan Michael Tan",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937430876"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.741495+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Jan Michael Tan",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937430876"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.741495+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "938011575",
+          "name": "18KCHRONO AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937430876"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:11.741495+00:00",
+      "fact_key": "operations.corporate_event.20260000180660",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2026-04-16",
+        "kid": "20260000180660",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000180660&sokeverdi=937430876&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000180660&sokeverdi=937430876&spraak=nb"
+    }
+  ],
+  "facts_created": 13,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

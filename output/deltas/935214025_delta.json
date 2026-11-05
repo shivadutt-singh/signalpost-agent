@@ -1,0 +1,194 @@
+{
+  "orgnr": "935214025",
+  "run_timestamp": "2026-11-05T14:04:23.346215+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "13 HOLDING AS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-03-14",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-03-04",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Sjølyst plass 3",
+        "postal_code": "0278",
+        "city": "OSLO",
+        "municipality": "OSLO",
+        "municipality_number": "0301",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "70.200",
+        "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "financial.latest_accounts_year",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "financial.share_capital",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 30000.0,
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "operations.statutory_purpose",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Investering i aksjer og andre eierandeler i andre selskaper og foretak, samt all annen virksomhet som hermed står i forbindelse.",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Roger Andre Johansen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "935562031",
+          "name": "13 HOLDING AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "financial.operating_profit_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -2.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "financial.profit_before_tax_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -2.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "financial.net_income_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": -2.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "financial.total_assets_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 1373499.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "financial.total_equity_2025",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": 23499.0,
+      "reason": "Initial discovery from https://data.brreg.no/regnskapsregisteret/regnskap/935214025"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "operations.corporate_event.20260000352203",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2026-06-06",
+        "kid": "20260000352203",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000352203&sokeverdi=935214025&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000352203&sokeverdi=935214025&spraak=nb"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:23.346215+00:00",
+      "fact_key": "operations.corporate_event.20250000118929",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "title": "Nyregistrering i Foretaksregisteret",
+        "date": "2025-03-14",
+        "kid": "20250000118929",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000118929&sokeverdi=935214025&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "reason": "Initial discovery from https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000118929&sokeverdi=935214025&spraak=nb"
+    }
+  ],
+  "facts_created": 19,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

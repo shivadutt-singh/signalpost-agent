@@ -4,12 +4,13 @@ Fetches authoritative enterprise data, governance roles, subunits, and update lo
 All facts derived here are classified as Tier 1 (Official Registry Ground Truth).
 """
 
-from typing import Any, Dict, List, Optional
-from datetime import datetime, timezone
+from datetime import UTC, datetime
+from typing import Any
+
 import httpx
 
-from src.config import settings
 from src.collectors.http_budget import BudgetedAsyncClient
+from src.config import settings
 from src.models.schema import ExtractedFactCandidate, FactCategory, FactEvidence, SourceTier
 from src.validators.fact_guard import EntityAnchor, is_own_company_domain
 from src.validators.mod11 import normalize_orgnr
@@ -24,7 +25,7 @@ class BrregClient:
         self.client = client
         self.base_url = settings.BRREG_BASE_URL
 
-    async def get_enhet(self, orgnr: str) -> Optional[Dict[str, Any]]:
+    async def get_enhet(self, orgnr: str) -> dict[str, Any] | None:
         """
         Fetches the primary entity record from /enhetsregisteret/api/enheter/{orgnr}.
         """
@@ -49,7 +50,7 @@ class BrregClient:
                 return None
             raise
 
-    async def get_roller(self, orgnr: str) -> Optional[Dict[str, Any]]:
+    async def get_roller(self, orgnr: str) -> dict[str, Any] | None:
         """
         Fetches governance roles (CEO, board of directors, auditor)
         from /enhetsregisteret/api/enheter/{orgnr}/roller.
@@ -66,7 +67,7 @@ class BrregClient:
         except Exception:
             return None
 
-    async def get_underenheter(self, orgnr: str, size: int = 10) -> List[Dict[str, Any]]:
+    async def get_underenheter(self, orgnr: str, size: int = 10) -> list[dict[str, Any]]:
         """
         Fetches subunits (branches, secondary operating establishments)
         from /enhetsregisteret/api/underenheter?overordnetEnhet={orgnr}.
@@ -82,12 +83,12 @@ class BrregClient:
         except Exception:
             return []
 
-    async def fetch_active_orgnrs(self, limit: int = 1000) -> List[str]:
+    async def fetch_active_orgnrs(self, limit: int = 1000) -> list[str]:
         """
         Fetches a list of active Norwegian enterprise numbers for batch seeding.
         Iterates over the enheter endpoint with konkurs=false.
         """
-        collected: List[str] = []
+        collected: list[str] = []
         page = 0
         page_size = min(100, limit)
 
@@ -114,8 +115,8 @@ class BrregClient:
 
     def build_entity_anchor(
         self,
-        enhet_data: Dict[str, Any],
-        roller_data: Optional[Dict[str, Any]] = None,
+        enhet_data: dict[str, Any],
+        roller_data: dict[str, Any] | None = None,
     ) -> EntityAnchor:
         """
         Constructs an authoritative EntityAnchor for downstream Entity Verification Gate.
@@ -133,10 +134,10 @@ class BrregClient:
             municipality = forr["kommune"]
 
         # Parse positive officers and external service provider entities from roller
-        ceo_names: List[str] = []
-        chair_names: List[str] = []
-        positive_officers: List[Dict[str, str]] = []
-        negative_external_entities: List[Dict[str, str]] = []
+        ceo_names: list[str] = []
+        chair_names: list[str] = []
+        positive_officers: list[dict[str, str]] = []
+        negative_external_entities: list[dict[str, str]] = []
 
         if roller_data and "rollegrupper" in roller_data:
             for group in roller_data["rollegrupper"]:
@@ -192,7 +193,7 @@ class BrregClient:
                             chair_names.append(officer_name)
 
         # Parse official domains from Brreg hjemmeside with shared manager domain filter
-        official_domains: List[str] = []
+        official_domains: list[str] = []
         hjemmeside_is_shared = False
         hjemmeside = enhet_data.get("hjemmeside")
         if hjemmeside:
@@ -221,19 +222,19 @@ class BrregClient:
 
     def extract_registry_facts(
         self,
-        enhet_data: Dict[str, Any],
-        roller_data: Optional[Dict[str, Any]] = None,
-        underenheter_data: Optional[List[Dict[str, Any]]] = None,
-    ) -> List[ExtractedFactCandidate]:
+        enhet_data: dict[str, Any],
+        roller_data: dict[str, Any] | None = None,
+        underenheter_data: list[dict[str, Any]] | None = None,
+    ) -> list[ExtractedFactCandidate]:
         """
         Transforms raw Brreg API payloads into normalized ExtractedFactCandidate models.
         """
         orgnr = enhet_data["organisasjonsnummer"]
         source_url = f"{self.base_url}/enheter/{orgnr}"
-        now_iso = datetime.now(timezone.utc).isoformat()
-        facts: List[ExtractedFactCandidate] = []
+        now_iso = datetime.now(UTC).isoformat()
+        facts: list[ExtractedFactCandidate] = []
 
-        def _make_evidence(quote: Optional[str] = None, explanation: str = "") -> FactEvidence:
+        def _make_evidence(quote: str | None = None, explanation: str = "") -> FactEvidence:
             return FactEvidence(
                 source_url=source_url,
                 source_tier=SourceTier.OFFICIAL_REGISTRY,

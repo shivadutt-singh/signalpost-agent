@@ -1,0 +1,1045 @@
+{
+  "orgnr": "929526678",
+  "legal_name": "1820 SKIN CLINIC AS",
+  "canonical_status": "ACTIVE",
+  "created_at": "2026-11-05T14:06:07.697126+00:00",
+  "updated_at": "2026-11-05T14:06:07.697126+00:00",
+  "schema_version": "2.0.0",
+  "profile_verification_explanation": "Enterprise profile for 1820 SKIN CLINIC AS (orgnr: 929526678) deterministically verified. 45 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "executive_summary": "1820 SKIN CLINIC AS is a registered Norwegian enterprise located in INDRE ØSTFOLD governed under enterprise number 929526678. Multi-year accounts (2023–2025): FY2025 operating revenue reached 1 070 256 NOK (YoY: -13.5%), operating margin: 0.0%. Unfiled interim quarterly results, private partner contracts, and internal headcount fluctuations remain unconfirmed from public records.",
+  "known_unknowns": [
+    "Current unfiled interim quarterly revenue and operating margins",
+    "Detailed private commercial agreements and non-public partner contracts",
+    "Real-time headcount variance beyond latest annual Aa-registeret submission"
+  ],
+  "financial_history": [
+    {
+      "fiscal_year": 2025,
+      "accounting_period_from": "2025-01-01",
+      "accounting_period_to": "2025-12-31",
+      "currency": "NOK",
+      "operating_revenue_nok": 1070256.0,
+      "operating_profit_nok": 82.0,
+      "profit_before_tax_nok": -2658.0,
+      "net_income_nok": -2658.0,
+      "total_assets_nok": 215827.0,
+      "total_equity_nok": -174441.0,
+      "total_liabilities_nok": 390267.0,
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+      "source_name": "Brønnøysund Regnskapsregisteret API",
+      "source_date": "2025-12-31",
+      "verbatim_evidence": "Regnskapsregisteret record journalnr 2026376231: Periode 2025-01-01 til 2025-12-31 (SELSKAP). Driftsinntekter: 1070256.0, Driftsresultat: 82.0, Ordinært resultat før skatt: -2658.0, Årsresultat: -2658.0, Sum eiendeler: 215827.0, Sum egenkapital: -174441.0."
+    },
+    {
+      "fiscal_year": 2024,
+      "accounting_period_from": "2024-01-01",
+      "accounting_period_to": "2024-12-31",
+      "currency": "NOK",
+      "operating_revenue_nok": 1236589.0,
+      "operating_profit_nok": 72569.0,
+      "profit_before_tax_nok": 45270.0,
+      "net_income_nok": 45270.0,
+      "total_assets_nok": 210141.0,
+      "total_equity_nok": -171783.0,
+      "total_liabilities_nok": 381924.0,
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+      "source_name": "Brønnøysund Regnskapsregisteret API",
+      "source_date": "2024-12-31",
+      "verbatim_evidence": "Regnskapsregisteret record journalnr 2025388943: Periode 2024-01-01 til 2024-12-31 (SELSKAP). Driftsinntekter: 1236589.0, Driftsresultat: 72569.0, Ordinært resultat før skatt: 45270.0, Årsresultat: 45270.0, Sum eiendeler: 210141.0, Sum egenkapital: -171783.0."
+    },
+    {
+      "fiscal_year": 2023,
+      "accounting_period_from": "2023-01-01",
+      "accounting_period_to": "2023-12-31",
+      "currency": "NOK",
+      "operating_revenue_nok": 1794777.0,
+      "operating_profit_nok": -98259.0,
+      "profit_before_tax_nok": -118287.0,
+      "net_income_nok": -118287.0,
+      "total_assets_nok": 314140.0,
+      "total_equity_nok": -217053.0,
+      "total_liabilities_nok": 531193.0,
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+      "source_name": "Brønnøysund Regnskapsregisteret API",
+      "source_date": "2023-12-31",
+      "verbatim_evidence": "Regnskapsregisteret record journalnr 2024346478: Periode 2023-01-01 til 2023-12-31 (SELSKAP). Driftsinntekter: 1794777.0, Driftsresultat: -98259.0, Ordinært resultat før skatt: -118287.0, Årsresultat: -118287.0, Sum eiendeler: 314140.0, Sum egenkapital: -217053.0."
+    }
+  ],
+  "facts": {
+    "registry.legal_name": {
+      "fact_key": "registry.legal_name",
+      "current_value": "1820 SKIN CLINIC AS",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2022-07-21",
+        "retrieval_timestamp": "2026-11-05T14:06:05.080803+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered enterprise name '1820 SKIN CLINIC AS'."
+      },
+      "previous_values": []
+    },
+    "registry.organization_form": {
+      "fact_key": "registry.organization_form",
+      "current_value": {
+        "kode": "AS",
+        "beskrivelse": "Aksjeselskap"
+      },
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2022-07-21",
+        "retrieval_timestamp": "2026-11-05T14:06:05.080803+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official corporate form AS (Aksjeselskap)."
+      },
+      "previous_values": []
+    },
+    "registry.registration_date": {
+      "fact_key": "registry.registration_date",
+      "current_value": "2022-07-21",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2022-07-21",
+        "retrieval_timestamp": "2026-11-05T14:06:05.080803+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registration date in Enhetsregisteret."
+      },
+      "previous_values": []
+    },
+    "registry.founding_date": {
+      "fact_key": "registry.founding_date",
+      "current_value": "2022-06-20",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2022-07-21",
+        "retrieval_timestamp": "2026-11-05T14:06:05.080803+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official founding date (stiftelsesdato) recorded in registry."
+      },
+      "previous_values": []
+    },
+    "contact.business_address": {
+      "fact_key": "contact.business_address",
+      "current_value": {
+        "street": "Wilses vei 1A",
+        "postal_code": "1820",
+        "city": "SPYDEBERG",
+        "municipality": "INDRE ØSTFOLD",
+        "municipality_number": "3118",
+        "country": "Norge"
+      },
+      "category": "contact_and_web",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2022-07-21",
+        "retrieval_timestamp": "2026-11-05T14:06:05.080803+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered business address in SPYDEBERG."
+      },
+      "previous_values": []
+    },
+    "operations.primary_nace": {
+      "fact_key": "operations.primary_nace",
+      "current_value": {
+        "kode": "96.220",
+        "beskrivelse": "Skjønnhetspleie"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2022-07-21",
+        "retrieval_timestamp": "2026-11-05T14:06:05.080803+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official primary economic activity code (NACE 96.220: Skjønnhetspleie)."
+      },
+      "previous_values": []
+    },
+    "financial.latest_accounts_year": {
+      "fact_key": "financial.latest_accounts_year",
+      "current_value": "2025",
+      "category": "financial",
+      "unit": null,
+      "period_or_year": "2025",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2022-07-21",
+        "retrieval_timestamp": "2026-11-05T14:06:05.080803+00:00",
+        "verbatim_quote": "2025",
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Latest annual accounts year filed with Regnskapsregisteret: 2025."
+      },
+      "previous_values": []
+    },
+    "financial.share_capital": {
+      "fact_key": "financial.share_capital",
+      "current_value": 30000.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2022-07-21",
+        "retrieval_timestamp": "2026-11-05T14:06:05.080803+00:00",
+        "verbatim_quote": "30000.0",
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registered equity share capital: 30,000.00 NOK. (3,000 shares)."
+      },
+      "previous_values": []
+    },
+    "operations.statutory_purpose": {
+      "fact_key": "operations.statutory_purpose",
+      "current_value": "Hudpleie.",
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2022-07-21",
+        "retrieval_timestamp": "2026-11-05T14:06:05.080803+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Statutory purpose registered in articles of association."
+      },
+      "previous_values": []
+    },
+    "registry.status": {
+      "fact_key": "registry.status",
+      "current_value": "ACTIVE",
+      "category": "registry_core",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2022-07-21",
+        "retrieval_timestamp": "2026-11-05T14:06:05.080803+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Authoritative corporate standing: ACTIVE."
+      },
+      "previous_values": []
+    },
+    "governance.ceo": {
+      "fact_key": "governance.ceo",
+      "current_value": "Katinka Hågensen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2022-07-21",
+        "retrieval_timestamp": "2026-11-05T14:06:05.080803+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_chair": {
+      "fact_key": "governance.board_chair",
+      "current_value": "Katinka Hågensen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2022-07-21",
+        "retrieval_timestamp": "2026-11-05T14:06:05.080803+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.malin_johnsen": {
+      "fact_key": "governance.board_member.malin_johnsen",
+      "current_value": "Malin Johnsen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2022-07-21",
+        "retrieval_timestamp": "2026-11-05T14:06:05.080803+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "structure.subunits": {
+      "fact_key": "structure.subunits",
+      "current_value": [
+        {
+          "orgnr": "929539516",
+          "name": "1820 SKIN CLINIC AS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "category": "structure",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2022-07-21",
+        "retrieval_timestamp": "2026-11-05T14:06:05.080803+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Registered active operational sub-units count: 1."
+      },
+      "previous_values": []
+    },
+    "financial.revenue_2025": {
+      "fact_key": "financial.revenue_2025",
+      "current_value": 1070256.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2025",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2025-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2026376231: Periode 2025-01-01 til 2025-12-31 (SELSKAP). Driftsinntekter: 1070256.0, Driftsresultat: 82.0, Ordinært resultat før skatt: -2658.0, Årsresultat: -2658.0, Sum eiendeler: 215827.0, Sum egenkapital: -174441.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2025 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.operating_profit_2025": {
+      "fact_key": "financial.operating_profit_2025",
+      "current_value": 82.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2025",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2025-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2026376231: Periode 2025-01-01 til 2025-12-31 (SELSKAP). Driftsinntekter: 1070256.0, Driftsresultat: 82.0, Ordinært resultat før skatt: -2658.0, Årsresultat: -2658.0, Sum eiendeler: 215827.0, Sum egenkapital: -174441.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2025 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.profit_before_tax_2025": {
+      "fact_key": "financial.profit_before_tax_2025",
+      "current_value": -2658.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2025",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2025-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2026376231: Periode 2025-01-01 til 2025-12-31 (SELSKAP). Driftsinntekter: 1070256.0, Driftsresultat: 82.0, Ordinært resultat før skatt: -2658.0, Årsresultat: -2658.0, Sum eiendeler: 215827.0, Sum egenkapital: -174441.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2025 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.net_income_2025": {
+      "fact_key": "financial.net_income_2025",
+      "current_value": -2658.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2025",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2025-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2026376231: Periode 2025-01-01 til 2025-12-31 (SELSKAP). Driftsinntekter: 1070256.0, Driftsresultat: 82.0, Ordinært resultat før skatt: -2658.0, Årsresultat: -2658.0, Sum eiendeler: 215827.0, Sum egenkapital: -174441.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2025 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.total_assets_2025": {
+      "fact_key": "financial.total_assets_2025",
+      "current_value": 215827.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2025",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2025-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2026376231: Periode 2025-01-01 til 2025-12-31 (SELSKAP). Driftsinntekter: 1070256.0, Driftsresultat: 82.0, Ordinært resultat før skatt: -2658.0, Årsresultat: -2658.0, Sum eiendeler: 215827.0, Sum egenkapital: -174441.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2025 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.total_equity_2025": {
+      "fact_key": "financial.total_equity_2025",
+      "current_value": -174441.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2025",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2025-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2026376231: Periode 2025-01-01 til 2025-12-31 (SELSKAP). Driftsinntekter: 1070256.0, Driftsresultat: 82.0, Ordinært resultat før skatt: -2658.0, Årsresultat: -2658.0, Sum eiendeler: 215827.0, Sum egenkapital: -174441.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2025 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.revenue_2024": {
+      "fact_key": "financial.revenue_2024",
+      "current_value": 1236589.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2024",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2024-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2025388943: Periode 2024-01-01 til 2024-12-31 (SELSKAP). Driftsinntekter: 1236589.0, Driftsresultat: 72569.0, Ordinært resultat før skatt: 45270.0, Årsresultat: 45270.0, Sum eiendeler: 210141.0, Sum egenkapital: -171783.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2024 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.operating_profit_2024": {
+      "fact_key": "financial.operating_profit_2024",
+      "current_value": 72569.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2024",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2024-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2025388943: Periode 2024-01-01 til 2024-12-31 (SELSKAP). Driftsinntekter: 1236589.0, Driftsresultat: 72569.0, Ordinært resultat før skatt: 45270.0, Årsresultat: 45270.0, Sum eiendeler: 210141.0, Sum egenkapital: -171783.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2024 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.profit_before_tax_2024": {
+      "fact_key": "financial.profit_before_tax_2024",
+      "current_value": 45270.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2024",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2024-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2025388943: Periode 2024-01-01 til 2024-12-31 (SELSKAP). Driftsinntekter: 1236589.0, Driftsresultat: 72569.0, Ordinært resultat før skatt: 45270.0, Årsresultat: 45270.0, Sum eiendeler: 210141.0, Sum egenkapital: -171783.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2024 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.net_income_2024": {
+      "fact_key": "financial.net_income_2024",
+      "current_value": 45270.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2024",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2024-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2025388943: Periode 2024-01-01 til 2024-12-31 (SELSKAP). Driftsinntekter: 1236589.0, Driftsresultat: 72569.0, Ordinært resultat før skatt: 45270.0, Årsresultat: 45270.0, Sum eiendeler: 210141.0, Sum egenkapital: -171783.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2024 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.total_assets_2024": {
+      "fact_key": "financial.total_assets_2024",
+      "current_value": 210141.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2024",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2024-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2025388943: Periode 2024-01-01 til 2024-12-31 (SELSKAP). Driftsinntekter: 1236589.0, Driftsresultat: 72569.0, Ordinært resultat før skatt: 45270.0, Årsresultat: 45270.0, Sum eiendeler: 210141.0, Sum egenkapital: -171783.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2024 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.total_equity_2024": {
+      "fact_key": "financial.total_equity_2024",
+      "current_value": -171783.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2024",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2024-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2025388943: Periode 2024-01-01 til 2024-12-31 (SELSKAP). Driftsinntekter: 1236589.0, Driftsresultat: 72569.0, Ordinært resultat før skatt: 45270.0, Årsresultat: 45270.0, Sum eiendeler: 210141.0, Sum egenkapital: -171783.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2024 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.revenue_2023": {
+      "fact_key": "financial.revenue_2023",
+      "current_value": 1794777.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2023",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2023-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2024346478: Periode 2023-01-01 til 2023-12-31 (SELSKAP). Driftsinntekter: 1794777.0, Driftsresultat: -98259.0, Ordinært resultat før skatt: -118287.0, Årsresultat: -118287.0, Sum eiendeler: 314140.0, Sum egenkapital: -217053.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2023 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.operating_profit_2023": {
+      "fact_key": "financial.operating_profit_2023",
+      "current_value": -98259.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2023",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2023-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2024346478: Periode 2023-01-01 til 2023-12-31 (SELSKAP). Driftsinntekter: 1794777.0, Driftsresultat: -98259.0, Ordinært resultat før skatt: -118287.0, Årsresultat: -118287.0, Sum eiendeler: 314140.0, Sum egenkapital: -217053.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2023 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.profit_before_tax_2023": {
+      "fact_key": "financial.profit_before_tax_2023",
+      "current_value": -118287.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2023",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2023-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2024346478: Periode 2023-01-01 til 2023-12-31 (SELSKAP). Driftsinntekter: 1794777.0, Driftsresultat: -98259.0, Ordinært resultat før skatt: -118287.0, Årsresultat: -118287.0, Sum eiendeler: 314140.0, Sum egenkapital: -217053.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2023 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.net_income_2023": {
+      "fact_key": "financial.net_income_2023",
+      "current_value": -118287.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2023",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2023-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2024346478: Periode 2023-01-01 til 2023-12-31 (SELSKAP). Driftsinntekter: 1794777.0, Driftsresultat: -98259.0, Ordinært resultat før skatt: -118287.0, Årsresultat: -118287.0, Sum eiendeler: 314140.0, Sum egenkapital: -217053.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2023 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.total_assets_2023": {
+      "fact_key": "financial.total_assets_2023",
+      "current_value": 314140.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2023",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2023-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2024346478: Periode 2023-01-01 til 2023-12-31 (SELSKAP). Driftsinntekter: 1794777.0, Driftsresultat: -98259.0, Ordinært resultat før skatt: -118287.0, Årsresultat: -118287.0, Sum eiendeler: 314140.0, Sum egenkapital: -217053.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2023 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.total_equity_2023": {
+      "fact_key": "financial.total_equity_2023",
+      "current_value": -217053.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2023",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2023-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:05.081183+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2024346478: Periode 2023-01-01 til 2023-12-31 (SELSKAP). Driftsinntekter: 1794777.0, Driftsresultat: -98259.0, Ordinært resultat før skatt: -118287.0, Årsresultat: -118287.0, Sum eiendeler: 314140.0, Sum egenkapital: -217053.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2023 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/929526678)."
+      },
+      "previous_values": []
+    },
+    "financial.operating_margin_2025": {
+      "fact_key": "financial.operating_margin_2025",
+      "current_value": 0.01,
+      "category": "financial",
+      "unit": "%",
+      "period_or_year": "2025",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2025-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:06.046888+00:00",
+        "verbatim_quote": "FY2025 Operating Margin: 0.01% calculated from Driftsresultat 82 NOK / Driftsinntekter 1070256 NOK",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Deterministically computed Operating Margin for FY2025 in Python (0.01%)."
+      },
+      "previous_values": []
+    },
+    "financial.yoy_revenue_growth_2025": {
+      "fact_key": "financial.yoy_revenue_growth_2025",
+      "current_value": -13.45,
+      "category": "financial",
+      "unit": "%",
+      "period_or_year": "2025",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2025-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:06.046888+00:00",
+        "verbatim_quote": "FY2025 YoY Revenue Growth: -13.45% calculated from FY2025 1070256 NOK vs FY2024 1236589 NOK",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Deterministically computed YoY Revenue Growth for FY2025 vs FY2024 (-13.45%)."
+      },
+      "previous_values": []
+    },
+    "financial.operating_margin_2024": {
+      "fact_key": "financial.operating_margin_2024",
+      "current_value": 5.87,
+      "category": "financial",
+      "unit": "%",
+      "period_or_year": "2024",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2024-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:06.046888+00:00",
+        "verbatim_quote": "FY2024 Operating Margin: 5.87% calculated from Driftsresultat 72569 NOK / Driftsinntekter 1236589 NOK",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Deterministically computed Operating Margin for FY2024 in Python (5.87%)."
+      },
+      "previous_values": []
+    },
+    "financial.yoy_revenue_growth_2024": {
+      "fact_key": "financial.yoy_revenue_growth_2024",
+      "current_value": -31.1,
+      "category": "financial",
+      "unit": "%",
+      "period_or_year": "2024",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2024-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:06.046888+00:00",
+        "verbatim_quote": "FY2024 YoY Revenue Growth: -31.1% calculated from FY2024 1236589 NOK vs FY2023 1794777 NOK",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Deterministically computed YoY Revenue Growth for FY2024 vs FY2023 (-31.1%)."
+      },
+      "previous_values": []
+    },
+    "financial.operating_margin_2023": {
+      "fact_key": "financial.operating_margin_2023",
+      "current_value": -5.47,
+      "category": "financial",
+      "unit": "%",
+      "period_or_year": "2023",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929526678",
+        "source_tier": "official_registry",
+        "source_date": "2023-12-31",
+        "retrieval_timestamp": "2026-11-05T14:06:06.046888+00:00",
+        "verbatim_quote": "FY2023 Operating Margin: -5.47% calculated from Driftsresultat -98259 NOK / Driftsinntekter 1794777 NOK",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Deterministically computed Operating Margin for FY2023 in Python (-5.47%)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20260000175562": {
+      "fact_key": "operations.corporate_event.20260000175562",
+      "current_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2026-04-14",
+        "kid": "20260000175562",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000175562&sokeverdi=929526678&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000175562&sokeverdi=929526678&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2026-04-14",
+        "retrieval_timestamp": "2026-11-05T14:06:07.696369+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2026-04-14): Godkjente årsregnskap (KID: 20260000175562, Orgnr: 929526678)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Godkjente årsregnskap' verified from Brønnøysundregistrene Kunngjøringer (orgnr 929526678)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20250000205669": {
+      "fact_key": "operations.corporate_event.20250000205669",
+      "current_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2025-04-26",
+        "kid": "20250000205669",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000205669&sokeverdi=929526678&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000205669&sokeverdi=929526678&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2025-04-26",
+        "retrieval_timestamp": "2026-11-05T14:06:07.696369+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2025-04-26): Godkjente årsregnskap (KID: 20250000205669, Orgnr: 929526678)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Godkjente årsregnskap' verified from Brønnøysundregistrene Kunngjøringer (orgnr 929526678)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20240000331702": {
+      "fact_key": "operations.corporate_event.20240000331702",
+      "current_value": {
+        "title": "Godkjente årsregnskap",
+        "date": "2024-04-06",
+        "kid": "20240000331702",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000331702&sokeverdi=929526678&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000331702&sokeverdi=929526678&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2024-04-06",
+        "retrieval_timestamp": "2026-11-05T14:06:07.696369+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2024-04-06): Godkjente årsregnskap (KID: 20240000331702, Orgnr: 929526678)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Godkjente årsregnskap' verified from Brønnøysundregistrene Kunngjøringer (orgnr 929526678)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20240000206991": {
+      "fact_key": "operations.corporate_event.20240000206991",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2024-01-15",
+        "kid": "20240000206991",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000206991&sokeverdi=929526678&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000206991&sokeverdi=929526678&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2024-01-15",
+        "retrieval_timestamp": "2026-11-05T14:06:07.696369+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2024-01-15): Forretningsadresse (KID: 20240000206991, Orgnr: 929526678)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 929526678)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20240000085041": {
+      "fact_key": "operations.corporate_event.20240000085041",
+      "current_value": {
+        "title": "Forretningsadresse",
+        "date": "2024-01-01",
+        "kid": "20240000085041",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000085041&sokeverdi=929526678&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000085041&sokeverdi=929526678&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2024-01-01",
+        "retrieval_timestamp": "2026-11-05T14:06:07.696369+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2024-01-01): Forretningsadresse (KID: 20240000085041, Orgnr: 929526678)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Forretningsadresse' verified from Brønnøysundregistrene Kunngjøringer (orgnr 929526678)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20230000800364": {
+      "fact_key": "operations.corporate_event.20230000800364",
+      "current_value": {
+        "title": "Vedtektsfestet formål",
+        "date": "2023-11-28",
+        "kid": "20230000800364",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000800364&sokeverdi=929526678&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000800364&sokeverdi=929526678&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2023-11-28",
+        "retrieval_timestamp": "2026-11-05T14:06:07.696369+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2023-11-28): Vedtektsfestet formål (KID: 20230000800364, Orgnr: 929526678)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Vedtektsfestet formål' verified from Brønnøysundregistrene Kunngjøringer (orgnr 929526678)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20230000800363": {
+      "fact_key": "operations.corporate_event.20230000800363",
+      "current_value": {
+        "title": "Vedtektsdato",
+        "date": "2023-11-28",
+        "kid": "20230000800363",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000800363&sokeverdi=929526678&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000800363&sokeverdi=929526678&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2023-11-28",
+        "retrieval_timestamp": "2026-11-05T14:06:07.696369+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2023-11-28): Vedtektsdato (KID: 20230000800363, Orgnr: 929526678)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Vedtektsdato' verified from Brønnøysundregistrene Kunngjøringer (orgnr 929526678)."
+      },
+      "previous_values": []
+    },
+    "operations.corporate_event.20230000800362": {
+      "fact_key": "operations.corporate_event.20230000800362",
+      "current_value": {
+        "title": "Foretaksnavn",
+        "date": "2023-11-28",
+        "kid": "20230000800362",
+        "permalink_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000800362&sokeverdi=929526678&spraak=nb",
+        "source": "Brønnøysund Registrene Kunngjøringer"
+      },
+      "category": "operations",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20230000800362&sokeverdi=929526678&spraak=nb",
+        "source_tier": "official_registry",
+        "source_date": "2023-11-28",
+        "retrieval_timestamp": "2026-11-05T14:06:07.696369+00:00",
+        "verbatim_quote": "Offisiell kunngjøring fra Brønnøysundregistrene (2023-11-28): Foretaksnavn (KID: 20230000800362, Orgnr: 929526678)",
+        "entity_match_rule": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_match_method": "OFFICIAL_BRREG_KUNNGJORING",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official registry announcement 'Foretaksnavn' verified from Brønnøysundregistrene Kunngjøringer (orgnr 929526678)."
+      },
+      "previous_values": []
+    }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 45,
+    "critic_facts_quarantined": 0
+  },
+  "metadata": {}
+}

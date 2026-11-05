@@ -1,0 +1,86 @@
+{
+  "orgnr": "935418860",
+  "run_timestamp": "2026-11-05T14:04:12.679149+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:04:12.679149+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "12P - RAYMOND STRANDHEIM",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935418860"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:12.679149+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935418860"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:12.679149+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-05-06",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935418860"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:12.679149+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Ture Nermans vei 63",
+        "postal_code": "5143",
+        "city": "FYLLINGSDALEN",
+        "municipality": "BERGEN",
+        "municipality_number": "4601",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935418860"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:12.679149+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "74.200",
+        "beskrivelse": "Fotografvirksomhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935418860"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:12.679149+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935418860"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:12.679149+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "935769167",
+          "name": "12P - RAYMOND STRANDHEIM",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935418860"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

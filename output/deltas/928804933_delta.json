@@ -1,0 +1,126 @@
+{
+  "orgnr": "928804933",
+  "run_timestamp": "2026-11-05T14:05:16.534462+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:05:16.534462+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "15/2314 SELNES SØR",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928804933"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.534462+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ESEK",
+        "beskrivelse": "Eierseksjonssameie"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928804933"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.534462+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2022-02-24",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928804933"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.534462+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2020-07-15",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928804933"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.534462+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Nordre Selnesveien 18",
+        "postal_code": "8402",
+        "city": "SORTLAND",
+        "municipality": "SORTLAND",
+        "municipality_number": "1870",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928804933"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.534462+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "97.001",
+        "beskrivelse": "Aktiviteter i borettslag og boligsameier"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928804933"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.534462+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928804933"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.534462+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Even Jamt",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928804933"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.534462+00:00",
+      "fact_key": "governance.board_member.torstein_jarl_karlsen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Torstein Jarl Karlsen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928804933"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.534462+00:00",
+      "fact_key": "governance.board_member.tord_nilssen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Tord Nilssen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928804933"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.534462+00:00",
+      "fact_key": "governance.board_member.may-anita_østingsen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "May-Anita Østingsen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928804933"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:16.534462+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "928808025",
+          "name": "15/2314 SELNES SØR",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/928804933"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

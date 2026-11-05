@@ -96,6 +96,27 @@ class BrregAdapter(RegistryPort):
             return Ok(subunits)
         return Ok([])
 
+    async def get_oppdateringer(
+        self, orgnr: str
+    ) -> Result[list[dict[str, Any]], DomainError]:
+        """Fetches official registry updates changelog from Brreg oppdateringer API."""
+        url = f"https://data.brreg.no/enhetsregisteret/api/oppdateringer/enheter?organisasjonsnummer={orgnr}&size=10"
+        res = await self.http.get(url, orgnr=orgnr)
+
+        if res.is_err:
+            return Ok([])
+
+        resp = res.unwrap()
+        if resp.status_code == 200:
+            try:
+                data = resp.json()
+                embedded = data.get("_embedded", {})
+                updates = embedded.get("oppdaterteEnheter", [])
+                return Ok(updates)
+            except Exception:
+                return Ok([])
+        return Ok([])
+
     def build_anchor(
         self,
         enhet: dict[str, Any],
@@ -120,6 +141,9 @@ class BrregAdapter(RegistryPort):
         post_adr = enhet.get("postadresse", {}) or enhet.get("forretningsadresse", {})
         municipality = post_adr.get("kommune")
         postal_code = post_adr.get("postnummer")
+        overordnet = enhet.get("overordnetEnhet")
+        parent_orgnr = str(overordnet) if overordnet else None
+        is_subsidiary = bool(parent_orgnr)
 
         return EntityAnchor(
             orgnr=orgnr,
@@ -132,6 +156,8 @@ class BrregAdapter(RegistryPort):
             external_service_providers=external_providers,
             address_municipality=municipality,
             address_postal_code=postal_code,
+            parent_orgnr=parent_orgnr,
+            is_subsidiary=is_subsidiary,
         )
 
     def extract_registry_candidate_facts(
@@ -139,6 +165,7 @@ class BrregAdapter(RegistryPort):
         enhet: dict[str, Any],
         roller: list[dict[str, Any]],
         underenheter: list[dict[str, Any]],
+        oppdateringer: list[dict[str, Any]] | None = None,
     ) -> list[CandidateFact]:
         """Extracts deterministic candidate facts from official registry data."""
         orgnr = str(enhet.get("organisasjonsnummer", ""))
@@ -269,5 +296,24 @@ class BrregAdapter(RegistryPort):
                     verbatim_evidence=f"Registered operating subunits: {len(underenheter)}",
                 )
             )
+
+        # Official Brreg Oppdateringer events changelog
+        if oppdateringer:
+            for idx, upd in enumerate(oppdateringer[:5], start=1):
+                upd_id = upd.get("oppdateringsid", "")
+                upd_type = upd.get("endringstype", "ENDRING")
+                upd_date = upd.get("dato", source_date)
+                date_str = str(upd_date)[:10] if upd_date else source_date
+                facts.append(
+                    CandidateFact(
+                        predicate=f"public_activity.registration_update.{idx}",
+                        value=f"{upd_type} (Update ID: {upd_id})",
+                        confidence=1.0,
+                        source_tier=SourceTier.PRIMARY_GOVERNMENT,
+                        source_url=f"https://data.brreg.no/enhetsregisteret/api/oppdateringer/enheter?organisasjonsnummer={orgnr}",
+                        source_date=date_str,
+                        verbatim_evidence=f"Official Brreg registration update: id={upd_id}, type={upd_type}, date={upd_date}",
+                    )
+                )
 
         return facts

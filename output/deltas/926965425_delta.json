@@ -1,0 +1,71 @@
+{
+  "orgnr": "926965425",
+  "run_timestamp": "2026-11-05T14:04:04.942881+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:04:04.942881+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "123FERDIG - LØBERG",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926965425"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:04.942881+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926965425"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:04.942881+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-04-19",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926965425"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:04.942881+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Bjørkavollen 37",
+        "postal_code": "6012",
+        "city": "ÅLESUND",
+        "municipality": "ÅLESUND",
+        "municipality_number": "1508",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926965425"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:04.942881+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "70.200",
+        "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926965425"
+    },
+    {
+      "timestamp": "2026-11-05T14:04:04.942881+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926965425"
+    }
+  ],
+  "facts_created": 6,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

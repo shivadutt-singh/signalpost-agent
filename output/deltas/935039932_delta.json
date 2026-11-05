@@ -1,0 +1,68 @@
+{
+  "orgnr": "935039932",
+  "run_timestamp": "2026-11-05T14:06:16.011875+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:16.011875+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1916 INVEST AB",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935039932"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:16.011875+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "UTLA",
+        "beskrivelse": "Utenlandsk enhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935039932"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:16.011875+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2025-02-14",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935039932"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:16.011875+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2010-05-11",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935039932"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:16.011875+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Haugen-Gruppen AB BOX 185",
+        "postal_code": null,
+        "city": "601 03 Norrköping",
+        "municipality": null,
+        "municipality_number": null,
+        "country": "Sverige"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935039932"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:16.011875+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/935039932"
+    }
+  ],
+  "facts_created": 6,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

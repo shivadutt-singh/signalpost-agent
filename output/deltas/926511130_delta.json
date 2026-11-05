@@ -1,0 +1,118 @@
+{
+  "orgnr": "926511130",
+  "run_timestamp": "2026-11-05T14:08:09.182342+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:08:09.182342+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2014-KULLET VED BEGBY SKOLE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926511130"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.182342+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926511130"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.182342+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-02-02",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926511130"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.182342+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-01-21",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926511130"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.182342+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Marius Isebakke Spinellveien 18",
+        "postal_code": "1639",
+        "city": "GAMLE FREDRIKSTAD",
+        "municipality": "FREDRIKSTAD",
+        "municipality_number": "3107",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926511130"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.182342+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926511130"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.182342+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926511130"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.182342+00:00",
+      "fact_key": "governance.board_member.marius_isebakke",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Marius Isebakke",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926511130"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.182342+00:00",
+      "fact_key": "governance.board_member.erlend_øystein_øygard",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Erlend Øystein Øygard",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926511130"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.182342+00:00",
+      "fact_key": "governance.board_member.jørgen_fog",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Jørgen Fog",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926511130"
+    },
+    {
+      "timestamp": "2026-11-05T14:08:09.182342+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "926512161",
+          "name": "2014-KULLET VED BEGBY SKOLE",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/926511130"
+    }
+  ],
+  "facts_created": 11,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

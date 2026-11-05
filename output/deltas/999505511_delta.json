@@ -1,0 +1,103 @@
+{
+  "orgnr": "999505511",
+  "run_timestamp": "2026-11-05T14:05:48.575195+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:05:48.575195+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "17. MAI KOMITEEN HÆGELAND",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999505511"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:48.575195+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999505511"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:48.575195+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2013-03-02",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999505511"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:48.575195+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2012-01-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999505511"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:48.575195+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Otto Røyland Gamlevegen Kile 5",
+        "postal_code": "4720",
+        "city": "HÆGELAND",
+        "municipality": "VENNESLA",
+        "municipality_number": "4223",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999505511"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:48.575195+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999505511"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:48.575195+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999505511"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:48.575195+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Ole Kristen Hægeland",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999505511"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:48.575195+00:00",
+      "fact_key": "governance.board_member.hilde_åsland",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Hilde Åsland",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999505511"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:48.575195+00:00",
+      "fact_key": "governance.board_member.kristin_hægeland",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kristin Hægeland",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/999505511"
+    }
+  ],
+  "facts_created": 10,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

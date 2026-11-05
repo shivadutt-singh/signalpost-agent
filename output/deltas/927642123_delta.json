@@ -1,0 +1,86 @@
+{
+  "orgnr": "927642123",
+  "run_timestamp": "2026-11-05T14:06:37.494859+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:37.494859+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1VISNING SATHASIVAM",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927642123"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:37.494859+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927642123"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:37.494859+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2021-09-02",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927642123"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:37.494859+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Odalsvegen 15",
+        "postal_code": "2080",
+        "city": "EIDSVOLL",
+        "municipality": "EIDSVOLL",
+        "municipality_number": "3240",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927642123"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:37.494859+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "74.130",
+        "beskrivelse": "Interiørdesignvirksomhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927642123"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:37.494859+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927642123"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:37.494859+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "927846098",
+          "name": "1VISNING",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/927642123"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

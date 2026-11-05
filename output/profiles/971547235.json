@@ -3,7 +3,7 @@
   "legal_name": "ACCENTURE (DANMARK)",
   "canonical_status": "ACTIVE",
   "created_at": "2026-11-05T07:30:36.936970+00:00",
-  "updated_at": "2026-11-05T07:30:36.936970+00:00",
+  "updated_at": "2026-11-05T12:23:27.315591+00:00",
   "schema_version": "2.0.0",
   "profile_verification_explanation": "Enterprise profile for ACCENTURE (DANMARK) (orgnr: 971547235) deterministically verified. 7 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
   "executive_summary": "ACCENTURE (DANMARK) (orgnr 971547235) is a registered NUF based in OSLO.",
@@ -166,6 +166,12 @@
       },
       "previous_values": []
     }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 0,
+    "critic_facts_quarantined": 0
   },
   "metadata": {}
 }

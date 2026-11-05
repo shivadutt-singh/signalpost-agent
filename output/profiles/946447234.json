@@ -3,9 +3,9 @@
   "legal_name": "A/L Tøyenlia Borettslag",
   "canonical_status": "ACTIVE",
   "created_at": "2026-11-05T07:29:10.644531+00:00",
-  "updated_at": "2026-11-05T07:29:10.644531+00:00",
+  "updated_at": "2026-11-05T12:21:07.630697+00:00",
   "schema_version": "2.0.0",
-  "profile_verification_explanation": "Enterprise profile for A/L Tøyenlia Borettslag (orgnr: 946447234) deterministically verified. 37 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
+  "profile_verification_explanation": "Enterprise profile for A/L Tøyenlia Borettslag (orgnr: 946447234) deterministically verified. 43 facts established via official Norwegian Enhetsregisteret API (Tier 1 Ground Truth) with Modulo-11 checksum validation. 0 operational and financial facts cross-referenced via verified official domain and targeted discovery with Entity Verification Gate. 0 prior values preserved in temporal audit lineage. Zero fabrication detected.",
   "executive_summary": "A/L Tøyenlia Borettslag (orgnr 946447234) is a registered BRL based in NITTEDAL.",
   "known_unknowns": [
     "Active job listings: Checked registry records and official NAV public job feed on 2026-11-05; 0 active openings verified featuring the company's legal name or exact orgnr."
@@ -853,7 +853,133 @@
         "verification_explanation": "Official registry announcement 'Styre' verified from Brønnøysundregistrene Kunngjøringer (orgnr 946447234)."
       },
       "previous_values": []
+    },
+    "governance.board_member.rune_austad": {
+      "fact_key": "governance.board_member.rune_austad",
+      "current_value": "Rune Austad",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/946447234",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-19",
+        "retrieval_timestamp": "2026-11-05T12:21:02.190370+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.rune_olsen": {
+      "fact_key": "governance.board_member.rune_olsen",
+      "current_value": "Rune Olsen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/946447234",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-19",
+        "retrieval_timestamp": "2026-11-05T12:21:02.190370+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.jarl_hesselberg": {
+      "fact_key": "governance.board_member.jarl_hesselberg",
+      "current_value": "Jarl Hesselberg",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/946447234",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-19",
+        "retrieval_timestamp": "2026-11-05T12:21:02.190370+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "governance.board_member.tom-andre_nielsen": {
+      "fact_key": "governance.board_member.tom-andre_nielsen",
+      "current_value": "Tom-Andre Nielsen",
+      "category": "governance",
+      "unit": null,
+      "period_or_year": null,
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/946447234",
+        "source_tier": "official_registry",
+        "source_date": "1995-02-19",
+        "retrieval_timestamp": "2026-11-05T12:21:02.190370+00:00",
+        "verbatim_quote": null,
+        "entity_match_rule": "OFFICIAL_REGISTRY_AUTHORITY",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Official executive governance leadership registered at Brønnøysund."
+      },
+      "previous_values": []
+    },
+    "financial.profit_before_tax_2024": {
+      "fact_key": "financial.profit_before_tax_2024",
+      "current_value": -179790.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2024",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/946447234",
+        "source_tier": "official_registry",
+        "source_date": "2024-12-31",
+        "retrieval_timestamp": "2026-11-05T12:21:02.191094+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2025424525: Periode 2024-01-01 til 2024-12-31 (SELSKAP). Driftsinntekter: 3624603.0, Driftsresultat: -32085.0, Ordinært resultat før skatt: -179790.0, Årsresultat: -179789.0, Sum eiendeler: 39067385.0, Sum egenkapital: 19979271.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2024 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/946447234)."
+      },
+      "previous_values": []
+    },
+    "financial.profit_before_tax_2023": {
+      "fact_key": "financial.profit_before_tax_2023",
+      "current_value": 972007.0,
+      "category": "financial",
+      "unit": "NOK",
+      "period_or_year": "2023",
+      "current_evidence": {
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/946447234",
+        "source_tier": "official_registry",
+        "source_date": "2023-12-31",
+        "retrieval_timestamp": "2026-11-05T12:21:02.191094+00:00",
+        "verbatim_quote": "Regnskapsregisteret record journalnr 2024443365: Periode 2023-01-01 til 2023-12-31 (SELSKAP). Driftsinntekter: 3584558.0, Driftsresultat: 1128200.0, Ordinært resultat før skatt: 972007.0, Årsresultat: 972009.0, Sum eiendeler: 39422801.0, Sum egenkapital: 20159059.0.",
+        "entity_match_rule": "EXACT_ORGNR_MATCH",
+        "entity_match_method": "EXACT_ORGNR_API",
+        "entity_confidence": 1.0,
+        "raw_digits_verified": true,
+        "verification_explanation": "Annual account for FY2023 verified from Brønnøysund Regnskapsregisteret API (https://data.brreg.no/regnskapsregisteret/regnskap/946447234)."
+      },
+      "previous_values": []
     }
+  },
+  "telemetry": {
+    "routing_path": "DETERMINISTIC_FAST_PATH",
+    "agentic_facts_proposed": 0,
+    "critic_facts_accepted": 0,
+    "critic_facts_quarantined": 0
   },
   "metadata": {}
 }

@@ -1,0 +1,126 @@
+{
+  "orgnr": "937505299",
+  "run_timestamp": "2026-11-05T14:05:58.102326+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:05:58.102326+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "17.MAI NEMDA VOSS",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937505299"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.102326+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937505299"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.102326+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-04-10",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937505299"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.102326+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-03-02",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937505299"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.102326+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Bømovegen 5",
+        "postal_code": "5705",
+        "city": "VOSS",
+        "municipality": "VOSS",
+        "municipality_number": "4621",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937505299"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.102326+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937505299"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.102326+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937505299"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.102326+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Steinar Røthe",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937505299"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.102326+00:00",
+      "fact_key": "governance.board_member.cecilie_remme",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Cecilie Remme",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937505299"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.102326+00:00",
+      "fact_key": "governance.board_member.cathrine_seim-haugen",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Cathrine Seim-Haugen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937505299"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.102326+00:00",
+      "fact_key": "governance.board_member.hallgeir_finbråten",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Hallgeir Finbråten",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937505299"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:58.102326+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "937506635",
+          "name": "17.MAI NEMDA VOSS",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/937505299"
+    }
+  ],
+  "facts_created": 12,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

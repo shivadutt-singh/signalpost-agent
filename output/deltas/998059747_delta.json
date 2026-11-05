@@ -1,0 +1,86 @@
+{
+  "orgnr": "998059747",
+  "run_timestamp": "2026-11-05T14:06:31.752104+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:31.752104+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1RM LIER",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/998059747"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:31.752104+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/998059747"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:31.752104+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2012-03-06",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/998059747"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:31.752104+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Jarlsøveien 43A",
+        "postal_code": "3124",
+        "city": "TØNSBERG",
+        "municipality": "TØNSBERG",
+        "municipality_number": "3905",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/998059747"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:31.752104+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "70.200",
+        "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/998059747"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:31.752104+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/998059747"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:31.752104+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "933658864",
+          "name": "1RM LIER",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/998059747"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

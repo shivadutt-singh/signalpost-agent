@@ -10,16 +10,17 @@ from __future__ import annotations
 import json
 import logging
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any
+
 from src.web.app import get_html_template
 
 logger = logging.getLogger("signalpost.static_exporter")
 
 
 def build_static_html(
-    output_path: Optional[Path] = None,
-    profiles_dir: Optional[Path] = None,
-    audit_file: Optional[Path] = None,
+    output_path: Path | None = None,
+    profiles_dir: Path | None = None,
+    audit_file: Path | None = None,
 ) -> Path:
     """Assembles all profiles and hand-checked audit matrix into a standalone single-file HTML."""
     out_file = output_path or Path("output/index.html")
@@ -29,13 +30,13 @@ def build_static_html(
     out_file.parent.mkdir(parents=True, exist_ok=True)
 
     # 1. Load profiles
-    profiles_summary: List[Dict[str, Any]] = []
-    full_profiles_map: Dict[str, Any] = {}
+    profiles_summary: list[dict[str, Any]] = []
+    full_profiles_map: dict[str, Any] = {}
 
     if p_dir.exists():
         for p_file in sorted(p_dir.glob("*.json")):
             try:
-                with open(p_file, "r", encoding="utf-8") as f:
+                with open(p_file, encoding="utf-8") as f:
                     data = json.load(f)
 
                 orgnr = str(data.get("orgnr", p_file.stem))
@@ -59,7 +60,7 @@ def build_static_html(
     audit_data = {}
     if a_path.exists():
         try:
-            with open(a_path, "r", encoding="utf-8") as f:
+            with open(a_path, encoding="utf-8") as f:
                 audit_data = json.load(f)
         except Exception as exc:
             logger.warning(f"Failed to load audit file: {exc}")

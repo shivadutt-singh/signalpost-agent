@@ -1,0 +1,94 @@
+{
+  "orgnr": "938798222",
+  "run_timestamp": "2026-11-05T14:06:23.805230+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:23.805230+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "19LFS AS TVANGSAVVIKLINGSBO",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938798222"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:23.805230+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "KBO",
+        "beskrivelse": "Konkursbo"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938798222"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:23.805230+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-11-02",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938798222"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:23.805230+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2026-11-02",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938798222"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:23.805230+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Liang 7A",
+        "postal_code": "4018",
+        "city": "STAVANGER",
+        "municipality": "STAVANGER",
+        "municipality_number": "1103",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938798222"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:23.805230+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "71.129",
+        "beskrivelse": "Annen teknisk konsulentvirksomhet"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938798222"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:23.805230+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938798222"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:23.805230+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "938798249",
+          "name": "19LFS AS TVANGSAVVIKLINGSBO",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/938798222"
+    }
+  ],
+  "facts_created": 8,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

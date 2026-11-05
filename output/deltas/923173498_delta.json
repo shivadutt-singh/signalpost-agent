@@ -1,0 +1,86 @@
+{
+  "orgnr": "923173498",
+  "run_timestamp": "2026-11-05T14:06:21.248548+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:06:21.248548+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "1991 MHRETAB TESFAGERGS GEBREZGI",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923173498"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:21.248548+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "ENK",
+        "beskrivelse": "Enkeltpersonforetak"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923173498"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:21.248548+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-08-08",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923173498"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:21.248548+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "Bolignummer U0101 Venusvegen 6E",
+        "postal_code": "7037",
+        "city": "TRONDHEIM",
+        "municipality": "TRONDHEIM",
+        "municipality_number": "5001",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923173498"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:21.248548+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "53.200",
+        "beskrivelse": "Andre post- og budtjenester"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923173498"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:21.248548+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923173498"
+    },
+    {
+      "timestamp": "2026-11-05T14:06:21.248548+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "929901436",
+          "name": "1991 MHRETAB TESFAGERGS GEBREZGI",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/923173498"
+    }
+  ],
+  "facts_created": 7,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

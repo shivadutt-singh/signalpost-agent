@@ -1,0 +1,110 @@
+{
+  "orgnr": "922836116",
+  "run_timestamp": "2026-11-05T14:05:56.400770+00:00",
+  "changes": [
+    {
+      "timestamp": "2026-11-05T14:05:56.400770+00:00",
+      "fact_key": "registry.legal_name",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "17.MAI BERGSØY",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922836116"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:56.400770+00:00",
+      "fact_key": "registry.organization_form",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "FLI",
+        "beskrivelse": "Forening/lag/innretning"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922836116"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:56.400770+00:00",
+      "fact_key": "registry.registration_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-06-03",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922836116"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:56.400770+00:00",
+      "fact_key": "registry.founding_date",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "2019-05-01",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922836116"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:56.400770+00:00",
+      "fact_key": "contact.business_address",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "street": "c/o Steinar Egset Nupen Breidnesvegen 23",
+        "postal_code": "6092",
+        "city": "FOSNAVÅG",
+        "municipality": "HERØY",
+        "municipality_number": "1515",
+        "country": "Norge"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922836116"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:56.400770+00:00",
+      "fact_key": "operations.primary_nace",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": {
+        "kode": "94.992",
+        "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers"
+      },
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922836116"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:56.400770+00:00",
+      "fact_key": "registry.status",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "ACTIVE",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922836116"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:56.400770+00:00",
+      "fact_key": "governance.board_chair",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Steinar Nupen",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922836116"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:56.400770+00:00",
+      "fact_key": "governance.board_member.kjell_edward_fure",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": "Kjell Edward Fure",
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922836116"
+    },
+    {
+      "timestamp": "2026-11-05T14:05:56.400770+00:00",
+      "fact_key": "structure.subunits",
+      "action": "CREATED",
+      "old_value": null,
+      "new_value": [
+        {
+          "orgnr": "923034021",
+          "name": "17.MAI BERGSØY",
+          "employees": null,
+          "municipality": null
+        }
+      ],
+      "reason": "Initial discovery from https://data.brreg.no/enhetsregisteret/api/enheter/922836116"
+    }
+  ],
+  "facts_created": 10,
+  "facts_updated": 0,
+  "facts_unchanged": 0,
+  "facts_rejected": 0
+}

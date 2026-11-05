@@ -222,12 +222,16 @@ def verify_dom_block_ownership(
     target_orgnr: str,
     canonical_name: str,
     poison_entities: list[str],
+    parent_orgnr: str | None = None,
+    group_name: str | None = None,
 ) -> Result[bool, PoisonEntityBleedError]:
     """
-    DOM-Block Level Verification:
+    DOM-Block Level Verification (v7.0 Red-Team Edition):
     (Condition 1) Block or parent must match target_orgnr or full canonical_name.
     (Condition 2) Block must NOT exclusively refer to a poison entity (USBL, OBOS, PwC)
                   without target entity presence.
+    (Condition 3) If parent_orgnr/group_name is present (Konsern / Corporate Group),
+                  allow group-level evidence provided target or corporate group context is confirmed.
     """
     normalized_block = " " + re.sub(r"\s+", " ", block_text.upper()) + " "
     norm_orgnr = target_orgnr.strip()
@@ -236,9 +240,11 @@ def verify_dom_block_ownership(
     # Check Condition 1: Target presence
     has_orgnr = norm_orgnr in normalized_block
     has_name = norm_name in normalized_block
+    has_parent_orgnr = bool(parent_orgnr and parent_orgnr.strip() in normalized_block)
+    has_group = bool(group_name and group_name.strip().upper() in normalized_block)
 
-    # If neither target orgnr nor target canonical name is mentioned, reject block
-    if not has_orgnr and not has_name:
+    # If neither target orgnr nor target canonical name nor confirmed corporate group is mentioned, reject block
+    if not has_orgnr and not has_name and not (has_parent_orgnr or has_group):
         return Err(
             PoisonEntityBleedError(
                 code="TARGET_ABSENT_IN_BLOCK",
@@ -247,7 +253,7 @@ def verify_dom_block_ownership(
             )
         )
 
-    # Check Condition 2: Poison entity isolation
+    # Check Condition 2: Poison entity isolation (USBL / OBOS / PwC / Azets)
     detected_poison: list[str] = []
     for poison in poison_entities:
         poison_upper = poison.upper().strip()
@@ -263,9 +269,17 @@ def verify_dom_block_ownership(
         if has_orgnr:
             return Ok(True)
 
-        # If canonical name is present, verify it's not merely a secondary mention in a manager publication
-        # (Target name must appear before or in equal prominence)
-        # E.g. "USBL Annual General Meeting - All borettslag invited" vs "FLS Borettslag managed by USBL"
-        return Ok(True)
+        # If canonical name is present in the block, verify it's corroborated
+        if has_name:
+            return Ok(True)
+
+        # External manager cannot be bypassed by group rules
+        return Err(
+            PoisonEntityBleedError(
+                code="POISON_MANAGER_BLEED",
+                message=f"Block contaminated by external manager {detected_poison} without target presence",
+                details={"detected_poison": detected_poison, "target": canonical_name},
+            )
+        )
 
     return Ok(True)

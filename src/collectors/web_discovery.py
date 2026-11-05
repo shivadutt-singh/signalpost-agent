@@ -11,11 +11,13 @@ import logging
 import re
 import urllib.parse
 from dataclasses import dataclass
-from datetime import datetime, timezone
-from typing import Any, Dict, List, Optional, Tuple
+from datetime import datetime
+from typing import Any
+
 from bs4 import BeautifulSoup
 
 from src.collectors.http_budget import BudgetedAsyncClient
+from src.domain.text_normalizer import normalize_norwegian_text
 from src.validators.fact_guard import (
     EntityAnchor,
     EntityVerificationGate,
@@ -56,7 +58,7 @@ class WebPageContent:
     url: str
     title: str
     raw_text: str
-    source_date: Optional[str]
+    source_date: str | None
     verification: EntityVerificationResult
     status_code: int
     html: str = ""
@@ -75,7 +77,7 @@ class WebDiscoveryCollector:
         self,
         url: str,
         anchor: EntityAnchor,
-    ) -> Optional[WebPageContent]:
+    ) -> WebPageContent | None:
         """
         Fetches a web page, parses metadata and clean text, and runs EntityVerificationGate.
         """
@@ -87,11 +89,17 @@ class WebDiscoveryCollector:
             if resp.status_code != 200:
                 return None
 
-            html_text = resp.text
+            try:
+                if resp.encoding is None or resp.encoding.lower() in ("iso-8859-1", "ascii"):
+                    resp.encoding = "utf-8"
+            except Exception:
+                pass
+
+            html_text = normalize_norwegian_text(resp.text)
             soup = BeautifulSoup(html_text, "html.parser")
 
             # Extract title
-            title = soup.title.string.strip() if soup.title and soup.title.string else ""
+            title = normalize_norwegian_text(soup.title.string.strip() if soup.title and soup.title.string else "")
 
             # Extract publication / last-modified date if present
             source_date = self._extract_date_metadata(soup, resp.headers)
@@ -101,7 +109,7 @@ class WebDiscoveryCollector:
             for tag in clean_soup(["script", "style", "noscript", "svg"]):
                 tag.extract()
 
-            text = clean_soup.get_text(separator=" ", strip=True)
+            text = normalize_norwegian_text(clean_soup.get_text(separator=" ", strip=True))
 
             # Run Entity Verification Gate
             verification = EntityVerificationGate.verify_source(
@@ -122,7 +130,7 @@ class WebDiscoveryCollector:
         except Exception:
             return None
 
-    def _extract_date_metadata(self, soup: BeautifulSoup, headers: dict) -> Optional[str]:
+    def _extract_date_metadata(self, soup: BeautifulSoup, headers: dict) -> str | None:
         """Attempts to extract publication/modification date from meta tags or HTTP headers."""
         meta_candidates = [
             ("property", "article:published_time"),
@@ -153,12 +161,12 @@ class WebDiscoveryCollector:
         self,
         anchor: EntityAnchor,
         include_search: bool = True,
-    ) -> List[WebPageContent]:
+    ) -> list[WebPageContent]:
         """
         Discovers official homepage and key corporate sections (about, investor, news, careers).
         All returned pages have already passed EntityVerificationGate.
         """
-        pages: List[WebPageContent] = []
+        pages: list[WebPageContent] = []
         visited = set()
 
         # Step 1: Official homepage (only if verified own domain, not shared manager)
@@ -180,11 +188,7 @@ class WebDiscoveryCollector:
                         for a in soup.find_all("a", href=True):
                             href = a["href"].strip()
                             txt = a.get_text().strip()
-                            if CAREER_REGEX.search(href) or CAREER_REGEX.search(txt):
-                                candidate_subpages.append(href)
-                            elif NEWS_REGEX.search(href) or NEWS_REGEX.search(txt):
-                                candidate_subpages.append(href)
-                            elif any(k in href.lower() for k in ["om-oss", "about", "investor", "aarsrapport"]):
+                            if CAREER_REGEX.search(href) or CAREER_REGEX.search(txt) or NEWS_REGEX.search(href) or NEWS_REGEX.search(txt) or any(k in href.lower() for k in ["om-oss", "about", "investor", "aarsrapport"]):
                                 candidate_subpages.append(href)
 
                         # Add standard fallbacks if not found
@@ -213,7 +217,7 @@ class WebDiscoveryCollector:
         self,
         anchor: EntityAnchor,
         max_subpages: int = 4,
-    ) -> Tuple[List[WebPageContent], Dict[str, str], List[Dict[str, Any]]]:
+    ) -> tuple[list[WebPageContent], dict[str, str], list[dict[str, Any]]]:
         """
         Stage 2A & 2B: Hybrid Link Selection & Deterministic Page Pre-Filter.
         1. Fetches company's verified homepage.
@@ -224,9 +228,9 @@ class WebDiscoveryCollector:
         Returns:
             (verified_pages, raw_scraped_pages, ld_json_jobs)
         """
-        verified_pages: List[WebPageContent] = []
-        raw_scraped_pages: Dict[str, str] = {}
-        ld_json_jobs: List[Dict[str, Any]] = []
+        verified_pages: list[WebPageContent] = []
+        raw_scraped_pages: dict[str, str] = {}
+        ld_json_jobs: list[dict[str, Any]] = []
         visited = set()
 
         if not anchor.official_domains or anchor.hjemmeside_is_shared_manager:
@@ -249,9 +253,9 @@ class WebDiscoveryCollector:
 
         # 2. Stage 2A: Parse and rank candidate subpages
         soup = BeautifulSoup(home_page.html, "html.parser")
-        p1_careers: List[str] = []
-        p2_news: List[str] = []
-        p3_about: List[str] = []
+        p1_careers: list[str] = []
+        p2_news: list[str] = []
+        p3_about: list[str] = []
 
         for a in soup.find_all("a", href=True):
             href = a["href"].strip()
@@ -303,7 +307,7 @@ class WebDiscoveryCollector:
                 target_list.append(fb_url)
 
         # Select up to max_subpages across priorities
-        selected_subpages: List[str] = []
+        selected_subpages: list[str] = []
         # Up to 2 career pages
         for u in p1_careers[:2]:
             if u not in selected_subpages:
@@ -377,7 +381,7 @@ class WebDiscoveryCollector:
     async def discover_jobs(
         self,
         anchor: EntityAnchor,
-    ) -> Tuple[List[Dict[str, Any]], Optional[str], List[str]]:
+    ) -> tuple[list[dict[str, Any]], str | None, list[str]]:
         """
         Strict Careers-Page-First Jobs Pipeline powered by JobsClient:
         Channel A: Norway NAV Public Job Feed (arbeidsplassen.nav.no).
@@ -400,13 +404,13 @@ class WebDiscoveryCollector:
     async def discover_news(
         self,
         anchor: EntityAnchor,
-    ) -> List[Dict[str, Any]]:
+    ) -> list[dict[str, Any]]:
         """
         Strict News Discovery:
         Collects press releases and corporate announcements ONLY from verified company domain
         or sources explicitly confirmed by verify_page_belongs_to_company.
         """
-        news_items: List[Dict[str, Any]] = []
+        news_items: list[dict[str, Any]] = []
         today_str = datetime.now().strftime("%Y-%m-%d")
 
         if not anchor.official_domains or anchor.hjemmeside_is_shared_manager:

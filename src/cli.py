@@ -8,32 +8,34 @@ import asyncio
 import logging
 import sys
 import time
+
+# Cross-platform UTF-8 reconfiguration for Windows & Linux
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+if hasattr(sys.stderr, "reconfigure"):
+    try:
+        sys.stderr.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
 import uuid
-from datetime import datetime, timezone
-from pathlib import Path
-from typing import List, Optional
+from datetime import UTC, datetime
 
 import click
 
-from src.config import settings
 from src.collectors.brreg_client import BrregClient
-from src.collectors.financials_client import FinancialsClient
-from src.collectors.kunngjoringer_client import KunngjoringerClient
 from src.collectors.http_budget import BudgetedAsyncClient, HttpBudgetTracker
-from src.collectors.web_discovery import WebDiscoveryCollector
+from src.config import settings
 from src.extraction.llm_extractor import FactExtractor
 from src.models.schema import (
     CompanyProfile,
     ExecutionTelemetry,
-    ExtractedFactCandidate,
-    FactCategory,
-    FactEvidence,
-    ProfileDeltaLog,
-    SourceTier,
 )
+from src.pipeline import HybridPipeline
 from src.state.profile_store import ProfileStore
-from src.validators.fact_critic import FactCriticPipeline
-from src.validators.mod11 import normalize_orgnr, try_normalize_orgnr
+from src.validators.mod11 import try_normalize_orgnr
 
 logging.basicConfig(
     level=logging.INFO,
@@ -43,8 +45,6 @@ logging.basicConfig(
 logger = logging.getLogger("signalpost")
 
 
-from src.pipeline import HybridPipeline
-
 async def process_single_company(
     raw_orgnr: str,
     client: BudgetedAsyncClient,
@@ -52,8 +52,8 @@ async def process_single_company(
     extractor: FactExtractor,
     include_web: bool = True,
     use_nim_full: bool = True,
-    telemetry: Optional[ExecutionTelemetry] = None,
-) -> Optional[CompanyProfile]:
+    telemetry: ExecutionTelemetry | None = None,
+) -> CompanyProfile | None:
     """
     Executes the 3-Layer Hybrid Neuro-Symbolic Sandwich Pipeline:
     Layer 1: Deterministic Registry & Multi-Year Accounts + Smart Path Router
@@ -70,7 +70,7 @@ async def process_single_company(
 
 
 async def run_batch(
-    orgnrs: List[str],
+    orgnrs: list[str],
     concurrency: int = settings.MAX_CONCURRENT_COMPANIES,
     include_web: bool = True,
 ) -> ExecutionTelemetry:
@@ -86,7 +86,7 @@ async def run_batch(
 
     telemetry = ExecutionTelemetry(
         session_id=str(uuid.uuid4()),
-        start_time=datetime.now(timezone.utc).isoformat(),
+        start_time=datetime.now(UTC).isoformat(),
     )
 
     semaphore = asyncio.Semaphore(concurrency)
@@ -133,7 +133,7 @@ async def run_batch(
         await asyncio.gather(*tasks)
 
     duration = time.time() - start_ts
-    telemetry.end_time = datetime.now(timezone.utc).isoformat()
+    telemetry.end_time = datetime.now(UTC).isoformat()
     telemetry.total_duration_seconds = round(duration, 2)
     telemetry.total_http_requests = budget_tracker.total_requests
     telemetry.web_outbound_requests = budget_tracker.web_outbound_requests
@@ -221,7 +221,7 @@ def run(orgnr: str, no_web: bool):
 @click.option("--no-web", is_flag=True, default=False, help="Disable external web discovery.")
 def batch(file_path: str, concurrency: int, no_web: bool):
     """Run batch extraction for a list of enterprise numbers from a file."""
-    with open(file_path, "r", encoding="utf-8") as f:
+    with open(file_path, encoding="utf-8") as f:
         lines = [line.strip() for line in f if line.strip() and not line.startswith("#")]
 
     engine_desc = (
@@ -279,6 +279,7 @@ def seed_1000(limit: int, concurrency: int, no_web: bool):
 def serve(port: int, host: str):
     """Launch the Signalpost Agent interactive production Web UI."""
     import uvicorn
+
     from src.web.static_builder import build_static_html
 
     settings.ensure_directories()
@@ -290,7 +291,7 @@ def serve(port: int, host: str):
     click.echo("=" * 65)
     click.echo("SIGNALPOST AGENT v2.0 INTERACTIVE WEB CONSOLE")
     click.echo(f"Web server running at: http://{host}:{port}")
-    click.echo(f"Static HTML Viewer:    output/index.html")
+    click.echo("Static HTML Viewer:    output/index.html")
     click.echo("=" * 65)
     uvicorn.run("src.web.app:app", host=host, port=port, log_level="info")
 
@@ -310,6 +311,31 @@ def audit():
     click.echo("Running 50-Profile Stratified Calibration Audit across Housing Associations, AS, and ASA...")
     asyncio.run(run_hand_checked_audit())
     click.echo("\n[SUCCESS] Calibration Audit complete. Saved data/hand_checked_audit.json and HAND_CHECKED_REPORT.md")
+
+
+@cli.command("doctor")
+def doctor():
+    """Run the pre-submission red-team health and compliance audit suite."""
+    from src.scripts.doctor import print_doctor_table, run_doctor_audit
+    click.echo("Executing Pre-Submission Doctor Suite (10 Zero-Failure Checks)...")
+    all_passed, results = run_doctor_audit()
+    print_doctor_table(all_passed, results)
+    sys.exit(0 if all_passed else 1)
+
+
+@cli.command("verify-updates")
+@click.option("--sample", default=25, help="Number of profiles to audit for incremental updates.")
+def verify_updates(sample: int):
+    """Audit incremental update handling and Brreg oppdateringer changelog."""
+    from src.scripts.verify_updates import run_verify_updates
+    click.echo(f"Running incremental update verification pass across {sample} profiles...")
+    manifest = asyncio.run(run_verify_updates(sample_size=sample))
+    click.echo("\n[SUCCESS] Incremental update verification complete.")
+    click.echo(f"Audited: {manifest['sample_size_audited']} profiles")
+    click.echo(f"Facts unchanged (idempotent): {manifest['total_facts_unchanged_idempotent']}")
+    click.echo(f"Oppdateringer events captured: {manifest['total_new_oppdateringer_events']}")
+    click.echo(f"Idempotency rate: {manifest['idempotency_rate_pct']}%")
+    click.echo("Proof saved to: output/telemetry/update_engine_proof.json")
 
 
 def main():
